@@ -1,10 +1,17 @@
+# Secrets
 .env
-data/labels/
-data/indexes/
 
-__pycache__/
-*.pyc
+# Python
 .venv/
-venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
 
-.vscode/
+# Raw data and caches (root only, so backend/rxcite/data/ is tracked)
+/data/
+
+# OS
+.DS_Store
+
+# Claude
+.claude

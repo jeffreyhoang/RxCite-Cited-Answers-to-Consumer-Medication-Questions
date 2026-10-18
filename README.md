@@ -1,38 +1,48 @@
 # RxCite: Cited Answers to Consumer Medication Questions
 
+A retrieval-augmented generation (RAG) assistant that answers consumer medication questions using only FDA-approved drug labels from openFDA, with citations to the label sections used. We compare four RAG architectures: Naive, Advanced, Hierarchical, and Decomposition.
+
+## Project structure
+
+```
+├── backend/             # Python project (uv)
+│   ├── pyproject.toml   # dependencies, ruff, pytest config
+│   ├── rxcite/          # all RAG logic
+│   │   ├── config.py    # env vars, model names, constants
+│   │   ├── db.py        # Supabase (Postgres + pgvector) access
+│   │   ├── llm.py       # Claude client wrapper
+│   │   ├── data/        # openFDA ingestion, section parsing, chunking, embedding
+│   │   ├── retrieval/   # dense, BM25, hybrid search, reranking
+│   │   ├── pipelines/   # one file per RAG architecture + shared base interface
+│   │   └── eval/        # recall@10, MRR, LLM judge, experiment runner
+│   ├── api/             # FastAPI app (imports rxcite)
+│   ├── scripts/         # command-line entry points (ingest, run eval, smoke test)
+│   └── tests/           # pytest tests
+├── frontend/            # React + Vite + TypeScript app
+├── datasets/            # committed eval sets: MedicationQA, refusal, gold mapping
+├── results/             # experiment outputs (tables, figures)
+├── notebooks/           # exploration and report figures
+└── data/                # gitignored: raw openFDA downloads and caches
+```
+
+Folders are added as the work that needs them begins.
+
 ## Setup
-```bash
-pip install -r requirements.txt
-cp .env.example .env #fill in API keys
-```
 
-## How the project works
-### 1. Build the dataset (run once)
-```bash
-python -m src.data_prep.ingest       #openFDA labels -> sections -> chunks -> embeddings -> indexes
-python -m src.data_prep.build_eval   #MedicationQA questions -> matched label sections -> eval file
-```
-- `ingest.py` fetches FDA drug labels from openFDA, splits them into sections, chunks them, and builds the vector and BM25 indexes. Output goes to `data/labels/` and `data/indexes/` (both gitignored)
-- `build_eval.py` samples ~200 MedicationQA questions, matches each to the label section containing the answer, and writes `data/eval/medicationqa.jsonl`.
-- `data/eval/refusal.jsonl` (~40 questions that should be refused) written by hand.
+1. Install [uv](https://docs.astral.sh/uv/): `brew install uv`
+2. Install dependencies (uv installs Python 3.12 automatically):
+   ```bash
+   cd backend
+   uv sync
+   ```
+3. Create your env file and fill in the values (ask a teammate for the Supabase connection string):
+   ```bash
+   cp .env.example .env
+   ```
+4. Check your setup:
+   ```bash
+   uv run python scripts/smoke_test.py   # should print: Supabase: OK
+   uv run ruff check . && uv run pytest
+   ```
 
-### 2. Run the experiments
-```bash
-python run_experiments.py
-```
-For each of the four architectures (Naive, Advanced, Hierarchical, Decomposition), the script retrieves chunks for every eval question, generates answers, and scores them with the functions in `src/core/evaluate.py` (recall@10, MRR, etc). It saves the results to `results/`.
-
-### 3. Run the demo
-```bash
-python demo.py
-```
-Ask a medication question and get an answer with citations to the FDA label sections it came from, using the architecture you choose.
-
-## Code layout
-| Folder | Purpose |
-|---|---|
-| `src/core/` | Shared pieces: constants, dataclasses, model wrappers (`shared.py`), answer generation (`generate_answer.py`), and metrics (`evaluate.py`) |
-| `src/architectures/` | One file per RAG architecture, all implementing `retrieve(query, k)` from `base.py`; `__init__.py` holds the name-to-class registry |
-| `src/data_prep/` | One-time dataset scripts |
-| `data/` | `labels/` and `indexes/` (generated, gitignored); `eval/` (committed) |
-| `results/` | Output tables from `run_experiments.py` |
+Use `uv add <package>` to add dependencies (not `pip install`), and commit `pyproject.toml` and `uv.lock`. Never commit `.env`.
