@@ -1,0 +1,10 @@
+.env
+data/labels/
+data/indexes/
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+.vscode/
