@@ -1,7 +1,5 @@
-'''
-Configuration settings for the RxCite application
-    -paths, env vars, model names, constants, etc.
-'''
+# Configuration settings for the RxCite application
+#       -paths, env vars, model names, constants, etc.
 
 import os
 from pathlib import Path
