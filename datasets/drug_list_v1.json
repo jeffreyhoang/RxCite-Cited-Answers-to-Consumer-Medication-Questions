@@ -1,0 +1,651 @@
+{
+  "version": "v1",
+  "drugs": [
+    "adacel",
+    "albuterol",
+    "alendronate",
+    "alprazolam",
+    "amiodarone",
+    "amitriptyline",
+    "amlodipine",
+    "amoxicillin",
+    "amphetamine",
+    "anastrozole",
+    "aripiprazole",
+    "aspirin",
+    "atorvastatin",
+    "azathioprine",
+    "balsalazide",
+    "bcg vaccine",
+    "beclomethasone",
+    "bimatoprost",
+    "bisoprolol",
+    "boric acid",
+    "botulinum toxin",
+    "budesonide",
+    "buprenorphine",
+    "bupropion",
+    "cabergoline",
+    "carbamazepine",
+    "carbidopa and levodopa",
+    "carprofen",
+    "carvedilol",
+    "ceftriaxone",
+    "ciprofloxacin",
+    "ciprofloxacin and dexamethasone",
+    "clonazepam",
+    "clotrimazole",
+    "codeine",
+    "conjugated estrogens",
+    "cortisone",
+    "cyanocobalamin",
+    "denosumab",
+    "dermgard",
+    "dextroamphetamine",
+    "diazepam",
+    "diclofenac",
+    "dicyclomine",
+    "dimenhydrinate",
+    "donepezil",
+    "doxepin",
+    "doxycycline",
+    "duloxetine",
+    "dutasteride",
+    "enalapril",
+    "enalaprilat",
+    "entecavir",
+    "escitalopram",
+    "estradiol",
+    "ezetimibe",
+    "famotidine",
+    "fentanyl",
+    "fluoride",
+    "fluorouracil",
+    "fluoxetine",
+    "fluvastatin",
+    "furosemide",
+    "gabapentin",
+    "gardasil",
+    "glipizide",
+    "guaifenesin",
+    "hydrochlorothiazide",
+    "hydrocodone",
+    "hydrocodone and acetaminophen",
+    "hydromorphone",
+    "hyoscyamine",
+    "indomethacin",
+    "insulin",
+    "lansoprazole",
+    "latanoprost",
+    "levetiracetam",
+    "levofloxacin",
+    "lidocaine",
+    "loratadine",
+    "lorazepam",
+    "losartan",
+    "meclizine",
+    "memantine",
+    "meprobamate",
+    "methylphenidate",
+    "methylprednisolone",
+    "metoprolol",
+    "minocycline",
+    "mometasone and formoterol",
+    "montelukast",
+    "morphine",
+    "moxifloxacin",
+    "nicotine",
+    "olanzapine",
+    "omeprazole",
+    "oxybutynin",
+    "oxycodone",
+    "oxycodone and acetaminophen",
+    "penicillin",
+    "perindopril",
+    "phenytoin",
+    "pneumococcal vaccine",
+    "polyethylene glycol",
+    "pravastatin",
+    "prednisone",
+    "pregabalin",
+    "prevnar",
+    "propranolol",
+    "quetiapine",
+    "ramipril",
+    "ropinirole",
+    "rotigotine",
+    "shingles vaccine",
+    "silodosin",
+    "simvastatin",
+    "sodium chloride",
+    "spironolactone",
+    "spironolactone and hydrochlorothiazide",
+    "streptomycin",
+    "terfenadine",
+    "testosterone",
+    "tetanus",
+    "tetracycline",
+    "tiotropium",
+    "topiramate",
+    "tramadol",
+    "trospium",
+    "valacyclovir",
+    "venlafaxine",
+    "verapamil",
+    "vitamin a",
+    "vitamin d",
+    "warfarin",
+    "zoledronic acid"
+  ],
+  "aliases": {
+    "\"bupropion patch\" (probably buprenorphine [butrans])": [
+      "buprenorphine"
+    ],
+    "adacel tdap": [
+      "adacel"
+    ],
+    "aldactazide": [
+      "spironolactone and hydrochlorothiazide"
+    ],
+    "amiodarone": [
+      "amiodarone"
+    ],
+    "amitriptyline, alprazolam": [
+      "amitriptyline",
+      "alprazolam"
+    ],
+    "amlodipine": [
+      "amlodipine"
+    ],
+    "amlodipine; metoprolol": [
+      "amlodipine",
+      "metoprolol"
+    ],
+    "amoxicillin & hydrocodone": [
+      "amoxicillin",
+      "hydrocodone"
+    ],
+    "amphetamine": [
+      "amphetamine"
+    ],
+    "anastrozole": [
+      "anastrozole"
+    ],
+    "anti inflammatory gel": [],
+    "anticholinergic drugs": [],
+    "aripiprazole": [
+      "aripiprazole"
+    ],
+    "aspirin 81 mg": [
+      "aspirin"
+    ],
+    "ativan": [
+      "lorazepam"
+    ],
+    "atorvastatin": [
+      "atorvastatin"
+    ],
+    "atorvastatin; lipitor": [
+      "atorvastatin"
+    ],
+    "azathioprine": [
+      "azathioprine"
+    ],
+    "balsalazide": [
+      "balsalazide"
+    ],
+    "barbiturates": [],
+    "bcg vaccine": [
+      "bcg vaccine"
+    ],
+    "bimatoprost ophthalmic": [
+      "bimatoprost"
+    ],
+    "bioflavonoid": [],
+    "bisoprolol": [
+      "bisoprolol"
+    ],
+    "boric acid powder": [
+      "boric acid"
+    ],
+    "botulinum toxin": [
+      "botulinum toxin"
+    ],
+    "bsg vaccine": [
+      "bcg vaccine"
+    ],
+    "bupropion hcl 300mg": [
+      "bupropion"
+    ],
+    "calan sr": [
+      "verapamil"
+    ],
+    "calcium and alendronate": [
+      "alendronate"
+    ],
+    "carbidopa and levodopa": [
+      "carbidopa and levodopa"
+    ],
+    "carprofen": [
+      "carprofen"
+    ],
+    "carvedilol": [
+      "carvedilol"
+    ],
+    "ceftriaxone injection": [
+      "ceftriaxone"
+    ],
+    "ciprodex": [
+      "ciprofloxacin and dexamethasone"
+    ],
+    "ciprofloxacin": [
+      "ciprofloxacin"
+    ],
+    "clotrimazole": [
+      "clotrimazole"
+    ],
+    "cobalamin": [
+      "cyanocobalamin"
+    ],
+    "codeine": [
+      "codeine"
+    ],
+    "cortisone": [
+      "cortisone"
+    ],
+    "cortisone shots": [
+      "cortisone"
+    ],
+    "cyanocobalamin": [
+      "cyanocobalamin"
+    ],
+    "cymbalta and effexor": [
+      "duloxetine",
+      "venlafaxine"
+    ],
+    "cymbalta, muscle relaxants": [
+      "duloxetine"
+    ],
+    "denosumab": [
+      "denosumab"
+    ],
+    "dermgard": [
+      "dermgard"
+    ],
+    "dextroamphetamine": [
+      "dextroamphetamine"
+    ],
+    "diabetes medicine": [],
+    "diazepam": [
+      "diazepam"
+    ],
+    "diazepam gel": [
+      "diazepam"
+    ],
+    "diclofenac": [
+      "diclofenac"
+    ],
+    "diclofenac sodium": [
+      "diclofenac"
+    ],
+    "dicyclomine": [
+      "dicyclomine"
+    ],
+    "dimenhydrinate": [
+      "dimenhydrinate"
+    ],
+    "donepezil": [
+      "donepezil"
+    ],
+    "doxepin, prexum": [
+      "doxepin",
+      "perindopril"
+    ],
+    "doxycycline": [
+      "doxycycline"
+    ],
+    "drugs that cause erectile dysfunction": [],
+    "drugs that cause hirsutism": [],
+    "drugs that reduce cholesterol": [],
+    "dulera": [
+      "mometasone and formoterol"
+    ],
+    "dutasteride": [
+      "dutasteride"
+    ],
+    "ecstacy": [],
+    "enalapril": [
+      "enalapril"
+    ],
+    "enalaprilat": [
+      "enalaprilat"
+    ],
+    "entecavir": [
+      "entecavir"
+    ],
+    "entocort ec": [
+      "budesonide"
+    ],
+    "estradiol transdermal patch": [
+      "estradiol"
+    ],
+    "estradiol transdermal patch; estrogen": [
+      "estradiol"
+    ],
+    "ezetimibe": [
+      "ezetimibe"
+    ],
+    "famotidine 10 mg": [
+      "famotidine"
+    ],
+    "fentanyl": [
+      "fentanyl"
+    ],
+    "fluoride": [
+      "fluoride"
+    ],
+    "fluorouracil": [
+      "fluorouracil"
+    ],
+    "fluvastatin": [
+      "fluvastatin"
+    ],
+    "fosamax": [
+      "alendronate"
+    ],
+    "gabapentin": [
+      "gabapentin"
+    ],
+    "gabapentin and lyrica": [
+      "gabapentin",
+      "pregabalin"
+    ],
+    "gardasil": [
+      "gardasil"
+    ],
+    "glipizide": [
+      "glipizide"
+    ],
+    "guaifenesin": [
+      "guaifenesin"
+    ],
+    "heroin": [],
+    "high cholesterol medication": [],
+    "hydrochlorothiazide": [
+      "hydrochlorothiazide"
+    ],
+    "hydrocodone + acetaminophen": [
+      "hydrocodone and acetaminophen"
+    ],
+    "hydromorphone": [
+      "hydromorphone"
+    ],
+    "hyoscyamine": [
+      "hyoscyamine"
+    ],
+    "indomethacin": [
+      "indomethacin"
+    ],
+    "insulin": [
+      "insulin"
+    ],
+    "kadian": [
+      "morphine"
+    ],
+    "klonopin": [
+      "clonazepam"
+    ],
+    "lansoprazole": [
+      "lansoprazole"
+    ],
+    "latanoprost ophthalmic": [
+      "latanoprost"
+    ],
+    "levaquin": [
+      "levofloxacin"
+    ],
+    "levetiracetam": [
+      "levetiracetam"
+    ],
+    "lexapro": [
+      "escitalopram"
+    ],
+    "lidocaine": [
+      "lidocaine"
+    ],
+    "lidocaine rinse": [
+      "lidocaine"
+    ],
+    "loratadine": [
+      "loratadine"
+    ],
+    "lorazepam": [
+      "lorazepam"
+    ],
+    "losartan": [
+      "losartan"
+    ],
+    "magnesium and dilantin": [
+      "phenytoin"
+    ],
+    "marijuana": [],
+    "meclizine": [
+      "meclizine"
+    ],
+    "memantine": [
+      "memantine"
+    ],
+    "meprobamate": [
+      "meprobamate"
+    ],
+    "methylphenidate": [
+      "methylphenidate"
+    ],
+    "methylprednisolone": [
+      "methylprednisolone"
+    ],
+    "metoprolol": [
+      "metoprolol"
+    ],
+    "metoprolol tartrate": [
+      "metoprolol"
+    ],
+    "minocycline": [
+      "minocycline"
+    ],
+    "montelukast": [
+      "montelukast"
+    ],
+    "morphine": [
+      "morphine"
+    ],
+    "moxifloxacin": [
+      "moxifloxacin"
+    ],
+    "n/a (exploration)": [],
+    "neupro and ropinirole": [
+      "rotigotine",
+      "ropinirole"
+    ],
+    "nicotine": [
+      "nicotine"
+    ],
+    "normal saline": [
+      "sodium chloride"
+    ],
+    "norvasc": [
+      "amlodipine"
+    ],
+    "olanzapine": [
+      "olanzapine"
+    ],
+    "omeprazole": [
+      "omeprazole"
+    ],
+    "oxybutynin": [
+      "oxybutynin"
+    ],
+    "oxycodone": [
+      "oxycodone"
+    ],
+    "oxycodone er": [
+      "oxycodone"
+    ],
+    "oxycodone hcl 5 mg; oxycodone \"10-325\"": [
+      "oxycodone",
+      "oxycodone and acetaminophen"
+    ],
+    "oxycodone, fentanyl": [
+      "oxycodone",
+      "fentanyl"
+    ],
+    "pain medications": [],
+    "penicillin": [
+      "penicillin"
+    ],
+    "peppermint oil": [],
+    "phenytoin": [
+      "phenytoin"
+    ],
+    "pneumococcal vaccines": [
+      "pneumococcal vaccine"
+    ],
+    "polyethylene glycol": [
+      "polyethylene glycol"
+    ],
+    "pravastatin": [
+      "pravastatin"
+    ],
+    "prednisone": [
+      "prednisone"
+    ],
+    "premarin cream": [
+      "conjugated estrogens"
+    ],
+    "prevnar": [
+      "prevnar"
+    ],
+    "proair hfa": [
+      "albuterol"
+    ],
+    "propranolol": [
+      "propranolol"
+    ],
+    "prozac": [
+      "fluoxetine"
+    ],
+    "quetiapine": [
+      "quetiapine"
+    ],
+    "qvar": [
+      "beclomethasone"
+    ],
+    "ramipril, cabergoline": [
+      "ramipril",
+      "cabergoline"
+    ],
+    "rapaflo": [
+      "silodosin"
+    ],
+    "riva-clonazepam (clonazepam)": [
+      "clonazepam"
+    ],
+    "shingles vaccine": [
+      "shingles vaccine"
+    ],
+    "simvastatin": [
+      "simvastatin"
+    ],
+    "singulair": [
+      "montelukast"
+    ],
+    "spiriva": [
+      "tiotropium"
+    ],
+    "spironolactone + furosemide": [
+      "spironolactone",
+      "furosemide"
+    ],
+    "statin": [],
+    "statins": [],
+    "streptomycin": [
+      "streptomycin"
+    ],
+    "sulfonylureas": [],
+    "tegretol": [
+      "carbamazepine"
+    ],
+    "terfenadine": [
+      "terfenadine"
+    ],
+    "testosterone injection": [
+      "testosterone"
+    ],
+    "tetanus": [
+      "tetanus"
+    ],
+    "tetracycline": [
+      "tetracycline"
+    ],
+    "thera-tabs": [],
+    "topamax": [
+      "topiramate"
+    ],
+    "tramadol": [
+      "tramadol"
+    ],
+    "trospium": [
+      "trospium"
+    ],
+    "vaccination": [],
+    "valacyclovir": [
+      "valacyclovir"
+    ],
+    "valium": [
+      "diazepam"
+    ],
+    "vicodin": [
+      "hydrocodone and acetaminophen"
+    ],
+    "vitamin a": [
+      "vitamin a"
+    ],
+    "vitamin b-12": [
+      "cyanocobalamin"
+    ],
+    "vitamin b12": [
+      "cyanocobalamin"
+    ],
+    "vitamin d": [
+      "vitamin d"
+    ],
+    "warfarin": [
+      "warfarin"
+    ],
+    "warfarin; cabbage": [
+      "warfarin"
+    ],
+    "xanax": [
+      "alprazolam"
+    ],
+    "zoledronic acid": [
+      "zoledronic acid"
+    ]
+  },
+  "excluded_drugs": [
+    "betahistine",
+    "bilastine",
+    "drotaverine",
+    "flupentixol",
+    "levosulpiride",
+    "meldonium",
+    "metamizole",
+    "nifuroxazide",
+    "nimesulide",
+    "piracetam",
+    "rupatadine",
+    "thiocolchicoside",
+    "tianeptine",
+    "trimetazidine"
+  ]
+}

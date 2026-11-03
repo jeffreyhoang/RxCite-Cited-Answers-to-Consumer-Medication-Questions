@@ -1,0 +1,1607 @@
+{
+  "version": "v1",
+  "source": "MedicationQA",
+  "seed": 42,
+  "questions": [
+    {
+      "id": "mqa-001",
+      "question": "how does valium affect the brain",
+      "type": "Action",
+      "drug": "Valium",
+      "answer": "Diazepam is a benzodiazepine that exerts anxiolytic, sedative, muscle-relaxant, anticonvulsant and amnestic effects. Most of these effects are thought to result from a facilitation of the action of gamma aminobutyric acid (GABA), an inhibitory neurotransmitter in the central nervous system.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=554baee5-b171-4452-a50a-41a0946f956c"
+    },
+    {
+      "id": "mqa-002",
+      "question": "what is morphine",
+      "type": "Information",
+      "drug": "morphine",
+      "answer": "Morphine is a pain medication of the opiate family which is found naturally in a number of plants and animals.[5][7] It acts directly on the central nervous system (CNS) to decrease the feeling of pain.",
+      "url": "https://en.wikipedia.org/wiki/Morphine"
+    },
+    {
+      "id": "mqa-003",
+      "question": "what are the milligrams for oxycodone e",
+      "type": "Dose",
+      "drug": "oxycodone ER",
+      "answer": "… 10 mg … 20 mg … 40 mg … 80 mg ...",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f06d3690-3fd4-407d-8f8d-ab0c354e61bd"
+    },
+    {
+      "id": "mqa-004",
+      "question": "81% aspirin contain resin and shellac in it. ?",
+      "type": "Ingredient",
+      "drug": "aspirin 81 mg",
+      "answer": "Inactive Ingredients  Ingredient Name",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c75dadc-a7d3-0b6a-e054-00144ff8d46c"
+    },
+    {
+      "id": "mqa-005",
+      "question": "what is the color of the fluvaastatin pill",
+      "type": "Appearance",
+      "drug": "fluvastatin",
+      "answer": "Product Characteristics   Color RED (rust)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4226222a-7729-42aa-8dff-887491a5dab7"
+    },
+    {
+      "id": "mqa-006",
+      "question": "how long before a meal should lansoprazole be taken",
+      "type": "Usage",
+      "drug": "Lansoprazole",
+      "answer": "Swallow 1 capsule with a glass of water before eating in the morning.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9cf54748-80da-428d-86f1-2a17f1160bc2"
+    },
+    {
+      "id": "mqa-007",
+      "question": "why did my doctor give me level iracetam",
+      "type": "Indication",
+      "drug": "Levetiracetam",
+      "answer": "Levetiracetam is used in combination with other medications to treat certain types of seizures in adults and children with epilepsy. Levetiracetam is in a class of medications called anticonvulsants. It works by decreasing abnormal excitement in the brain.",
+      "url": "https://medlineplus.gov/druginfo/meds/a699059.html"
+    },
+    {
+      "id": "mqa-008",
+      "question": "how long does marijuana it stay in system",
+      "type": "Action/time",
+      "drug": "marijuana",
+      "answer": "The effects of marijuana usually last from 1 to 3 hours, but marijuana can stay in the body for days or even weeks after use. Organs in the body have fatty tissues that absorb the THC in marijuana. In general, standard urine tests can detect THC several days after use. In people who use heavily, however, urine tests can sometimes detect THC for several weeks.",
+      "url": "https://www.drugabuse.gov/publications/marijuana-facts-teens/want-to-know-more-some-faqs-about-marijuana"
+    },
+    {
+      "id": "mqa-009",
+      "question": "neupro and ropinirole when is it safe to take",
+      "type": "Interaction",
+      "drug": "neupro and ropinirole",
+      "answer": "Anxiolytics; Sedatives; and Hypnotics: (Moderate) A reduction in the dose of anxiolytics, sedatives, hypnotics and concomitantly administered dopamine agonists with sedative properties (e.g., ropinirole, pramipexole, rotigotine, apomorphine) should be considered to minimize additive sedative effects. In addition, the risk of next-day psychomotor impairment is increased during co-administration, which may decrease the ability to perform tasks requiring full mental alertness such as driving.",
+      "url": "https://www.pdr.net/drug-summary/Neupro-rotigotine-2468"
+    },
+    {
+      "id": "mqa-010",
+      "question": "how many mg does it take to overdose on oxycodone",
+      "type": "Overdose",
+      "drug": "oxycodone",
+      "answer": "OXYCODONE HCl CONTROLLED-RELEASE 80 mg and 160 mg Tablets, or a single dose greater than 40 mg, ARE FOR USE IN OPIOID-TOLERANT PATIENTS ONLY. A single dose greater than 40 mg, or total daily doses greater than 80 mg, may cause fatal respiratory depression when administered to patients who are not tolerant to the respiratory depressant effects of opioids.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f06d3690-3fd4-407d-8f8d-ab0c354e61bd"
+    },
+    {
+      "id": "mqa-011",
+      "question": "pravastatin s9 orange how many \"grams?\"",
+      "type": "Dose",
+      "drug": "pravastatin",
+      "answer": "No answers",
+      "url": null
+    },
+    {
+      "id": "mqa-012",
+      "question": "how long morphine remains in body",
+      "type": "Action/time",
+      "drug": "morphine",
+      "answer": "Morphine takes longer to work than heroin and the effects tend to last longer. Despite this, blood tests can only detect morphine for the first 12 hours after the last dose, and urine tests only work for up to 3 days. However, saliva tests are more effective, being able to detect traces of morphine for up to 4 days. Again, morphine stays in the hair for 90 days.",
+      "url": "https://americanaddictioncenters.org/prescription-drugs/how-long-in-system/"
+    },
+    {
+      "id": "mqa-013",
+      "question": "what can take the place of tramadol",
+      "type": "Alternatives",
+      "drug": "tramadol",
+      "answer": "The American Academy of Pediatrics (AAP) and other pediatric associations and academies have released guidelines on the management of nociceptive pain in children. The top 3 medications’ recommendations in children are paracetamol, ibuprofen, and opioids: non-opioids for mild nociceptive pain; non-opioids + weak opioids for moderate nociceptive pain and non-opioids + strong opioids for severe nociceptive pain. Codeine and tramadol are the only two opioids classified as weak opioids. In most countries, they do not require a restricted medical drug prescription and as “weak” opioids, they are often considered to have a lower potential for adverse drug reactions (ADR) than “strong” opioids.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5844975/"
+    },
+    {
+      "id": "mqa-014",
+      "question": "how to administer denosumab",
+      "type": "Usage",
+      "drug": "denosumab",
+      "answer": "Denosumab injection comes as a solution (liquid) to be injected subcutaneously (under the skin) in your upper arm, upper thigh, or stomach area. It is usually injected by a doctor or nurse in a medical office or clinic. Denosumab injection (Prolia) is usually given once every 6 months. When denosumab injection (Xgeva) is used to reduce the risk of fractures from multiple myeloma, or cancer that has spread to the bones, it is usually given once every 4 weeks. When denosumab injection (Xgeva) is used to treat giant cell tumor of bone, or high calcium levels caused by cancer, it is usually given every 7 days for the first three doses (on day 1, day 8, and day 15) and then once every 4 weeks starting 2 weeks after the first three doses.\n\nYour doctor will tell you to take supplements of calcium and vitamin D while you are being treated with denosumab injection. Take these supplements exactly as directed.\n\nWhen denosumab injection (Prolia) is used to treat osteoporosis or bone loss, your doctor or pharmacist will give you the manufacturer's patient information sheet (Medication Guide) when you begin treatment with denosumab injection and each time you refill your prescription. Read the information carefully and ask your doctor or pharmacist if you have any questions. You can also visit the Food and Drug Administration (FDA) website (http://www.fda.gov/Drugs/DrugSafety/ucm085729.htm) or the manufacturer's website to obtain the Medication Guide.",
+      "url": "https://medlineplus.gov/druginfo/meds/a610023.html"
+    },
+    {
+      "id": "mqa-015",
+      "question": "what is barbiturates",
+      "type": "Information",
+      "drug": "barbiturates",
+      "answer": "Barbiturates are sedative-hypnotic drugs that were once commonly used as sedatives or antianxiety medications. A physician must prescribe barbiturates; otherwise, their use is considered illicit. Among their limited uses, barbiturates are used to manage some seizure disorders as well as for pre-procedural sedation. In rarer instances, they are prescribed for the treatment of headache, anxiety and insomnia. However, their use in most areas of medicine has largely been supplanted by other safer medications. Barbiturates are controlled substances due to the potential they pose for abuse, physical dependence, and addiction. Some of the more common barbiturates include     Luminal (phenobarbital).     Brevital (methohexital).     Seconal (secobarbital).     Butisol (butabarbital).     Fiorinal (butalbital).",
+      "url": "https://drugabuse.com/library/barbiturate-abuse/"
+    },
+    {
+      "id": "mqa-016",
+      "question": "vitamin d 25, totalhow much to takea day",
+      "type": "Dose",
+      "drug": "vitamin D",
+      "answer": "Currently, there’s scientific debate about how much vitamin D people need each day. The Institute of Medicine, in a long-awaited report released on November 30, 2010 recommends tripling the daily vitamin D intake for children and adults in the U.S. and Canada, to 600 IU per day. (7) The report also recognized the safety of vitamin D by increasing the upper limit from 2,000 to 4,000 IU per day, and acknowledged that even at 4,000 IU per day, there was no good evidence of harm. The new guidelines, however, are overly conservative about the recommended intake, and they do not give enough weight to some of the latest science on vitamin D and health. For bone health and chronic disease prevention, many people are likely to need more vitamin D than even these new government guidelines recommend.",
+      "url": "https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/vitamins/vitamin-d/"
+    },
+    {
+      "id": "mqa-017",
+      "question": "can i eat after taking rapaflo?",
+      "type": "Usage",
+      "drug": "Rapaflo",
+      "answer": "The recommended dose is 8 mg orally once daily with a meal.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a21163d6-e1b9-4490-bce3-751e0823797c"
+    },
+    {
+      "id": "mqa-018",
+      "question": "what is metopol tar use",
+      "type": "Indication",
+      "drug": "metoprolol tartrate",
+      "answer": "Hypertension Metoprolol tartrate tablets are indicated for the treatment of hypertension. They may be used alone or in combination with other antihypertensive agents.  Angina Pectoris  Metoprolol tartrate tablets are indicated in the long-term treatment of angina pectoris.  Myocardial Infarction  Metoprolol tartrate tablets are indicated in the treatment of hemodynamically stable patients with definite or suspected acute myocardial infarction to reduce cardiovascular mortality. Treatment with intravenous metoprolol can be initiated as soon as the patient's clinical condition allows (see DOSAGE AND ADMINISTRATION, CONTRAINDICATIONS, and WARNINGS ). Alternatively, treatment can begin within 3 to 10 days of the acute event (see DOSAGE AND ADMINISTRATION).",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88f1abdc-f53e-4ff9-b4c1-3cfbc2609b79"
+    },
+    {
+      "id": "mqa-019",
+      "question": "how reduce cholesterol",
+      "type": "Indication",
+      "drug": "drugs that reduce cholesterol",
+      "answer": "A healthy lifestyle is the first defense against high cholesterol. But sometimes diet and exercise aren't enough, and you may need to take cholesterol medications. Cholesterol medications might help",
+      "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/cholesterol-medications/art-20050958"
+    },
+    {
+      "id": "mqa-020",
+      "question": "when is gardasil \"contra indicated?\"",
+      "type": "Contraindication",
+      "drug": "Gardasil",
+      "answer": "Hypersensitivity, including severe allergic reactions to yeast (a vaccine component), or after a previous dose of GARDASIL 9 or GARDASIL [see Description (11)].",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a21f4f4b-b891-4f25-b747-cb9ec7d865d6"
+    },
+    {
+      "id": "mqa-021",
+      "question": "i take lorazepam, my eyes are blurry, if i stop taking it, will my eyes clear up ?",
+      "type": "Side effects",
+      "drug": "lorazepam",
+      "answer": "Withdrawal symptoms (e.g., rebound insomnia) can appear following cessation of recommended doses after as little as one week of therapy. Abrupt discontinuation of product should be avoided and a gradual dosage-tapering schedule followed after extended therapy.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b851f67-309d-4ef3-8b4b-ade8908256ea"
+    },
+    {
+      "id": "mqa-022",
+      "question": "when does skin redness start on fluorouracil",
+      "type": "Side effects",
+      "drug": "fluorouracil",
+      "answer": "When Fluorouracil 5% Topical Cream is applied to a lesion, a response occurs with the following sequence: erythema, usually followed by vesiculation, desquamation, erosion and reepithelialization.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=744737c5-0d96-4214-82ab-6cff016b1ea0"
+    },
+    {
+      "id": "mqa-023",
+      "question": "what tier drug is methylphenidate",
+      "type": "Information",
+      "drug": "methylphenidate",
+      "answer": "DEA Schedule: CII",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1f8983ce-71b8-4c62-830d-e4692ddededa"
+    },
+    {
+      "id": "mqa-024",
+      "question": "what is normal saline",
+      "type": "Information",
+      "drug": "normal saline",
+      "answer": "physiologic saline solution (physiologic salt solution) (physiologic sodium chloride solution) a 0.9 per cent solution of sodium chloride and water; it is isotonic, i.e., of the same osmotic pressure as blood serum. It is sometimes given intravenously to replace lost sodium and chloride. Excessive quantities may cause edema, elevated blood sodium levels, and loss of potassium from the tissue fluid. Called also normal saline or normal salt solution.",
+      "url": "https://medical-dictionary.thefreedictionary.com/physiologic+saline+solution"
+    },
+    {
+      "id": "mqa-025",
+      "question": "what is ciprodex?",
+      "type": "Information",
+      "drug": "Ciprodex",
+      "answer": "Ciprofloxacin and dexamethasone otic is used to treat outer ear infections in adults and children and acute (suddenly occurring) middle ear infections in children with ear tubes. Ciprofloxacin is in a class of medications called quinolone antibiotics. Dexamethasone is in a class of medications called corticosteroids. The combination of ciprofloxacin and dexamethasone works by killing the bacteria that cause infection and reducing swelling in the ear.",
+      "url": "https://medlineplus.gov/druginfo/meds/a607010.html"
+    },
+    {
+      "id": "mqa-026",
+      "question": "how often can i get a cortisone shot",
+      "type": "Usage/time",
+      "drug": "cortisone shots",
+      "answer": "There's concern that repeated cortisone shots might cause the cartilage within a joint to deteriorate. So doctors typically limit the number of cortisone shots into a joint. In general, you shouldn't get cortisone injections more often than every six weeks and usually not more than three or four times a year.",
+      "url": "https://www.mayoclinic.org/tests-procedures/cortisone-shots/about/pac-20384794"
+    },
+    {
+      "id": "mqa-027",
+      "question": "why codeine",
+      "type": "Indication",
+      "drug": "codeine",
+      "answer": "Codeine is used to relieve mild to moderate pain. It is also used, usually in combination with other medications, to reduce coughing. Codeine will help relieve symptoms but will not treat the cause of symptoms or speed recovery. Codeine belongs to a class of medications called opiate (narcotic) analgesics and to a class of medications called antitussives. When codeine is used to treat pain, it works by changing the way the brain and nervous system respond to pain. When codeine is used to reduce coughing, it works by decreasing the activity in the part of the brain that causes coughing.",
+      "url": "https://medlineplus.gov/druginfo/meds/a682065.html"
+    },
+    {
+      "id": "mqa-028",
+      "question": "wean off tegretol?",
+      "type": "Stopping/tapering",
+      "drug": "Tegretol",
+      "answer": "As with all antiepileptic drugs, Tegretol should be withdrawn gradually to minimize the potential of increased seizure frequency.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d409411-aa9f-4f3a-a52c-fbcb0c3ec053"
+    },
+    {
+      "id": "mqa-029",
+      "question": "what happened if one takes a double does of simvastatin",
+      "type": "Overdose",
+      "drug": "Simvastatin",
+      "answer": "A few cases of overdosage with simvastatin have been reported; the maximum dose taken was 3.6 g. All patients recovered without sequelae. Supportive measures should be taken in the event of an overdose. The dialyzability of simvastatin and its metabolites in man is not known at present.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7ad38e3b-79a8-f4c1-0662-c24f3e897ac7"
+    },
+    {
+      "id": "mqa-030",
+      "question": "what kind of rash could pravastatin cause",
+      "type": "Side effects",
+      "drug": "pravastatin",
+      "answer": "In rare cases, it’s possible to have a serious allergic reaction to pravastatin. ... The warning signs of a serious allergic reaction are:    getting a skin rash that may include itchy, red, swollen, blistered or peeling skin",
+      "url": "https://beta.nhs.uk/medicines/pravastatin/"
+    },
+    {
+      "id": "mqa-031",
+      "question": "how to take your medicine diabetes",
+      "type": "Usage",
+      "drug": "diabetes medicine",
+      "answer": "The medicine you take will vary by your type of diabetes and how well the medicine controls your blood glucose levels, also called blood sugar. Other factors, such as your other health conditions, medication costs, and your daily schedule may play a role in what diabetes medicine you take.",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments"
+    },
+    {
+      "id": "mqa-032",
+      "question": "what is classed as a low dose of azathioprine",
+      "type": "Dose",
+      "drug": "azathioprine",
+      "answer": "approximately 1 mg/kg (50 to 100 mg) given as a single dose or on a twice-daily schedule",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59f3219f-898f-4d05-a430-c2b3f5255af1"
+    },
+    {
+      "id": "mqa-033",
+      "question": "is it safe to add peppermint essential oil in \"mouth wash?\"",
+      "type": "Side effects",
+      "drug": "peppermint oil",
+      "answer": "Peppermint oil appears to be safe when taken orally (by mouth) in the doses commonly used. Excessive doses of peppermint oil can be toxic.     Possible side effects of peppermint oil include allergic reactions and heartburn. Capsules containing peppermint oil are often enteric-coated to reduce the likelihood of heartburn. If enteric-coated peppermint oil capsules are taken at the same time as antacids, the coating can break down too quickly.     Like other essential oils, peppermint oil is highly concentrated. When the undiluted essential oil is used for health purposes, only a few drops are used.     Side effects of applying peppermint oil to the skin can include skin rashes and irritation. Peppermint oil should not be applied to the face or chest of infants or young children because serious side effects may occur if they inhale the menthol in the oil.     No harmful effects of peppermint leaf tea have been reported. However, the long-term safety of consuming large amounts of peppermint leaf is unknown.",
+      "url": "https://nccih.nih.gov/health/peppermintoil"
+    },
+    {
+      "id": "mqa-034",
+      "question": "what type of drug is marijuana",
+      "type": "Information",
+      "drug": "marijuana",
+      "answer": "Cannabis, also known as marijuana among other names,[n 1] is a psychoactive drug from the Cannabis plant used for medical or recreational purposes.[16][17][18] The main psychoactive part of cannabis is tetrahydrocannabinol (THC), one of 483 known compounds in the plant,[19] including at least 65 other cannabinoids.[20] Cannabis can be used by smoking, vaporizing, within food, or as an extract.[21]  Cannabis has mental and physical effects such as creating a \"high\" or \"stoned\" feeling, a general change in perception, heightened mood, and an increase in appetite.[21][22]",
+      "url": "https://en.wikipedia.org/wiki/Cannabis_(drug)"
+    },
+    {
+      "id": "mqa-035",
+      "question": "how long i take cipro for a urinary tract infection ?",
+      "type": "Usage/time",
+      "drug": "ciprofloxacin",
+      "answer": "Infection Urinary Tract / Acute Uncomplicated 250 mg q 12 h 3 days / Mild/Moderate 250 mg q 12 h 7 to 14 days / Severe/Complicated 500 mg q 12 h 7 to 14 days",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d54a97d5-3664-4ca5-bffd-8366c7255b73"
+    },
+    {
+      "id": "mqa-036",
+      "question": "how does a 20 mcg bedford norton transdermal patch compared to say oxycodone what would be the equivalent",
+      "type": "Comparison",
+      "drug": "oxycodone, fentanyl",
+      "answer": "25 mcg fentanyl/hr = 40 mg oral / 20 mg IV oxycodone [from conversion chart]",
+      "url": "http://olh.ie/wp-content/uploads/2014/09/Opioid-Conversion-Chart-2015.pdf"
+    },
+    {
+      "id": "mqa-037",
+      "question": "what if meclizine does not work",
+      "type": "Alternatives",
+      "drug": "meclizine",
+      "answer": "Meclizine is the generic name for the prescription drug called Antivert and the over-the-counter (OTC) medicines known as Dramamine and Bonine. Meclizine is used to treat motion sickness and dizziness.\n\nThe drug belongs to a class of drugs called antihistamines, which are generally used to treat allergies. However, meclizine works a little differently, reducing nausea and muscle spasms.",
+      "url": "https://www.everydayhealth.com/drugs/meclizine"
+    },
+    {
+      "id": "mqa-038",
+      "question": "mix salt and hydromorphone what will happen",
+      "type": "Interaction",
+      "drug": "Hydromorphone",
+      "answer": "No answers",
+      "url": null
+    },
+    {
+      "id": "mqa-039",
+      "question": "what pill is close to the pill hyoscyamine for bloating food to more faster",
+      "type": "Alternatives",
+      "drug": "Hyoscyamine",
+      "answer": "Unanswerable",
+      "url": null
+    },
+    {
+      "id": "mqa-040",
+      "question": "what types of insulin for resistance",
+      "type": "Information",
+      "drug": "n/a (Exploration)",
+      "answer": "Insulin sensitizers like Glucophage (Metformin) may be prescribed to help your body use insulin more effectively.",
+      "url": "https://www.drweil.com/health-wellness/body-mind-spirit/disease-disorders/metabolic-syndrome/"
+    },
+    {
+      "id": "mqa-041",
+      "question": "what is the dose for vit b12 tabet?",
+      "type": "Dose",
+      "drug": "Vitamin B-12",
+      "answer": "When taken at appropriate doses, vitamin B-12 supplements are generally considered safe. While the recommended daily amount of vitamin B-12 for adults is 2.4 micrograms, you can safely take higher doses. Your body absorbs only as much as it needs, and any excess passes through your urine.",
+      "url": "https://www.mayoclinic.org/drugs-supplements-vitamin-b12/art-20363663"
+    },
+    {
+      "id": "mqa-042",
+      "question": "what is the difference between vitamin b12 1000 geltabs and vitamin b12 shots",
+      "type": "Comparison",
+      "drug": "Cobalamin",
+      "answer": "The clinical evidence-based analysis has found that oral supplementation is as effective as intramuscular injections.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3874775/"
+    },
+    {
+      "id": "mqa-043",
+      "question": "is losartan gluten free?",
+      "type": "Ingredient",
+      "drug": "Losartan",
+      "answer": "Unanswerable",
+      "url": null
+    },
+    {
+      "id": "mqa-044",
+      "question": "tdap (adacel) 10-64 yrs how often is booster needed",
+      "type": "Dose",
+      "drug": "Adacel Tdap",
+      "answer": "Five years should have elapsed since the recipient's last dose of tetanus toxoid, diphtheria toxoid and/or pertussis containing vaccine and the administration of Adacel vaccine.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a41b7601-34f2-4a88-a406-f53011fb7de1"
+    },
+    {
+      "id": "mqa-045",
+      "question": "pain medication how to use",
+      "type": "Usage",
+      "drug": "Pain Medications",
+      "answer": "Pain medications are safe and effective when used as directed. However, misuse of these products can be extremely harmful and even deadly.\n\nConsumers who take pain relief medications must follow their health care professional's instructions carefully. If a measuring tool is provided with your medicine, use it as directed.\n\nDo not change the dose of your pain relief medication without talking to your doctor first.\n\nAlso, pain medications should never be shared with anyone else. Only your health care professional can decide if a prescription pain medication is safe for someone.\n\nHere are other key points to remember.\n\nWith acetaminophen:\n\nTaking a higher dose than recommended will not provide more relief and can be dangerous.\nToo much can lead to liver damage and death. Risk for liver damage may be increased in people who drink three or more alcoholic beverages a day while using acetaminophen-containing medicines.\nBe cautious when giving acetaminophen to children. Infant drop medications can be significantly stronger than regular children's medications. Read and follow the directions on the label every time you use a medicine. Be sure that your infant is getting the infants' pain formula and your older child is getting the children's pain formula.\n\nWith NSAIDs:\nToo much can cause stomach bleeding. This risk increases in people who are over 60 years of age, are taking prescription blood thinners, are taking steroids, have a history of stomach bleeding or ulcers, and/or have other bleeding problems.\nUse of NSAIDs can also cause kidney damage. This risk may increase in people who are over 60 years of age, are taking a diuretic (a drug that increases the excretion of urine), have high blood pressure, heart disease, or pre-existing kidney disease.\n\nWith opioids:\nUse of opioids can lead to drowsiness. Do not drive or use any machinery that may injure you, especially when you first start the medication.The dose of an opioid pain medication that is safe for you could be high enough to cause an overdose and death in someone else, especially children.",
+      "url": "https://www.fda.gov/forconsumers/consumerupdates/ucm095673.htm"
+    },
+    {
+      "id": "mqa-046",
+      "question": "freezing clotrimazole?",
+      "type": "Storage and disposal",
+      "drug": "Clotrimazole",
+      "answer": "store at temperature not exceeding 30°C (86°F). Do not freeze.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=becd0353-56a7-4c4c-8b7a-1363ef2eefa5&type=display"
+    },
+    {
+      "id": "mqa-047",
+      "question": "how to use ivermectin \"derm gard\" for dog",
+      "type": "Usage",
+      "drug": "Dermgard",
+      "answer": "No answers",
+      "url": null
+    },
+    {
+      "id": "mqa-048",
+      "question": "what foods should a person taking warfarin eat",
+      "type": "Interaction",
+      "drug": "Warfarin",
+      "answer": "Eat a normal, healthy diet. Some foods and beverages, particularly those that contain vitamin K, can affect how warfarin works for you. Ask your doctor or pharmacist for a list of foods that contain vitamin K. Eat consistent amounts of vitamin K-containing food on a week-to-week basis. Do not eat large amounts of leafy, green vegetables or certain vegetable oils that contain large amounts of vitamin K. Be sure to talk to your doctor before you make any changes in your diet. Talk to your doctor about eating grapefruit and drinking grapefruit juice while taking this medication.",
+      "url": "https://medlineplus.gov/druginfo/meds/a682277.html"
+    },
+    {
+      "id": "mqa-049",
+      "question": "can i take doxepin and prexum together?",
+      "type": "Interaction",
+      "drug": "Doxepin, Prexum",
+      "answer": "No answers",
+      "url": null
+    },
+    {
+      "id": "mqa-050",
+      "question": "what are contraindications for kadian",
+      "type": "Contraindication",
+      "drug": "Kadian",
+      "answer": "KADIAN is contraindicated in patients with\n\nSignificant respiratory depression\nAcute or severe bronchial asthma in an unmonitored setting or in the absence of resuscitative equipment\nKnown or suspected paralytic ileus\nHypersensitivity (e.g., anaphylaxis) to morphine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2cb462d0-f4a5-41b4-b4d5-8b3d8453e0e9&audience=consumer"
+    },
+    {
+      "id": "mqa-051",
+      "question": "how long is oxycodone expired",
+      "type": "Storage and disposal",
+      "drug": "Oxycodone",
+      "answer": "No answers",
+      "url": null
+    },
+    {
+      "id": "mqa-052",
+      "question": "why is vitamin a important to the body",
+      "type": "Indication",
+      "drug": "Vitamin A",
+      "answer": "Vitamins are substances that your body needs to grow and develop normally. Vitamin A plays a role in your\n\nVision\nBone growth\nReproduction\nCell functions\nImmune system\nVitamin A is an antioxidant. It can come from plant or animal sources. Plant sources include colorful fruits and vegetables. Animal sources include liver and whole milk. Vitamin A is also added to foods like cereals.\n\nVegetarians, young children, and alcoholics may need extra Vitamin A. You might also need more if you have certain conditions, such as liver diseases, cystic fibrosis, and Crohn's disease. Check with your health care provider to see if you need to take vitamin A supplements.",
+      "url": "https://medlineplus.gov/vitamina.html"
+    },
+    {
+      "id": "mqa-053",
+      "question": "amiodarone for \"afib what\" are side effects",
+      "type": "Side effects",
+      "drug": "Amiodarone",
+      "answer": "Amiodarone may cause side effects. Tell your doctor if any of these symptoms are severe or do not go away:\nconstipation\nloss of appetite\nheadache\ndecreased sex drive\ndifficulty falling asleep or staying asleep\nflushing\nchanges in ability to taste and smell\nchanges in amount of saliva\nSome side effects can be serious. If you experience any of the following symptoms, or those listed in the IMPORTANT WARNING section, call your doctor immediately or get emergency medical treatment:\nrash\nweight loss or gain\nrestlessness\nweakness\nnervousness\nirritability\nintolerance to heat or cold\nthinning hair\nexcessive sweating\nchanges in menstrual cycle\nswelling in the front of the neck (goiter)\nswelling of the hands, feet, ankles, or lower legs\nuncontrollable shaking of a part of the body\ndecreased concentration\nmovements that you cannot control\npoor coordination or trouble walking\nnumbness or tingling in the hands, legs, and feet\nmuscle weakness\nAmiodarone may cause other side effects. Call your doctor if you have any unusual problems while taking this medication.\n\nIf you experience a serious side effect, you or your doctor may send a report to the Food and Drug Administration's (FDA) MedWatch Adverse Event Reporting program online (http://www.fda.gov/Safety/MedWatch) or by phone (1-800-332-1088).",
+      "url": "https://medlineplus.gov/druginfo/meds/a687009.html"
+    },
+    {
+      "id": "mqa-054",
+      "question": "why prozac used",
+      "type": "Indication",
+      "drug": "Prozac",
+      "answer": "Fluoxetine (Prozac) is used to treat depression, obsessive-compulsive disorder (bothersome thoughts that won't go away and the need to perform certain actions over and over), some eating disorders, and panic attacks (sudden, unexpected attacks of extreme fear and worry about these attacks).",
+      "url": "https://medlineplus.gov/druginfo/meds/a689006.html"
+    },
+    {
+      "id": "mqa-055",
+      "question": "pill form topamax what does it look like",
+      "type": "Appearance",
+      "drug": "topamax",
+      "answer": "TOPAMAX® (topiramate) Tablets are available as debossed, coated, round tablets in the following strengths and colors:\n\n25 mg cream (debossed \"OMN\" on one side; \"25\" on the other)\n\n50 mg light-yellow (debossed \"OMN\" on one side; \"50\" on the other)\n\n100 mg yellow (debossed \"OMN\" on one side; \"100\" on the other)\n\n200 mg salmon (debossed \"OMN\" on one side; \"200\" on the other)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=topamax&pagesize=200&page=1"
+    },
+    {
+      "id": "mqa-056",
+      "question": "what is dosage/quetiapine",
+      "type": "Dose",
+      "drug": "Quetiapine",
+      "answer": "2.1 Schizophrenia \n\nAdults\n\nDose Selection— SEROQUEL should generally be administered with an initial dose of 25 mg twice daily, with increases in total daily dose of 25 mg - 50 mg divided in two or three doses on the second and third day, as tolerated, to a total dose range of 300 mg to 400 mg daily by the fourth day. Further dosage adjustments, if indicated, should generally occur at intervals of not less than 2 days, as steady-state for SEROQUEL would not be achieved for approximately 1-2 days in the typical patient. When dosage adjustments are necessary, dose increments/decrements of 25 mg - 50 mg divided twice daily are recommended. Most efficacy data with SEROQUEL were obtained using three times daily dosing regimens, but in one controlled trial 225 mg given twice per day was also effective. \n\nEfficacy in schizophrenia was demonstrated in a dose range of 150 mg/day to 750 mg/day in the clinical trials supporting the effectiveness of SEROQUEL. In a dose response study, doses above 300 mg/day were not demonstrated to be more efficacious than the 300 mg/day dose. In other studies, however, doses in the range of 400 mg/day - 500 mg/day appeared to be needed. The safety of doses above 800 mg/day has not been evaluated in clinical trials.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b007bac6-a207-481c-8aba-03ade1dd6a88"
+    },
+    {
+      "id": "mqa-057",
+      "question": "what happens if too much insulin is released into the blood",
+      "type": "Overdose",
+      "drug": "Insulin",
+      "answer": "Excess insulin in the bloodstream causes cells in your body to absorb too much glucose (sugar) from your blood. It also causes the liver to release less glucose. These two effects together create dangerously low glucose levels in your blood. This condition is called hypoglycemia. || Mild hypoglycemia\nSymptoms of low blood sugar may include:\n\nsweating and clamminess\nchills\nlightheadedness or dizziness\nmild confusion\nanxiety or nervousness\nshakiness\nrapid heartbeat\nhunger\nirritability\ndouble vision or blurred vision\ntingling in the lips or around the mouth ||  More severe symptoms of hypoglycemia, sometimes referred to as diabetic shock or insulin shock, include:\n\nconcentration problems\nseizures\nunconsciousness\ndeath",
+      "url": "https://www.healthline.com/health/diabetes/insulin-overdose#accidental-od"
+    },
+    {
+      "id": "mqa-058",
+      "question": "what type of drug is amphetamine",
+      "type": "Information",
+      "drug": "Amphetamine",
+      "answer": "Amphetamine (Adzenys ER, Adzenys XR, Dyanavel XR, Evekeo) is used as part of a treatment program to control symptoms of attention deficit hyperactivity disorder (ADHD; more difficulty focusing, controlling actions, and remaining still or quiet than other people who are the same age) in adults and children. Amphetamine (Evekeo) is used to treat narcolepsy (a sleep disorder that causes excessive daytime sleepiness and sudden attacks of sleep). Amphetamine (Evekeo) is also used for a limited period of time (a few weeks) along with a reduced calorie diet and an exercise plan for weight loss in obese people unable to lose weight. Amphetamine is in a class of medications called central nervous system stimulants. It works by changing the amounts of certain natural substances in the brain.",
+      "url": "https://medlineplus.gov/druginfo/meds/a689002.html"
+    },
+    {
+      "id": "mqa-059",
+      "question": "wetting in pants after penicillin shot?",
+      "type": "Side effects",
+      "drug": "Penicillin",
+      "answer": "Penicillin G benzathine and penicillin G procaine injection may cause side effects.",
+      "url": "https://medlineplus.gov/druginfo/meds/a615053.html"
+    },
+    {
+      "id": "mqa-060",
+      "question": "what color is 30mg prednisone",
+      "type": "Appearance",
+      "drug": "Prednisone",
+      "answer": "Yellow, 9mm, round, flat, tablet, with a score line on one side, imprinted with “A670” on one side and “30” on the other.",
+      "url": "https://www.medicines.org.uk/emc/product/7237/smpc"
+    },
+    {
+      "id": "mqa-061",
+      "question": "do i take a statin with or without food ?",
+      "type": "Usage",
+      "drug": "Statin",
+      "answer": "Read the label on the bottle carefully. Some brands should be taken with food. Others may be taken with, or without food.",
+      "url": "https://medlineplus.gov/ency/patientinstructions/000748.htm"
+    },
+    {
+      "id": "mqa-062",
+      "question": "remipril compatible with cabergoline?",
+      "type": "Interaction",
+      "drug": "Ramipril, Cabergoline",
+      "answer": "Cabergoline: (Minor) Cabergoline has minimal affinity for adrenergic receptors; however, it has been associated with hypotension in some instances. Cabergoline should be used cautiously in those receiving antihypertensive agents.",
+      "url": "https://www.pdr.net/drug-summary/Altace-ramipril-282.4279"
+    },
+    {
+      "id": "mqa-063",
+      "question": "how much ethanol alcohol is in 2 puffs of \"proair?\"",
+      "type": "Ingredient",
+      "drug": "ProAir HFA",
+      "answer": "After 2 puffs (30 s between puffs), breathalyser BAC results were as follows: 0.008% (1 min) and 0 at 2 min",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/resp.13113"
+    },
+    {
+      "id": "mqa-064",
+      "question": "how does amitriptyline compare to alprazolam",
+      "type": "Comparison",
+      "drug": "Amitriptyline, Alprazolam",
+      "answer": "In a double-blind randomized study the therapeutic effect and safety of alprazolam was compared with amitriptyline in 81 outpatients suffering from major depression. Variable dosages of both drugs were used, the mean final dose of alprazolam being 3.05 and that of amitriptyline 130 mg. Both treatment groups improved steadily, assessed weekly with the use of the Hamilton Rating Scale for Depression, and no significant differences were found between the groups, either on comparison between single items or total scores. On several of the criteria used for assessment of treatment response, however, more patients responded to amitriptyline than to alprazolam. In an analysis of specific subgroups, patients whose depression was accompanied by retardation, those in whom there were no precipitating factors and those with low levels of anxiety, responded better to amitriptyline. Considerably fewer side effects were reported by patients receiving alprazolam. In particular, there was a significantly lower incidence of dry mouth, light-headedness, tremor and tachycardia in patients receiving alprazolam compared with amitriptyline.",
+      "url": "https://www.ncbi.nlm.nih.gov/pubmed/3618289"
+    },
+    {
+      "id": "mqa-065",
+      "question": "what is aldactazide used for",
+      "type": "Indication",
+      "drug": "Aldactazide",
+      "answer": "The combination of spironolactone and hydrochlorothiazide is used to treat high blood pressure. This medication is also used to treat patients with edema (fluid retention) caused by various conditions, including heart, liver, or kidney disease. Spironolactone is in a class of medications called aldosterone receptor antagonists. It causes the kidneys to eliminate unneeded water and sodium from the body into the urine, but reduces the loss of potassium from the body. Hydrochlorothiazide is in a class of medications called diuretics (''water pills''). It works by causing the kidneys to get rid of unneeded water and salt from the body into the urine.",
+      "url": "https://medlineplus.gov/druginfo/meds/a601111.html"
+    },
+    {
+      "id": "mqa-066",
+      "question": "how does insulin work?",
+      "type": "Action",
+      "drug": "Insulin",
+      "answer": "Insulin is a hormone that helps glucose get into your cells to give them energy. Without insulin, too much glucose stays in your blood. Over time, high blood glucose can lead to serious problems with your heart, eyes, kidneys, nerves, and gums and teeth.",
+      "url": "https://medlineplus.gov/diabetestype1.html"
+    },
+    {
+      "id": "mqa-067",
+      "question": "how does spiriva work",
+      "type": "Action",
+      "drug": "Spiriva",
+      "answer": "Tiotropium is in a class of medications called bronchodilators. It works by relaxing and opening the air passages to the lungs to make breathing easier.",
+      "url": "https://medlineplus.gov/druginfo/meds/a604018.html"
+    },
+    {
+      "id": "mqa-068",
+      "question": "what is bioflavonoid",
+      "type": "Information",
+      "drug": "Bioflavonoid",
+      "answer": "Bioflavonoids are a group of what are called “polyphenolic” plant-derived compounds. They’re also called flavonoids. There are between 4,000 and 6,000 different varieties known. Some are used in medicine, supplements, or for other health purposes.",
+      "url": "https://www.healthline.com/health/bioflavonoids"
+    },
+    {
+      "id": "mqa-069",
+      "question": "what are the symptoms of a human exposed to boric acid powder",
+      "type": "Side effects",
+      "drug": "Boric Acid Powder",
+      "answer": "The main symptoms of boric acid poisoning are blue-green vomit, diarrhea, and a bright red rash on the skin. Other symptoms may include:\n•SKIN\tMAY BE ABSORBED! Redness. May be absorbed through injured skin.\tProtective gloves.\tRemove contaminated clothes. Rinse and then wash skin with water and soap. Refer for medical attention.\n•EYES\tRedness. Pain.\tSafety spectacles.\tFirst rinse with plenty of water for several minutes (remove contact lenses if easily possible), then take to a doctor.\n•INGESTION\tAbdominal pain. Convulsions. Diarrhoea. Nausea. Vomiting. Skin rash.\tDo not eat, drink, or smoke during work.\tRinse mouth. Refer for medical attention.",
+      "url": "https://medlineplus.gov/ency/article/002485.htm"
+    },
+    {
+      "id": "mqa-070",
+      "question": "how long it takes for withdrawals to go away on oxycodone",
+      "type": "Information",
+      "drug": "Oxycodone",
+      "answer": "Withdrawal from oxycodone usually starts within 8-12 hours of taking the drug, and it peaks in the first 72 hours. Symptoms generally subside in about a week, although some of the psychological effects and drug cravings may persist for longer.",
+      "url": "https://americanaddictioncenters.org/withdrawal-timelines-treatments/oxycodone/"
+    },
+    {
+      "id": "mqa-071",
+      "question": "qvar 40mcg what is it for",
+      "type": "Indication",
+      "drug": "qvar",
+      "answer": "QVAR® is indicated in the maintenance treatment of asthma as prophylactic therapy in patients 5 years of age and older.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bac8a9b-f6c5-47df-a593-ece41b53f09b"
+    },
+    {
+      "id": "mqa-072",
+      "question": "what meds are in the pill montelukast?",
+      "type": "Ingredient",
+      "drug": "montelukast",
+      "answer": "ACTIVE INGREDIENT: MONTELUKAST SODIUM (UNII: U1O3J18SFL) (MONTELUKAST - UNII:MHM278SD3E)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ccbbf0d6-efd9-4fdd-9e7b-e3d293062609"
+    },
+    {
+      "id": "mqa-073",
+      "question": "hyptotension caused by lexapro?",
+      "type": "Side effects",
+      "drug": "lexapro",
+      "answer": "Vascular Disorders: deep vein thrombosis, flushing, hypertensive crisis, hypotension, orthostatic hypotension, phlebitis, thrombosis.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13bb8267-1cab-43e5-acae-55a4d957630a"
+    },
+    {
+      "id": "mqa-074",
+      "question": "how often do you need a shingles vaccine",
+      "type": "Usage/time",
+      "drug": "shingles vaccine",
+      "answer": "The recommended schedule for live shingles vaccine is a single dose for adults 60 years of age and older.",
+      "url": "https://www.cdc.gov/vaccines/hcp/vis/vis-statements/shingles.html"
+    },
+    {
+      "id": "mqa-075",
+      "question": "how often should you use a dulera inhaler",
+      "type": "Usage/time",
+      "drug": "dulera",
+      "answer": "DULERA should be administered as two inhalations twice daily every day (morning and evening) by the orally inhaled route (see PATIENT INSTRUCTIONS FOR USE in the Patient Information leaflet).",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=116464ce-cfd8-4b9f-8b5a-3a114b6ff2b1"
+    },
+    {
+      "id": "mqa-076",
+      "question": "what effect if take high cholesteron pill",
+      "type": "Action",
+      "drug": "high cholesterol medication",
+      "answer": "If diet and exercise don't reduce your cholesterol levels, you may need to take cholesterol medicine. Often, this medicine is a statin. Statins interfere with the production of cholesterol in your liver. They lower LDL (bad) cholesterol levels and raise HDL (good) cholesterol levels. This can slow the formation of plaques in your arteries.",
+      "url": "https://medlineplus.gov/statins.html"
+    },
+    {
+      "id": "mqa-077",
+      "question": "what is the length of entecavir treatment",
+      "type": "Usage/duration",
+      "drug": "entecavir",
+      "answer": "The optimal duration of treatment with entecavir tablets for patients with chronic hepatitis B virus infection and the relationship between treatment and long-term outcomes such as cirrhosis and hepatocellular carcinoma are unknown.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=def332bf-2906-4a6c-b85d-dfb56bb94312"
+    },
+    {
+      "id": "mqa-078",
+      "question": "how much b-12 is needed in an adult/month",
+      "type": "Dose",
+      "drug": "vitamin B12",
+      "answer": "Average daily recommended amounts … Adults 2.4 mcg",
+      "url": "https://ods.od.nih.gov/pdf/factsheets/VitaminB12-Consumer.pdf"
+    },
+    {
+      "id": "mqa-079",
+      "question": "how long does heroin stay in toxicology test",
+      "type": "Action/time",
+      "drug": "heroin",
+      "answer": "Most of the time, heroin is no longer detectable in a person’s urine after just 2 days. However, certain tests have been known to have a positive result for this drug for up to 7 days.",
+      "url": "https://americanaddictioncenters.org/heroin-treatment/how-long-in-system/"
+    },
+    {
+      "id": "mqa-080",
+      "question": "can spironolactone e used when talking furosemide",
+      "type": "Interaction",
+      "drug": "spironolactone + furosemide",
+      "answer": "The combination product, in a daily dose of 1 or 2 capsules, was found useful and well tolerated in the management of congestive heart failure.",
+      "url": "https://www.ncbi.nlm.nih.gov/pubmed/3714755"
+    },
+    {
+      "id": "mqa-081",
+      "question": "how long should i take dutasteride",
+      "type": "Usage/duration",
+      "drug": "dutasteride",
+      "answer": "We strongly recommend that physicians discuss with their patients these potential serious adverse effects of long-term dutasteride therapy prior to instituting this form of treatment.",
+      "url": "https://www.ncbi.nlm.nih.gov/pubmed/28632494"
+    },
+    {
+      "id": "mqa-082",
+      "question": "what is in norvasc",
+      "type": "Ingredient",
+      "drug": "norvasc",
+      "answer": "ACTIVE INGREDIENT-AMLODIPINE BESYLATE; INACTIVE INGREDIENTS-MICROCRYSTALLINE CELLULOSE, ANHYDROUS DIBASIC CALCIUM PHOSPHATE, SODIUM STARCH GLYCOLATE TYPE A POTATO, MAGNESIUM STEARATE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed"
+    },
+    {
+      "id": "mqa-083",
+      "question": "what shape is the amlodipine pill",
+      "type": "Appearance",
+      "drug": "amlodipine",
+      "answer": "DIAMOND (DIAMOND)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b52e2905-f906-4c46-bb24-2c7754c5d75b"
+    },
+    {
+      "id": "mqa-084",
+      "question": "how to wean off calan sr",
+      "type": "Stopping/tapering",
+      "drug": "Calan SR",
+      "answer": "Do not stop taking verapamil without talking to your doctor.",
+      "url": "https://medlineplus.gov/druginfo/meds/a684030.html"
+    },
+    {
+      "id": "mqa-085",
+      "question": "what does memantine look like",
+      "type": "Appearance",
+      "drug": "memantine",
+      "answer": "Color - WHITE, Shape - ROUND, Score - no score, Size - 6mm, Imprint Code - M;103",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=be032f1e-c123-45a0-a345-a56be6fa43a6"
+    },
+    {
+      "id": "mqa-086",
+      "question": "where is heroin originated from",
+      "type": "Information",
+      "drug": "heroin",
+      "answer": "Heroin is ... an opioid drug made from morphine, a natural substance in the seedpod of the Asian poppy plant.",
+      "url": "https://medlineplus.gov/heroin.html"
+    },
+    {
+      "id": "mqa-087",
+      "question": "what drugs case erectile dysfuntion",
+      "type": "Side effects",
+      "drug": "drugs that cause erectile dysfunction",
+      "answer": "The following is a list of some medicines and drugs that may cause impotence in men. There may be additional drugs other than those on this list that can cause erectile difficulties.",
+      "url": "https://medlineplus.gov/ency/article/004024.htm"
+    },
+    {
+      "id": "mqa-088",
+      "question": "how long does it take to get carbidopa levodopa out of your system",
+      "type": "Action/time",
+      "drug": "carbidopa and levodopa",
+      "answer": "When carbidopa and levodopa are administered together, the half-life of levodopa is increased to about 1.5 hours. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a355d5f2-407d-40fa-a374-b3632261ea4a"
+    },
+    {
+      "id": "mqa-089",
+      "question": "is oxybutynin an \"opioid?\"",
+      "type": "Ingredient",
+      "drug": "oxybutynin",
+      "answer": "OXYBUTYNIN CHLORIDE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c042bf06-79a3-4dc7-ae05-3ef3cfae9d44"
+    },
+    {
+      "id": "mqa-090",
+      "question": "in how much temp bcg vaccine should store",
+      "type": "Storage and disposal",
+      "drug": "bcg vaccine",
+      "answer": "The intact vials of BCG VACCINE should be stored refrigerated at 2-8°C (36-46°F).",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a83f0b99-9038-4c5a-aaac-8792b32838fe"
+    },
+    {
+      "id": "mqa-091",
+      "question": "how to give diazepam rectal gel",
+      "type": "Usage",
+      "drug": "diazepam gel",
+      "answer": "1. Put the person having seizures on his/her side in a place where he/she cannot fall.2. Remove the protective cover from the syringe by pushing it up with your thumb and then pulling it off.3. Put lubricating jelly on the rectal tip.4. Turn the person on his/her side facing you, bend his/her upper leg forward, and separate his/her buttocks to expose the rectum.5. Gently insert the syringe tip into the rectum until the rim is snug against the rectal opening.6.Slowly count to 3 while pushing in the plunger until it stops.7. Slowly count to 3 again, and then remove the syringe from the rectum.8. Hold the buttocks together so the gel doesn't leak from the rectum, and slowly count to 3 before letting go.9. Keep the person on his/her side. Take note of what time diazepam rectal gel was given, and continue to watch the person.",
+      "url": "https://medlineplus.gov/druginfo/meds/a605033.html"
+    },
+    {
+      "id": "mqa-092",
+      "question": "if i am allergic to sufa can i take glipizide?",
+      "type": "Contraindication",
+      "drug": "glipizide",
+      "answer": "Glipizide is an oral blood-glucose-lowering drug of the sulfonylurea class. … Glipizide Tablets, USP are contraindicated in patients with: Known hypersensitivity to the drug.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5565ccec-8000-48ab-a6af-37eca2d8c993"
+    },
+    {
+      "id": "mqa-093",
+      "question": "what color is phenytoin",
+      "type": "Appearance",
+      "drug": "phenytoin",
+      "answer": "PINK",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=15d32f84-14f6-49a6-9bad-d7f4b14eaf14"
+    },
+    {
+      "id": "mqa-094",
+      "question": "what is xanax",
+      "type": "Information",
+      "drug": "xanax",
+      "answer": "XANAX Tablets contain alprazolam which is a triazolo analog of the 1,4 benzodiazepine class of central nervous system-active compounds. The chemical name of alprazolam is 8-Chloro-1-methyl-6-phenyl-4H-s-triazolo [4,3-α] [1,4] benzodiazepine.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=388e249d-b9b6-44c3-9f8f-880eced0239f"
+    },
+    {
+      "id": "mqa-095",
+      "question": "how long should you use anti inflammatory gel",
+      "type": "Usage/duration",
+      "drug": "anti inflammatory gel",
+      "answer": "Use topical diclofenac (Pennsaid, Voltaren) exactly as directed. Do not use more or less of it or use it more often or for a longer period of time than prescribed by your doctor.",
+      "url": "https://medlineplus.gov/druginfo/meds/a611002.html"
+    },
+    {
+      "id": "mqa-096",
+      "question": "how long is mda or ecstasy take to leave your \"body?\"",
+      "type": "Action/time",
+      "drug": "ecstacy",
+      "answer": "In terms of its metabolism, research suggests that MDMA taken by mouth reaches its maximal blood concentration in about two hours. As ecstasy is metabolized, it is secreted into the urine and can be present for up to two days.",
+      "url": "https://www.verywellmind.com/how-long-does-ecstasy-stay-in-your-system-80255"
+    },
+    {
+      "id": "mqa-097",
+      "question": "what help withdrawal \"fom.\" hydrocodone 10 35",
+      "type": "Stopping/tapering",
+      "drug": "hydrocodone + acetaminophen",
+      "answer": "Narcotics Anonymous (N.A.) assists people who want to stop abusing prescription or illegal drugs. Find a meeting center or online support group by searching for the local helpline or website for the area where the meeting is located.",
+      "url": "https://www.usa.gov/mental-health-substance-abuse#item-35032"
+    },
+    {
+      "id": "mqa-098",
+      "question": "what is streptomycin",
+      "type": "Information",
+      "drug": "streptomycin",
+      "answer": "Streptomycin is an antibiotic produced by the soil actinomycete Streptomyces griseus. It acts by inhibiting the initiation and elongation processes during protein synthesis.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/streptomycin"
+    },
+    {
+      "id": "mqa-099",
+      "question": "what drugs contain in testerone injection",
+      "type": "Information",
+      "drug": "testosterone injection",
+      "answer": "TESTOSTERONE UNDECANOATE [or] TESTOSTERONE CYPIONATE [or] TESTOSTERONE ENANTHATE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?adv=1&labeltype=all&pagesize=20&page=1&query=%28testosterone+*+injection%29+"
+    },
+    {
+      "id": "mqa-100",
+      "question": "what is the therapeutic effect of levaquin",
+      "type": "Action",
+      "drug": "Levaquin",
+      "answer": "Levofloxacin is the L-isomer of the racemate, ofloxacin, a quinolone antimicrobial agent. The antibacterial activity of ofloxacin resides primarily in the L-isomer. The mechanism of action of levofloxacin and other fluoroquinolone antimicrobials involves inhibition of bacterial topoisomerase IV and DNA gyrase (both of which are type II topoisomerases), enzymes required for DNA replication, transcription, repair and recombination.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33c4a32f-15f4-3d0c-e054-00144ff88e88"
+    },
+    {
+      "id": "mqa-101",
+      "question": "is it nessasary to ween off of cymbalta before starting effexor?",
+      "type": "Interaction",
+      "drug": "Cymbalta and Effexor",
+      "answer": "Switching from one antidepressant to another is frequently indicated due to an inadequate treatment response or unacceptable adverse effects. All antidepressant switches must be carried out cautiously and under close observation. Conservative switching strategies involve gradually tapering the first antidepressant followed by an adequate washout period before the new antidepressant is started. This can take a long time and include periods of no treatment with the risk of potentially life-threatening exacerbations of illness. Clinical expertise is needed for more rapid or cross-taper switching as drug toxicity, including serotonin syndrome, may result from inappropriate co-administration of antidepressants. Some antidepressants must not be combined. Antidepressants can cause withdrawal syndromes if discontinued abruptly after prolonged use. Relapse and exacerbation of depression can also occur. Gradual dose reduction over days to weeks reduces the risk and severity of complications.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4919171/"
+    },
+    {
+      "id": "mqa-102",
+      "question": "what is it he ingredients in indomethacin",
+      "type": "Ingredient",
+      "drug": "indomethacin",
+      "answer": "ACTIVE INGREDIENT: INDOMETHACIN; INACTIVE INGREDIENTS: FERROSOFERRIC OXIDE;SILICON DIOXIDE;GELATIN;FD&C BLUE NO. 1;FD&C YELLOW NO. 5;MAGNESIUM STEARATE;CELLULOSE, MICROCRYSTALLINE;POWDERED CELLULOSE;SODIUM LAURYL SULFATE;SODIUM STARCH GLYCOLATE TYPE A CORN;TITANIUM DIOXIDE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=129eaf3a-b013-4b29-a58f-1565f9f41d5b"
+    },
+    {
+      "id": "mqa-103",
+      "question": "what are the active incredience in balsalazide",
+      "type": "Ingredient",
+      "drug": "balsalazide",
+      "answer": "BALSALAZIDE DISODIUM",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=93064dc5-6748-4876-a32c-156438b09ac7"
+    },
+    {
+      "id": "mqa-104",
+      "question": "does enalaprilat is used for treat stroke?",
+      "type": "Indication",
+      "drug": "enalaprilat",
+      "answer": "Enalaprilat injection, USP is indicated for the treatment of hypertension when oral therapy is not practical.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eabae489-e254-4987-ab90-7cda20a6f856"
+    },
+    {
+      "id": "mqa-105",
+      "question": "what medicines should not be taken with gabapentine",
+      "type": "Interaction",
+      "drug": "gabapentin",
+      "answer": "Although certain medicines should not be used together at all, in other cases two different medicines may be used together even if an interaction might occur. In these cases, your doctor may want to change the dose, or other precautions may be necessary. When you are taking this medicine, it is especially important that your healthcare professional know if you are taking any of the medicines listed below. The following interactions have been selected on the basis of their potential significance and are not necessarily all-inclusive.  Using this medicine with any of the following medicines is usually not recommended, but may be required in some cases. If both medicines are prescribed together, your doctor may change the dose or how often you use one or both of the medicines.      Calcifediol     Orlistat  Using this medicine with any of the following medicines may cause an increased risk of certain side effects, but using both drugs may be the best treatment for you. If both medicines are prescribed together, your doctor may change the dose or how often you use one or both of the medicines.      Aluminum Carbonate, Basic     Aluminum Hydroxide     Aluminum Phosphate     Dihydroxyaluminum Aminoacetate     Dihydroxyaluminum Sodium Carbonate     Ginkgo     Magaldrate     Magnesium Carbonate     Magnesium Hydroxide     Magnesium Oxide     Magnesium Trisilicate     Morphine     Morphine Sulfate Liposome",
+      "url": "https://www.mayoclinic.org/drugs-supplements/gabapentin-oral-route/before-using/drg-20064011"
+    },
+    {
+      "id": "mqa-106",
+      "question": "how long does polyethylene glycol stay good",
+      "type": "Storage and disposal",
+      "drug": "polyethylene glycol",
+      "answer": "Expiration Dates - Questions and Answers …",
+      "url": "https://www.fda.gov/Drugs/DevelopmentApprovalProcess/Manufacturing/ucm605559.htm"
+    },
+    {
+      "id": "mqa-107",
+      "question": "how to stop using estradiol transdermal system patch",
+      "type": "Stopping/tapering",
+      "drug": "estradiol transdermal patch",
+      "answer": "There's no limit on how long you can take HRT, but talk to your GP about the duration of treatment they recommend. Most women stop taking it once their menopausal symptoms pass, which is usually after a few years. When you decide to stop, you can choose to do so suddenly or gradually. Gradually decreasing your HRT dose is usually recommended because it's less likely to cause your symptoms to come back in the short term. Contact your GP if you have symptoms that persist for several months after you stop HRT, or if you have particularly severe symptoms. You may need to start HRT again.",
+      "url": "https://www.nhs.uk/conditions/hormone-replacement-therapy-hrt/"
+    },
+    {
+      "id": "mqa-108",
+      "question": "how to stop taking bisoprolol",
+      "type": "Stopping/tapering",
+      "drug": "bisoprolol",
+      "answer": "Abrupt Cessation of Therapy: Exacerbation of angina pectoris, and, in some instances, myocardial infarction or ventricular arrhythmia, have been observed in patients with coronary artery disease following abrupt cessation of therapy with beta-blockers. Such patients should, therefore, be cautioned against interruption or discontinuation of therapy without the physician's advice. Even in patients without overt coronary artery disease, it may be advisable to taper therapy with BISOPROLOL FUMARATE over approximately one week with the patient under careful observation. If withdrawal symptoms occur, BISOPROLOL FUMARATE therapy should be reinstituted, at least temporarily.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3"
+    },
+    {
+      "id": "mqa-109",
+      "question": "can i have allergie test when taking methylprednisolone?",
+      "type": "Side effects",
+      "drug": "methylprednisolone",
+      "answer": "May suppress reactions to skin tests",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bf4d3d3-3f8a-4e20-9194-061658efca61"
+    },
+    {
+      "id": "mqa-110",
+      "question": "what is the difference between gabbentibe lyrica \"?\" for pain",
+      "type": "Comparison",
+      "drug": "gabapentin and Lyrica",
+      "answer": "Though pregabalin and gabapentin have somewhat similar pharmacokinetic and pharmacodynamic profiles, there are clearly significant differences. Overall, pregabalin has more predictable pharmacokinetics, and it also shows a stronger binding affinity to its target receptor, increased potency, and a steeper dose-response curve in neuropathic pain that does not plateau over recommended dosing levels. A few studies have found that pregabalin has fewer side effects and may be more efficacious for neuropathic pain than gabapentin. Several studies reviewing conversion of gabapentin to pregabalin predict that a rough ratio for conversion is about 6:1 gabapentin to pregabalin. In addition, a direct switch from gabapentin to pregabalin seems to be well tolerated, making the conversion simple. Clinicians should note that pregabalin has various pharmacokinetic and pharmacodynamic advantages over gabapentin, and a conversion between the 2 medications is often well tolerated.",
+      "url": "https://www.pharmacytimes.com/contributor/jeffrey-fudin/2015/09/how-gabapentin-differs-from-pregabalin?p=3"
+    },
+    {
+      "id": "mqa-111",
+      "question": "what is the lowest dose of hydrochlorothiazide",
+      "type": "Dose",
+      "drug": "hydrochlorothiazide",
+      "answer": "For Edema: The usual adult dosage is 25 to 100 mg daily as a single or divided dose.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b38ac8a-4540-4eb2-aedd-9aa966d22190"
+    },
+    {
+      "id": "mqa-112",
+      "question": "what valacyclovir looks like in color shape",
+      "type": "Appearance",
+      "drug": "valacyclovir",
+      "answer": "Color - blue; Shape - CAPSULE; Score - no score; Size - 17mm; Imprint Code - RX904",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51f93a1c-90d0-4cbc-90f7-6f1415efd673"
+    },
+    {
+      "id": "mqa-113",
+      "question": "is 600mg of gabapentin considered a strong dose ? how high in my can it go?",
+      "type": "Dose",
+      "drug": "gabapentin",
+      "answer": "In adults with postherpetic neuralgia, gabapentin capsules therapy may be initiated as a single 300 mg dose on Day 1, 600 mg/day on Day 2 (divided BID), and 900 mg/day on Day 3 (divided TID). The dose can subsequently be titrated up as needed for pain relief to a daily dose of 1800 mg (divided TID). In clinical studies, efficacy was demonstrated over a range of doses from 1800 mg/day to 3600 mg/day with comparable effects across the dose range. Additional benefit of using doses greater than 1800 mg/day was not demonstrated.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0936a88f-b569-49c4-951b-14e8f6273b53"
+    },
+    {
+      "id": "mqa-114",
+      "question": "motoprolol pill how long before it takes affect",
+      "type": "Action/time",
+      "drug": "metoprolol",
+      "answer": "In man, absorption of metoprolol is rapid and complete. ... In comparison to conventional metoprolol, the plasma metoprolol levels following administration of metoprolol succinate extended-release tablets are characterized by lower peaks, longer time to peak and significantly lower peak to trough variation.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d948600-35d8-4490-983b-918bdce488c8"
+    },
+    {
+      "id": "mqa-115",
+      "question": "famotidine 10 mg?",
+      "type": "Information",
+      "drug": "famotidine 10 mg",
+      "answer": "relieves heartburn associated with acid indigestion and sour stomach\nprevents heartburn associated with acid indigestion and sour stomach brought on by eating or drinking certain food and beverages",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c7c0db88-6287-458a-abd1-c0ebf81f2337&audience=consumer"
+    },
+    {
+      "id": "mqa-116",
+      "question": "what side effects would magnesium have on a woman taking dilantin?",
+      "type": "Interaction",
+      "drug": "magnesium and Dilantin",
+      "answer": "Oral administration of MgO in a low dose (500 mg/kg) for 4 weeks in healthy rats appears to exert protective effect against MES. High oral doses of MgO (750 and 1000 mg/kg) appear to enhance the activity of phenytoin and carbamazepine in the MES model.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2846501/"
+    },
+    {
+      "id": "mqa-117",
+      "question": "what are tne side effects of carprofen",
+      "type": "Side effects",
+      "drug": "carprofen",
+      "answer": "… vomiting (4%), diarrhea (4%), changes in appetite (3%), lethargy (1.4%), behavioral changes (1 %), and constipation (0.3%)….",
+      "url": "https://www.drugs.com/pro/carprofen.html#s-34084-4"
+    },
+    {
+      "id": "mqa-118",
+      "question": "lansoprazole long term use?",
+      "type": "Usage/duration",
+      "drug": "lansoprazole",
+      "answer": "you may repeat a 14-day course every 4 months * do not take for more than 14 days or more often than every 4 months unless directed by a doctor",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d86585b7-e146-4f04-9016-412b16e06f55"
+    },
+    {
+      "id": "mqa-119",
+      "question": "how long after teeth treatment can you start zoledronic acid infection",
+      "type": "Contraindication",
+      "drug": "zoledronic acid",
+      "answer": "Routine dental treatment generally should not be modified solely on the basis of oral bisphosphonate therapy. However, patients with possible risk factors for BON may benefit from assessment by an expert in metabolic bone diseases. These risk factors may include concomitant use of estrogen or glucocorticoids, older age (over 65 years) and prolonged use of bisphosphonates.",
+      "url": "https://jada.ada.org/article/S0002-8177(14)64960-6/pdf"
+    },
+    {
+      "id": "mqa-120",
+      "question": "how long do you leave bimatoprost ophthalmic",
+      "type": "Usage",
+      "drug": "bimatoprost ophthalmic",
+      "answer": "2 to 3 minutes",
+      "url": "https://medlineplus.gov/druginfo/meds/a602030.html"
+    },
+    {
+      "id": "mqa-121",
+      "question": "do i take over the counter calcium with \"alendronate?\"",
+      "type": "Interaction",
+      "drug": "calcium and alendronate",
+      "answer": "Co-administration of alendronate sodium and calcium, antacids, or oral medications containing multivalent cations will interfere with absorption of alendronate sodium. Therefore, instruct patients to wait at least one-half hour after taking alendronate sodium before taking any other oral medications.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a24fd39c-34a7-4de2-9439-781e612189ca"
+    },
+    {
+      "id": "mqa-122",
+      "question": "what is prevnar >65?",
+      "type": "Information",
+      "drug": "Prevnar",
+      "answer": "The pneumococcal conjugate vaccine (PCV13 or Prevnar 13®) protects against 13 types of pneumococcal bacteria. CDC recommends PCV13 for use in infants and young children and adults 65 years or older.",
+      "url": "https://www.cdc.gov/pneumococcal/vaccination.html"
+    },
+    {
+      "id": "mqa-123",
+      "question": "where does marijuana come from",
+      "type": "Information",
+      "drug": "marijuana",
+      "answer": "Marijuana is a green, brown, or gray mix of dried, crumbled parts from the marijuana plant.",
+      "url": "https://medlineplus.gov/marijuana.html"
+    },
+    {
+      "id": "mqa-124",
+      "question": "how long for donepezil to show in your blood",
+      "type": "Action/time",
+      "drug": "donepezil",
+      "answer": "Based on population pharmacokinetic analysis of plasma donepezil concentrations measured in patients with Alzheimer's disease, following oral dosing, peak plasma concentration is achieved in 3 hours for donepezil hydrochloride 10 mg tablets.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=11ac01f4-d26e-47b2-9660-d514ab097fdb"
+    },
+    {
+      "id": "mqa-125",
+      "question": "for a \"rinse,\" how many \"cc\" should be \"used?f\" lidocaine lidocaine used",
+      "type": "Usage",
+      "drug": "lidocaine rinse",
+      "answer": "For symptomatic treatment of irritated or inflamed mucous membranes of the mouth and pharynx, the usual adult dose is 15 mL undiluted.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=79b42076-359d-4258-b1d8-f40e67ac5424"
+    },
+    {
+      "id": "mqa-126",
+      "question": "what medicine besides statins lower cholesterol?",
+      "type": "Alternatives",
+      "drug": "statins",
+      "answer": "Fibrates ... Fenofibrate (TriCor) ... Gemfibrozil (Lopid) ... Resins ... Cholestyramine (Questran, LoCholest) ... Colestipol (Colestid) ... Colesevelam (WelChol) ... Absorption Blocker ... Ezetimibe (Zetia) ... Niacin ...",
+      "url": "https://www.health.harvard.edu/newsletter_article/help-for-your-cholesterol-when-the-statins-wont-do"
+    },
+    {
+      "id": "mqa-127",
+      "question": "what does the pill oxybutynin look like",
+      "type": "Appearance",
+      "drug": "oxybutynin",
+      "answer": "Product Characteristics Color BLUE (light blue) Score 2 pieces Shape ROUND Size 8mm Imprint Code 4853;V",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd72314e-773a-4e9d-8aa7-ec51592e4c90"
+    },
+    {
+      "id": "mqa-128",
+      "question": "shingrix vaccine how often do you get a shingles shot",
+      "type": "Usage/time",
+      "drug": "shingles vaccine",
+      "answer": "Shingles Vaccine (recombinant)  Two doses, 2 to 6 months apart, are recommended for adults 50 and older.  This vaccine is also recommended for people who have already gotten the live shingles vaccine (Zostavax). There is no live virus in this vaccine.",
+      "url": "https://www.cdc.gov/vaccines/hcp/vis/vis-statements/shingles-recombinant.html"
+    },
+    {
+      "id": "mqa-129",
+      "question": "how to give insulin",
+      "type": "Usage",
+      "drug": "insulin",
+      "answer": "Insulin comes as a solution (liquid) and a suspension (liquid with particles that will settle on standing) to be injected subcutaneously (under the skin). Insulin is usually injected several times a day … [whole section]",
+      "url": "https://medlineplus.gov/druginfo/meds/a682611.html"
+    },
+    {
+      "id": "mqa-130",
+      "question": "what is medication for singular 10 mg.",
+      "type": "Indication",
+      "drug": "Singulair",
+      "answer": "SINGULAIR is indicated for the prophylaxis and chronic treatment of asthma in adults and pediatric patients 12 months of age and older. SINGULAIR is indicated for prevention of exercise-induced bronchoconstriction in patients 15 years of age and older. SINGULAIR is indicated for the relief of symptoms of allergic rhinitis (seasonal allergic rhinitis in adults and pediatric patients 2 years of age and older, and perennial allergic rhinitis in adults and pediatric patients 6 months of age and older).",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10cd5ca5-6f8b-417c-af11-a2054a2dde34"
+    },
+    {
+      "id": "mqa-131",
+      "question": "diclofenac sodium, 75 mg. how much is to much",
+      "type": "Overdose",
+      "drug": "diclofenac sodium",
+      "answer": "Diclofenac sodium may be administered as 25 mg, 50 mg, or 75 mg delayed-release tablets. Regardless of the indication, the dosage of diclofenac should be individualized to the lowest effective dose to minimize adverse effects (see CLINICAL PHARMACOLOGY: Individualization of Dosage). Osteoarthritis: The recommended dosage is 100 to 150 mg/day in divided doses, 50 mg b.i.d. or t.i.d. or 75 mg b.i.d. Dosages above 150 mg/day have not been studied in patients with osteoarthritis. Rheumatoid Arthritis: The recommended dosage is 150 to 200 mg/day in divided doses, 50 mg t.i.d. or q.i.d., or 75 mg b.i.d. Dosages above 225 mg/day are not recommended in patients with rheumatoid arthritis. Ankylosing Spondylitis: The recommended dosage is 100 to 125 mg/day, administered as 25 mg q.i.d., with an extra 25 mg dose at bedtime if necessary. Dosages above 125 mg/day have not been studied in patients with ankylosing spondylitis.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a4fd2d68-019f-4c89-8923-4e61262f6eee"
+    },
+    {
+      "id": "mqa-132",
+      "question": "what opioid is in the bupropion patch",
+      "type": "Ingredient",
+      "drug": "\"bupropion patch\" (probably buprenorphine [Butrans])",
+      "answer": "Active Ingredient/Active Moiety: Ingredient Name buprenorphine (UNII: 40D3SCR4GZ) (buprenorphine - UNII:40D3SCR4GZ)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=794aa355-66de-41b8-aedf-f2c40f6bc664"
+    },
+    {
+      "id": "mqa-133",
+      "question": "what is fluoride",
+      "type": "Information",
+      "drug": "fluoride",
+      "answer": "The mineral fluoride occurs naturally on earth and is released from rocks into the soil, water, and air. All water contains some fluoride. Usually, the fluoride level in water is not enough to prevent tooth decay; however, some groundwater and natural springs can have naturally high levels of fluoride. Fluoride has been proven to protect teeth from decay. Bacteria in the mouth produce acid when a person eats sugary foods. This acid eats away minerals from the tooth’s surface, making the tooth weaker and increasing the chance of developing cavities. Fluoride helps to rebuild and strengthen the tooth’s surface, or enamel. Water fluoridation prevents tooth decay by providing frequent and consistent contact with low levels of fluoride. By keeping the tooth strong and solid, fluoride stops cavities from forming and can even rebuild the tooth’s surface.",
+      "url": "https://www.cdc.gov/fluoridation/basics/index.htm"
+    },
+    {
+      "id": "mqa-134",
+      "question": "when used as a rinse, how big should the amount of lidocaineof lidocaine used",
+      "type": "Dose",
+      "drug": "lidocaine rinse",
+      "answer": "Lidocaine viscous comes as a thick liquid and should be shaken well before using. Lidocaine viscous usually is used as needed but not more frequently than every 3 hours, with a maximum of 8 doses in 24 hours. In children under 3 years of age, do not use more frequently than every 3 hours, with a maximum of 4 doses in 12 hours. Follow the directions on your prescription label carefully, and ask your doctor or pharmacist to explain any part you do not understand. Use lidocaine exactly as directed. Do not use more or less of it or use it more often than prescribed by your doctor.",
+      "url": "https://medlineplus.gov/druginfo/meds/a682701.html"
+    },
+    {
+      "id": "mqa-135",
+      "question": "what is marijuana",
+      "type": "Information",
+      "drug": "marijuana",
+      "answer": "Marijuana is a green, brown, or gray mix of dried, crumbled parts from the marijuana plant.",
+      "url": "https://medlineplus.gov/marijuana.html"
+    },
+    {
+      "id": "mqa-136",
+      "question": "how to safely stop taking anastrozole",
+      "type": "Stopping/tapering",
+      "drug": "anastrozole",
+      "answer": "A study has found that postmenopausal women who stop taking hormonal therapy early or skip doses are much more likely to have a breast cancer recurrence than women who take hormonal therapy as prescribed.",
+      "url": "https://www.breastcancer.org/research-news/not-taking-hormonal-tx-leads-to-more-recurrence"
+    },
+    {
+      "id": "mqa-137",
+      "question": "vitamin d 15000,what can do for bones",
+      "type": "Action",
+      "drug": "vitamin D",
+      "answer": "Vitamin D helps your body absorb calcium. Calcium is one of the main building blocks of bone. A lack of vitamin D can lead to bone diseases such as osteoporosis or rickets. Vitamin D also has a role in your nerve, muscle, and immune systems.",
+      "url": "https://medlineplus.gov/vitamind.html"
+    },
+    {
+      "id": "mqa-138",
+      "question": "what does valacyclovir 1gm cure?",
+      "type": "Indication",
+      "drug": "valacyclovir",
+      "answer": "Valacyclovir tablets, USP are a prescription antiviral medicine. Valacyclovir tablets, USP lower the ability of herpes viruses to multiply in your body.\n\nValacyclovir tablets, USP are used in adults:\n\nto treat cold sores (also called fever blisters or herpes labialis)\nto treat shingles (also called herpes zoster)\nto treat or control genital herpes outbreaks in adults with normal immune systems\nto control genital herpes outbreaks in adults infected with the human immunodeficiency virus (HIV) with CD4 + cell count greater than 100 cells/mm3\nwith safer sex practices to lower the chances of spreading genital herpes to others. Even with safer sex practices, it is still possible to spread genital herpes.\nValacyclovir tablets, USP used daily with the following safer sex practices can lower the chances of passing genital herpes to your partner.\n\nDo not have sexual contact with your partner when you have any symptom or outbreak of genital herpes.\nUse a condom made of latex or polyurethane whenever you have sexual contact.\nValacyclovir tablets, USP are used in children:\n\nto treat cold sores (for children ≥ 12 years of age)\nto treat chickenpox (for children 2 to < 18 years of age).",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51f93a1c-90d0-4cbc-90f7-6f1415efd673"
+    },
+    {
+      "id": "mqa-139",
+      "question": "oxycodone hcl 5 mg & oxycodone \"10-325\" apap the same?",
+      "type": "Comparison",
+      "drug": "oxycodone hcl 5 mg; oxycodone \"10-325\"",
+      "answer": "PERCOCET - oxycodone hydrochloride and acetaminophen tablet. Each tablet, for oral administration, contains oxycodone hydrochloride and acetaminophen in the following strengths: Oxycodone Hydrochloride, USP          10 mg*\nAcetaminophen, USP         325 mg\n*10 mg oxycodone HCl is equivalent to 8.9637 mg of oxycodone.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a446947-2cda-4a32-aa6a-53e09245825a"
+    },
+    {
+      "id": "mqa-140",
+      "question": "what valacyclovir looks like",
+      "type": "Appearance",
+      "drug": "valacyclovir",
+      "answer": "Color blue Shape CAPSULE Size 17mm",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51f93a1c-90d0-4cbc-90f7-6f1415efd673&audience=consumer"
+    },
+    {
+      "id": "mqa-141",
+      "question": "how dextroamphetamine works",
+      "type": "Action",
+      "drug": "dextroamphetamine",
+      "answer": "Dextroamphetamine is used as part of a treatment program to control symptoms of attention deficit hyperactivity disorder (ADHD; more difficulty focusing, controlling actions, and remaining still or quiet than other people who are the same age) in adults and children. Dextroamphetamine is also used to treat narcolepsy (a sleep disorder that causes excessive daytime sleepiness and sudden attacks of sleep). Dextroamphetamine is in a class of medications called central nervous system stimulants. It works by changing the amounts of certain natural substances in the brain.",
+      "url": "https://medlineplus.gov/druginfo/meds/a605027.html"
+    },
+    {
+      "id": "mqa-142",
+      "question": "what milagrams olanzapine come in",
+      "type": "Dose",
+      "drug": "olanzapine",
+      "answer": "Olanzapine Tablets USP, 20 mg are white, film coated, oval, biconvex tablets with “R” 20\ndebossed on one side and “0168” on other side.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=676ace4e-7706-742d-cab0-430dd1f83408&audience=consumer"
+    },
+    {
+      "id": "mqa-143",
+      "question": "at what point do i no longer need cyanocobalamin injection?",
+      "type": "Usage/time",
+      "drug": "cyanocobalamin",
+      "answer": "Cyanocobalamin comes as a solution (liquid) to be injected into a muscle or just under the skin. It is usually injected by a healthcare provider in an office or clinic. You will probably receive cyanocobalamin injection once a day for the first 6-7 days of your treatment. As your red blood cells return to normal, you will probably receive the medication every other day for 2 weeks, and then every 3-4 days for 2-3 weeks. After your anemia has been treated, you will probably receive the medication once a month to prevent your symptoms from coming back.\n\nCyanocobalamin injection will supply you with enough vitamin B12 only as long as you receive injections regularly. You may receive cyanocobalamin injections every month for the rest of your life. Keep all appointments to receive cyanocobalamin injections even if you feel well. If you stop receiving cyanocobalamin injections, your anemia may return and your nerves may be damaged.",
+      "url": "https://medlineplus.gov/druginfo/meds/a601167.html"
+    },
+    {
+      "id": "mqa-144",
+      "question": "amiodarone for afibwhat are side effects",
+      "type": "Side effects",
+      "drug": "amiodarone",
+      "answer": "Adverse reactions have been very common in virtually all series of patients treated with amiodarone for ventricular arrhythmias with relatively large doses of drug (400 mg/day and above), occurring in about three-fourths of all patients and causing discontinuation in 7 to 18%. The most serious reactions are pulmonary toxicity, exacerbation of arrhythmia, and rare serious liver injury (see “WARNINGS”), but other adverse effects constitute important problems. They are often reversible with dose reduction or cessation of amiodarone treatment. Most of the adverse effects appear to become more frequent with continued treatment beyond six months, although rates appear to remain relatively constant beyond one year. The time and dose relationships of adverse effects are under continued study.\n\nNeurologic problems are extremely common, occurring in 20 to 40% of patients and including malaise and fatigue, tremor and involuntary movements, poor coordination and gait, and peripheral neuropathy; they are rarely a reason to stop therapy and may respond to dose reductions or discontinuation (see “PRECAUTIONS”). There have been spontaneous reports of demyelinating polyneuropathy.\n\nGastrointestinal complaints, most commonly nausea, vomiting, constipation, and anorexia, occur in about 25% of patients but rarely require discontinuation of drug. These commonly occur during high-dose administration (i.e., loading dose) and usually respond to dose reduction or divided doses.\n\nOphthalmic abnormalities including optic neuropathy and/or optic neuritis, in some cases progressing to permanent blindness, papilledema, corneal degeneration, photosensitivity, eye discomfort, scotoma, lens opacities, and macular degeneration have been reported (see “WARNINGS”).\n\nAsymptomatic corneal microdeposits are present in virtually all adult patients who have been on drug for more than 6 months. Some patients develop eye symptoms of halos, photophobia, and dry eyes. Vision is rarely affected and drug discontinuation is rarely needed.\n\nDermatological adverse reactions occur in about 15% of patients, with photosensitivity being most common (about 10%). Sunscreen and protection from sun exposure may be helpful, and drug discontinuation is not usually necessary. Prolonged exposure to amiodarone occasionally results in a blue-gray pigmentation. This is slowly and occasionally incompletely reversible on discontinuation of drug but is of cosmetic importance only.\n\nCardiovascular adverse reactions, other than exacerbation of the arrhythmias, include the uncommon occurrence of congestive heart failure (3%) and bradycardia. Bradycardia usually responds to dosage reduction but may require a pacemaker for control. CHF rarely requires drug discontinuation. Cardiac conduction abnormalities occur infrequently and are reversible on discontinuation of drug.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d779a746-0bdd-49cc-b0d8-5f9a72524b8c&audience=consumer"
+    },
+    {
+      "id": "mqa-145",
+      "question": "what class is diazepam",
+      "type": "Information",
+      "drug": "diazepam",
+      "answer": "Diazepam is a benzodiazepine that exerts anxiolytic, sedative, muscle-relaxant, anticonvulsant and amnestic effects.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=75c7d502-0178-5ba1-e053-2a91aa0a7d67"
+    },
+    {
+      "id": "mqa-146",
+      "question": "is estradiol transdermal patch bio-identical estrogen?",
+      "type": "Information",
+      "drug": "estradiol transdermal patch; estrogen",
+      "answer": "Estradiol transdermal system (twice-weekly) is an estrogen indicated for:\n•Treatment of moderate to severe vasomotor symptoms due to menopause ( 1.1)\n•Treatment of moderate to severe symptoms of vulvar and vaginal atrophy due to menopause",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d28bec8f-762e-4f05-a20d-96a42970d6a7"
+    },
+    {
+      "id": "mqa-147",
+      "question": "what is the action of ezetimibe in my body",
+      "type": "Action",
+      "drug": "ezetimibe",
+      "answer": "Ezetimibe is in a class of medications called cholesterol-lowering medications. It works by preventing the absorption of cholesterol in the intestine.",
+      "url": "https://medlineplus.gov/druginfo/meds/a603015.html"
+    },
+    {
+      "id": "mqa-148",
+      "question": "when is the best time of day to take propranolol",
+      "type": "Usage/time",
+      "drug": "propranolol",
+      "answer": "The extended-release propranolol capsule (brand name: Inderal LA) usually is taken once a day. The extended-release capsule (Innopran XL, Inderal XL) is usually taken at bedtime and should consistently be taken either always with or always without food each time. Immediate-acting propranolol tablets or solution may be taken two, three, or four times a day. Take propranolol at around the same time(s) every day.",
+      "url": "https://medlineplus.gov/druginfo/meds/a682607.html"
+    },
+    {
+      "id": "mqa-149",
+      "question": "marijuana is what schedule drug",
+      "type": "Information",
+      "drug": "marijuana",
+      "answer": "Cannabis , also known as marijuana, is a plant grown in many parts of the world which produces a resin containing compounds called cannabinoids. Some cannabinoids are psychoactive (acting on the brain and changing mood or consciousness) (see Question 1).\nThe use of Cannabis for medicinal purposes dates back to ancient times (see Question 3).\nBy federal law, the possession of Cannabis is illegal in the United States outside of approved research settings. However, a growing number of states, territories, and the District of Columbia have enacted laws to legalize medical marijuana (see Question 1).\nIn the United States, Cannabis is a controlled substance requiring special licensing for its use (see Question 1 and Question 3).",
+      "url": "https://www.cancer.gov/about-cancer/treatment/cam/patient/cannabis-pdq"
+    },
+    {
+      "id": "mqa-150",
+      "question": "are you able to take guaifenesin if you have a heart \"transplant?\"",
+      "type": "Contraindication",
+      "drug": "guaifenesin",
+      "answer": "Guaifenesin can be used in transplant recipients but should be used with caution in patients receiving kidney or lung transplants and in patients with renal impairment. Codeine combined with guaifenesin is another option for cough and can be used in most transplant patients although those with reduced renal function should be monitored carefully for adverse events.",
+      "url": "https://www.ncbi.nlm.nih.gov/pubmed/21485938"
+    },
+    {
+      "id": "mqa-151",
+      "question": "can i took minocycline for acne when i have kidney stone",
+      "type": "Contraindication",
+      "drug": "minocycline",
+      "answer": "The antianabolic action of the tetracyclines may cause an increase in blood urea nitrogen (BUN). While this is not a problem in those with normal renal function, in patients with significantly impaired function, higher serum levels of tetracycline may lead to azotemia, hyperphosphatemia, and acidosis. Under such conditions, monitoring of creatinine and BUN is recommended, and the total daily dosage should not exceed 200 mg in 24 hours (see DOSAGE AND ADMINISTRATION). If renal impairment exists, even usual oral or parenteral doses may lead to systemic accumulation of the drug and possible liver toxicity.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8082a9be-4b03-45ad-9501-28ee7aa573eb&audience=consumer"
+    },
+    {
+      "id": "mqa-152",
+      "question": "what is amlodipine ?",
+      "type": "Information",
+      "drug": "amlodipine",
+      "answer": "Amlodipine is used alone or in combination with other medications to treat high blood pressure and chest pain (angina). Amlodipine is in a class of medications called calcium channel blockers. It lowers blood pressure by relaxing the blood vessels so the heart does not have to pump as hard. It controls chest pain by increasing the supply of blood to the heart. If taken regularly, amlodipine controls chest pain, but it does not stop chest pain once it starts. Your doctor may prescribe a different medication to take when you have chest pain.",
+      "url": "https://medlineplus.gov/druginfo/meds/a692044.html"
+    },
+    {
+      "id": "mqa-153",
+      "question": "what is the medication riva-clonazepam",
+      "type": "Information",
+      "drug": "RIVA-CLONAZEPAM (clonazepam)",
+      "answer": "Clonazepam is used alone or in combination with other medications to control certain types of seizures. It is also used to relieve panic attacks (sudden, unexpected attacks of extreme fear and worry about these attacks). Clonazepam is in a class of medications called benzodiazepines. It works by decreasing abnormal electrical activity in the brain.",
+      "url": "https://medlineplus.gov/druginfo/meds/a682279.html"
+    },
+    {
+      "id": "mqa-154",
+      "question": "when is it ok to discontinue use of premarin crea m",
+      "type": "Stopping/tapering",
+      "drug": "premarin cream",
+      "answer": "Use of estrogen-alone, or in combination with a progestin, should be with the lowest effective dose and for the shortest duration consistent with treatment goals and risks for the individual woman. Postmenopausal women should be re-evaluated periodically as clinically appropriate to determine if treatment is still necessary.\n\n2. 1 Treatment of Atrophic Vaginitis and Kraurosis Vulvae\nPREMARIN Vaginal Cream is administered intravaginally in a cyclic regimen (daily for 21 days and then off for 7 days). \n\n2. 2 Treatment of Moderate to Severe Dyspareunia, a Symptom of Vulvar and Vaginal Atrophy, due to Menopause\nPREMARIN Vaginal Cream (0.5 g) is administered intravaginally in a twice-weekly (for example, Monday and Thursday) continuous regimen or in a cyclic regimen of 21 days of therapy followed by 7 days off of therapy [see DOSAGE FORMS AND STRENGTHS (3)].\n\nAn increased risk of stroke and DVT has been reported with estrogen-alone therapy. An increased risk of PE, DVT, stroke and MI has been reported with estrogen plus progestin therapy. Should any of these occur or be suspected, estrogen with or without progestin therapy should be discontinued immediately. \n\nMost studies show no significant increased risk associated with use of estrogens for less than 1 year. The greatest risk appears to be associated with prolonged use, with increased risks of 15- to 24-fold for 5 to 10 years or more, and this risk has been shown to persist for at least 8 to 15 years after estrogen therapy is discontinued.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=96609623-528e-4aba-cabe-7254aed816d5&audience=consumer"
+    },
+    {
+      "id": "mqa-155",
+      "question": "how other inject cortisone to the knee",
+      "type": "Information",
+      "drug": "cortisone",
+      "answer": "A steroid injection is a shot of medicine used to relieve a swollen or inflamed area that is often painful. It can be injected into a joint, tendon, or bursa.\n\nDescription\nYour health care provider inserts a small needle and injects medicine into the painful and inflamed area. Depending on the site, your provider may use an x-ray or ultrasound to see where to place the needle.\n\nFor this procedure:\n\nYou will lie on a table and the injection area will be cleaned.\nA numbing medicine may be applied to the injection site.\nYou may be given medicine to help you relax.\nSteroid injections can be given into a bursa, joint, or tendon.",
+      "url": "https://medlineplus.gov/ency/article/007678.htm"
+    },
+    {
+      "id": "mqa-156",
+      "question": "why are anticholinergic drugs useful for treating gastrointestinal spasms associated with ibs",
+      "type": "Action",
+      "drug": "anticholinergic drugs",
+      "answer": "Dicyclomine relieves smooth muscle spasm of the gastrointestinal tract. Animal studies indicate that this action is achieved via a dual mechanism: (1) a specific anticholinergic effect (antimuscarinic) at the acetylcholine-receptor sites; and (2) a direct effect upon smooth muscle (musculotropic.)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=baf1bea8-c573-4ef8-8630-7b51a8e53cac&audience=consumer"
+    },
+    {
+      "id": "mqa-157",
+      "question": "how long does vicodin stay in breast milk",
+      "type": "Action/time",
+      "drug": "vicodin",
+      "answer": "Following a 10 mg oral dose of hydrocodone administered to five adult male subjects, the mean peak concentration was 23.6 ± 5.2 ng/mL. Maximum serum levels were achieved at 1.3 ± 0.3 hours and the half-life was determined to be 3.8 ± 0.3 hours.\n\nAcetaminophen is rapidly absorbed from the gastrointestinal tract and is distributed throughout most body tissues. A small fraction (10-25%) of acetaminophen is bound to plasma proteins. The plasma half-life is 1.25 to 3 hours.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=21ff13de-6633-4dd3-728e-dc21e574ea7b&audience=consumer#GN66756"
+    },
+    {
+      "id": "mqa-158",
+      "question": "trospium can i stop taking it?",
+      "type": "Stopping/tapering",
+      "drug": "trospium",
+      "answer": "Angioedema of the face, lips, tongue and/or larynx has been reported with trospium chloride. In one case, angioedema occurred after the first dose of trospium chloride. Angioedema associated with upper airway swelling may be life threatening. If involvement of the tongue, hypopharynx, or larynx occurs, trospium chloride should be promptly discontinued",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b8d434c-daa2-4bf2-bde6-3e59f81bd88b&audience=consumer#section-1"
+    },
+    {
+      "id": "mqa-159",
+      "question": "how much gravol to kill you",
+      "type": "Overdose",
+      "drug": "Dimenhydrinate",
+      "answer": "Dimenhydrinate is a type of medicine called an antihistamine.\n\nDimenhydrinate overdose occurs when someone takes more than the normal or recommended amount of this medicine. This can be by accident or on purpose.\n\nThis article is for information only. DO NOT use it to treat or manage an actual overdose. If you or someone you are with has an overdose, call your local emergency number (such as 911), or your local poison center can be reached directly by calling the national toll-free Poison Help hotline (1-800-222-1222) from anywhere in the United States. \n\nPoisonous Ingredient\nDimenhydrinate can be harmful in large amounts.\n\nWhere Found\nDimenhydrinate is found in some allergy medicines. It is also in some medicines used to treat nausea, vomiting, and motion sickness.\n\nIt may be in medicines with these brand names:\n\nDramamine\nGravol\nMarmine\nNico-Vert\nTriptone\nDimenhydrinate may also be found in other medicines.\n\nSymptoms\nBelow are symptoms of a dimenhydrinate overdose in different parts of the body.\n\nBLADDER AND KIDNEYS\n\nInability to urinate\nEYES, EARS, NOSE, MOUTH, AND THROAT\n\nBlurred vision\nDry mouth\nEnlarged pupils\nVery dry eyes\nRinging in the ears\nHEART AND BLOOD VESSELS\n\nLow blood pressure\nRapid heartbeat\nNERVOUS SYSTEM\n\nAgitation\nConfusion\nSeizures\nDelirium\nDepression\nDrowsiness\nHallucinations (seeing or hearing things that aren't there)\nIncreased sleepiness\nNervousness\nTremor\nUnsteadiness\nSKIN\n\nDry, red skin\nSTOMACH AND INTESTINES\n\nNausea\nVomiting",
+      "url": "https://medlineplus.gov/ency/article/002634.htm"
+    },
+    {
+      "id": "mqa-160",
+      "question": "what are the side effects and long term consequences of using nicotine",
+      "type": "Side effects",
+      "drug": "nicotine",
+      "answer": "Nicotine use can have many different effects on the body. It can:\n\nDecrease the appetite -- Fear of weight gain makes some people unwilling to stop smoking.\nBoost mood, give people a sense of well-being, and possibly even relieve minor depression.\nIncrease activity in the intestines.\nCreate more saliva and phlegm.\nIncrease the heart rate by around 10 to 20 beats per minute.\nIncrease blood pressure by 5 to 10 mm Hg.\nPossibly cause sweating, nausea, and diarrhea.\nStimulate memory and alertness -- People who use tobacco often depend on it to help them accomplish certain tasks and perform well.",
+      "url": "https://medlineplus.gov/ency/article/000953.htm"
+    },
+    {
+      "id": "mqa-161",
+      "question": "what would a normal dose be for valacyclovir",
+      "type": "Dose",
+      "drug": "valacyclovir",
+      "answer": "Cold Sores (Herpes Labialis): The recommended dosage of valacyclovir tablets for treatment of cold sores is 2 grams twice daily for 1 day taken 12 hours apart. Therapy should be initiated at the earliest symptom of a cold sore (e.g., tingling, itching, or burning).\n\nGenital Herpes:\n\nInitial Episode: The recommended dosage of valacyclovir tablets for treatment of initial genital herpes is 1 gram twice daily for 10 days. Therapy was most effective when administered within 48 hours of the onset of signs and symptoms.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51f93a1c-90d0-4cbc-90f7-6f1415efd673&audience=consumer"
+    },
+    {
+      "id": "mqa-162",
+      "question": "what is another drug similar to sulfonylureas",
+      "type": "Alternatives",
+      "drug": "sulfonylureas",
+      "answer": "Types of Insulin Secretagogues\nInsulin-releasing medicines\nSulfonylureas (Generic names): Glimepiride, Glipizide, Glyburide\nMeglitinides (Generic names): Repaglinide, Nateglinide",
+      "url": "https://www.hormone.org/diseases-and-conditions/diabetes/medicines-and-treatment/insulin-secretagogues"
+    },
+    {
+      "id": "mqa-163",
+      "question": "how do botulinum toxin injections treat muscle conditions?",
+      "type": "Action",
+      "drug": "botulinum toxin",
+      "answer": "Targeted injection of botulinum toxin into muscles with the most tome can help to selectively weaken these muscles to improve range of motion and function.",
+      "url": "https://www.ninds.nih.gov/Disorders/All-Disorders/Spasticity-Information-Page"
+    },
+    {
+      "id": "mqa-164",
+      "question": "heroin mixed with fentanyl what are the symptoms of an overdose",
+      "type": "Overdose",
+      "drug": "fentanyl",
+      "answer": "Acute overdose with Fentanyl Citrate Injection can be manifested by respiratory depression, somnolence progressing to stupor or coma, skeletal muscle flaccidity, cold and clammy skin, constricted pupils, and, in some cases, pulmonary edema, bradycardia, hypotension, partial or complete airway obstruction, atypical snoring, and death.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ce5db1c2-feb1-4ad2-847a-d02e865bd47e&audience=consumer"
+    },
+    {
+      "id": "mqa-165",
+      "question": "can you take amoxicillin with hydrocodone ?",
+      "type": "Interaction",
+      "drug": "amoxicillin & hydrocodone",
+      "answer": "There are no direct drug interactions between Norco (acetaminophen, hydrocodone), amoxicillin (Amoxil) and Adipex (phentermine). Take the Norco only as needed. This may cause drowsiness, be careful if you must be alert. Take the amoxicillin until finished.",
+      "url": "https://www.bjc.org/In-Your-Community/Help-For-Your-Health-Ask-the-BJC-Experts/Answers-from-the-BJC-Experts?QuestionID=317&AFMID=935"
+    },
+    {
+      "id": "mqa-166",
+      "question": "entocort ec how prescribed",
+      "type": "Dose",
+      "drug": "entocort ec",
+      "answer": "2.1 Mild to Moderate Active Crohn’s Disease\nThe recommended adult dosage for the treatment of mild to moderate active Crohn's disease involving the ileum and/or the ascending colon is 9 mg orally taken once daily in the morning for up to 8 weeks. Repeated 8 week courses of ENTOCORT EC can be given for recurring episodes of active disease.\n\n2.2 Maintenance of Clinical Remission of Mild to Moderate Crohn’s Disease\nFollowing an 8 week course(s) of treatment for active disease and once the patient’s symptoms are controlled (CDAI less than 150), ENTOCORT EC 6 mg orally is recommended once daily for maintenance of clinical remission up to 3 months. If symptom control is still maintained at 3 months an attempt to taper to complete cessation is recommended. Continued treatment with ENTOCORT EC 6 mg for more than 3 months has not been shown to provide substantial clinical benefit.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=70532afa-4006-4883-feb2-927faaee8e20&audience=consumer"
+    },
+    {
+      "id": "mqa-167",
+      "question": "what happens when you mix cymbalta with muscle relaxes",
+      "type": "Interaction",
+      "drug": "cymbalta, muscle relaxants",
+      "answer": "CNS Acting Drugs — Given the primary CNS effects of CYMBALTA, it should be used with caution when it is taken in combination with or substituted for other centrally acting drugs, including those with a similar mechanism of action [see Warnings and Precautions (5.12) and Drug Interactions (7.16)].",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f7d4d67-10c1-4bf4-a7f2-c185fbad64ba&audience=consumer#s33"
+    },
+    {
+      "id": "mqa-168",
+      "question": "how to take clotrimazole",
+      "type": "Usage",
+      "drug": "clotrimazole",
+      "answer": "Clotrimazole comes as a cream, lotion, powder, and solution to apply to the skin; lozenges (called troches) to dissolve in the mouth; and vaginal tablets and vaginal cream to be inserted into the vagina. Clotrimazole is usually used five times a day for 14 days for oral thrush, twice a day (in the morning and evening) for 2 to 8 weeks for skin infections, and once a day at bedtime for 3 or 7 days for vaginal infections. Follow the directions on the package or your prescription label carefully, and ask your doctor or pharmacist to explain any part you do not understand. Use clotrimazole exactly as directed. Do not use more or less of it or use it more often than prescribed by your doctor.\n\nTo use the topical cream, lotion, or solution, thoroughly clean the infected area, allow it to dry, and then gently rub the medication in until most of it disappears. Use just enough medication to cover the affected area. You should wash your hands after applying the medication.\n\nThe lozenges should be placed in the mouth and dissolved slowly over about 15 to 30 minutes. Do not chew or swallow the lozenges whole.",
+      "url": "https://medlineplus.gov/druginfo/meds/a682753.html"
+    },
+    {
+      "id": "mqa-169",
+      "question": "how 9is cyanocobalamin adminitsered",
+      "type": "Usage",
+      "drug": "cyanocobalamin",
+      "answer": "Cyanocobalamin comes as a solution (liquid) to be injected into a muscle or just under the skin. It is usually injected by a healthcare provider in an office or clinic. You will probably receive cyanocobalamin injection once a day for the first 6-7 days of your treatment. As your red blood cells return to normal, you will probably receive the medication every other day for 2 weeks, and then every 3-4 days for 2-3 weeks. After your anemia has been treated, you will probably receive the medication once a month to prevent your symptoms from coming back.",
+      "url": "https://medlineplus.gov/druginfo/meds/a605007.html"
+    },
+    {
+      "id": "mqa-170",
+      "question": "show me omeprazole",
+      "type": "Appearance",
+      "drug": "omeprazole",
+      "answer": "Color: BROWN; Shape: OVAL; Size: 12mm; Imprint Code: 20",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=78507fde-256c-42e9-af3f-bb53024e5b10&audience=consumer"
+    },
+    {
+      "id": "mqa-171",
+      "question": "what size bottle does latanoprost ophthalmic come in",
+      "type": "Storage and disposal",
+      "drug": "latanoprost ophthalmic",
+      "answer": "Latanoprost ophthalmic solution is a sterile, clear, isotonic, buffered, preserved, colorless solution of latanoprost 0.005% (50 mcg/mL). It is supplied as a 2.5 mL solution in a 6 mL natural low density polyethylene bottle with a natural low density polyethylene dropper tip and a turquoise polyethylene screw cap.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f44d3f09-fa2d-4f01-831d-71a15bde5e29&audience=consumer"
+    },
+    {
+      "id": "mqa-172",
+      "question": "how is bcg vaccine stored",
+      "type": "Storage and disposal",
+      "drug": "bsg vaccine",
+      "answer": "The intact vials of BCG VACCINE should be stored refrigerated at 2-8°C (36-46°F).\n\nThis agent contains live bacteria and should be protected from direct sunlight. The product should not be used after the expiration date printed on the label.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a83f0b99-9038-4c5a-aaac-8792b32838fe&audience=consumer"
+    },
+    {
+      "id": "mqa-173",
+      "question": "what is a normal dosage of klonopin",
+      "type": "Dose",
+      "drug": "klonopin",
+      "answer": "Seizure Disorders\nThe use of multiple anticonvulsants may result in an increase of CNS depressant adverse effects. This should be considered before adding Klonopin to an existing anticonvulsant regimen.\n\nAdults\n\nThe initial dose for adults with seizure disorders should not exceed 1.5 mg/day divided into three doses. Dosage may be increased in increments of 0.5 to 1 mg every 3 days until seizures are adequately controlled or until side effects preclude any further increase. Maintenance dosage must be individualized for each patient depending upon response. Maximum recommended daily dose is 20 mg.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=542f22e8-dad2-47a8-93b6-30936715d73b&audience=consumer"
+    },
+    {
+      "id": "mqa-174",
+      "question": "how often can a prescription of fentanyl be called in",
+      "type": "Usage",
+      "drug": "fentanyl",
+      "answer": "Fentanyl comes as four different transmucosal products and several other types of products. The medication in each product is absorbed differently by the body, so one product cannot be substituted for any other fentanyl product. If you are switching from one product to another, your doctor will prescribe a dose that is best for you.\n\nA program has been set up for each fentanyl product to decrease the risk of using the medication. Your doctor will need to enroll in the program in order to prescribe fentanyl and you will need to have your prescription filled at a pharmacy that is enrolled in the program. As part of the program, your doctor will talk with you about the risks and benefits of using fentanyl and about how to safely use, store, and dispose of the medication. After you talk with your doctor, you will sign a form acknowledging that you understand the risks of using fentanyl and that you will follow your doctor's instructions to use the medication safely. Your doctor will give you more information about the program and how to get your medication and will answer any questions you have about the program and your treatment with fentanyl.",
+      "url": "https://medlineplus.gov/druginfo/meds/a605043.html"
+    },
+    {
+      "id": "mqa-175",
+      "question": "how long does stomach take to empty for fosamax",
+      "type": "Action/time",
+      "drug": "fosamax",
+      "answer": "Absorption\n\nRelative to an intravenous reference dose, the mean oral bioavailability of alendronate in women was 0.64% for doses ranging from 5 to 70 mg when administered after an overnight fast and two hours before a standardized breakfast. Oral bioavailability of the 10 mg tablet in men (0.59%) was similar to that in women when administered after an overnight fast and 2 hours before breakfast.\n\nFOSAMAX 70 mg oral solution and FOSAMAX 70 mg tablet are equally bioavailable.\n\nA study examining the effect of timing of a meal on the bioavailability of alendronate was performed in 49 postmenopausal women. Bioavailability was decreased (by approximately 40%) when 10 mg alendronate was administered either 0.5 or 1 hour before a standardized breakfast, when compared to dosing 2 hours before eating. In studies of treatment and prevention of osteoporosis, alendronate was effective when administered at least 30 minutes before breakfast.\n\nBioavailability was negligible whether alendronate was administered with or up to two hours after a standardized breakfast. Concomitant administration of alendronate with coffee or orange juice reduced bioavailability by approximately 60%.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f2dcfb39-a7c2-4e39-9e35-852a3a74f947&audience=consumer"
+    },
+    {
+      "id": "mqa-176",
+      "question": "does doxycycline contain resin and shellac in it. ?",
+      "type": "Ingredient",
+      "drug": "doxycycline",
+      "answer": "INACTIVE INGREDIENTS:\nSILICON DIOXIDE \nSTARCH, CORN \nCROSCARMELLOSE SODIUM \nDOCUSATE SODIUM  \nSODIUM BENZOATE \t \nMAGNESIUM STEARATE \t \nCELLULOSE, MICROCRYSTALLINE  \nFD&C BLUE NO. 2  \nFD&C YELLOW NO. 6 \nHYPROMELLOSES \t \nPOLYETHYLENE GLYCOLS \nTITANIUM DIOXIDE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b52e0a7-f024-4d8a-a59e-374946e60b44&audience=consumer"
+    },
+    {
+      "id": "mqa-177",
+      "question": "wht is a normal dose daily for ativan?",
+      "type": "Dose",
+      "drug": "ativan",
+      "answer": "Ativan (lorazepam) is administered orally. For optimal results, dose, frequency of administration, and duration of therapy should be individualized according to patient response. To facilitate this, 0.5 mg, 1 mg, and 2 mg tablets are available.\n\nThe usual range is 2 to 6 mg/day given in divided doses, the largest dose being taken before bedtime, but the daily dosage may vary from 1 to 10 mg/day.\n\nFor anxiety, most patients require an initial dose of 2 to 3 mg/day given two times a day or three times a day.\n\nFor insomnia due to anxiety or transient situational stress, a single daily dose of 2 to 4 mg may be given, usually at bedtime.\n\nFor elderly or debilitated patients, an initial dosage of 1 to 2 mg/day in divided doses is recommended, to be adjusted as needed and tolerated.\n\nThe dosage of Ativan (lorazepam) should be increased gradually when needed to help avoid adverse effects. When higher dosage is indicated, the evening dose should be increased before the daytime doses.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89057c93-8155-4040-acec-64e877bd2b4c&audience=consumer"
+    },
+    {
+      "id": "mqa-178",
+      "question": "ok to use expired lidocaine patches??",
+      "type": "Storage and disposal",
+      "drug": "lidocaine",
+      "answer": "A 2006 study of 122 drugs tested by the program showed that two-thirds of the expired medications were stable every time a lot was tested. Each of them had their expiration dates extended, on average, by more than four years, according to research published in the Journal of Pharmaceutical Sciences.\n\nSome that failed to hold their potency include the common asthma inhalant albuterol, the topical rash spray diphenhydramine, and a local anesthetic made from lidocaine and epinephrine, the study said",
+      "url": "https://www.npr.org/sections/health-shots/2017/07/18/537257884/that-drug-expiration-date-may-be-more-myth-than-fact"
+    },
+    {
+      "id": "mqa-179",
+      "question": "how often is the tetanus shot \"given?\"",
+      "type": "Usage/time",
+      "drug": "tetanus",
+      "answer": "Everyone needs tetanus vaccines throughout their lives. That means everyone needs to get vaccinated as babies, children, and adults.\n\nInfants and children birth through age 6\nYoung children need the DTaP vaccine as part of their routine vaccine schedule. Young children need a dose of the vaccine at:\n\n2 months\n4 months\n6 months\n15 through 18 months\n4 through 6 years\nIf your child has had a serious reaction to the whooping cough part of the DTaP vaccine, they may be able to get the DT vaccine instead. \nPreteens and teens ages 7 through 18\nOlder children need 1 booster shot of the Tdap vaccine at age 11 or 12 as part of their routine vaccine schedule.\nAdults age 19 and older\nAdults need 1 booster shot of the Td vaccine every 10 years as part of their routine vaccine schedule. If you get a deep cut or a burn, you may need the booster earlier — especially if the cut or burn is dirty.\n\nIf you missed the Tdap booster as a teen, you’ll need to get a Tdap booster instead to make sure you have protection from whooping cough.\n\nPregnant women\nPregnant women need 1 booster shot of the Tdap vaccine during the third trimester of each pregnancy.",
+      "url": "https://www.vaccines.gov/diseases/tetanus/index.html"
+    },
+    {
+      "id": "mqa-180",
+      "question": "what is the medication thera tab used to treat?",
+      "type": "Indication",
+      "drug": "Thera-Tabs",
+      "answer": "This medication is a multivitamin product used to treat or prevent vitamin deficiency due to poor diet, certain illnesses, or during pregnancy.",
+      "url": "https://www.webmd.com/drugs/2/drug-17353/thera-tabs-oral/details"
+    },
+    {
+      "id": "mqa-181",
+      "question": "what time should take memantine",
+      "type": "Usage/time",
+      "drug": "memantine",
+      "answer": "Memantine comes as a tablet, a solution (liquid), and an extended-release (long-acting) capsule to take by mouth. The solution and tablet are usually taken once or twice a day with or without food. The capsule is taken once a day with or without food.",
+      "url": "https://medlineplus.gov/druginfo/meds/a604006.html"
+    },
+    {
+      "id": "mqa-182",
+      "question": "exercise restrictions with taking moxifloxacin?",
+      "type": "Usage",
+      "drug": "moxifloxacin",
+      "answer": "Fluoroquinolones, including Moxifloxacin Tablets, have been associated with an increased risk of tendinitis and tendon rupture in all ages [see Warnings and Precautions ( 5.1) and Adverse Reactions ( 6.2)] . This adverse reaction most frequently involves the Achilles tendon, and has also been reported with the rotator cuff (the shoulder), the hand, the biceps, the thumb, and other tendons. Tendinitis or tendon rupture can occur within hours or days of starting moxifloxacin or as long as several months after completion of therapy. Tendinitis and tendon rupture can occur bilaterally.\n\nThe risk of developing fluoroquinolone-associated tendinitis and tendon rupture is increased in patients over 60 years of age, in patients taking corticosteroid drugs, and in patients with kidney, heart or lung transplants. Other factors that may independently increase the risk of tendon rupture include strenuous physical activity, renal failure, and previous tendon disorders such as rheumatoid arthritis. Tendinitis and tendon rupture have also occurred in patients taking fluoroquinolones who do not have the above risk factors. Discontinue Moxifloxacin Tablets immediately if the patient experiences pain, swelling, inflammation or rupture of a tendon. Patients should be advised to rest at the first sign of tendinitis or tendon rupture, and to contact their healthcare provider regarding changing to a non-quinolone antimicrobial drug. Avoid fluoroquinolones, including Moxifloxacin Tablets, in patients who have a history of tendon disorders or who have experienced tendinitis or tendon rupture [see Adverse Reactions",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=78039242-3472-0b54-e053-2a91aa0a2651&audience=consumer"
+    },
+    {
+      "id": "mqa-183",
+      "question": "vaccine when pregnant",
+      "type": "Information",
+      "drug": "vaccination",
+      "answer": "Vaccines help keep your pregnant patients and their\n  \ngrowing families healthy.",
+      "url": "https://www.cdc.gov/vaccines/pregnancy/downloads/immunizations-preg-chart.pdf"
+    },
+    {
+      "id": "mqa-184",
+      "question": "pneumonia vaccine is good for how long?",
+      "type": "Usage/duration",
+      "drug": "Pneumococcal Vaccines",
+      "answer": "CDC recommends routine administration of pneumococcal conjugate vaccine (PCV13 or Prevnar13®) for all children younger than 2 years of age:\nGive PCV13 to infants as a series of 4 doses, one dose at each of these ages: 2 months, 4 months, 6 months, and 12 through 15 months.\nChildren who miss their shots or start the series later should still get the vaccine. The number of doses recommended and the intervals between doses will depend on the child’s age when vaccination begins.\nCDC recommends pneumococcal vaccination (PCV13 or Prevnar13®, and PPSV23 or Pneumovax23®) for all adults 65 years or older:\nGive a dose of PCV13 to adults 65 years or older who have not previously received a dose. Then administer a dose of PPSV23 at least 1 year later.\nIf the patient already received one or more doses of PPSV23, give the dose of PCV13 at least 1 year after they received the most recent dose of PPSV23.",
+      "url": "https://www.cdc.gov/vaccines/vpd/pneumo/hcp/recommendations.html"
+    },
+    {
+      "id": "mqa-185",
+      "question": "what mg. does meprobamate have?",
+      "type": "Dose",
+      "drug": "meprobamate",
+      "answer": "Meprobamate Tablets USP 200 mg are scored, round, white tablets imprinted 591-B supplied in bottles of 100 and 1000.\n\nMeprobamate Tablets USP 400 mg are scored, round, white tablets imprinted 591-A supplied in bottles of 100 and 1000.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a27d7877-38e4-4437-afd3-3d570c0dead1&audience=consumer"
+    },
+    {
+      "id": "mqa-186",
+      "question": "what is the difference between atorvastatin and lipitor",
+      "type": "Comparison",
+      "drug": "atorvastatin; lipitor",
+      "answer": "LIPITOR ® (atorvastatin calcium) tablets, for oral use",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c6e131fe-e7df-4876-83f7-9156fc4e8228&audience=consumer"
+    },
+    {
+      "id": "mqa-187",
+      "question": "what medications could cause excessive hair growth",
+      "type": "Side effects",
+      "drug": "drugs that cause hirsutism",
+      "answer": "The following medications can cause hirsutism:\nAnabolic steroids\nTestosterone\nGlucocorticoids\nCyclosporine (Sandimmune®)\nMinoxidil (Loniten®, Rogaine®)\nDanazol (Danocrine®)\nPhenytoin (Dilantin®)",
+      "url": "https://my.clevelandclinic.org/health/diseases/14523-excessive-hair-growth-hirsutism"
+    },
+    {
+      "id": "mqa-188",
+      "question": "what time of day to take aripiprazole",
+      "type": "Usage/time",
+      "drug": "aripiprazole",
+      "answer": "Aripiprazole comes as a tablet, a solution (liquid), and an orally disintegrating tablet (tablet that dissolves quickly in the mouth) to take by mouth. It is usually taken once a day with or without food. Take aripiprazole at around the same time every day.",
+      "url": "https://medlineplus.gov/druginfo/meds/a603012.html"
+    },
+    {
+      "id": "mqa-189",
+      "question": "warfarin and cabbage?",
+      "type": "Interaction",
+      "drug": "warfarin; cabbage",
+      "answer": "Some foods can change the way warfarin works in your body. Make sure you check with your provider before making any big changes in your diet.\n\nYou do not have to avoid these foods, but try to eat or drink only small amounts of them. In the least, DO NOT change much of these foods and products you eat day-to-day or week-to-week:\n\nMayonnaise and some oils, such as canola, olive, and soybean oils\nBroccoli, Brussels sprouts, and raw green cabbage\nEndive, lettuce, spinach, parsley, watercress, garlic, and scallions (green onions)\nKale, collard greens, mustard greens, and turnip greens\nCranberry juice and green tea\nFish oil supplements, herbs used in herbal teas",
+      "url": "https://medlineplus.gov/ency/patientinstructions/000292.htm"
+    },
+    {
+      "id": "mqa-190",
+      "question": "can a patient stop using enalapril if the condition \"stabilize?\"",
+      "type": "Stopping/tapering",
+      "drug": "enalapril",
+      "answer": "Enalapril controls high blood pressure and heart failure but does not cure them. Continue to take enalapril even if you feel well. Do not stop taking enalapril without talking to your doctor.",
+      "url": "https://medlineplus.gov/druginfo/meds/a686022.html"
+    },
+    {
+      "id": "mqa-191",
+      "question": "when to take loratadine",
+      "type": "Usage/time",
+      "drug": "loratadine",
+      "answer": "Hay fever typically worsens at night and feels most severe in the morning, when levels of symptom-triggering histamine are highest. Once-daily antihistamines, such as Claritin, reach their peak eight to 12 hours after you take them, so using them at dinnertime means better control of morning symptoms. (Take twice-a-day antihistamines in the morning and evening.)",
+      "url": "https://www.rd.com/health/conditions/medication-timing/"
+    },
+    {
+      "id": "mqa-192",
+      "question": "where is tetracycline metabolized?",
+      "type": "Action",
+      "drug": "tetracycline",
+      "answer": "The majority of first-generation tetracyclines are not metabolized (though 5 % of tetracycline is metabolized to a less active metabolite). Instead, they are most often eliminated by renal excretion. Second-generation tetracyclines are 3 to 5 times more lipophilic, which enhances their tissue penetration. Doxycycline, the most common member of this group, features more than 80 % bioavailability. Bile concentration of doxycycline is 10 to 25 times higher as compared with its serum concentration. High concentrations of doxycycline are found also in kidneys, liver and bowel. Primarily, doxycycline is excreted in bile to feces. Part of doxycycline is inactivated in the liver and 40 % of it is excreted by kidneys in urine.",
+      "url": "https://www.ncbi.nlm.nih.gov/pubmed/19399726"
+    },
+    {
+      "id": "mqa-193",
+      "question": "how to stop taking atorvastatin",
+      "type": "Stopping/tapering",
+      "drug": "atorvastatin",
+      "answer": "You may think that once your cholesterol goes down, you can stop taking statin medication. But if the drug helped lower your cholesterol, you'll likely need to stay on it for the long term. If you stop taking it, your cholesterol levels will probably go back up.\n\nThere is one exception: If you make significant changes to your diet or lose a lot of weight, you may be able to lower and control your cholesterol without medication. However, don't make any changes to your medications without talking to your doctor first.",
+      "url": "https://www.drugs.com/mca/statins-are-these-cholesterol-lowering-drugs-right-for-you"
+    },
+    {
+      "id": "mqa-194",
+      "question": "bupropion hcl 300mg is good for what?",
+      "type": "Indication",
+      "drug": "bupropion hcl 300mg",
+      "answer": "Bupropion hydrochloride extended-release tablets (XL) are indicated for the treatment of major depressive disorder (MDD), as defined by the Diagnostic and Statistical Manual (DSM).  || Bupropion hydrochloride extended-release tablets (XL) are indicated for the prevention of seasonal major depressive episodes in patients with a diagnosis of seasonal affective disorder (SAD).",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bff74476-f633-4048-bb11-3af93950c54c&audience=consumer"
+    },
+    {
+      "id": "mqa-195",
+      "question": "how much weight gain with carvedilol",
+      "type": "Side effects",
+      "drug": "carvedilol",
+      "answer": "Newer beta blockers, such as carvedilol (Coreg), don't usually cause weight gain as a side effect. Weight may rise in the first weeks of taking the beta blocker and then generally stabilizes.",
+      "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/expert-answers/beta-blockers/faq-20058385"
+    },
+    {
+      "id": "mqa-196",
+      "question": "is dicyclomine good for heartburn?",
+      "type": "Indication",
+      "drug": "dicyclomine",
+      "answer": "Normally when you swallow, the muscles in the esophagus move in waves to push food down into your stomach. Just after the food enters the stomach, a band of muscle (the lower esophageal sphincter, or LES) closes off the esophagus. If the muscle does not close tightly enough or gets weak over time, stomach contents can back up into the esophagus, causing heartburn and other symptoms. || Some medicines can also weaken the LES. Among them are: || Anticholinergic drugs\n\nBenztropine (Cogentin)\nDicyclomine (Bentyl)\nHyoscyamine (Levsin)\nIsopropamide\nScopolamine",
+      "url": "http://pennstatehershey.adam.com/content.aspx?productId=112&pid=33&gid=000068"
+    },
+    {
+      "id": "mqa-197",
+      "question": "how should i dilute ceftriaxone injection?",
+      "type": "Usage",
+      "drug": "ceftriaxone injection",
+      "answer": "Ceftriaxone has been shown to be compatible with Flagyl®*IV (metronidazole hydrochloride). The concentration should not exceed 5 to 7.5 mg/mL metronidazole hydrochloride with ceftriaxone 10 mg/mL as an admixture. The admixture is stable for 24 hours at room temperature only in 0.9% sodium chloride injection or 5% dextrose in water (D5W). No compatibility studies have been conducted with the Flagyl®*IV RTU® or using other diluents. Metronidazole at concentrations greater than 8 mg/mL will precipitate. Do not refrigerate the admixture as precipitation will occur.\n\nVancomycin and fluconazole are physically incompatible with ceftriaxone in admixtures. When either of these drugs is to be administered concomitantly with ceftriaxone by intermittent intravenous infusion, it is recommended that they be given sequentially, with thorough flushing of the intravenous lines (with one of the compatible fluids) between the administrations.\n\nDo not use diluents containing calcium, such as Ringer’s solution or Hartmann’s solution, to reconstitute ceftriaxone for injection. Particulate formation can result.\n\nCeftriaxone solutions should not be physically mixed with or piggybacked into solutions containing other antimicrobial drugs or into diluent solutions other than those listed above, due to possible incompatibility (see WARNINGS).",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5d7ae2f-5485-42e2-af2b-bd7f06df85d7&audience=consumer"
+    },
+    {
+      "id": "mqa-198",
+      "question": "what is diclofenac ointment used for",
+      "type": "Indication",
+      "drug": "diclofenac",
+      "answer": "Diclofenac topical gel (Voltaren) is used to relieve pain from osteoarthritis (arthritis caused by a breakdown of the lining of the joints) in certain joints such as those of the knees, ankles, feet, elbows, wrists, and hands. Diclofenac topical liquid (Pennsaid) is used to relieve osteoarthritis pain in the knees. Diclofenac is in a class of medications called nonsteroidal anti-inflammatory drugs (NSAIDs). It works by stopping the body's production of a substance that causes pain.\n\nDiclofenac is also available as a 3% gel (Solaraze; generic) that is applied to the skin to treat actinic keratosis (flat, scaly growths on the skin caused by too much sun exposure). This monograph only gives information about diclofenac gel (Voltaren) and liquid (Pennsaid) for osteoarthritis. If you are using diclofenac gel (Solaraze, generic) for actinic keratosis, read the monograph entitled diclofenac topical (actinic keratosis).",
+      "url": "https://medlineplus.gov/druginfo/meds/a611002.html"
+    },
+    {
+      "id": "mqa-199",
+      "question": "what is terfenadine",
+      "type": "Information",
+      "drug": "terfenadine",
+      "answer": "Terfenadine is a selective histamine H1-receptor antagonist devoid of central nervous system depressant activity. The drug was used for ALLERGY but withdrawn due to causing LONG QT SYNDROME.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/terfenadine#section=Top"
+    },
+    {
+      "id": "mqa-200",
+      "question": "what are the side effects of taking the two medication amlodipine metoprolol together",
+      "type": "Interaction",
+      "drug": "amlodipine; metoprolol",
+      "answer": "There were six AEs reported in five patients. Peripheral edema 2.97% (3/101) was the most common AE, which was reported in three patients and was related to the study medication, probably to the amlodipine component. All these patients had hemoglobin (Hb) less than 12 g/dL at baseline (one patient had Hb of 11.6 g/dL at baseline, which was 12.1 at end of study and two had 11.7 g/dL which was 11.3 and 12.9 respectively at the end of study). Of these three, one patient had severe peripheral edema and was withdrawn from the study. The patient was followed-up and after a week time peripheral edema was resolved. Peripheral edema of mild and moderate degree was seen in one patient each. In these two patients, edema was resolved and improved respectively. Vertigo, lumbar spondylosis and eosinophilia (considered unlikely due to the study drug), were seen in one patient each and were mild in intensity. Though there were statistically significant changes in sodium, chloride, which showed decrease and blood urea, fasting blood sugar, which were increased, but these were clinically insignificant. Details of laboratory tests are shown in Table 6. The other AEs were of mild severity and not related to the study medication. Table 7 summarizes the AEs.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3952407/"
+    }
+  ]
+}

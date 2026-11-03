@@ -5,24 +5,24 @@ A retrieval-augmented generation (RAG) assistant that answers consumer medicatio
 ## Project structure
 
 ```
-├── backend/             # Python project (uv)
-│   ├── pyproject.toml   # dependencies, ruff, pytest config
-│   ├── rxcite/          # all RAG logic
-│   │   ├── config.py    # env vars, model names, constants
-│   │   ├── db.py        # Supabase (Postgres + pgvector) access
-│   │   ├── llm.py       # Claude client wrapper
-│   │   ├── data/        # openFDA ingestion, section parsing, chunking, embedding
-│   │   ├── retrieval/   # dense, BM25, hybrid search, reranking
-│   │   ├── pipelines/   # one file per RAG architecture + shared base interface
-│   │   └── eval/        # recall@10, MRR, LLM judge, experiment runner
-│   ├── api/             # FastAPI app (imports rxcite)
-│   ├── scripts/         # command-line entry points (ingest, run eval, smoke test)
-│   └── tests/           # pytest tests
-├── frontend/            # React + Vite + TypeScript app
-├── datasets/            # committed eval sets: MedicationQA, refusal, gold mapping
-├── results/             # experiment outputs (tables, figures)
-├── notebooks/           # exploration and report figures
-└── data/                # gitignored: raw openFDA downloads and caches
+├── backend/                # Python code
+│   ├── rxcite/             # the RAG system
+│   │   ├── config.py       # settings: paths, model names, numbers
+│   │   ├── db.py           # talks to the Supabase database
+│   │   ├── llm.py          # talks to Claude
+│   │   ├── data/           # downloads drug labels and splits them into chunks
+│   │   ├── retrieval/      # finds the chunks that match a question
+│   │   ├── pipelines/      # the four RAG types, one file each
+│   │   └── eval/           # scores how well each RAG type does
+│   ├── api/                # web server the website calls
+│   ├── scripts/            # commands you run by hand
+│   ├── tests/              # automated tests
+│   └── pyproject.toml      # list of Python packages
+├── frontend/               # the website
+├── datasets/               # test questions and drug list (committed)
+├── results/                # experiment tables and charts
+├── notebooks/              # exploring data, making report figures
+└── data/                   # downloaded files (not committed)
 ```
 
 Folders are added as the work that needs them begins.
