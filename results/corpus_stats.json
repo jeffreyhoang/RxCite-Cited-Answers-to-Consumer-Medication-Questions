@@ -1,0 +1,50 @@
+{
+  "drug_list": {
+    "drugs": 135,
+    "found": 123,
+    "not_found": [
+      "adacel",
+      "bcg vaccine",
+      "carprofen",
+      "dermgard",
+      "gardasil",
+      "pneumococcal vaccine",
+      "prevnar",
+      "rotigotine",
+      "shingles vaccine",
+      "terfenadine",
+      "tetanus",
+      "vitamin a"
+    ]
+  },
+  "distractors": {
+    "drugs": 300,
+    "found": 300,
+    "not_found": []
+  },
+  "labels": 423,
+  "labels_by_product_type": {
+    "HUMAN PRESCRIPTION DRUG": 415,
+    "HUMAN OTC DRUG": 8
+  },
+  "sections": 8836,
+  "sections_per_label": 20.9,
+  "total_text_chars": 27256783,
+  "most_common_sections": {
+    "dosage_and_administration": 422,
+    "indications_and_usage": 421,
+    "adverse_reactions": 415,
+    "how_supplied": 415,
+    "description": 413,
+    "contraindications": 411,
+    "clinical_pharmacology": 409,
+    "overdosage": 380,
+    "pregnancy": 329,
+    "drug_interactions": 325,
+    "pediatric_use": 317,
+    "information_for_patients": 307,
+    "carcinogenesis_and_mutagenesis_and_impairment_of_fertility": 291,
+    "geriatric_use": 273,
+    "pharmacokinetics": 253
+  }
+}

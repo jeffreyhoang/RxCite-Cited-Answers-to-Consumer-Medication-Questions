@@ -36,7 +36,7 @@ JUDGE_MODEL = ""
 FINAL_RUN_GENERATOR_MODEL = ""
 
 EMBEDDING_MODEL = ""
-EMBEDDING_DIM =   # must match the pgvector column; update with EMBEDDING_MODEL
+EMBEDDING_DIM: int | None = None  # must match the pgvector column; set in T5 with EMBEDDING_MODEL
 RERANKER_MODEL = ""
 
 
