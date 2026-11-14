@@ -1,0 +1,600 @@
+{
+  "version": "v2",
+  "source": "MedicationQA top-up: drugs with a label in the T3 corpus",
+  "seed": 42,
+  "aliases": {
+    "albuterol": [
+      "albuterol"
+    ],
+    "albuterol nebulizers": [
+      "albuterol"
+    ],
+    "alprazolam": [
+      "alprazolam"
+    ],
+    "amoxicillin": [
+      "amoxicillin"
+    ],
+    "aripiprazole": [
+      "aripiprazole"
+    ],
+    "asa ec": [
+      "aspirin"
+    ],
+    "aspirin": [
+      "aspirin"
+    ],
+    "bimatoprost": [
+      "bimatoprost"
+    ],
+    "bupropion": [
+      "bupropion"
+    ],
+    "carbidopa and levodopa, extended release": [
+      "carbidopa and levodopa"
+    ],
+    "cataflam, medrol": [
+      "diclofenac",
+      "methylprednisolone"
+    ],
+    "clotrimazole": [
+      "clotrimazole"
+    ],
+    "concerta and lexapro": [
+      "methylphenidate",
+      "escitalopram"
+    ],
+    "coumadin": [
+      "warfarin"
+    ],
+    "diclofenac": [
+      "diclofenac"
+    ],
+    "efudex": [
+      "fluorouracil"
+    ],
+    "fentanyl": [
+      "fentanyl"
+    ],
+    "fluorouracil": [
+      "fluorouracil"
+    ],
+    "fluoxetine": [
+      "fluoxetine"
+    ],
+    "gabapentin, pregabalin": [
+      "gabapentin",
+      "pregabalin"
+    ],
+    "hydromorphone": [
+      "hydromorphone"
+    ],
+    "indomethacin": [
+      "indomethacin"
+    ],
+    "insulin": [
+      "insulin"
+    ],
+    "insulin glargine": [
+      "insulin"
+    ],
+    "lantus solostar": [
+      "insulin"
+    ],
+    "lasix": [
+      "furosemide"
+    ],
+    "latanoprost ophthalmic": [
+      "latanoprost"
+    ],
+    "levetiracetam": [
+      "levetiracetam"
+    ],
+    "levofloxacin": [
+      "levofloxacin"
+    ],
+    "lidocaine": [
+      "lidocaine"
+    ],
+    "metoprolol": [
+      "metoprolol"
+    ],
+    "metoprolol + lexapro": [
+      "metoprolol",
+      "escitalopram"
+    ],
+    "metoprolol succinate": [
+      "metoprolol"
+    ],
+    "montelukast": [
+      "montelukast"
+    ],
+    "nicotine": [
+      "nicotine"
+    ],
+    "norco": [
+      "hydrocodone and acetaminophen"
+    ],
+    "norvasc": [
+      "amlodipine"
+    ],
+    "penicillin": [
+      "penicillin"
+    ],
+    "percocet": [
+      "oxycodone and acetaminophen"
+    ],
+    "pregabalin": [
+      "pregabalin"
+    ],
+    "premarin": [
+      "conjugated estrogens"
+    ],
+    "qvar": [
+      "beclomethasone"
+    ],
+    "spiriva": [
+      "tiotropium"
+    ],
+    "topiramate": [
+      "topiramate"
+    ],
+    "tramadol": [
+      "tramadol"
+    ],
+    "vicodin": [
+      "hydrocodone and acetaminophen"
+    ],
+    "warfarin": [
+      "warfarin"
+    ],
+    "warfarin; spices": [
+      "warfarin"
+    ],
+    "zoledronic acid": [
+      "zoledronic acid"
+    ]
+  },
+  "questions": [
+    {
+      "id": "mqa-201",
+      "question": "qvar 40mg what is it for",
+      "type": "Indication",
+      "drug": "Qvar",
+      "answer": "QVAR is indicated in the maintenance treatment of asthma as prophylactic therapy in patients 5 years of age and older. QVAR is also indicated for asthma patients who require systemic corticosteroid administration, where adding QVAR may reduce or eliminate the need for the systemic corticosteroids.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20682605-557b-4586-9d98-829a63091ddf"
+    },
+    {
+      "id": "mqa-202",
+      "question": "what is the maximum dose of pregabalin",
+      "type": "Dose",
+      "drug": "pregabalin",
+      "answer": "In view of the dose-dependent adverse reactions, treatment with doses above 300 mg/day is not recommended",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54e6d137-a495-4b87-b3c2-2f5a0226dd3e"
+    },
+    {
+      "id": "mqa-203",
+      "question": "what is the imprint on metoprolol succ., 50 mg",
+      "type": "Appearance",
+      "drug": "metoprolol succinate",
+      "answer": "50 mg tablets: White, round, coated tablets debossed with Andrx logo and “831” on one side and scored on the other side.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff391fc7-a0ab-4f8c-927e-2588053c7021"
+    },
+    {
+      "id": "mqa-204",
+      "question": "what is the class for insulin glargine?",
+      "type": "Information",
+      "drug": "insulin glargine",
+      "answer": "DEA Schedule: None",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0ad21db3-2b1c-4ed9-a687-bdd6a74d0aae"
+    },
+    {
+      "id": "mqa-205",
+      "question": "can you take these tow medications at the same time of day concerta and lexapro?",
+      "type": "Interaction",
+      "drug": "Concerta and Lexapro",
+      "answer": "Human pharmacologic studies have shown that methylphenidate may inhibit the metabolism of ... selective serotonin reuptake inhibitors). Downward dose adjustment of these drugs may be required when given concomitantly with methylphenidate. It may be necessary to adjust the dosage and monitor plasma drug concentrations (or, in the case of coumarin, coagulation times), when initiating or discontinuing concomitant methylphenidate.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a88218c-5b18-4220-8f56-526de1a276cd"
+    },
+    {
+      "id": "mqa-206",
+      "question": "what mg norco comes in",
+      "type": "Dose",
+      "drug": "Norco",
+      "answer": "... NORCO® 5/325 ... NORCO® 7.5/325 ... NORCO® 10/325 …",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=66a328bc-055f-4107-8b81-f6f939bea0a7"
+    },
+    {
+      "id": "mqa-207",
+      "question": "why to take vicodin",
+      "type": "Indication",
+      "drug": "Vicodin",
+      "answer": "Hydrocodone is used to relieve severe pain. Hydrocodone is only used to treat people who are expected to need medication to relieve severe pain around-the-clock for a long time and who cannot be treated with other medications or treatments. Hydrocodone extended-release (long-acting) capsules or extended-release tablets should not be used to treat pain that can be controlled by medication that is taken as needed.",
+      "url": "https://medlineplus.gov/druginfo/meds/a614045.html"
+    },
+    {
+      "id": "mqa-208",
+      "question": "how long on metoprolol after vavle replacement surgery",
+      "type": "Usage/time",
+      "drug": "metoprolol",
+      "answer": "Typically one stays on it for around a month but it can be indefinitely if you have high blood pressure. This is a very benign drug and is very commonly used.",
+      "url": "https://www.heart-valve-surgery.com/heart-surgery-blog/2014/05/27/metoprolol/"
+    },
+    {
+      "id": "mqa-209",
+      "question": "what does the clotrimazole pill look like",
+      "type": "Appearance",
+      "drug": "Clotrimazole",
+      "answer": "Product Characteristics Color white Score no score Shape ROUND Size 16mm Imprint Code 54;552",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0829286-e9fc-442c-82d1-8268e1110109"
+    },
+    {
+      "id": "mqa-210",
+      "question": "what color are the pills for levodopa carbidopa for \"50/200\" mg extended relief",
+      "type": "Appearance",
+      "drug": "Carbidopa and Levodopa, extended release",
+      "answer": "The 50 mg/200 mg tablet is supplied as an oval, scored, biconvex, compressed tablet that is peach to light peach colored.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5217a6ec-cc26-4acc-b2da-17f6545c3b60&audience=consumer"
+    },
+    {
+      "id": "mqa-211",
+      "question": "how many milligrams in tramadol",
+      "type": "Dose",
+      "drug": "Tramadol",
+      "answer": "Each tablet, for oral administration contains 50 mg of tramadol hydrochloride and is white in color.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae7c54b1-b440-4cca-97e8-e5b825413d32"
+    },
+    {
+      "id": "mqa-212",
+      "question": "what tramadol pills look like",
+      "type": "Appearance",
+      "drug": "Tramadol",
+      "answer": "Tramadol Hydrochloride Tablets, 50 mg are available as white, round, film coated tablets, debossed with 466 on one side and WATSON on the other.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae7c54b1-b440-4cca-97e8-e5b825413d32"
+    },
+    {
+      "id": "mqa-213",
+      "question": "drug therapyof gastritis when taking diclofenac sodium",
+      "type": "Side effects",
+      "drug": "Diclofenac",
+      "answer": "When taken for a long time, painkillers like diclofenac and ibuprofen can lead to ulcers in the stomach and duodenum. But the risk of this happening can be clearly reduced by also taking medication to protect your stomach. || Various medications can lower the risk of getting a peptic ulcer. These include, in particular, drugs called proton pump inhibitors (PPIs) and H2 blockers. Both of these types of drugs reduce the production of stomach acid. In Germany, the most commonly used PPIs are omeprazole and pantoprazole. The H2 blocker that is normally used is ranitidine.\n\nThe hormone-like drug misoprostol is sometimes used too, although less often. One of the things misoprostol does is increase the production of gastric (stomach) mucus, which helps protect the stomach wall. In Germany, misoprostol is available as a combination drug together with the painkiller diclofenac.",
+      "url": "https://www.ncbi.nlm.nih.gov/pubmedhealth/PMH0078823/"
+    },
+    {
+      "id": "mqa-214",
+      "question": "latanoprost ophthalmic how long do you use the drops",
+      "type": "Usage/time",
+      "drug": "Latanoprost Ophthalmic",
+      "answer": "No answers",
+      "url": null
+    },
+    {
+      "id": "mqa-215",
+      "question": "can i drink cataflam when i drink medrol;",
+      "type": "Interaction",
+      "drug": "Cataflam, Medrol",
+      "answer": "Drug interactions are reported among people who take Medrol and Cataflam together. This study is created by eHealthMe based on reports of 36 people who take Medrol and Cataflam from FDA, and is updated regularly.",
+      "url": "https://www.ehealthme.com/drug-interaction/medrol/cataflam/"
+    },
+    {
+      "id": "mqa-216",
+      "question": "age limits for use of bupropion?",
+      "type": "Indication",
+      "drug": "Bupropion",
+      "answer": "It is not known if Bupropion Hydrochloride Extended-release (SR) tablets are safe and effective in children under the age of 18.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=39b2d509-1281-4464-9cf1-a94bbc18b84b#section-7.5"
+    },
+    {
+      "id": "mqa-217",
+      "question": "how to inject insulin",
+      "type": "Usage",
+      "drug": "Insulin",
+      "answer": "Your doctor will tell you which type(s) of insulin to use, how much insulin to use, and how often to inject insulin. Follow these directions carefully. Do not use more or less insulin or use it more often than prescribed by your doctor.",
+      "url": "https://medlineplus.gov/druginfo/meds/a682611.html"
+    },
+    {
+      "id": "mqa-218",
+      "question": "why no side affects on hydromorphone listed, yet on reg inet they have a list?",
+      "type": "Side effects",
+      "drug": "Hydromorphone",
+      "answer": "Hydromorphone may cause side effects.",
+      "url": "https://medlineplus.gov/druginfo/meds/a682013.html"
+    },
+    {
+      "id": "mqa-219",
+      "question": "how to use albuterol oral inhalation demonstration video",
+      "type": "Usage",
+      "drug": "Albuterol",
+      "answer": "To inhale the aerosol using an inhaler, follow these steps:\nRemove the protective dust cap from the end of the mouthpiece. If the dust cap was not placed on the mouthpiece, check the mouthpiece for dirt or other objects. Be sure that the canister is fully and firmly inserted in the mouthpiece.\nIf you are using the inhaler for the first time or if you have not used the inhaler in more than 14 days, you will need to prime it. You may also need to prime the inhaler if it has been dropped. Ask your pharmacist or check the manufacturer's information if this happens. To prime the inhaler, shake it well and then press down on the canister 4 times to release 4 sprays into the air, away from your face. Be careful not to get albuterol in your eyes.\nShake the inhaler well.\nBreathe out as completely as possible through your mouth.\nHold the canister with the mouthpiece on the bottom, facing you and the canister pointing upward. Place the open end of the mouthpiece into your mouth. Close your lips tightly around the mouthpiece.\nBreathe in slowly and deeply through the mouthpiece.At the same time, press down once on the container to spray the medication into your mouth.\nTry to hold your breath for 10 seconds. remove the inhaler, and breathe out slowly.\nIf you were told to use 2 puffs, wait 1 minute and then repeat steps 3-7.\nReplace the protective cap on the inhaler.\nClean your inhaler regularly. Follow the manufacturer's directions carefully and ask your doctor or pharmacist if you have any questions about cleaning your inhaler.\nTo inhale the powder using the inhaler, follow these steps. Do not use the Respiclick inhaler with a spacer:\nIf you will be using a new inhaler for the first time, remove it from the foil wrapper. Look at the dose counter at the back of the inhaler and check that you see the number 200 in the window.\nHolding the inhaler upright, with the cap on the bottom and the inhaler pointing upwards, load the dose by opening the protective dust cap at the end of the mouthpiece until it clicks. Do not open the cap unless you are ready to use the inhaler. Every time the protective cap is opened, a dose is ready to inhale. You will see the number in the dose counter go down. Do not waste doses by opening the inhaler unless you are inhaling a dose.\nBreathe out as completely as possible through your mouth. Do not blow or exhale into the inhaler.\nPlace the mouthpiece between your lips well into your mouth. Close your lips tightly around the mouthpiece. Inhale slowly and deeply through your mouth. Do not breath in through your nose. Make sure that your fingers or lips do not block the vent above the mouthpiece.\nRemove the inhaler from your mouth and hold your breath for 10 seconds or as long as you comfortably can. Do not blow or exhale through the inhaler.\nClose the cap firmly over the mouthpiece.\nIf you are to inhale 2 puffs, repeat steps 2-6.\nKeep the inhaler clean and dry at all times. To clean your inhaler, use a clean, dry tissue or cloth. Do not wash or put any part of your inhaler in water.\nTo inhale the solution using a nebulizer, follow these steps;\nRemove one vial of albuterol solution from the foil pouch. Leave the rest of the vials in the pouch until you are ready to use them.\nLook at the liquid in the vial. It should be clear and colorless. Do not use the vial if the liquid is cloudy or discolored.\nTwist off the top of the vial and squeeze all of the liquid into the nebulizer reservoir. If you are using your nebulizer to inhale other medications, ask your doctor or pharmacist if you can place the other medications in the reservoir along with albuterol.\nConnect the nebulizer reservoir to the mouthpiece or face mask.\nConnect the nebulizer to the compressor.\nPlace the mouthpiece in your mouth or put on the face mask. Sit in an upright, comfortable position and turn on the compressor.\nBreathe in calmly, deeply, and evenly for about 5-15 minutes until mist stops forming in the nebulizer chamber.\nClean your nebulizer regularly. Follow the manufacturer's directions carefully and ask your doctor or pharmacist if you have any questions about cleaning your nebulizer.",
+      "url": "https://medlineplus.gov/druginfo/meds/a682145.html"
+    },
+    {
+      "id": "mqa-220",
+      "question": "gabapentin and pregabalin what is the difference?",
+      "type": "Comparison",
+      "drug": "Gabapentin, Pregabalin",
+      "answer": "Lyrica (pregablin) and gabapentin (Neurontin) are anti-epileptic medications used to treat seizures and nerve pain (neuropathic pain).\nGabapentin also is used to treat nerve pain caused by shingles (herpes zoster). || Side effects of gabapentin that are different from Lyrica include:\nDifficulty speaking\nViral infections\nFever\nUnusual eye movements\nJerky movements\n|| Side effects of Lyrica that are different from gabapentin include:\nDry mouth\nConstipation\nSwelling (edema)\nBreast enlargement\nWeight gain",
+      "url": "https://www.medicinenet.com/lyrica_vs_gabapentin/article.htm#lyrica_pregablin_vs_gabapentin_neurontin_quick_comparison"
+    },
+    {
+      "id": "mqa-221",
+      "question": "norvasc and depression?",
+      "type": "Side effects",
+      "drug": "Norvasc",
+      "answer": "The following events occurred in <1% but >0.1% of patients in controlled clinical trials or under conditions of open trials or marketing experience where a causal relationship is uncertain; they are listed to alert the physician to a possible relationship: || Psychiatric: sexual dysfunction (male4 and female), insomnia, nervousness, depression, abnormal dreams, anxiety, depersonalization.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b00570ff-4081-4514-b45b-eb6f753450f5"
+    },
+    {
+      "id": "mqa-222",
+      "question": "is lyrica the same as gabbentine?",
+      "type": "Comparison",
+      "drug": "Gabapentin, Pregabalin",
+      "answer": "Lyrica (pregablin) and gabapentin (Neurontin) are anti-epileptic medications used to treat seizures and nerve pain (neuropathic pain).\nGabapentin also is used to treat nerve pain caused by shingles (herpes zoster). || Side effects of gabapentin that are different from Lyrica include:\nDifficulty speaking\nViral infections\nFever\nUnusual eye movements\nJerky movements\n|| Side effects of Lyrica that are different from gabapentin include:\nDry mouth\nConstipation\nSwelling (edema)\nBreast enlargement\nWeight gain",
+      "url": "https://www.medicinenet.com/lyrica_vs_gabapentin/article.htm#lyrica_pregablin_vs_gabapentin_neurontin_quick_comparison"
+    },
+    {
+      "id": "mqa-223",
+      "question": "seniors and premarin?",
+      "type": "Usage",
+      "drug": "premarin",
+      "answer": "There have not been sufficient numbers of geriatric patients involved in studies utilizing PREMARIN to determine whether those over 65 years of age differ from younger subjects in their response to PREMARIN.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff#S8.5"
+    },
+    {
+      "id": "mqa-224",
+      "question": "what is in the pill montelukast?",
+      "type": "Ingredient",
+      "drug": "montelukast",
+      "answer": "MONTELUKAST SODIUM; CROSCARMELLOSE SODIUM; HYDROXYPROPYL CELLULOSE, LOW SUBSTITUTED; LACTOSE MONOHYDRATE; MAGNESIUM STEARATE; CELLULOSE, MICROCRYSTALLINE; FERROSOFERRIC OXIDE; HYPROMELLOSES; FERRIC OXIDE RED; FERRIC OXIDE YELLOW; TITANIUM DIOXIDE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ccbbf0d6-efd9-4fdd-9e7b-e3d293062609"
+    },
+    {
+      "id": "mqa-225",
+      "question": "why did my doctor give me levetiracetam",
+      "type": "Indication",
+      "drug": "levetiracetam",
+      "answer": "Levetiracetam Extended-release Tablets is indicated as adjunctive therapy in the treatment of partial onset seizures in patients 12 years of age and older with epilepsy.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aeb36add-e083-49be-9c3c-e76593c70d61"
+    },
+    {
+      "id": "mqa-226",
+      "question": "how to use spiriva",
+      "type": "Usage",
+      "drug": "spiriva",
+      "answer": "For oral inhalation only. Do not swallow SPIRIVA capsules, as the intended effects on the lungs will not be obtained. The contents of the SPIRIVA capsules should only be used with the HANDIHALER device ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=820839ef-e53d-47e8-a3b9-d911ff92e6a9"
+    },
+    {
+      "id": "mqa-227",
+      "question": "is lasix the only diuretic drug for fluid build up in heart failure patients?",
+      "type": "Indication",
+      "drug": "Lasix",
+      "answer": "Mild congestive heart failure is initially managed with a thiazide diuretic [11]. However, loop diuretics (e.g., furosemide, torsemide, or bumetanide) are the principal drugs used in the treatment of heart failure [22].",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4532861/"
+    },
+    {
+      "id": "mqa-228",
+      "question": "what dosage amounts does aripiprazole",
+      "type": "Dose",
+      "drug": "aripiprazole",
+      "answer": "The recommended starting and target dose for aripiprazole is 10 mg/day or 15 mg/day administered on a once-a-day schedule without regard to meals. Aripiprazole has been systematically evaluated and shown to be effective in a dose range of 10 mg/day to 30 mg/day, when administered as the tablet formulation; however, doses higher than 10 mg/day or 15 mg/day were not more effective than 10 mg/day or 15 mg/day.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=394ea4a4-3991-4f98-b38f-56e9335d66b3"
+    },
+    {
+      "id": "mqa-229",
+      "question": "should metoprolol and lexapro be taken together?",
+      "type": "Interaction",
+      "drug": "metoprolol + Lexapro",
+      "answer": "Coadministration of Lexapro and metoprolol had no clinically significant effects on blood pressure or heart rate.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13bb8267-1cab-43e5-acae-55a4d957630a"
+    },
+    {
+      "id": "mqa-230",
+      "question": "what is fentanyl",
+      "type": "Information",
+      "drug": "fentanyl",
+      "answer": "Fentanyl is in a class of medications called narcotic (opiate) analgesics. It works by changing the way the brain and nervous system respond to pain.",
+      "url": "https://medlineplus.gov/druginfo/meds/a605043.html"
+    },
+    {
+      "id": "mqa-231",
+      "question": "what do percocets look like",
+      "type": "Appearance",
+      "drug": "percocet",
+      "answer": "Color - blue, Shape - ROUND, Score - 2 pieces, Size - 11mm, Imprint Code - PERCOCET;5",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a446947-2cda-4a32-aa6a-53e09245825a"
+    },
+    {
+      "id": "mqa-232",
+      "question": "what is coumadin",
+      "type": "Information",
+      "drug": "coumadin",
+      "answer": "COUMADIN (warfarin sodium) tablets contain warfarin sodium, an anticoagulant that acts by inhibiting vitamin K‑dependent coagulation factors. The chemical name of warfarin sodium is 3-(α-acetonylbenzyl)-4-hydroxycoumarin sodium salt, which is a racemic mixture of the R- and S-enantiomers. ",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d91934a0-902e-c26c-23ca-d5accc4151b6"
+    },
+    {
+      "id": "mqa-233",
+      "question": "albuterol portable \"nebulizer?\" microtia vibrating mesh nebulizing \"system.\"",
+      "type": "Information",
+      "drug": "albuterol nebulizers",
+      "answer": "Evidence suggests that the vibrating mesh nebulizer (VMN) provides 5-fold greater aerosol delivery to the lung as compared to a jet nebulizer (JN).",
+      "url": "https://www.ncbi.nlm.nih.gov/pubmed/29167030"
+    },
+    {
+      "id": "mqa-234",
+      "question": "what is the highest dose lidocaine comes in",
+      "type": "Dose",
+      "drug": "lidocaine",
+      "answer": "Group: local anaesthetic agent\nInjection (hydrochloride): 5 mg/ml (0.5%), 10 mg/ml (1%) in 20-ml ampoule; 10 mg/ml (1%) + epinephrine 5 micrograms/ml (1:200 000) in 20-ml ampoule; 20 mg/ml (2%) + epinephrine 12.5 micrograms/ml (1:80 000) in 2.2-ml cartridge for dental anaesthesia; 50 mg/ml (5%) in 2-ml ampoule to be mixed with 75 mg/ml (7.5%) glucose solution\nTopical forms: 20-40 mg (hydrochloride)/ml (2-4%) as gel or solution",
+      "url": "https://apps.who.int/medicinedocs/en/d/Jh2929e/5.2.html"
+    },
+    {
+      "id": "mqa-235",
+      "question": "what is in indomethacin",
+      "type": "Ingredient",
+      "drug": "indomethacin",
+      "answer": "ACTIVE INGREDIENT: INDOMETHACIN; INACTIVE INGREDIENTS: FERROSOFERRIC OXIDE;SILICON DIOXIDE;GELATIN;FD&C BLUE NO. 1;FD&C YELLOW NO. 5;MAGNESIUM STEARATE;CELLULOSE, MICROCRYSTALLINE;POWDERED CELLULOSE;SODIUM LAURYL SULFATE;SODIUM STARCH GLYCOLATE TYPE A CORN;TITANIUM DIOXIDE",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=129eaf3a-b013-4b29-a58f-1565f9f41d5b"
+    },
+    {
+      "id": "mqa-236",
+      "question": "when teeth have been treated how lon after do yohave to wait to have zoledronic acid injection",
+      "type": "Contraindication",
+      "drug": "zoledronic acid",
+      "answer": "Routine dental treatment generally should not be modified solely on the basis of oral bisphosphonate therapy. However, patients with possible risk factors for BON may benefit from assessment by an expert in metabolic bone diseases. These risk factors may include concomitant use of estrogen or glucocorticoids, older age (over 65 years) and prolonged use of bisphosphonates.",
+      "url": "https://jada.ada.org/article/S0002-8177(14)64960-6/pdf"
+    },
+    {
+      "id": "mqa-237",
+      "question": "why did my doctor give me levetiracetam what is use for",
+      "type": "Indication",
+      "drug": "levetiracetam",
+      "answer": "Levetiracetam Extended-release Tablets is indicated as adjunctive therapy in the treatment of partial onset seizures in patients 12 years of age and older with epilepsy.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aeb36add-e083-49be-9c3c-e76593c70d61"
+    },
+    {
+      "id": "mqa-238",
+      "question": "what is asa ec",
+      "type": "Information",
+      "drug": "ASA EC",
+      "answer": "Acetylsalicylic acid [Aspirin] … Enteric coated tablet … Asa EC",
+      "url": "https://www.drugbank.ca/drugs/DB00945"
+    },
+    {
+      "id": "mqa-239",
+      "question": "can alprazolam lower blood pressure?",
+      "type": "Indication",
+      "drug": "alprazolam",
+      "answer": "Alprazolam is as effective as captopril in lowering BP in ED patients with an initial SBP > 160 mmHg.",
+      "url": "https://www.ncbi.nlm.nih.gov/pubmed/21288144"
+    },
+    {
+      "id": "mqa-240",
+      "question": "what is efudex?",
+      "type": "Information",
+      "drug": "Efudex",
+      "answer": "Efudex Solutions and Cream are topical preparations containing the fluorinated pyrimidine 5-fluorouracil, an antineoplastic antimetabolite.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35de1c1c-bef5-46c5-b6f8-ea032147411c"
+    },
+    {
+      "id": "mqa-241",
+      "question": "what are the active ingredients in bimatoprost",
+      "type": "Ingredient",
+      "drug": "bimatoprost",
+      "answer": "Active Ingredient/Active Moiety: Ingredient Name  bimatoprost (UNII: QXS94885MZ) (bimatoprost - UNII:QXS94885MZ)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1"
+    },
+    {
+      "id": "mqa-242",
+      "question": "if \"i'm\" allergic to penicillin can i take \"amoxicillin?\"",
+      "type": "Contraindication",
+      "drug": "amoxicillin",
+      "answer": "A history of allergic reaction to any of the penicillins is a contraindication.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=649d285c-8fcb-48dd-aa5e-2f34128102f5&audience=consumer"
+    },
+    {
+      "id": "mqa-243",
+      "question": "are you mentally \"i'll\" when you \"take fluoxetine?\"",
+      "type": "Indication",
+      "drug": "fluoxetine",
+      "answer": "Fluoxetine (Prozac) is used to treat depression, obsessive-compulsive disorder (bothersome thoughts that won't go away and the need to perform certain actions over and over), some eating disorders, and panic attacks (sudden, unexpected attacks of extreme fear and worry about these attacks). Fluoxetine (Sarafem) is used to relieve the symptoms of premenstrual dysphoric disorder, including mood swings, irritability, bloating, and breast tenderness. It is also used along with olanzapine (Zyprexa) to treat depression that did not respond to other medications and episodes of depression in people with bipolar I disorder (manic-depressive disorder; a disease that causes episodes of depression, episodes of mania, and other abnormal moods).",
+      "url": "https://medlineplus.gov/druginfo/meds/a689006.html"
+    },
+    {
+      "id": "mqa-244",
+      "question": "how to use lantus solostar insulin pen",
+      "type": "Usage",
+      "drug": "lantus solostar",
+      "answer": "Important Administration Instructions\nAdminister LANTUS subcutaneously once daily at any time of day but at the same time every day.\nPrior to initiation of LANTUS, train patients on proper use and injection technique.\nPatient should follow the Instructions for Use to correctly administer LANTUS.\nAdminister LANTUS subcutaneously into the abdominal area, thigh, or deltoid, and rotate injection sites within the same region from one injection to the next to reduce the risk of lipodystrophy [see ADVERSE REACTIONS (6.1)].\nVisually inspect LANTUS vials and SoloStar prefilled pens for particulate matter and discoloration prior to administration. Only use if the solution is clear and colorless with no visible particles.\nRefrigerate unused (unopened) LANTUS vials and SoloStar® prefilled pens.\nDo not administer intravenously or via an insulin pump.\nDo not dilute or mix LANTUS with any other insulin or solution.\nThe SoloStar prefilled pen is for single patient use only",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d5e07a0c-7e14-4756-9152-9fea485d654a&audience=consumer#S2"
+    },
+    {
+      "id": "mqa-245",
+      "question": "how much penicillin to treat strep throat for adult",
+      "type": "Dose",
+      "drug": "penicillin",
+      "answer": "The usual dosage recommendations for adults and children 12 years and over are as follows:\n\nStreptococcal Infections\nMild to moderately severe – of the upper respiratory tract and including scarlet fever and erysipelas: 125 to 250 mg (200,000 to 400,000 units) every 6 to 8 hours for 10 days.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da74ca3c-951d-4569-b13e-d01faad1da12"
+    },
+    {
+      "id": "mqa-246",
+      "question": "how is nicotine taken",
+      "type": "Information",
+      "drug": "nicotine",
+      "answer": "Nicotine supplements come in many forms:\n\nGum\nInhalers\nLozenges\nNasal spray\nSkin patch\nAll of these work well if they are used correctly. People are more likely to use the gum and patches correctly than other forms.",
+      "url": "https://medlineplus.gov/ency/article/007438.htm"
+    },
+    {
+      "id": "mqa-247",
+      "question": "what does vicodin look like",
+      "type": "Appearance",
+      "drug": "vicodin",
+      "answer": "Color: WHITE Score: 2 pieces Shape: OVAL Size: 14mm Imprint Code: VICODIN;HP;10;300",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=21ff13de-6633-4dd3-728e-dc21e574ea7b&audience=consumer"
+    },
+    {
+      "id": "mqa-248",
+      "question": "how can i split a 3mg or 4mg waefin pill so i can get a 2.5mg pill",
+      "type": "Usage",
+      "drug": "warfarin",
+      "answer": "Warfarin comes as a tablet to take by mouth. It is usually taken once a day with or without food. Take warfarin at around the same time every day. Follow the directions on your prescription label carefully, and ask your doctor or pharmacist to explain any part you do not understand. Take warfarin exactly as directed. Do not take more or less of it or take it more often than prescribed by your doctor. Call your doctor immediately if you take more than your prescribed dose of warfarin.\n\nYour doctor will probably start you on a low dose of warfarin and gradually increase or decrease your dose based on the results of your blood tests. Make sure you understand any new dosing instructions from your doctor.",
+      "url": "https://medlineplus.gov/druginfo/meds/a682277.html"
+    },
+    {
+      "id": "mqa-249",
+      "question": "what spices can be used while on warfarin",
+      "type": "Interaction",
+      "drug": "warfarin; spices",
+      "answer": "We found 58 different plants that may alter the blood haemostasis and anticoagulation with warfarin. The herbs that showed the greatest potential to interact with warfarin include garlic, ginger, ginkgo, St. John's wort, and ginseng, i.e. plants normally consumed as food and also used for therapeutic purposes. The interactions between drugs and herbs are varied because of the complex chemical matrix of plants. Mainly coumarins, quinones, xanthones, terpenes, lignans, and vitamin K showed significant influence on warfarin treatment. In general, these plants can potentiate the effect of warfarin by stimulating anticoagulation in multiple ways, and the clinical outcome associated with this interaction is the increase of bleeding risk.",
+      "url": "https://www.ncbi.nlm.nih.gov/pubmed/27470545"
+    },
+    {
+      "id": "mqa-250",
+      "question": "what is the purpose or desired effect of aspirin",
+      "type": "Indication",
+      "drug": "aspirin",
+      "answer": "Prescription aspirin is used to relieve the symptoms of rheumatoid arthritis (arthritis caused by swelling of the lining of the joints), osteoarthritis (arthritis caused by breakdown of the lining of the joints), systemic lupus erythematosus (condition in which the immune system attacks the joints and organs and causes pain and swelling) and certain other rheumatologic conditions (conditions in which the immune system attacks parts of the body). Nonprescription aspirin is used to reduce fever and to relieve mild to moderate pain from headaches, menstrual periods, arthritis, colds, toothaches, and muscle aches. Nonprescription aspirin is also used to prevent heart attacks in people who have had a heart attack in the past or who have angina (chest pain that occurs when the heart does not get enough oxygen). Nonprescription aspirin is also used to reduce the risk of death in people who are experiencing or who have recently experienced a heart attack. Nonprescription aspirin is also used to prevent ischemic strokes (strokes that occur when a blood clot blocks the flow of blood to the brain) or mini-strokes (strokes that occur when the flow of blood to the brain is blocked for a short time) in people who have had this type of stroke or mini-stroke in the past. Aspirin will not prevent hemorrhagic strokes (strokes caused by bleeding in the brain). Aspirin is in a group of medications called salicylates. It works by stopping the production of certain natural substances that cause fever, pain, swelling, and blood clots.",
+      "url": "https://medlineplus.gov/druginfo/meds/a682878.html"
+    },
+    {
+      "id": "mqa-251",
+      "question": "topiramate?",
+      "type": "Information",
+      "drug": "topiramate",
+      "answer": "Topiramate is used alone or with other medications to treat certain types of seizures including primary generalized tonic-clonic seizures (formerly known as a grand mal seizure; seizure that involves the entire body) and partial onset seizures (seizures that involve only one part of the brain). Topiramate is also used with other medications to control seizures in people who have Lennox-Gastaut syndrome (a disorder that causes seizures and developmental delays). Topiramate is also used to prevent migraine headaches but not to relieve the pain of migraine headaches when they occur. Topiramate is in a class of medications called anticonvulsants. It works by decreasing abnormal excitement in the brain.",
+      "url": "https://medlineplus.gov/druginfo/meds/a697012.html"
+    },
+    {
+      "id": "mqa-252",
+      "question": "what is the protocol for adding insulin for type2 diabetics",
+      "type": "Usage",
+      "drug": "insulin",
+      "answer": "Why do I need to take insulin?\nAll people who have type 1 diabetes and some people who have type 2 diabetes need to take insulin to help control their blood sugar levels. The goal of taking insulin is to keep your blood sugar level in a normal range as much as possible. Keeping blood sugar in check helps you stay healthy. Insulin can’t be taken by mouth. It is usually taken by injection (a shot). It can also be taken by using an insulin pen or an insulin pump.\n\nHow often will I need to take insulin?\nYou and your doctor will develop a schedule that is right for you. Most people who have diabetes and take insulin need at least 2 insulin shots a day for good blood sugar control. Some people need 3 or 4 shots a day.",
+      "url": "https://familydoctor.org/insulin-therapy/?adfree=true"
+    },
+    {
+      "id": "mqa-253",
+      "question": "what is the dosage of levofloxacin tablets for bronchitis please",
+      "type": "Dose",
+      "drug": "levofloxacin",
+      "answer": "Dosage of Levofloxacin Tablets in Adult Patients with Creatinine Clearance ≥ 50 mL/minute\nThe usual dose of levofloxacin tablets are 250 mg or 500 mg administered orally every 24 hours, as indicated by infection and described in Table 1.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8962eb50-3366-1eec-44f9-170e686d2d66&audience=consumer"
+    },
+    {
+      "id": "mqa-254",
+      "question": "symptoms from taking multiple doses of lasix 40 mg per dayproblems with taking lasix 40mg twice daily ?",
+      "type": "Side effects",
+      "drug": "lasix",
+      "answer": "Furosemide is a strong diuretic ('water pill') and may cause dehydration and electrolyte imbalance. It is important that you take it exactly as told by your doctor. If you experience any of the following symptoms, call your doctor immediately: decreased urination; dry mouth; thirst; nausea; vomiting; weakness; drowsiness; confusion; muscle pain or cramps; or rapid or pounding heartbeats.",
+      "url": "https://medlineplus.gov/druginfo/meds/a682858.html"
+    },
+    {
+      "id": "mqa-255",
+      "question": "where does fluorouracil come from",
+      "type": "Information",
+      "drug": "fluorouracil",
+      "answer": "Fluorouracil is a nucleoside metabolic inhibitor that interferes with the synthesis of deoxyribonucleic acid (DNA) and to a lesser extent inhibits the formation of ribonucleic acid (RNA); these affect rapidly growing cells and may lead to cell death.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8eff167f-203a-4a81-b2fc-d8773bc3555e&audience=consumer"
+    }
+  ]
+}

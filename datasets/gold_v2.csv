@@ -1,0 +1,56 @@
+id,question,type,drug,set_ids,sections,no_label,reviewed,note
+mqa-201,qvar 40mg what is it for,Indication,Qvar,ccd3aaec-4892-40d0-ad60-3e570178fbe1,indications_and_usage,,yes,kept: answer text is here
+mqa-202,what is the maximum dose of pregabalin,Dose,pregabalin,ab06a36d-9a2d-4eae-8991-4eab5bc8311c,dosage_and_administration,,yes,kept: answer text is here
+mqa-203,"what is the imprint on metoprolol succ., 50 mg",Appearance,metoprolol succinate,a46cbf09-20e3-4f0d-ab41-221f60fde068,,yes,yes,changed: our label only has the 100 mg tablet
+mqa-204,what is the class for insulin glargine?,Information,insulin glargine,12ec9e3f-e2ac-43a1-b334-8b6538cf2bb0,,yes,yes,"changed: our insulin label is insulin lispro (ADMELOG), not glargine"
+mqa-205,can you take these tow medications at the same time of day concerta and lexapro?,Interaction,Concerta and Lexapro,768bf181-d0d8-49e5-9c87-cacbb069e0b2;9ddd1f24-3ebd-4307-bb23-6acd742cd140,,yes,yes,changed: neither label covers methylphenidate + escitalopram
+mqa-206,what mg norco comes in,Dose,Norco,995a6cc7-8b72-4d35-b3b4-8c5752438fb7,,yes,yes,"changed: our label is the oral solution, not Norco tablets"
+mqa-207,why to take vicodin,Indication,Vicodin,995a6cc7-8b72-4d35-b3b4-8c5752438fb7,indications_and_usage,,yes,kept
+mqa-208,how long on metoprolol after vavle replacement surgery,Usage/time,metoprolol,a46cbf09-20e3-4f0d-ab41-221f60fde068,,yes,yes,changed: label doesn't say how long to stay on it after surgery
+mqa-209,what does the clotrimazole pill look like,Appearance,Clotrimazole,c64e2290-593f-48a2-a15d-41689f836fda,,yes,yes,"changed: our label is topical clotrimazole, not a troche/pill"
+mqa-210,"what color are the pills for levodopa carbidopa for ""50/200"" mg extended relief",Appearance,"Carbidopa and Levodopa, extended release",9b17b028-964a-473c-823d-81423535bd66,,yes,yes,changed: our label is immediate-release Sinemet; no 50/200 ER tablet
+mqa-211,how many milligrams in tramadol,Dose,Tramadol,a6cbd5de-8ae5-49e3-b89b-e35536b115d8,description;dosage_forms_and_strengths,,yes,changed: 25 mg and 50 mg tablets
+mqa-212,what tramadol pills look like,Appearance,Tramadol,a6cbd5de-8ae5-49e3-b89b-e35536b115d8,dosage_forms_and_strengths;how_supplied,,yes,changed: tablet color/imprint
+mqa-213,drug therapyof gastritis when taking diclofenac sodium,Side effects,Diclofenac,5a852412-69af-6502-e063-6294a90a0748,,yes,yes,changed: label warns of GI ulcers but gives no gastritis treatment
+mqa-214,latanoprost ophthalmic how long do you use the drops,Usage/time,Latanoprost Ophthalmic,be74d517-7f73-a74c-e053-2a95a90a3819,,yes,yes,changed: no answer in MedicationQA; label gives no length of use
+mqa-215,can i drink cataflam when i drink medrol;,Interaction,"Cataflam, Medrol",5a852412-69af-6502-e063-6294a90a0748;ae524bdb-9fd0-49f9-802d-465a374c175b,warnings;spl_medguide,,yes,changed: oral corticosteroids raise NSAID GI bleeding risk
+mqa-216,age limits for use of bupropion?,Indication,Bupropion,86530199-999b-9f92-b1bc-b8515ec829f3,use_in_specific_populations;warnings_and_cautions,,yes,changed: pediatric safety not established; suicidality in young people
+mqa-217,how to inject insulin,Usage,Insulin,12ec9e3f-e2ac-43a1-b334-8b6538cf2bb0,dosage_and_administration,,yes,kept: subcutaneous injection
+mqa-218,"why no side affects on hydromorphone listed, yet on reg inet they have a list?",Side effects,Hydromorphone,59d88866-e1ba-9d97-e063-6394a90a7b27,adverse_reactions,,yes,kept: label does list side effects
+mqa-219,how to use albuterol oral inhalation demonstration video,Usage,Albuterol,17858afa-dcdf-4612-b475-3b6baadfb639,instructions_for_use;dosage_and_administration,,yes,changed: inhaler steps
+mqa-220,gabapentin and pregabalin what is the difference?,Comparison,"Gabapentin, Pregabalin",4a975ebe-ae0a-446a-8a3d-2ca325e28f93;ab06a36d-9a2d-4eae-8991-4eab5bc8311c,indications_and_usage;clinical_pharmacology,,yes,kept: comparison: each drug's use
+mqa-221,norvasc and depression?,Side effects,Norvasc,5af8493b-2b73-859c-e063-6394a90a4620,adverse_reactions,,yes,changed: answer text is here
+mqa-222,is lyrica the same as gabbentine?,Comparison,"Gabapentin, Pregabalin",4a975ebe-ae0a-446a-8a3d-2ca325e28f93;ab06a36d-9a2d-4eae-8991-4eab5bc8311c,indications_and_usage;clinical_pharmacology,,yes,kept: comparison: each drug's use
+mqa-223,seniors and premarin?,Usage,premarin,87e2da8d-432c-4ed5-67a1-dc26294b2295,geriatric_use;precautions,,yes,changed: answer text is here
+mqa-224,what is in the pill montelukast?,Ingredient,montelukast,583a9499-97f0-2ebf-e063-6394a90a35af,description;spl_medguide,,yes,changed: active and inactive ingredients
+mqa-225,why did my doctor give me levetiracetam,Indication,levetiracetam,0348fec4-d919-4307-ac90-35360819bc00,indications_and_usage,,yes,kept: answer text is here
+mqa-226,how to use spiriva,Usage,spiriva,7b656b14-fcaa-2741-f6f0-e0be48971c02,dosage_and_administration;spl_patient_package_insert,,yes,changed: our label is Respimat; reference is HandiHaler
+mqa-227,is lasix the only diuretic drug for fluid build up in heart failure patients?,Indication,Lasix,dba00759-87b4-4ecf-998e-ba03ed3d2f1a,,yes,yes,changed: label can't say what other diuretics exist
+mqa-228,what dosage amounts does aripiprazole,Dose,aripiprazole,b72c0cff-9f4d-42e2-b884-d06dea3e6378,dosage_and_administration,,yes,kept: answer text is here
+mqa-229,should metoprolol and lexapro be taken together?,Interaction,metoprolol + Lexapro,a46cbf09-20e3-4f0d-ab41-221f60fde068;9ddd1f24-3ebd-4307-bb23-6acd742cd140,pharmacokinetics;clinical_pharmacology,,yes,changed: answer text is here (escitalopram label)
+mqa-230,what is fentanyl,Information,fentanyl,bfa8018a-4cbc-434b-e09e-782872b0340a,indications_and_usage;description,,yes,changed: opioid agonist
+mqa-231,what do percocets look like,Appearance,percocet,40a68a27-4422-5ba0-e063-6294a90ac550,how_supplied,,yes,changed: generic tablet look; reference is brand Percocet (blue)
+mqa-232,what is coumadin,Information,coumadin,5a5b5e3a-6556-a542-e063-6294a90a6d3f,description,,yes,kept: answer text is here
+mqa-233,"albuterol portable ""nebulizer?"" microtia vibrating mesh nebulizing ""system.""",Information,albuterol nebulizers,17858afa-dcdf-4612-b475-3b6baadfb639,,yes,yes,changed: nebulizer devices aren't in the label
+mqa-234,what is the highest dose lidocaine comes in,Dose,lidocaine,23c8f711-e458-479a-9ab0-dcc851311e24,how_supplied;dosage_and_administration,,yes,changed: strengths of our injection label
+mqa-235,what is in indomethacin,Ingredient,indomethacin,12821a3a-b5f2-4415-84c9-0a30a4725f1e,description,,yes,changed: active and inactive ingredients
+mqa-236,when teeth have been treated how lon after do yohave to wait to have zoledronic acid injection,Contraindication,zoledronic acid,8aac81ae-f92c-4f0b-b480-44badf72b5f5,warnings_and_cautions;information_for_patients,,yes,"changed: osteonecrosis of the jaw, dental exams"
+mqa-237,why did my doctor give me levetiracetam what is use for,Indication,levetiracetam,0348fec4-d919-4307-ac90-35360819bc00,indications_and_usage,,yes,kept: answer text is here
+mqa-238,what is asa ec,Information,ASA EC,7ce4807e-7bd5-41f1-a9c7-1f3af6acdc09,active_ingredient;purpose,,yes,"changed: aspirin 81 mg, pain reliever"
+mqa-239,can alprazolam lower blood pressure?,Indication,alprazolam,563e09db-2f3d-4ce8-b356-ae44477be6d0,adverse_reactions,,yes,changed: hypotension listed as a side effect
+mqa-240,what is efudex?,Information,Efudex,f0b60247-89ff-42b5-a55b-61980c282749,,yes,yes,"changed: our label is fluorouracil injection, not Efudex cream"
+mqa-241,what are the active ingredients in bimatoprost,Ingredient,bimatoprost,f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1,description;dosage_forms_and_strengths,,yes,changed: bimatoprost 0.3 mg/mL
+mqa-242,"if ""i'm"" allergic to penicillin can i take ""amoxicillin?""",Contraindication,amoxicillin,4adc198e-39d8-4b3e-bfa4-278aaf4064ae,contraindications;warnings_and_cautions,,yes,changed: penicillin/beta-lactam hypersensitivity
+mqa-243,"are you mentally ""i'll"" when you ""take fluoxetine?""",Indication,fluoxetine,a08dadff-f209-48dc-b597-6f085be13640,indications_and_usage,,yes,kept
+mqa-244,how to use lantus solostar insulin pen,Usage,lantus solostar,12ec9e3f-e2ac-43a1-b334-8b6538cf2bb0,,yes,yes,"changed: our insulin label is insulin lispro (ADMELOG), not Lantus"
+mqa-245,how much penicillin to treat strep throat for adult,Dose,penicillin,dd8a48b2-9ff1-49de-a53e-db4964c2384c,dosage_and_administration,,yes,kept: answer text is here
+mqa-246,how is nicotine taken,Information,nicotine,473501c3-70d4-40fd-bc44-1b750fd1771b,dosage_and_administration,,yes,changed: our label is the OTC lozenge
+mqa-247,what does vicodin look like,Appearance,vicodin,995a6cc7-8b72-4d35-b3b4-8c5752438fb7,,yes,yes,"changed: our label is the oral solution, not Vicodin tablets"
+mqa-248,how can i split a 3mg or 4mg waefin pill so i can get a 2.5mg pill,Usage,warfarin,5a5b5e3a-6556-a542-e063-6294a90a6d3f,dosage_forms_and_strengths;how_supplied,,yes,changed: a 2.5 mg tablet exists; tablets are scored
+mqa-249,what spices can be used while on warfarin,Interaction,warfarin; spices,5a5b5e3a-6556-a542-e063-6294a90a6d3f,drug_interactions;information_for_patients,,yes,changed: botanicals affect INR; no spice list
+mqa-250,what is the purpose or desired effect of aspirin,Indication,aspirin,7ce4807e-7bd5-41f1-a9c7-1f3af6acdc09,indications_and_usage;purpose,,yes,changed: OTC uses
+mqa-251,topiramate?,Information,topiramate,be42ed09-350c-4e8a-aff4-6afb242dd599,indications_and_usage,,yes,kept
+mqa-252,what is the protocol for adding insulin for type2 diabetics,Usage,insulin,12ec9e3f-e2ac-43a1-b334-8b6538cf2bb0,,yes,yes,changed: label has no insulin start protocol for type 2
+mqa-253,what is the dosage of levofloxacin tablets for bronchitis please,Dose,levofloxacin,5a65b2bc-9edc-f193-e063-6394a90a0104,dosage_and_administration,,yes,kept: answer text is here
+mqa-254,symptoms from taking multiple doses of lasix 40 mg per dayproblems with taking lasix 40mg twice daily ?,Side effects,lasix,dba00759-87b4-4ecf-998e-ba03ed3d2f1a,precautions;warnings_and_cautions,,yes,"changed: dehydration, electrolyte loss"
+mqa-255,where does fluorouracil come from,Information,fluorouracil,f0b60247-89ff-42b5-a55b-61980c282749,clinical_pharmacology;description,,yes,changed: answer text is here

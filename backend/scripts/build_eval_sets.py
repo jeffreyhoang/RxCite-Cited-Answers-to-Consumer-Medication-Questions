@@ -171,6 +171,47 @@ DRUG_OVERRIDES: dict[str, list[str]] = {
 }
 
 
+# v2 top-up only: more MedicationQA drug names -> drug-list drugs we already have labels for.
+# Kept apart from DRUG_OVERRIDES so v1 doesn't change.
+TOPUP_OVERRIDES: dict[str, list[str]] = {
+    "(voltaren or cataflam) and medrol": ["diclofenac", "methylprednisolone"],
+    "albuterol nebulizers": ["albuterol"],
+    "albuterol sulfate inhalation solution": ["albuterol"],
+    "amoxiciliin": ["amoxicillin"],
+    "asa ec": ["aspirin"],
+    "b12": ["cyanocobalamin"],
+    "carbidopa and levodopa, extended release": ["carbidopa and levodopa"],
+    "cataflam, medrol": ["diclofenac", "methylprednisolone"],
+    "cipro": ["ciprofloxacin"],
+    "concerta and lexapro": ["methylphenidate", "escitalopram"],
+    "coreg": ["carvedilol"],
+    "coumadin": ["warfarin"],
+    "coumadine": ["warfarin"],
+    "diclofenac sodium topical gel": ["diclofenac"],
+    "duragesic patch and oxycontin": ["fentanyl", "oxycodone"],
+    "efudex": ["fluorouracil"],
+    "gabapentin, pregabalin": ["gabapentin", "pregabalin"],
+    "insulin glargine": ["insulin"],
+    "lantus solostar": ["insulin"],
+    "lasix": ["furosemide"],
+    "llevodopa and carbidopa; alcohol": ["carbidopa and levodopa"],
+    "lorcet 7.5 liquid": ["hydrocodone and acetaminophen"],
+    "metoprolol + lexapro": ["metoprolol", "escitalopram"],
+    "metoprolol succinate": ["metoprolol"],
+    "metroprolol succinate": ["metoprolol"],
+    "miralax": ["polyethylene glycol"],
+    "norco": ["hydrocodone and acetaminophen"],
+    "percocet": ["oxycodone and acetaminophen"],
+    "premarin": ["conjugated estrogens"],
+    "seroquel": ["quetiapine"],
+    "trospium chloride": ["trospium"],
+    "warfarin; spices": ["warfarin"],
+}
+TOPUP_SIZE = 55
+# types where half or fewer of the v1 questions (with a label) got a gold section
+TOPUP_SKIP_TYPES = {"Alternatives", "Storage and disposal", "Stopping/tapering"}
+
+
 # Drugs used by the missing_from_corpus refusal questions (datasets/refusal_v1.json).
 # None had any openFDA label hit on 2026-11-02; T3 must not fetch them.
 EXCLUDED_DRUGS = [
@@ -204,13 +245,44 @@ def build_drug_list(questions: list[dict]) -> dict:
     }
 
 
+# v2 top-up: unused questions about drugs that have a label (from T3's corpus_stats.json),
+# skipping weak types. IDs continue after v1 (mqa-201...).
+def sample_topup(df: pd.DataFrame, v1: list[dict]) -> tuple[list[dict], dict]:
+    stats = json.loads((REPO_ROOT / "results" / "corpus_stats.json").read_text())
+    have = set(build_drug_list(v1)["drugs"]) - set(stats["drug_list"]["not_found"])
+    overrides = DRUG_OVERRIDES | TOPUP_OVERRIDES
+    names = df["drug"].str.lower().map(lambda raw: overrides.get(raw, [raw]))
+    pool = df[
+        ~df["question"].isin({q["question"] for q in v1})
+        & ~df["type"].isin(TOPUP_SKIP_TYPES)
+        & names.map(lambda n: bool(n) and all(d in have for d in n))
+    ]
+    sample = pool.sample(n=TOPUP_SIZE, random_state=SEED).sort_index()
+    questions = [
+        {
+            "id": f"mqa-{i:03d}",
+            "question": row.question,
+            "type": row.type,
+            "drug": row.drug,
+            "answer": None if pd.isna(row.answer) else row.answer,
+            "url": None if pd.isna(row.url) else row.url,
+        }
+        for i, row in enumerate(sample.itertuples(), start=len(v1) + 1)
+    ]
+    aliases = {
+        raw: overrides.get(raw, [raw]) for raw in sorted({q["drug"].lower() for q in questions})
+    }
+    return questions, aliases
+
+
 def write_json(path: Path, data: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
 
 
 if __name__ == "__main__":
-    questions = sample_questions(load_medicationqa())
+    df = load_medicationqa()
+    questions = sample_questions(df)
     write_json(
         DATASETS_DIR / f"medicationqa_{VERSION}.json",
         {"version": VERSION, "source": "MedicationQA", "seed": SEED, "questions": questions},
@@ -222,3 +294,17 @@ if __name__ == "__main__":
     write_json(DATASETS_DIR / f"drug_list_{VERSION}.json", drug_list)
     no_drug = [raw for raw, names in drug_list["aliases"].items() if not names]
     print(f"\nWrote {len(drug_list['drugs'])} drugs ({len(no_drug)} drug names map to none)")
+
+    topup, topup_aliases = sample_topup(df, questions)
+    write_json(
+        DATASETS_DIR / "medicationqa_v2.json",
+        {
+            "version": "v2",
+            "source": "MedicationQA top-up: drugs with a label in the T3 corpus",
+            "seed": SEED,
+            "aliases": topup_aliases,
+            "questions": topup,
+        },
+    )
+    print(f"\nWrote {len(topup)} top-up questions (v2)")
+    print(pd.Series([q["type"] for q in topup]).value_counts().to_string())

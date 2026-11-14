@@ -1,0 +1,201 @@
+id,question,type,drug,set_ids,sections,no_label,reviewed,note
+mqa-001,how does valium affect the brain,Action,Valium,ba953b22-f0cd-4be5-9e0e-178bded88727,clinical_pharmacology,,yes,kept: answer text is in this section
+mqa-002,what is morphine,Information,morphine,1f53de80-efc8-4930-b3e3-fba0d026af05,indications_and_usage;description,,yes,kept
+mqa-003,what are the milligrams for oxycodone e,Dose,oxycodone ER,338b5391-e5f7-40a2-8b15-57f47cbc4813,,yes,yes,changed: our label is oxycodone IR 5 mg capsules; ER strengths not in it
+mqa-004,81% aspirin contain resin and shellac in it. ?,Ingredient,aspirin 81 mg,7ce4807e-7bd5-41f1-a9c7-1f3af6acdc09,inactive_ingredient,,yes,changed: lists inactive ingredients (no shellac)
+mqa-005,what is the color of the fluvaastatin pill,Appearance,fluvastatin,ccd6bbe1-e293-4e1c-9ec4-e6c217612e77,dosage_forms_and_strengths;how_supplied,,yes,changed: capsule colors are here
+mqa-006,how long before a meal should lansoprazole be taken,Usage,Lansoprazole,7daa1721-f92b-4096-b19e-4d27fc8acb51,dosage_and_administration;information_for_patients,,yes,changed: says take before meals
+mqa-007,why did my doctor give me level iracetam,Indication,Levetiracetam,0348fec4-d919-4307-ac90-35360819bc00,indications_and_usage,,yes,kept
+mqa-008,how long does marijuana it stay in system,Action/time,marijuana,,,yes,yes,no label for this drug in the corpus
+mqa-009,neupro and ropinirole when is it safe to take,Interaction,neupro and ropinirole,cdc63b7a-062a-4519-a63e-e48a356f641c,,yes,yes,changed: rotigotine not in corpus; ropinirole label doesn't cover the combo
+mqa-010,how many mg does it take to overdose on oxycodone,Overdose,oxycodone,338b5391-e5f7-40a2-8b15-57f47cbc4813,,yes,yes,changed: label gives no overdose amount
+mqa-011,"pravastatin s9 orange how many ""grams?""",Dose,pravastatin,6cef5e92-26b7-435c-878f-72a05a624560,,yes,yes,changed: S9 orange imprint isn't our label's tablet; no answer
+mqa-012,how long morphine remains in body,Action/time,morphine,1f53de80-efc8-4930-b3e3-fba0d026af05,pharmacokinetics;clinical_pharmacology,,yes,changed: half-life/elimination
+mqa-013,what can take the place of tramadol,Alternatives,tramadol,a6cbd5de-8ae5-49e3-b89b-e35536b115d8,,yes,yes,changed: alternatives aren't in a label
+mqa-014,how to administer denosumab,Usage,denosumab,b1f0590e-f5bb-44ac-99a0-4aa4596c7e54,dosage_and_administration,,yes,kept
+mqa-015,what is barbiturates,Information,barbiturates,,,yes,yes,no label for this drug in the corpus
+mqa-016,"vitamin d 25, totalhow much to takea day",Dose,vitamin D,84647b52-3c4c-31bb-e053-2991aa0a8a7e,,yes,yes,changed: label is Rx ergocalciferol; no general daily intake
+mqa-017,can i eat after taking rapaflo?,Usage,Rapaflo,ee8d577e-948d-4164-9671-c876544ac83b,dosage_and_administration;information_for_patients,,yes,changed: answer text is here
+mqa-018,what is metopol tar use,Indication,metoprolol tartrate,a46cbf09-20e3-4f0d-ab41-221f60fde068,indications_and_usage,,yes,kept
+mqa-019,how reduce cholesterol,Indication,drugs that reduce cholesterol,,,yes,yes,no label for this drug in the corpus
+mqa-020,"when is gardasil ""contra indicated?""",Contraindication,Gardasil,,,yes,yes,no label for this drug in the corpus
+mqa-021,"i take lorazepam, my eyes are blurry, if i stop taking it, will my eyes clear up ?",Side effects,lorazepam,c0810422-b732-4c04-97d8-c1521c401ef4,adverse_reactions;warnings,,yes,changed: blurred vision listed; withdrawal/tapering
+mqa-022,when does skin redness start on fluorouracil,Side effects,fluorouracil,f0b60247-89ff-42b5-a55b-61980c282749,,yes,yes,"changed: our label is fluorouracil injection, not the topical cream"
+mqa-023,what tier drug is methylphenidate,Information,methylphenidate,768bf181-d0d8-49e5-9c87-cacbb069e0b2,controlled_substance;drug_abuse_and_dependence,,yes,changed: Schedule II
+mqa-024,what is normal saline,Information,normal saline,2e5fe9f4-78e5-4af4-8bf9-9680e5dc5e88,indications_and_usage;description,,yes,kept
+mqa-025,what is ciprodex?,Information,Ciprodex,780a5554-54ef-4294-b681-8c5300b028b6,indications_and_usage,,yes,kept
+mqa-026,how often can i get a cortisone shot,Usage/time,cortisone shots,cc158d11-f356-4696-8b73-5d2681dcbcf2,,yes,yes,changed: label doesn't cover joint-injection frequency
+mqa-027,why codeine,Indication,codeine,5819bdf7-300e-45b8-8f3a-447b53656293,indications_and_usage,,yes,kept
+mqa-028,wean off tegretol?,Stopping/tapering,Tegretol,7c1dd8ce-c490-40b4-b17a-da331df24cba,warnings,,yes,kept: answer text is here
+mqa-029,what happened if one takes a double does of simvastatin,Overdose,Simvastatin,3f6fad0b-0278-433f-86db-761b673a5803,overdosage,,yes,kept
+mqa-030,what kind of rash could pravastatin cause,Side effects,pravastatin,6cef5e92-26b7-435c-878f-72a05a624560,adverse_reactions,,yes,changed: rash and hypersensitivity listed
+mqa-031,how to take your medicine diabetes,Usage,diabetes medicine,,,yes,yes,no label for this drug in the corpus
+mqa-032,what is classed as a low dose of azathioprine,Dose,azathioprine,5116b22b-1460-5535-e063-6394a90acbe5,dosage_and_administration,,yes,kept: answer text is here
+mqa-033,"is it safe to add peppermint essential oil in ""mouth wash?""",Side effects,peppermint oil,,,yes,yes,no label for this drug in the corpus
+mqa-034,what type of drug is marijuana,Information,marijuana,,,yes,yes,no label for this drug in the corpus
+mqa-035,how long i take cipro for a urinary tract infection ?,Usage/time,ciprofloxacin,47d1e4c5-f669-4aca-9e8c-0d6bb833b859,dosage_and_administration,,yes,kept: UTI duration table
+mqa-036,how does a 20 mcg bedford norton transdermal patch compared to say oxycodone what would be the equivalent,Comparison,"oxycodone, fentanyl",338b5391-e5f7-40a2-8b15-57f47cbc4813;bfa8018a-4cbc-434b-e09e-782872b0340a,,yes,yes,changed: patch conversion not in oxycodone capsule label
+mqa-037,what if meclizine does not work,Alternatives,meclizine,21d4a6ee-0a66-45d7-bab9-c5eef399713d,,yes,yes,changed: alternatives aren't in a label
+mqa-038,mix salt and hydromorphone what will happen,Interaction,Hydromorphone,59d88866-e1ba-9d97-e063-6394a90a7b27,,yes,yes,changed: no answer in MedicationQA or label
+mqa-039,what pill is close to the pill hyoscyamine for bloating food to more faster,Alternatives,Hyoscyamine,57b12b25-adea-c9bc-e063-6394a90aa925,,yes,yes,changed: alternatives aren't in a label
+mqa-040,what types of insulin for resistance,Information,n/a (Exploration),,,yes,yes,no label for this drug in the corpus
+mqa-041,what is the dose for vit b12 tabet?,Dose,Vitamin B-12,54f088b1-7cf8-3837-e063-6294a90a88e7,,yes,yes,changed: label is the injection; no tablet dose
+mqa-042,what is the difference between vitamin b12 1000 geltabs and vitamin b12 shots,Comparison,Cobalamin,54f088b1-7cf8-3837-e063-6294a90a88e7,clinical_pharmacology;dosage_and_administration,,yes,changed: label says oral absorption is undependable in pernicious anemia; reference says oral works as well
+mqa-043,is losartan gluten free?,Ingredient,Losartan,a397502e-abe7-49cf-97c7-d53a616947eb,,yes,yes,changed: labels don't state gluten content
+mqa-044,tdap (adacel) 10-64 yrs how often is booster needed,Dose,Adacel Tdap,,,yes,yes,no label for this drug in the corpus
+mqa-045,pain medication how to use,Usage,Pain Medications,,,yes,yes,no label for this drug in the corpus
+mqa-046,freezing clotrimazole?,Storage and disposal,Clotrimazole,c64e2290-593f-48a2-a15d-41689f836fda,storage_and_handling;how_supplied,,yes,changed: gives storage temp; doesn't mention freezing
+mqa-047,"how to use ivermectin ""derm gard"" for dog",Usage,Dermgard,,,yes,yes,no label for this drug in the corpus
+mqa-048,what foods should a person taking warfarin eat,Interaction,Warfarin,5a5b5e3a-6556-a542-e063-6294a90a6d3f,spl_medguide;drug_interactions,,yes,changed: foods and vitamin K
+mqa-049,can i take doxepin and prexum together?,Interaction,"Doxepin, Prexum",2a9c2159-e89e-47e4-b91c-ac5560607a2d;87768fbf-7c63-47da-8925-0316f343d6ef,,yes,yes,changed: neither label covers doxepin + perindopril
+mqa-050,what are contraindications for kadian,Contraindication,Kadian,1f53de80-efc8-4930-b3e3-fba0d026af05,contraindications,,yes,kept: answer text is here
+mqa-051,how long is oxycodone expired,Storage and disposal,Oxycodone,338b5391-e5f7-40a2-8b15-57f47cbc4813,,yes,yes,changed: expiry isn't in the label
+mqa-052,why is vitamin a important to the body,Indication,Vitamin A,,,yes,yes,no label for this drug in the corpus
+mqa-053,"amiodarone for ""afib what"" are side effects",Side effects,Amiodarone,4c149392-a4f0-4e2d-a13f-2b94810005de,adverse_reactions,,yes,kept
+mqa-054,why prozac used,Indication,Prozac,a08dadff-f209-48dc-b597-6f085be13640,indications_and_usage,,yes,kept
+mqa-055,pill form topamax what does it look like,Appearance,topamax,be42ed09-350c-4e8a-aff4-6afb242dd599,how_supplied;dosage_forms_and_strengths,,yes,kept: tablet colors/imprints
+mqa-056,what is dosage/quetiapine,Dose,Quetiapine,711f42c5-0719-46de-81fb-3d03801b9ed9,dosage_and_administration,,yes,kept
+mqa-057,what happens if too much insulin is released into the blood,Overdose,Insulin,12ec9e3f-e2ac-43a1-b334-8b6538cf2bb0,overdosage,,yes,kept: hypoglycemia
+mqa-058,what type of drug is amphetamine,Information,Amphetamine,20735c2e-6304-425f-a4e4-584f6f90d6a0,indications_and_usage;clinical_pharmacology,,yes,changed: CNS stimulant
+mqa-059,wetting in pants after penicillin shot?,Side effects,Penicillin,dd8a48b2-9ff1-49de-a53e-db4964c2384c,,yes,yes,changed: label lists no urinary side effects
+mqa-060,what color is 30mg prednisone,Appearance,Prednisone,0062fcc7-aa08-4990-9d33-d798725907f1,,yes,yes,changed: our label has no 30 mg tablet
+mqa-061,do i take a statin with or without food ?,Usage,Statin,,,yes,yes,no label for this drug in the corpus
+mqa-062,remipril compatible with cabergoline?,Interaction,"Ramipril, Cabergoline",45707435-4fc8-457e-9ff2-02d7be9b4a6e;e497366b-a124-4d7f-bd45-a883c392d4bb,,yes,yes,changed: neither label covers ramipril + cabergoline
+mqa-063,"how much ethanol alcohol is in 2 puffs of ""proair?""",Ingredient,ProAir HFA,17858afa-dcdf-4612-b475-3b6baadfb639,,yes,yes,changed: label lists ethanol but not the amount
+mqa-064,how does amitriptyline compare to alprazolam,Comparison,"Amitriptyline, Alprazolam",61b29703-cfc2-45c7-ae24-7bf3b77e8587;563e09db-2f3d-4ce8-b356-ae44477be6d0,indications_and_usage;clinical_pharmacology,,yes,kept: comparison: each drug's use
+mqa-065,what is aldactazide used for,Indication,Aldactazide,6fa96947-f4d8-4ca4-98fd-a2c123310d83,indications_and_usage,,yes,kept
+mqa-066,how does insulin work?,Action,Insulin,12ec9e3f-e2ac-43a1-b334-8b6538cf2bb0,mechanism_of_action;clinical_pharmacology,,yes,changed
+mqa-067,how does spiriva work,Action,Spiriva,7b656b14-fcaa-2741-f6f0-e0be48971c02,mechanism_of_action;indications_and_usage,,yes,changed: antimuscarinic bronchodilator
+mqa-068,what is bioflavonoid,Information,Bioflavonoid,,,yes,yes,no label for this drug in the corpus
+mqa-069,what are the symptoms of a human exposed to boric acid powder,Side effects,Boric Acid Powder,3c3a423c-805d-4146-b16e-0138617a8dc6,,yes,yes,changed: label is an OTC boric acid suppository; no exposure symptoms
+mqa-070,how long it takes for withdrawals to go away on oxycodone,Information,Oxycodone,338b5391-e5f7-40a2-8b15-57f47cbc4813,,yes,yes,"changed: label gives tapering, not how long withdrawal lasts"
+mqa-071,qvar 40mcg what is it for,Indication,qvar,ccd3aaec-4892-40d0-ad60-3e570178fbe1,indications_and_usage,,yes,kept: answer text is here
+mqa-072,what meds are in the pill montelukast?,Ingredient,montelukast,583a9499-97f0-2ebf-e063-6394a90a35af,description;spl_medguide,,yes,changed: active ingredient
+mqa-073,hyptotension caused by lexapro?,Side effects,lexapro,9ddd1f24-3ebd-4307-bb23-6acd742cd140,adverse_reactions,,yes,kept: answer text is here
+mqa-074,how often do you need a shingles vaccine,Usage/time,shingles vaccine,,,yes,yes,no label for this drug in the corpus
+mqa-075,how often should you use a dulera inhaler,Usage/time,dulera,8f399784-f257-4f31-b3dc-368bf2a1864d,dosage_and_administration,,yes,kept: answer text is here
+mqa-076,what effect if take high cholesteron pill,Action,high cholesterol medication,,,yes,yes,no label for this drug in the corpus
+mqa-077,what is the length of entecavir treatment,Usage/duration,entecavir,73dea2a4-a596-477f-b66d-5a80dd019837,dosage_and_administration,,yes,kept: answer text is here
+mqa-078,how much b-12 is needed in an adult/month,Dose,vitamin B12,54f088b1-7cf8-3837-e063-6294a90a88e7,,yes,yes,changed: label is the injection; no daily requirement
+mqa-079,how long does heroin stay in toxicology test,Action/time,heroin,,,yes,yes,no label for this drug in the corpus
+mqa-080,can spironolactone e used when talking furosemide,Interaction,spironolactone + furosemide,8b76a904-6c99-485a-a05f-13a36c5f720c;dba00759-87b4-4ecf-998e-ba03ed3d2f1a,mechanism_of_action;clinical_pharmacology,,yes,changed: says spironolactone may be given with other diuretics
+mqa-081,how long should i take dutasteride,Usage/duration,dutasteride,c78d18cf-05df-4154-b2f9-39cc374ca9e3,,yes,yes,changed: label gives no treatment length
+mqa-082,what is in norvasc,Ingredient,norvasc,5af8493b-2b73-859c-e063-6394a90a4620,description,,yes,changed: active and inactive ingredients
+mqa-083,what shape is the amlodipine pill,Appearance,amlodipine,5af8493b-2b73-859c-e063-6394a90a4620,dosage_forms_and_strengths;how_supplied,,yes,changed: our label's tablet is round; reference says diamond (other maker)
+mqa-084,how to wean off calan sr,Stopping/tapering,Calan SR,9c89764e-ff07-4077-a40f-91eb1c179af2,,yes,yes,"changed: our label is verapamil injection, not Calan SR"
+mqa-085,what does memantine look like,Appearance,memantine,007d4cb9-3fa9-40f3-b5ca-4083eccd6038,dosage_forms_and_strengths;how_supplied,,yes,changed: our label is ER capsules; reference is a tablet
+mqa-086,where is heroin originated from,Information,heroin,,,yes,yes,no label for this drug in the corpus
+mqa-087,what drugs case erectile dysfuntion,Side effects,drugs that cause erectile dysfunction,,,yes,yes,no label for this drug in the corpus
+mqa-088,how long does it take to get carbidopa levodopa out of your system,Action/time,carbidopa and levodopa,9b17b028-964a-473c-823d-81423535bd66,pharmacokinetics;clinical_pharmacology,,yes,changed: answer text is here
+mqa-089,"is oxybutynin an ""opioid?""",Ingredient,oxybutynin,1a08a16a-f16d-4ef1-95bb-6943bcae0737,description;clinical_pharmacology,,yes,"changed: anticholinergic, not an opioid"
+mqa-090,in how much temp bcg vaccine should store,Storage and disposal,bcg vaccine,,,yes,yes,no label for this drug in the corpus
+mqa-091,how to give diazepam rectal gel,Usage,diazepam gel,ba953b22-f0cd-4be5-9e0e-178bded88727,,yes,yes,"changed: our label is diazepam tablets, not rectal gel"
+mqa-092,if i am allergic to sufa can i take glipizide?,Contraindication,glipizide,00729e82-150a-464a-abe7-a3319721fbdb,description;contraindications,,yes,kept: sulfonylurea; hypersensitivity
+mqa-093,what color is phenytoin,Appearance,phenytoin,46d5c0d1-a97b-46d9-8cf4-994780673337,dosage_forms_and_strengths;how_supplied,,yes,changed: capsule colors
+mqa-094,what is xanax,Information,xanax,563e09db-2f3d-4ce8-b356-ae44477be6d0,description,,yes,kept: answer text is here
+mqa-095,how long should you use anti inflammatory gel,Usage/duration,anti inflammatory gel,,,yes,yes,no label for this drug in the corpus
+mqa-096,"how long is mda or ecstasy take to leave your ""body?""",Action/time,ecstacy,,,yes,yes,no label for this drug in the corpus
+mqa-097,"what help withdrawal ""fom."" hydrocodone 10 35",Stopping/tapering,hydrocodone + acetaminophen,995a6cc7-8b72-4d35-b3b4-8c5752438fb7,dosage_and_administration;drug_abuse_and_dependence,,yes,changed: tapering guidance only
+mqa-098,what is streptomycin,Information,streptomycin,abd1f64e-4283-4370-aae8-3666316aa36e,indications_and_usage;description,,yes,kept
+mqa-099,what drugs contain in testerone injection,Information,testosterone injection,cfbb53d4-b868-4a28-8436-f9112eb01c39,description,,yes,changed
+mqa-100,what is the therapeutic effect of levaquin,Action,Levaquin,5a65b2bc-9edc-f193-e063-6394a90a0104,clinical_pharmacology,,yes,kept: answer text is here
+mqa-101,is it nessasary to ween off of cymbalta before starting effexor?,Interaction,Cymbalta and Effexor,79bfd6be-a1ff-4786-b4e2-abbd0a3e3932;c41d847b-88ba-49a5-9d73-269ac4caa4ed,dosage_and_administration;warnings_and_cautions,,yes,changed: discontinuation/taper advice; no direct switch guidance
+mqa-102,what is it he ingredients in indomethacin,Ingredient,indomethacin,12821a3a-b5f2-4415-84c9-0a30a4725f1e,description,,yes,changed
+mqa-103,what are the active incredience in balsalazide,Ingredient,balsalazide,f12ffa32-d14b-e9d9-e957-2ef08b64e8b4,description,,yes,changed
+mqa-104,does enalaprilat is used for treat stroke?,Indication,enalaprilat,5d398da1-020c-ccb1-a775-ce8e0b29d621,indications_and_usage,,yes,kept: answer text is here
+mqa-105,what medicines should not be taken with gabapentine,Interaction,gabapentin,4a975ebe-ae0a-446a-8a3d-2ca325e28f93,drug_interactions;warnings_and_cautions,,yes,"changed: interactions, CNS depressants"
+mqa-106,how long does polyethylene glycol stay good,Storage and disposal,polyethylene glycol,812c59b0-e7ce-4c7a-91ed-e74b7b1b84be,,yes,yes,changed: shelf life isn't in the label
+mqa-107,how to stop using estradiol transdermal system patch,Stopping/tapering,estradiol transdermal patch,c8a2d29c-299c-4559-b859-87b303a4af81,,yes,yes,"changed: our label is estradiol vaginal cream, not the patch"
+mqa-108,how to stop taking bisoprolol,Stopping/tapering,bisoprolol,df37d337-9978-0c31-e053-2a95a90a3258,warnings,,yes,kept: answer text is here
+mqa-109,can i have allergie test when taking methylprednisolone?,Side effects,methylprednisolone,ae524bdb-9fd0-49f9-802d-465a374c175b,precautions;drug_interactions,,yes,changed: answer text is here
+mqa-110,"what is the difference between gabbentibe lyrica ""?"" for pain",Comparison,gabapentin and Lyrica,4a975ebe-ae0a-446a-8a3d-2ca325e28f93;ab06a36d-9a2d-4eae-8991-4eab5bc8311c,indications_and_usage;clinical_pharmacology,,yes,kept: comparison: each drug's use
+mqa-111,what is the lowest dose of hydrochlorothiazide,Dose,hydrochlorothiazide,8e0683e2-5473-4246-97ae-b71c21c39ac7,dosage_and_administration,,yes,kept: answer text is here
+mqa-112,what valacyclovir looks like in color shape,Appearance,valacyclovir,14e479b1-8afd-4912-8f93-59b60a0868bc,dosage_forms_and_strengths;how_supplied,,yes,changed: tablet color/shape
+mqa-113,is 600mg of gabapentin considered a strong dose ? how high in my can it go?,Dose,gabapentin,4a975ebe-ae0a-446a-8a3d-2ca325e28f93,dosage_and_administration,,yes,kept: answer text is here
+mqa-114,motoprolol pill how long before it takes affect,Action/time,metoprolol,a46cbf09-20e3-4f0d-ab41-221f60fde068,pharmacokinetics;clinical_pharmacology,,yes,changed
+mqa-115,famotidine 10 mg?,Information,famotidine 10 mg,669fbd46-cae5-4477-884e-8eca893d2e05,indications_and_usage,,yes,kept: our label is Rx famotidine; reference is the OTC uses
+mqa-116,what side effects would magnesium have on a woman taking dilantin?,Interaction,magnesium and Dilantin,46d5c0d1-a97b-46d9-8cf4-994780673337,drug_interactions;information_for_patients,,yes,changed: antacids may affect phenytoin absorption
+mqa-117,what are tne side effects of carprofen,Side effects,carprofen,,,yes,yes,no label for this drug in the corpus
+mqa-118,lansoprazole long term use?,Usage/duration,lansoprazole,7daa1721-f92b-4096-b19e-4d27fc8acb51,dosage_and_administration;warnings_and_cautions,,yes,changed: Rx durations and long-term risks; reference is OTC 14-day rule
+mqa-119,how long after teeth treatment can you start zoledronic acid infection,Contraindication,zoledronic acid,8aac81ae-f92c-4f0b-b480-44badf72b5f5,warnings_and_cautions;information_for_patients,,yes,"changed: osteonecrosis of the jaw, dental exams"
+mqa-120,how long do you leave bimatoprost ophthalmic,Usage,bimatoprost ophthalmic,f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1,,yes,yes,changed: label doesn't say how long to leave it
+mqa-121,"do i take over the counter calcium with ""alendronate?""",Interaction,calcium and alendronate,c7e470d6-508e-466e-a78d-060bbbc9745c,drug_interactions;dosage_and_administration,,yes,changed: answer text is here
+mqa-122,what is prevnar >65?,Information,Prevnar,,,yes,yes,no label for this drug in the corpus
+mqa-123,where does marijuana come from,Information,marijuana,,,yes,yes,no label for this drug in the corpus
+mqa-124,how long for donepezil to show in your blood,Action/time,donepezil,37fc6638-4a63-4582-a64c-3525f8ed7ef2,clinical_pharmacology,,yes,kept: answer text is here
+mqa-125,"for a ""rinse,"" how many ""cc"" should be ""used?f"" lidocaine lidocaine used",Usage,lidocaine rinse,23c8f711-e458-479a-9ab0-dcc851311e24,,yes,yes,changed: our lidocaine label isn't the oral rinse/viscous form
+mqa-126,what medicine besides statins lower cholesterol?,Alternatives,statins,,,yes,yes,no label for this drug in the corpus
+mqa-127,what does the pill oxybutynin look like,Appearance,oxybutynin,1a08a16a-f16d-4ef1-95bb-6943bcae0737,description;how_supplied,,yes,kept: tablet color/shape
+mqa-128,shingrix vaccine how often do you get a shingles shot,Usage/time,shingles vaccine,,,yes,yes,no label for this drug in the corpus
+mqa-129,how to give insulin,Usage,insulin,12ec9e3f-e2ac-43a1-b334-8b6538cf2bb0,dosage_and_administration,,yes,kept
+mqa-130,what is medication for singular 10 mg.,Indication,Singulair,583a9499-97f0-2ebf-e063-6394a90a35af,indications_and_usage;spl_medguide,,yes,changed: answer text is here
+mqa-131,"diclofenac sodium, 75 mg. how much is to much",Overdose,diclofenac sodium,5a852412-69af-6502-e063-6294a90a0748,dosage_and_administration,,yes,kept: max daily dose
+mqa-132,what opioid is in the bupropion patch,Ingredient,"""bupropion patch"" (probably buprenorphine [Butrans])",6189fb21-9432-45f8-8481-0bfaf3ccde95,description,,yes,changed: buprenorphine
+mqa-133,what is fluoride,Information,fluoride,3daf3cc3-585a-4bb2-9b56-7117d220ed38,active_ingredient;indications_and_usage,,yes,"changed: OTC fluoride rinse; describes use, not what fluoride is"
+mqa-134,"when used as a rinse, how big should the amount of lidocaineof lidocaine used",Dose,lidocaine rinse,23c8f711-e458-479a-9ab0-dcc851311e24,,yes,yes,changed: our lidocaine label isn't the oral rinse/viscous form
+mqa-135,what is marijuana,Information,marijuana,,,yes,yes,no label for this drug in the corpus
+mqa-136,how to safely stop taking anastrozole,Stopping/tapering,anastrozole,1d1d5818-1594-4f54-90a9-ae9a9afcdc67,,yes,yes,changed: label doesn't cover stopping
+mqa-137,"vitamin d 15000,what can do for bones",Action,vitamin D,84647b52-3c4c-31bb-e053-2991aa0a8a7e,clinical_pharmacology,,yes,kept: calcium/phosphate for bone mineralization
+mqa-138,what does valacyclovir 1gm cure?,Indication,valacyclovir,14e479b1-8afd-4912-8f93-59b60a0868bc,indications_and_usage;information_for_patients,,yes,changed
+mqa-139,"oxycodone hcl 5 mg & oxycodone ""10-325"" apap the same?",Comparison,"oxycodone hcl 5 mg; oxycodone ""10-325""",338b5391-e5f7-40a2-8b15-57f47cbc4813;40a68a27-4422-5ba0-e063-6294a90ac550,description,,yes,kept: answer text is here
+mqa-140,what valacyclovir looks like,Appearance,valacyclovir,14e479b1-8afd-4912-8f93-59b60a0868bc,dosage_forms_and_strengths;how_supplied,,yes,changed: tablet color/shape
+mqa-141,how dextroamphetamine works,Action,dextroamphetamine,0ef920a9-c5b9-4d31-a478-ee18d22a3c5b,clinical_pharmacology;description,,yes,changed: sympathomimetic amine
+mqa-142,what milagrams olanzapine come in,Dose,olanzapine,5af81f87-5582-aa23-e063-6294a90a1ee8,dosage_forms_and_strengths;how_supplied,,yes,changed: strengths
+mqa-143,at what point do i no longer need cyanocobalamin injection?,Usage/time,cyanocobalamin,54f088b1-7cf8-3837-e063-6294a90a88e7,dosage_and_administration,,yes,kept: lifelong for pernicious anemia
+mqa-144,amiodarone for afibwhat are side effects,Side effects,amiodarone,4c149392-a4f0-4e2d-a13f-2b94810005de,adverse_reactions,,yes,kept: answer text is here
+mqa-145,what class is diazepam,Information,diazepam,ba953b22-f0cd-4be5-9e0e-178bded88727,clinical_pharmacology;description,,yes,changed: answer text is here
+mqa-146,is estradiol transdermal patch bio-identical estrogen?,Information,estradiol transdermal patch; estrogen,c8a2d29c-299c-4559-b859-87b303a4af81,indications_and_usage;description,,yes,kept
+mqa-147,what is the action of ezetimibe in my body,Action,ezetimibe,090776cf-f211-49a3-a993-ff5d707311f2,mechanism_of_action;clinical_pharmacology,,yes,changed
+mqa-148,when is the best time of day to take propranolol,Usage/time,propranolol,5affa0ea-db84-86fd-e063-6294a90a4d16,dosage_and_administration,,yes,kept
+mqa-149,marijuana is what schedule drug,Information,marijuana,,,yes,yes,no label for this drug in the corpus
+mqa-150,"are you able to take guaifenesin if you have a heart ""transplant?""",Contraindication,guaifenesin,f6a23be6-0313-4c23-afb7-576666b80e21,,yes,yes,changed: label doesn't mention transplants
+mqa-151,can i took minocycline for acne when i have kidney stone,Contraindication,minocycline,3e74e8a3-2670-97f5-e063-6394a90a361e,warnings_and_cautions,,yes,kept: BUN/renal
+mqa-152,what is amlodipine ?,Information,amlodipine,5af8493b-2b73-859c-e063-6394a90a4620,indications_and_usage;description,,yes,changed
+mqa-153,what is the medication riva-clonazepam,Information,RIVA-CLONAZEPAM (clonazepam),2606ecf9-3d71-4c1c-bfda-d7d98ffc6011,indications_and_usage,,yes,kept
+mqa-154,when is it ok to discontinue use of premarin crea m,Stopping/tapering,premarin cream,87e2da8d-432c-4ed5-67a1-dc26294b2295,warnings;dosage_and_administration,,yes,"changed: lowest dose, shortest duration"
+mqa-155,how other inject cortisone to the knee,Information,cortisone,cc158d11-f356-4696-8b73-5d2681dcbcf2,,yes,yes,changed: label doesn't cover knee injections
+mqa-156,why are anticholinergic drugs useful for treating gastrointestinal spasms associated with ibs,Action,anticholinergic drugs,,,yes,yes,no label for this drug in the corpus
+mqa-157,how long does vicodin stay in breast milk,Action/time,vicodin,995a6cc7-8b72-4d35-b3b4-8c5752438fb7,nursing_mothers;precautions,,yes,changed: says hydrocodone is in breast milk; not how long
+mqa-158,trospium can i stop taking it?,Stopping/tapering,trospium,7a2fea88-266d-4fc0-a476-66dc6effcff7,warnings_and_cautions;information_for_patients,,yes,changed: stop if angioedema
+mqa-159,how much gravol to kill you,Overdose,Dimenhydrinate,bc71539e-1a33-4709-8a24-c2894e8dbc1c,,yes,yes,changed: label gives no lethal amount
+mqa-160,what are the side effects and long term consequences of using nicotine,Side effects,nicotine,473501c3-70d4-40fd-bc44-1b750fd1771b,warnings;stop_use,,yes,changed: OTC nicotine product warnings; no long-term effects
+mqa-161,what would a normal dose be for valacyclovir,Dose,valacyclovir,14e479b1-8afd-4912-8f93-59b60a0868bc,dosage_and_administration;information_for_patients,,yes,changed: answer text is here
+mqa-162,what is another drug similar to sulfonylureas,Alternatives,sulfonylureas,,,yes,yes,no label for this drug in the corpus
+mqa-163,how do botulinum toxin injections treat muscle conditions?,Action,botulinum toxin,3aaa6e14-a3f7-4fb2-b9f9-d3a9c3ae1f74,mechanism_of_action;clinical_pharmacology,,yes,changed: blocks neuromuscular transmission
+mqa-164,heroin mixed with fentanyl what are the symptoms of an overdose,Overdose,fentanyl,bfa8018a-4cbc-434b-e09e-782872b0340a,overdosage,,yes,kept: answer text is here (fentanyl part only)
+mqa-165,can you take amoxicillin with hydrocodone ?,Interaction,amoxicillin & hydrocodone,4adc198e-39d8-4b3e-bfa4-278aaf4064ae;b7d23ac2-e776-9f62-3290-c64c2d6eb353,,yes,yes,changed: neither label covers amoxicillin + hydrocodone
+mqa-166,entocort ec how prescribed,Dose,entocort ec,3235e2a4-8e12-2d58-e063-6294a90a4936,dosage_and_administration,,yes,kept
+mqa-167,what happens when you mix cymbalta with muscle relaxes,Interaction,"cymbalta, muscle relaxants",79bfd6be-a1ff-4786-b4e2-abbd0a3e3932,warnings_and_cautions;information_for_patients,,yes,changed: answer text is here
+mqa-168,how to take clotrimazole,Usage,clotrimazole,c64e2290-593f-48a2-a15d-41689f836fda,dosage_and_administration,,yes,kept
+mqa-169,how 9is cyanocobalamin adminitsered,Usage,cyanocobalamin,54f088b1-7cf8-3837-e063-6294a90a88e7,dosage_and_administration,,yes,kept
+mqa-170,show me omeprazole,Appearance,omeprazole,63b3982a-b541-4b0d-99d4-93a673e57d46,dosage_forms_and_strengths;how_supplied,,yes,changed: our capsule is purple/grey; reference says brown (other maker)
+mqa-171,what size bottle does latanoprost ophthalmic come in,Storage and disposal,latanoprost ophthalmic,be74d517-7f73-a74c-e053-2a95a90a3819,how_supplied,,yes,kept: answer text is here
+mqa-172,how is bcg vaccine stored,Storage and disposal,bsg vaccine,,,yes,yes,no label for this drug in the corpus
+mqa-173,what is a normal dosage of klonopin,Dose,klonopin,2606ecf9-3d71-4c1c-bfda-d7d98ffc6011,dosage_and_administration,,yes,kept: answer text is here
+mqa-174,how often can a prescription of fentanyl be called in,Usage,fentanyl,bfa8018a-4cbc-434b-e09e-782872b0340a,,yes,yes,changed: our label is fentanyl injection; no refill rules
+mqa-175,how long does stomach take to empty for fosamax,Action/time,fosamax,c7e470d6-508e-466e-a78d-060bbbc9745c,pharmacokinetics;clinical_pharmacology,,yes,changed: answer text is here
+mqa-176,does doxycycline contain resin and shellac in it. ?,Ingredient,doxycycline,051654c7-8ba6-44f2-842c-72f515e9b32d,description,,yes,changed: lists inactive ingredients (no shellac)
+mqa-177,wht is a normal dose daily for ativan?,Dose,ativan,c0810422-b732-4c04-97d8-c1521c401ef4,dosage_and_administration,,yes,kept: answer text is here
+mqa-178,ok to use expired lidocaine patches??,Storage and disposal,lidocaine,23c8f711-e458-479a-9ab0-dcc851311e24,,yes,yes,changed: expiry isn't in the label
+mqa-179,"how often is the tetanus shot ""given?""",Usage/time,tetanus,,,yes,yes,no label for this drug in the corpus
+mqa-180,what is the medication thera tab used to treat?,Indication,Thera-Tabs,,,yes,yes,no label for this drug in the corpus
+mqa-181,what time should take memantine,Usage/time,memantine,007d4cb9-3fa9-40f3-b5ca-4083eccd6038,dosage_and_administration,,yes,kept
+mqa-182,exercise restrictions with taking moxifloxacin?,Usage,moxifloxacin,656f582c-ecba-4ec8-9420-9562114d889b,warnings_and_cautions;information_for_patients,,yes,changed: tendon rupture; answer text is here
+mqa-183,vaccine when pregnant,Information,vaccination,,,yes,yes,no label for this drug in the corpus
+mqa-184,pneumonia vaccine is good for how long?,Usage/duration,Pneumococcal Vaccines,,,yes,yes,no label for this drug in the corpus
+mqa-185,what mg. does meprobamate have?,Dose,meprobamate,17d814e2-b277-4dce-8615-e7fd7cab773f,how_supplied;description,,yes,changed: answer text is here
+mqa-186,what is the difference between atorvastatin and lipitor,Comparison,atorvastatin; lipitor,6600f22e-d303-4fe3-8212-accd6fb06e62,,yes,yes,changed: generic label doesn't mention Lipitor
+mqa-187,what medications could cause excessive hair growth,Side effects,drugs that cause hirsutism,,,yes,yes,no label for this drug in the corpus
+mqa-188,what time of day to take aripiprazole,Usage/time,aripiprazole,b72c0cff-9f4d-42e2-b884-d06dea3e6378,dosage_and_administration,,yes,kept
+mqa-189,warfarin and cabbage?,Interaction,warfarin; cabbage,5a5b5e3a-6556-a542-e063-6294a90a6d3f,drug_interactions;spl_medguide,,yes,changed: foods and vitamin K
+mqa-190,"can a patient stop using enalapril if the condition ""stabilize?""",Stopping/tapering,enalapril,3fbc6cce-7ad5-49d5-9705-5f66ef92d544,,yes,yes,changed: label doesn't say whether to stop
+mqa-191,when to take loratadine,Usage/time,loratadine,bc789b82-56ca-4248-b60a-252d9695636a,dosage_and_administration,,yes,kept: OTC: once daily
+mqa-192,where is tetracycline metabolized?,Action,tetracycline,02e88b4a-57ae-4ef6-ba48-97c657202b94,clinical_pharmacology,,yes,"kept: concentrated by liver, excreted in urine/feces"
+mqa-193,how to stop taking atorvastatin,Stopping/tapering,atorvastatin,6600f22e-d303-4fe3-8212-accd6fb06e62,,yes,yes,changed: label doesn't cover stopping
+mqa-194,bupropion hcl 300mg is good for what?,Indication,bupropion hcl 300mg,86530199-999b-9f92-b1bc-b8515ec829f3,indications_and_usage,,yes,kept: answer text is here
+mqa-195,how much weight gain with carvedilol,Side effects,carvedilol,d7d6bfff-fbb6-4a1f-aa13-babbb9a1e878,adverse_reactions,,yes,changed: weight increase listed
+mqa-196,is dicyclomine good for heartburn?,Indication,dicyclomine,6d7e73b0-3f7e-462f-92eb-cc82919c8095,indications_and_usage,,yes,"kept: indicated for IBS, not heartburn"
+mqa-197,how should i dilute ceftriaxone injection?,Usage,ceftriaxone injection,ddbc3bf6-5bab-4851-ae5a-ef263cd8f255,dosage_and_administration,,yes,kept: answer text is here
+mqa-198,what is diclofenac ointment used for,Indication,diclofenac,5a852412-69af-6502-e063-6294a90a0748,,yes,yes,"changed: our label is diclofenac tablets, not the gel"
+mqa-199,what is terfenadine,Information,terfenadine,,,yes,yes,no label for this drug in the corpus
+mqa-200,what are the side effects of taking the two medication amlodipine metoprolol together,Interaction,amlodipine; metoprolol,5af8493b-2b73-859c-e063-6394a90a4620;a46cbf09-20e3-4f0d-ab41-221f60fde068,indications_and_usage;adverse_reactions,,yes,changed: amlodipine can be combined with other BP drugs; edema
