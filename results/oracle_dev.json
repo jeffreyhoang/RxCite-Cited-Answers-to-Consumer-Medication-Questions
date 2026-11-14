@@ -1,0 +1,346 @@
+{
+  "arch": "oracle",
+  "mode": "dev",
+  "n_answerable": 20,
+  "n_refusal": 10,
+  "new_api_runs": {
+    "pipeline_answers": 0,
+    "judge_calls": 0
+  },
+  "metrics": {
+    "retrieval": {
+      "recall@10": 1.0,
+      "mrr": 1.0,
+      "n": 20
+    },
+    "false_refusal_rate": 0.0,
+    "refusal_accuracy": 1.0,
+    "refusal_accuracy_by_reason": {
+      "missing_from_corpus": 1.0,
+      "no_supporting_label": 1.0,
+      "personalized_advice": 1.0
+    },
+    "latency_s": {
+      "mean": 0.64116997217061,
+      "median": 0.908010853570886
+    },
+    "judge": {
+      "correctness": 0,
+      "groundedness": 1.05,
+      "citation_accuracy": 0.65,
+      "n": 20
+    }
+  },
+  "questions": [
+    {
+      "id": "mqa-057",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.1176551670068875,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 0,
+        "reason": "The answer only points the reader to the overdosage section and never states what happens (hypoglycemia, hypokalemia, coma or seizures), so it does not answer the question; it makes no false claims, but the cited excerpt supports no actual claim in the answer."
+      }
+    },
+    {
+      "id": "mqa-012",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9320210000732914,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 0,
+        "reason": "The answer only points the reader to the pharmacokinetics section and gives no information such as the 1.5-2 hour elimination half-life, so it does not answer the question; it makes no false claims, but the citation is just a pointer and supports no actual claim."
+      }
+    },
+    {
+      "id": "mqa-127",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9091550410958007,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer only points to the description section and never states what the pill looks like (very light to light blue, round, biconvex, scored, debossed 'A' and '44'), so it does not answer the question; the cited description section does mention color and shape, so the pointer is loosely relevant but no claim is actually made or supported."
+      }
+    },
+    {
+      "id": "mqa-113",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9068666660459712,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer only points to the label section and gives no actual information on whether 600 mg is strong or how high the dose can go, though the cited section does contain the relevant details."
+      }
+    },
+    {
+      "id": "mqa-108",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9000430840533227,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer only points to the warnings section and gives no actual information about stopping bisoprolol (e.g., avoid abrupt cessation, taper over about a week, consult the physician), so it does not answer the question; the cited section does contain the relevant content, but the answer makes no substantive claims to be supported."
+      }
+    },
+    {
+      "id": "mqa-072",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9184847079450265,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer only points to the description section and never states the active ingredient (montelukast sodium) or the inactive ingredients, so it does not answer the question, though the cited section does contain that information."
+      }
+    },
+    {
+      "id": "mqa-055",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.8865719579625875,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer only says to see the how supplied section and never describes the tablet's appearance, so it does not answer the question; it makes no false claims and the cited section is relevant, but it supports no actual description."
+      }
+    },
+    {
+      "id": "mqa-230",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9193547919858247,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 0,
+        "reason": "The answer only points to a label section without saying what fentanyl is (an opioid agonist/analgesic), so it does not answer the question, makes no substantive claim to ground, and the citation supports no stated content."
+      }
+    },
+    {
+      "id": "mqa-048",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.0221481249900535,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer only points to the medguide section and gives no actual dietary information (normal balanced diet, consistent vitamin K, avoid large amounts of leafy greens), so it does not answer the question; the cited section does contain the relevant info but the answer makes no substantive claims to support."
+      }
+    },
+    {
+      "id": "mqa-245",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9694949169643223,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer only points to the label section and gives no dose (125 to 250 mg every 6 to 8 hours for 10 days), so it does not answer the question; it makes no false claims but states nothing substantive, and the citation points to the right section while supporting no stated claim."
+      }
+    },
+    {
+      "id": "mqa-181",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.8826394589850679,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 0,
+        "reason": "The answer only points to the label section and gives no actual information about when to take memantine (e.g., once daily, with or without food), so it does not answer the question, and the citation is merely a pointer that supports no stated claim."
+      }
+    },
+    {
+      "id": "mqa-017",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9378897090209648,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer only points to a label section and never states whether the patient can eat after taking Rapaflo (the label says to take it with a meal), so it fails to answer; the cited section does contain the relevant information, but no claim is actually made."
+      }
+    },
+    {
+      "id": "mqa-014",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9521747919498011,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 0,
+        "reason": "The answer only refers the reader to the label section and gives no actual administration information (subcutaneous route, healthcare provider administration, injection sites, dosing intervals), so it does not answer the question and the citation supports no specific claim."
+      }
+    },
+    {
+      "id": "mqa-050",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.8433879170333967,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 0,
+        "reason": "The answer lists no contraindications and only points to the label section, so it fails to answer the question; its sole claim (that a morphine label has a contraindications section) is true but trivial, and the citation, though to a real excerpt, supports no substantive claim about the contraindications themselves."
+      }
+    },
+    {
+      "id": "mqa-104",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.941586458007805,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer only points to the indications section without saying that enalaprilat is for hypertension and not stroke, so it does not answer the question; it makes no false claims, but the citation does not support any actual claim."
+      }
+    },
+    {
+      "id": "mqa-110",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.0962931249523535,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 0,
+        "reason": "The answer only points to the gabapentin indications section without comparing gabapentin and Lyrica (pregabalin) for pain, so it does not answer the question, and the single gabapentin citation cannot support a comparison that was never made."
+      }
+    },
+    {
+      "id": "mqa-219",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9959271670086309,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer only says to see the instructions for use section and gives no actual usage steps, and it never addresses the demonstration video part of the question, even though the excerpts contain full instructions; the reference is also much more detailed. Its single pointer to the instructions section is accurate, but it makes no substantive claims to ground or cite."
+      }
+    },
+    {
+      "id": "mqa-249",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.0034839579602703,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer only points to the drug interactions section and never says which spices are safe or unsafe, so it does not answer the question, although the cited section does discuss botanicals such as garlic and ginkgo that interact with warfarin."
+      }
+    },
+    {
+      "id": "mqa-235",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9859418330015615,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 2,
+        "citation_accuracy": 1,
+        "reason": "The answer only points to the description section and never states any ingredients, so it does not answer the question, though the cited excerpt does contain the relevant ingredient information and nothing stated is unsupported."
+      }
+    },
+    {
+      "id": "mqa-099",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.1139261670177802,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer only points to the description section and never names the ingredients (testosterone cypionate, benzyl benzoate, cottonseed oil, benzyl alcohol), so it does not answer the question; the cited excerpt does contain the relevant information but no specific claim is made to be supported."
+      }
+    },
+    {
+      "id": "ref-013",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 1.7915968783199787e-05
+    },
+    {
+      "id": "mqa-128",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 6.791087798774242e-06
+    },
+    {
+      "id": "ref-020",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": true,
+      "latency_s": 4.041939973831177e-06
+    },
+    {
+      "id": "mqa-180",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.2080570235848427e-06
+    },
+    {
+      "id": "mqa-008",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.4580007195472717e-06
+    },
+    {
+      "id": "mqa-081",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.3330870792269707e-06
+    },
+    {
+      "id": "ref-014",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 4.58303838968277e-06
+    },
+    {
+      "id": "mqa-213",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.7079444155097008e-06
+    },
+    {
+      "id": "mqa-079",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.8329668566584587e-06
+    },
+    {
+      "id": "mqa-126",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.2499665394425392e-06
+    }
+  ]
+}

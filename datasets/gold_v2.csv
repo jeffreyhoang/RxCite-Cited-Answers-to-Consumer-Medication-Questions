@@ -13,7 +13,7 @@ mqa-211,how many milligrams in tramadol,Dose,Tramadol,a6cbd5de-8ae5-49e3-b89b-e3
 mqa-212,what tramadol pills look like,Appearance,Tramadol,a6cbd5de-8ae5-49e3-b89b-e35536b115d8,dosage_forms_and_strengths;how_supplied,,yes,changed: tablet color/imprint
 mqa-213,drug therapyof gastritis when taking diclofenac sodium,Side effects,Diclofenac,5a852412-69af-6502-e063-6294a90a0748,,yes,yes,changed: label warns of GI ulcers but gives no gastritis treatment
 mqa-214,latanoprost ophthalmic how long do you use the drops,Usage/time,Latanoprost Ophthalmic,be74d517-7f73-a74c-e053-2a95a90a3819,,yes,yes,changed: no answer in MedicationQA; label gives no length of use
-mqa-215,can i drink cataflam when i drink medrol;,Interaction,"Cataflam, Medrol",5a852412-69af-6502-e063-6294a90a0748;ae524bdb-9fd0-49f9-802d-465a374c175b,warnings;spl_medguide,,yes,changed: oral corticosteroids raise NSAID GI bleeding risk
+mqa-215,can i drink cataflam when i drink medrol;,Interaction,"Cataflam, Medrol",5a852412-69af-6502-e063-6294a90a0748,warnings;spl_medguide,,yes,changed: oral corticosteroids raise NSAID GI bleeding risk; gold is in the diclofenac label only
 mqa-216,age limits for use of bupropion?,Indication,Bupropion,86530199-999b-9f92-b1bc-b8515ec829f3,use_in_specific_populations;warnings_and_cautions,,yes,changed: pediatric safety not established; suicidality in young people
 mqa-217,how to inject insulin,Usage,Insulin,12ec9e3f-e2ac-43a1-b334-8b6538cf2bb0,dosage_and_administration,,yes,kept: subcutaneous injection
 mqa-218,"why no side affects on hydromorphone listed, yet on reg inet they have a list?",Side effects,Hydromorphone,59d88866-e1ba-9d97-e063-6394a90a7b27,adverse_reactions,,yes,kept: label does list side effects
@@ -27,7 +27,7 @@ mqa-225,why did my doctor give me levetiracetam,Indication,levetiracetam,0348fec
 mqa-226,how to use spiriva,Usage,spiriva,7b656b14-fcaa-2741-f6f0-e0be48971c02,dosage_and_administration;spl_patient_package_insert,,yes,changed: our label is Respimat; reference is HandiHaler
 mqa-227,is lasix the only diuretic drug for fluid build up in heart failure patients?,Indication,Lasix,dba00759-87b4-4ecf-998e-ba03ed3d2f1a,,yes,yes,changed: label can't say what other diuretics exist
 mqa-228,what dosage amounts does aripiprazole,Dose,aripiprazole,b72c0cff-9f4d-42e2-b884-d06dea3e6378,dosage_and_administration,,yes,kept: answer text is here
-mqa-229,should metoprolol and lexapro be taken together?,Interaction,metoprolol + Lexapro,a46cbf09-20e3-4f0d-ab41-221f60fde068;9ddd1f24-3ebd-4307-bb23-6acd742cd140,pharmacokinetics;clinical_pharmacology,,yes,changed: answer text is here (escitalopram label)
+mqa-229,should metoprolol and lexapro be taken together?,Interaction,metoprolol + Lexapro,9ddd1f24-3ebd-4307-bb23-6acd742cd140,pharmacokinetics;clinical_pharmacology,,yes,changed: answer text is here (escitalopram label); gold is in the escitalopram label only
 mqa-230,what is fentanyl,Information,fentanyl,bfa8018a-4cbc-434b-e09e-782872b0340a,indications_and_usage;description,,yes,changed: opioid agonist
 mqa-231,what do percocets look like,Appearance,percocet,40a68a27-4422-5ba0-e063-6294a90ac550,how_supplied,,yes,changed: generic tablet look; reference is brand Percocet (blue)
 mqa-232,what is coumadin,Information,coumadin,5a5b5e3a-6556-a542-e063-6294a90a6d3f,description,,yes,kept: answer text is here

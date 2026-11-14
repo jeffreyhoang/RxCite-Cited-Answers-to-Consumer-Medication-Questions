@@ -1,4 +1,4 @@
-"""Check that the environment can reach Supabase with pgvector enabled.
+"""Check that the environment can reach Supabase (with pgvector) and Claude.
 
 Run from backend/: uv run python scripts/smoke_test.py
 """
@@ -33,5 +33,23 @@ def check_supabase() -> bool:
     return True
 
 
+def check_claude() -> bool:
+    import anthropic
+
+    from rxcite import llm
+    from rxcite.config import GENERATOR_MODEL
+
+    try:
+        first = llm.call("Reply with exactly: OK", GENERATOR_MODEL, max_tokens=50)
+        again = llm.call("Reply with exactly: OK", GENERATOR_MODEL, max_tokens=50)
+    except (anthropic.APIError, RuntimeError) as e:
+        print(f"Claude: FAIL ({type(e).__name__})")
+        return False
+    print(f"Claude: OK ({GENERATOR_MODEL} said {first.text.strip()!r})")
+    print(f"Claude repeat: cache hit = {again.cached}")
+    return again.cached
+
+
 if __name__ == "__main__":
-    sys.exit(0 if check_supabase() else 1)
+    results = [check_supabase(), check_claude()]
+    sys.exit(0 if all(results) else 1)

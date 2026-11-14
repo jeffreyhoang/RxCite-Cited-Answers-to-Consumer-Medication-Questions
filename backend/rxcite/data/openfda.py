@@ -103,4 +103,3 @@ def pick_distractors(taken: list[str]) -> list[str]:
             break
     DISTRACTORS_FILE.write_text(json.dumps(chosen, indent=2))
     return chosen
-

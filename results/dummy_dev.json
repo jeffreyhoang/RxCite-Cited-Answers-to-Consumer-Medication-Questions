@@ -1,0 +1,346 @@
+{
+  "arch": "dummy",
+  "mode": "dev",
+  "n_answerable": 20,
+  "n_refusal": 10,
+  "new_api_runs": {
+    "pipeline_answers": 30,
+    "judge_calls": 20
+  },
+  "metrics": {
+    "retrieval": {
+      "recall@10": 0.0,
+      "mrr": 0.0,
+      "n": 20
+    },
+    "false_refusal_rate": 0.0,
+    "refusal_accuracy": 0.0,
+    "refusal_accuracy_by_reason": {
+      "missing_from_corpus": 0.0,
+      "no_supporting_label": 0.0,
+      "personalized_advice": 0.0
+    },
+    "latency_s": {
+      "mean": 1.096371399910034,
+      "median": 1.086366020492278
+    },
+    "judge": {
+      "correctness": 0,
+      "groundedness": 0,
+      "citation_accuracy": 0,
+      "n": 20
+    }
+  },
+  "questions": [
+    {
+      "id": "mqa-057",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.0463632500031963,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer only points to the carbamazepine warnings section and never addresses what happens with excess insulin (hypoglycemia), and the cited excerpt says nothing about insulin."
+      }
+    },
+    {
+      "id": "mqa-012",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.2698024159763008,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer points to the linezolid label, which has nothing about morphine, so it does not answer the question; none of the excerpts cover morphine, and the citation does not support any relevant claim."
+      }
+    },
+    {
+      "id": "mqa-127",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.1397571249399334,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer does not describe oxybutynin's appearance and points to an unrelated cyproheptadine nursing mothers section, which doesn't support any answer to the question; the excerpts contain no oxybutynin information."
+      }
+    },
+    {
+      "id": "mqa-113",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.0818409159546718,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer only points to the terbinafine clinical studies section and says nothing about gabapentin dosing, so it fails the question, and the cited terbinafine excerpt (about onychomycosis efficacy) does not support any answer about gabapentin doses."
+      }
+    },
+    {
+      "id": "mqa-108",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.2270884169265628,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer points to the dutasteride warnings section, which has nothing on bisoprolol or how to stop it, so it misses the needed guidance on tapering and avoiding abrupt cessation, and the cited excerpt cannot support any answer to the question."
+      }
+    },
+    {
+      "id": "mqa-072",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.1510540830204263,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer points to the glipizide how-supplied section, which says nothing about montelukast or its active ingredient (montelukast sodium), so it neither answers the question nor is supported by or accurately cited to the excerpts."
+      }
+    },
+    {
+      "id": "mqa-055",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.0984141660155728,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer only points to the hydroxychloroquine mechanism of action section, which says nothing about what Topamax tablets look like, so it fails to answer the question, and neither the claim nor the citation is supported by the excerpt's relevance."
+      }
+    },
+    {
+      "id": "mqa-230",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.1561932920012623,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer never says what fentanyl is and only points to the citalopram warnings section, which mentions fentanyl just as a serotonergic drug that raises serotonin syndrome risk, so it neither answers the question nor is supported or properly cited."
+      }
+    },
+    {
+      "id": "mqa-048",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.02435445797164,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer only points to the metronidazole dosage section, which has nothing about warfarin or foods, so it does not answer the question, its implied claim is unsupported, and the citation does not support it."
+      }
+    },
+    {
+      "id": "mqa-245",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.0355947909411043,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer points to the neostigmine overdosage section, which has nothing to do with penicillin dosing for strep throat, so it fails to answer the question, makes no claim the excerpt supports, and cites an irrelevant section."
+      }
+    },
+    {
+      "id": "mqa-181",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.126604124903679,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer points to the risperidone pharmacokinetics section, which says nothing about memantine or when to take it, so it does not answer the question; no excerpt covers memantine, and the cited section does not support any relevant claim."
+      }
+    },
+    {
+      "id": "mqa-017",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.35357599996496,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer only points to the flecainide description section, which says nothing about Rapaflo or taking it with food, so it does not answer the question (reference: take with a meal) and the citation does not support any answer."
+      }
+    },
+    {
+      "id": "mqa-014",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.2275700840400532,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer points to the desvenlafaxine label, which has nothing on denosumab, so it gives no administration information and the citation does not support any relevant claim."
+      }
+    },
+    {
+      "id": "mqa-050",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.0423527919920161,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer points to the terbinafine label's clinical pharmacology section, which has nothing on Kadian contraindications, so it fails to give the actual contraindications (respiratory depression, severe asthma, paralytic ileus, morphine hypersensitivity); the claim is unsupported and the citation is irrelevant."
+      }
+    },
+    {
+      "id": "mqa-104",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.0861220830120146,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer only points to the venlafaxine warnings section, which says nothing about enalaprilat or stroke, so it does not answer the question (enalaprilat treats hypertension), and the cited excerpt does not support any relevant claim."
+      }
+    },
+    {
+      "id": "mqa-110",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.955683666979894,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer points to an unrelated fluticasone/salmeterol geriatric section and says nothing about gabapentin versus Lyrica (pregabalin), and the excerpts contain no relevant information, so the answer fails to address the question and the citation does not support any relevant claim."
+      }
+    },
+    {
+      "id": "mqa-219",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.0866099579725415,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer points to the moxifloxacin nonclinical toxicology section, which has nothing to do with albuterol inhaler use, so it does not answer the question, the claim is unsupported, and the citation is irrelevant."
+      }
+    },
+    {
+      "id": "mqa-249",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.2132149159442633,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer only points to the levetiracetam pregnancy section, which has nothing to do with spices or warfarin, so it does not answer the question, is unsupported by the excerpts, and the citation does not support any relevant claim."
+      }
+    },
+    {
+      "id": "mqa-235",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.053423541947268,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The answer points to the enalaprilat label, which has nothing to do with indomethacin's ingredients, so it fails to answer the question, and the cited excerpt does not support any claim about indomethacin."
+      }
+    },
+    {
+      "id": "mqa-099",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.0802161250030622,
+      "judge": {
+        "correctness": 0,
+        "groundedness": 0,
+        "citation_accuracy": 0,
+        "reason": "The question asks which drugs are in testosterone injection (reference: testosterone undecanoate, cypionate, enanthate), but the answer only points to a ciprofloxacin/dexamethasone otic label's warnings section, which is irrelevant, unsupported by the excerpts, and the citation does not support any relevant claim."
+      }
+    },
+    {
+      "id": "ref-013",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 1.142938792007044
+    },
+    {
+      "id": "mqa-128",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 1.0172779590357095
+    },
+    {
+      "id": "ref-020",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 1.0467449589632452
+    },
+    {
+      "id": "mqa-180",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 1.0893447909038514
+    },
+    {
+      "id": "mqa-008",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.9819440830033273
+    },
+    {
+      "id": "mqa-081",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 1.0939466250129044
+    },
+    {
+      "id": "ref-014",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 1.1352690410567448
+    },
+    {
+      "id": "mqa-213",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 1.0063095419900492
+    },
+    {
+      "id": "mqa-079",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.9967362919123843
+    },
+    {
+      "id": "mqa-126",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.9247937079053372
+    }
+  ]
+}
