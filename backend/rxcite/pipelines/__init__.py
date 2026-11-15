@@ -25,6 +25,12 @@ def _pgvector_dense() -> RAGPipeline:
     return PgvectorDensePipeline()
 
 
+def _naive() -> RAGPipeline:
+    from rxcite.pipelines.naive import NaivePipeline
+
+    return NaivePipeline()
+
+
 def _dense(model: str) -> Callable[[], RAGPipeline]:
     def build() -> RAGPipeline:
         from rxcite.pipelines.dense import DensePipeline
@@ -37,6 +43,7 @@ def _dense(model: str) -> Callable[[], RAGPipeline]:
 PIPELINES: dict[str, Callable[[], RAGPipeline]] = {
     "oracle": _oracle,
     "dummy": _dummy,
+    "naive": _naive,  # T6: dense top-10 -> shared generator
     "dense": _pgvector_dense,  # chosen embedder, pgvector in Supabase
     # T5 embedder comparison (in memory): dense-bge-base, dense-pubmedbert, dense-openai-small
     **{f"dense-{m}": _dense(m) for m in MODELS},

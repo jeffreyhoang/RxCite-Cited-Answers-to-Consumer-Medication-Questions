@@ -59,7 +59,9 @@ def build_prompt(
     question: str, chunks: list[Chunk], answer: str, citations: list[Citation], reference: str
 ) -> str:
     excerpts = "\n\n".join(f"[{c.set_id} | {c.section}] ({c.drug_name})\n{c.text}" for c in chunks)
-    cited = "\n".join(f"[{c.set_id} | {c.section}]" for c in citations) or "(none)"
+    # Numbered to match the [k] markers in the answer
+    cited = "\n".join(f"[{i}] {c.set_id} | {c.section}" for i, c in enumerate(citations, 1))
+    cited = cited or "(none)"
     return (
         f"<question>\n{question}\n</question>\n\n"
         f"<label_excerpts>\n{excerpts}\n</label_excerpts>\n\n"

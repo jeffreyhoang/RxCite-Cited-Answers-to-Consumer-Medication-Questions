@@ -21,11 +21,42 @@ class Chunk:
     parent_id: str | None = None  # parent section id (Hierarchical RAG)
 
 
+DAILYMED_URL = "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid={set_id}"
+
+# Section names that don't read well with underscores swapped for spaces
+SECTION_NAMES = {
+    "spl_medguide": "Medication guide",
+    "spl_patient_package_insert": "Patient information",
+    "spl_unclassified_section": "Other label information",
+}
+
+
+# Readable label page for one FDA label (DailyMed, run by the National Library of Medicine)
+def citation_url(set_id: str) -> str:
+    return DAILYMED_URL.format(set_id=set_id)
+
+
+# "drug_interactions" -> "Drug interactions"
+def section_name(section: str) -> str:
+    return SECTION_NAMES.get(section) or section.replace("_", " ").capitalize()
+
+
 # Points at label section that the answer relied on
 @dataclass
 class Citation:
     set_id: str
     section: str
+    drug_name: str = field(default="", compare=False)  # for display only
+
+    @property
+    def url(self) -> str:
+        return citation_url(self.set_id)
+
+    # e.g. "Lisinopril — Drug interactions"
+    @property
+    def label(self) -> str:
+        name = section_name(self.section)
+        return f"{self.drug_name.title()} — {name}" if self.drug_name else name
 
 
 # What the generation returns
