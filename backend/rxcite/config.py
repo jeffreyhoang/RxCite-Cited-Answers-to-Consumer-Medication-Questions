@@ -43,8 +43,8 @@ JUDGE_MODEL = "claude-sonnet-5-5"  # stronger than the generator (T4 decision)
 FINAL_RUN_GENERATOR_MODEL = "claude-haiku-5-5"  # may switch to Sonnet 5.5 after T9
 
 
-EMBEDDING_MODEL = ""
-EMBEDDING_DIM: int | None = None  # must match the pgvector column; set in T5 with EMBEDDING_MODEL
+EMBEDDING_MODEL = "openai-small"  # key in rxcite/embeddings.py MODELS: text-embedding-3-small (T5)
+EMBEDDING_DIM = 512  # must match the pgvector halfvec column
 RERANKER_MODEL = ""
 
 

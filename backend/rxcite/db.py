@@ -2,7 +2,7 @@
 
 import psycopg
 
-from rxcite.config import supabase_db_url
+from rxcite.config import EMBEDDING_DIM, supabase_db_url
 
 
 # Open a connection to the Supabase database (use as `with connect() as conn:`)
@@ -30,7 +30,30 @@ create table if not exists sections (
 """
 
 
+# Fixed-size chunks (T5) with their embeddings; each chunk belongs to one label section.
+#       halfvec = 16-bit floats, half the storage of vector (fits the Supabase free tier)
+CHUNKS_SCHEMA = f"""
+create extension if not exists vector;
+
+create table if not exists chunks (
+    chunk_id  text primary key,  -- "<set_id>:<section>:<n>"
+    set_id    text not null,
+    section   text not null,
+    text      text not null,
+    embedding halfvec({EMBEDDING_DIM}) not null,
+    foreign key (set_id, section) references sections (set_id, section) on delete cascade
+);
+"""
+
+# Built after a bulk load (faster than updating the index row by row)
+CHUNKS_INDEX = """
+create index if not exists chunks_embedding_idx
+    on chunks using hnsw (embedding halfvec_cosine_ops);
+"""
+
+
 # Create the tables if they don't exist yet (safe to run more than once)
 def create_tables() -> None:
     with connect() as conn:
         conn.execute(SCHEMA)
+        conn.execute(CHUNKS_SCHEMA)
