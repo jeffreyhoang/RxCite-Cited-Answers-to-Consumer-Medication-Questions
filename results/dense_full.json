@@ -22,8 +22,8 @@
       "personalized_advice": 0.0
     },
     "latency_s": {
-      "mean": 0.46796666498994455,
-      "median": 0.4393541664467193
+      "mean": 0.4232087049187268,
+      "median": 0.40517677046591416
     }
   },
   "questions": [
@@ -31,1913 +31,1913 @@
       "id": "mqa-001",
       "set": "answerable",
       "refused": false,
-      "latency_s": 3.1079990840516984
+      "latency_s": 1.8053613330703229
     },
     {
       "id": "mqa-002",
       "set": "answerable",
       "refused": false,
-      "latency_s": 1.262479875003919
+      "latency_s": 0.7600825419649482
     },
     {
       "id": "mqa-004",
       "set": "answerable",
       "refused": false,
-      "latency_s": 1.1407742919400334
+      "latency_s": 0.8308334589237347
     },
     {
       "id": "mqa-005",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.6768389589851722
+      "latency_s": 0.5428912079660222
     },
     {
       "id": "mqa-006",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.794319917098619
+      "latency_s": 0.4611225420376286
     },
     {
       "id": "mqa-007",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.8763240840053186
+      "latency_s": 0.6734519589226693
     },
     {
       "id": "mqa-012",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.7645733340177685
+      "latency_s": 0.48511179198976606
     },
     {
       "id": "mqa-014",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3978161249542609
+      "latency_s": 0.499274457921274
     },
     {
       "id": "mqa-017",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.6540598749415949
+      "latency_s": 0.47002258291468024
     },
     {
       "id": "mqa-018",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5674358749529347
+      "latency_s": 0.5762617079308257
     },
     {
       "id": "mqa-021",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5138814999954775
+      "latency_s": 0.44045266695320606
     },
     {
       "id": "mqa-023",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.6183114589657634
+      "latency_s": 0.6399596669944003
     },
     {
       "id": "mqa-024",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5356168750440702
+      "latency_s": 0.4003443750552833
     },
     {
       "id": "mqa-025",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4833409159909934
+      "latency_s": 0.578721750061959
     },
     {
       "id": "mqa-027",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4084094580030069
+      "latency_s": 0.7814299169695005
     },
     {
       "id": "mqa-028",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.47730733396019787
+      "latency_s": 0.5347686669556424
     },
     {
       "id": "mqa-029",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.6964760420378298
+      "latency_s": 0.9132542919833213
     },
     {
       "id": "mqa-030",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.32580054202117026
+      "latency_s": 0.7243617079220712
     },
     {
       "id": "mqa-032",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3773841660004109
+      "latency_s": 0.5606394580099732
     },
     {
       "id": "mqa-035",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.29758354206569493
+      "latency_s": 0.2745537910377607
     },
     {
       "id": "mqa-042",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.6956829580012709
+      "latency_s": 0.40047904197126627
     },
     {
       "id": "mqa-046",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.49363958404865116
+      "latency_s": 0.46464029198978096
     },
     {
       "id": "mqa-048",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4349982920102775
+      "latency_s": 0.46560183400288224
     },
     {
       "id": "mqa-050",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3363937500398606
+      "latency_s": 0.476256416994147
     },
     {
       "id": "mqa-053",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4816004999447614
+      "latency_s": 0.4430743750417605
     },
     {
       "id": "mqa-054",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4786933750147
+      "latency_s": 0.4964087080443278
     },
     {
       "id": "mqa-055",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4330219170078635
+      "latency_s": 0.4883747500134632
     },
     {
       "id": "mqa-056",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.47558416600804776
+      "latency_s": 0.5526937079848722
     },
     {
       "id": "mqa-057",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.32616429193876684
+      "latency_s": 0.4088258750271052
     },
     {
       "id": "mqa-058",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.33054012490902096
+      "latency_s": 0.3586677920538932
     },
     {
       "id": "mqa-064",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.44793595804367214
+      "latency_s": 0.4854689580388367
     },
     {
       "id": "mqa-065",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.551406875019893
+      "latency_s": 0.38335187500342727
     },
     {
       "id": "mqa-066",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3147841249592602
+      "latency_s": 0.5794639579253271
     },
     {
       "id": "mqa-067",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.536521082976833
+      "latency_s": 0.7888446249999106
     },
     {
       "id": "mqa-071",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4264250840060413
+      "latency_s": 0.4276562080485746
     },
     {
       "id": "mqa-072",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.32362345792353153
+      "latency_s": 0.4026769589399919
     },
     {
       "id": "mqa-073",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3453486249782145
+      "latency_s": 0.5096854579169303
     },
     {
       "id": "mqa-075",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.6804067080374807
+      "latency_s": 0.49878316710237414
     },
     {
       "id": "mqa-077",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3222869170131162
+      "latency_s": 0.3979389170417562
     },
     {
       "id": "mqa-080",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5237392090493813
+      "latency_s": 0.48612533300183713
     },
     {
       "id": "mqa-082",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.46249387494754046
+      "latency_s": 0.2895120830507949
     },
     {
       "id": "mqa-083",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.30616345803719014
+      "latency_s": 0.4143949169665575
     },
     {
       "id": "mqa-085",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.6505128749413416
+      "latency_s": 0.3201317499624565
     },
     {
       "id": "mqa-088",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.6500589170027524
+      "latency_s": 0.28953912493307143
     },
     {
       "id": "mqa-089",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5960104580735788
+      "latency_s": 0.27560229098889977
     },
     {
       "id": "mqa-092",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5111456249142066
+      "latency_s": 0.524275750038214
     },
     {
       "id": "mqa-093",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5656874999403954
+      "latency_s": 0.5000403330195695
     },
     {
       "id": "mqa-094",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4779252919834107
+      "latency_s": 0.5435099169844761
     },
     {
       "id": "mqa-097",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.7737849169643596
+      "latency_s": 0.4136306659784168
     },
     {
       "id": "mqa-098",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.6788281659828499
+      "latency_s": 0.4138267911039293
     },
     {
       "id": "mqa-099",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.40579208394046873
+      "latency_s": 0.287579208961688
     },
     {
       "id": "mqa-100",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.35728266602382064
+      "latency_s": 0.3981517079519108
     },
     {
       "id": "mqa-101",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.7255027909995988
+      "latency_s": 0.26758508407510817
     },
     {
       "id": "mqa-102",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.34807399997953326
+      "latency_s": 0.4896595829632133
     },
     {
       "id": "mqa-103",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3204237500904128
+      "latency_s": 0.44980208296328783
     },
     {
       "id": "mqa-104",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.8912111250683665
+      "latency_s": 0.4236661249306053
     },
     {
       "id": "mqa-105",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3228232500841841
+      "latency_s": 0.29680974991060793
     },
     {
       "id": "mqa-108",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.43384700000751764
+      "latency_s": 0.4049381249351427
     },
     {
       "id": "mqa-109",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5799514999380335
+      "latency_s": 0.5399726249743253
     },
     {
       "id": "mqa-110",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3158635419094935
+      "latency_s": 0.42743312497623265
     },
     {
       "id": "mqa-111",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5846654169727117
+      "latency_s": 0.37200987502001226
     },
     {
       "id": "mqa-112",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.44341029098723084
+      "latency_s": 0.43508358392864466
     },
     {
       "id": "mqa-113",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.2953362500993535
+      "latency_s": 0.5094704169314355
     },
     {
       "id": "mqa-114",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.362378166988492
+      "latency_s": 1.2554170000366867
     },
     {
       "id": "mqa-115",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3268351670121774
+      "latency_s": 0.44529708300251514
     },
     {
       "id": "mqa-116",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.36089500004891306
+      "latency_s": 0.41283616703003645
     },
     {
       "id": "mqa-118",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3401301249396056
+      "latency_s": 0.3744079580064863
     },
     {
       "id": "mqa-119",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3719391250051558
+      "latency_s": 0.4201121669029817
     },
     {
       "id": "mqa-121",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.78047208301723
+      "latency_s": 0.3515594999771565
     },
     {
       "id": "mqa-124",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.45613320800475776
+      "latency_s": 0.3372595839900896
     },
     {
       "id": "mqa-127",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5419519169954583
+      "latency_s": 0.3190094579476863
     },
     {
       "id": "mqa-129",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.7156625411007553
+      "latency_s": 0.33674279192928225
     },
     {
       "id": "mqa-130",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5908974589547142
+      "latency_s": 0.29287729097995907
     },
     {
       "id": "mqa-131",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.6431613339809701
+      "latency_s": 0.36511029209941626
     },
     {
       "id": "mqa-132",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.7432807090226561
+      "latency_s": 0.2783495000330731
     },
     {
       "id": "mqa-133",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.8045943749602884
+      "latency_s": 0.4511944589903578
     },
     {
       "id": "mqa-137",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5055057080462575
+      "latency_s": 0.38102620793506503
     },
     {
       "id": "mqa-138",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.7605622910195962
+      "latency_s": 0.6813649159157649
     },
     {
       "id": "mqa-139",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.633560249931179
+      "latency_s": 0.336642749956809
     },
     {
       "id": "mqa-140",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4940638750558719
+      "latency_s": 0.40889608405996114
     },
     {
       "id": "mqa-141",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.6034399999771267
+      "latency_s": 0.2689940830459818
     },
     {
       "id": "mqa-142",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4793110419996083
+      "latency_s": 0.2891575420508161
     },
     {
       "id": "mqa-143",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.501551124965772
+      "latency_s": 0.30879662500228733
     },
     {
       "id": "mqa-144",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.41462320799473673
+      "latency_s": 0.3256858749082312
     },
     {
       "id": "mqa-145",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.40574987488798797
+      "latency_s": 0.37596966698765755
     },
     {
       "id": "mqa-146",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4425632500788197
+      "latency_s": 0.4014542499789968
     },
     {
       "id": "mqa-147",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.42022783297579736
+      "latency_s": 0.4061864579562098
     },
     {
       "id": "mqa-148",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5061250829603523
+      "latency_s": 0.2708903750171885
     },
     {
       "id": "mqa-151",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.39793229196220636
+      "latency_s": 0.4343818329507485
     },
     {
       "id": "mqa-152",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.2756146671017632
+      "latency_s": 0.2920775000238791
     },
     {
       "id": "mqa-153",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.41612120892386883
+      "latency_s": 0.43440220807679
     },
     {
       "id": "mqa-154",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.42284762498456985
+      "latency_s": 0.4806144169997424
     },
     {
       "id": "mqa-157",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.31380545906722546
+      "latency_s": 0.45032029191497713
     },
     {
       "id": "mqa-158",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4561129159992561
+      "latency_s": 0.2902020829496905
     },
     {
       "id": "mqa-160",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.30571108299773186
+      "latency_s": 0.2858895829413086
     },
     {
       "id": "mqa-161",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4085128749720752
+      "latency_s": 0.43307949998416007
     },
     {
       "id": "mqa-163",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4099337080260739
+      "latency_s": 0.4405478340340778
     },
     {
       "id": "mqa-164",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5271373329451308
+      "latency_s": 0.4301998750306666
     },
     {
       "id": "mqa-166",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.33844362501986325
+      "latency_s": 0.26619808305986226
     },
     {
       "id": "mqa-167",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5214471669169143
+      "latency_s": 0.2894691670080647
     },
     {
       "id": "mqa-168",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.30036154109984636
+      "latency_s": 0.2829811660340056
     },
     {
       "id": "mqa-169",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.35063200001604855
+      "latency_s": 0.28290212503634393
     },
     {
       "id": "mqa-170",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4401962920092046
+      "latency_s": 0.46492395806126297
     },
     {
       "id": "mqa-171",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.34564029099419713
+      "latency_s": 0.35038591700140387
     },
     {
       "id": "mqa-173",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3120861250208691
+      "latency_s": 0.5947244159178808
     },
     {
       "id": "mqa-175",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.43578745797276497
+      "latency_s": 0.35883833398111165
     },
     {
       "id": "mqa-176",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.30560050008352846
+      "latency_s": 0.3200205829925835
     },
     {
       "id": "mqa-177",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.45415987505111843
+      "latency_s": 0.27988787495996803
     },
     {
       "id": "mqa-181",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.518597541959025
+      "latency_s": 0.31089991703629494
     },
     {
       "id": "mqa-182",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5328964160289615
+      "latency_s": 0.42326445796061307
     },
     {
       "id": "mqa-185",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.39339012489654124
+      "latency_s": 0.276268083951436
     },
     {
       "id": "mqa-188",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.45090229203924537
+      "latency_s": 0.4300242499448359
     },
     {
       "id": "mqa-189",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4211902910610661
+      "latency_s": 0.31115887500345707
     },
     {
       "id": "mqa-191",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3193236249499023
+      "latency_s": 1.2439131250139326
     },
     {
       "id": "mqa-192",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5297575830481946
+      "latency_s": 0.5013037499738857
     },
     {
       "id": "mqa-194",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4362682920182124
+      "latency_s": 0.3961745409760624
     },
     {
       "id": "mqa-195",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.40741358301602304
+      "latency_s": 0.4804397081024945
     },
     {
       "id": "mqa-196",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.471936458023265
+      "latency_s": 0.4383093339856714
     },
     {
       "id": "mqa-197",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4307538339635357
+      "latency_s": 0.4474473330192268
     },
     {
       "id": "mqa-200",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.39068787498399615
+      "latency_s": 0.39828937500715256
     },
     {
       "id": "mqa-201",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.6422181670786813
+      "latency_s": 0.42146979202516377
     },
     {
       "id": "mqa-202",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.6264805420069024
+      "latency_s": 0.47561129194218665
     },
     {
       "id": "mqa-207",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.29415141697973013
+      "latency_s": 0.37831958301831037
     },
     {
       "id": "mqa-211",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5129892500117421
+      "latency_s": 0.42275120806880295
     },
     {
       "id": "mqa-212",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4432040828978643
+      "latency_s": 0.4376264170277864
     },
     {
       "id": "mqa-215",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.332581042079255
+      "latency_s": 0.4242719999747351
     },
     {
       "id": "mqa-216",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.39775500004179776
+      "latency_s": 0.3968697499949485
     },
     {
       "id": "mqa-217",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.566962750046514
+      "latency_s": 0.38730791700072587
     },
     {
       "id": "mqa-218",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.426369542023167
+      "latency_s": 0.3849335830891505
     },
     {
       "id": "mqa-219",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.45009416702669114
+      "latency_s": 0.3158407079754397
     },
     {
       "id": "mqa-220",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.46302866702899337
+      "latency_s": 0.5041915829060599
     },
     {
       "id": "mqa-221",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5681707920739427
+      "latency_s": 0.9439729580190033
     },
     {
       "id": "mqa-222",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3891677079955116
+      "latency_s": 0.5403820410137996
     },
     {
       "id": "mqa-223",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.47168029099702835
+      "latency_s": 0.8660604170290753
     },
     {
       "id": "mqa-224",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.40400508395396173
+      "latency_s": 0.6812736659776419
     },
     {
       "id": "mqa-225",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.43479424994438887
+      "latency_s": 0.522035124944523
     },
     {
       "id": "mqa-226",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4130740000400692
+      "latency_s": 0.3533188330475241
     },
     {
       "id": "mqa-228",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.44789695902727544
+      "latency_s": 0.5656313329236582
     },
     {
       "id": "mqa-229",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3125116659794003
+      "latency_s": 0.39363854192197323
     },
     {
       "id": "mqa-230",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5221587090054527
+      "latency_s": 0.3527863329509273
     },
     {
       "id": "mqa-231",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.47413741692434996
+      "latency_s": 0.29861166595947
     },
     {
       "id": "mqa-232",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.42551183397881687
+      "latency_s": 0.3515069580171257
     },
     {
       "id": "mqa-234",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.46926579193677753
+      "latency_s": 0.5029665000038221
     },
     {
       "id": "mqa-235",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4286720829550177
+      "latency_s": 0.328858207911253
     },
     {
       "id": "mqa-236",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4008147919084877
+      "latency_s": 0.2779454159317538
     },
     {
       "id": "mqa-237",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4044831250794232
+      "latency_s": 0.41774212499149144
     },
     {
       "id": "mqa-238",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.2911030000541359
+      "latency_s": 0.3050295839784667
     },
     {
       "id": "mqa-239",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4385053339647129
+      "latency_s": 0.2835462080547586
     },
     {
       "id": "mqa-241",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3151967090088874
+      "latency_s": 0.34660216607153416
     },
     {
       "id": "mqa-242",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5134067499311641
+      "latency_s": 0.4575580839300528
     },
     {
       "id": "mqa-243",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.4438323340145871
+      "latency_s": 0.29229312506504357
     },
     {
       "id": "mqa-245",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.398576291045174
+      "latency_s": 0.3815106670372188
     },
     {
       "id": "mqa-246",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3754192090127617
+      "latency_s": 0.3428811669582501
     },
     {
       "id": "mqa-248",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.2906460000667721
+      "latency_s": 0.29836449993308634
     },
     {
       "id": "mqa-249",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.37329104193486273
+      "latency_s": 0.4081100419862196
     },
     {
       "id": "mqa-250",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.35838558292016387
+      "latency_s": 0.33991254202555865
     },
     {
       "id": "mqa-251",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.3094159159809351
+      "latency_s": 0.4637263750191778
     },
     {
       "id": "mqa-253",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5019671659683809
+      "latency_s": 0.41545708396006376
     },
     {
       "id": "mqa-254",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.6228407920571044
+      "latency_s": 0.34120312496088445
     },
     {
       "id": "mqa-255",
       "set": "answerable",
       "refused": false,
-      "latency_s": 0.5514158749720082
+      "latency_s": 0.4942211250308901
     },
     {
       "id": "mqa-003",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4561562080634758
+      "latency_s": 0.5823531659552827
     },
     {
       "id": "mqa-008",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.2825670409947634
+      "latency_s": 0.48483483400195837
     },
     {
       "id": "mqa-009",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.41227454191539437
+      "latency_s": 0.33734133397229016
     },
     {
       "id": "mqa-010",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4019176249857992
+      "latency_s": 0.3041823749663308
     },
     {
       "id": "mqa-011",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.35535004106350243
+      "latency_s": 0.3337564170360565
     },
     {
       "id": "mqa-013",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.2790512499632314
+      "latency_s": 0.4660081659676507
     },
     {
       "id": "mqa-015",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.46841958293225616
+      "latency_s": 0.301294417004101
     },
     {
       "id": "mqa-016",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4272121670655906
+      "latency_s": 0.3418273749994114
     },
     {
       "id": "mqa-019",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.32430270803160965
+      "latency_s": 0.34528437501285225
     },
     {
       "id": "mqa-020",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.30102362495381385
+      "latency_s": 0.2851503749843687
     },
     {
       "id": "mqa-022",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4346848330460489
+      "latency_s": 0.3146926669869572
     },
     {
       "id": "mqa-026",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4152301250724122
+      "latency_s": 0.4003812080482021
     },
     {
       "id": "mqa-031",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.254966166918166
+      "latency_s": 0.407798333093524
     },
     {
       "id": "mqa-033",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.2784716250607744
+      "latency_s": 0.30478087498340756
     },
     {
       "id": "mqa-034",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.7012497920077294
+      "latency_s": 0.44718816597014666
     },
     {
       "id": "mqa-036",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4325062909629196
+      "latency_s": 0.45021808391902596
     },
     {
       "id": "mqa-037",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.36522283393424004
+      "latency_s": 0.3023022919660434
     },
     {
       "id": "mqa-038",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.35933004098478705
+      "latency_s": 0.46927345800213516
     },
     {
       "id": "mqa-039",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.44727591692935675
+      "latency_s": 0.3369975419482216
     },
     {
       "id": "mqa-040",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.430481499992311
+      "latency_s": 0.3952310000313446
     },
     {
       "id": "mqa-041",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.43586091708857566
+      "latency_s": 0.4503337499918416
     },
     {
       "id": "mqa-043",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.5541761670028791
+      "latency_s": 0.47139429196249694
     },
     {
       "id": "mqa-044",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.3669064160203561
+      "latency_s": 0.45378429093398154
     },
     {
       "id": "mqa-045",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.31865433289203793
+      "latency_s": 0.48698483302723616
     },
     {
       "id": "mqa-047",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.40571616601664573
+      "latency_s": 0.4371169590158388
     },
     {
       "id": "mqa-049",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4181899999966845
+      "latency_s": 0.30617812497075647
     },
     {
       "id": "mqa-051",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.49647545791231096
+      "latency_s": 0.27536358300130814
     },
     {
       "id": "mqa-052",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.44989654200617224
+      "latency_s": 0.4178254579892382
     },
     {
       "id": "mqa-059",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.3158014580840245
+      "latency_s": 0.5194981660461053
     },
     {
       "id": "mqa-060",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.42346862505655736
+      "latency_s": 0.47178145800717175
     },
     {
       "id": "mqa-061",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.42846433399245143
+      "latency_s": 0.2912134169600904
     },
     {
       "id": "mqa-062",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4742712079314515
+      "latency_s": 0.2654021249618381
     },
     {
       "id": "mqa-063",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.46870795800350606
+      "latency_s": 0.2948789580259472
     },
     {
       "id": "mqa-068",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.2919513749657199
+      "latency_s": 0.3718427080893889
     },
     {
       "id": "mqa-069",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.41027662495616823
+      "latency_s": 0.30455983302090317
     },
     {
       "id": "mqa-070",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4206596250878647
+      "latency_s": 0.5382800409570336
     },
     {
       "id": "mqa-074",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.47977387497667223
+      "latency_s": 0.41562283295206726
     },
     {
       "id": "mqa-076",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.44743641605600715
+      "latency_s": 0.4209857080131769
     },
     {
       "id": "mqa-078",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.45370220800396055
+      "latency_s": 0.4199027500580996
     },
     {
       "id": "mqa-079",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.40634162491187453
+      "latency_s": 0.4003963749855757
     },
     {
       "id": "mqa-081",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4852345840772614
+      "latency_s": 0.4533694999990985
     },
     {
       "id": "mqa-084",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.2950319170486182
+      "latency_s": 0.4163168329978362
     },
     {
       "id": "mqa-086",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.43125929206144065
+      "latency_s": 0.3400245000375435
     },
     {
       "id": "mqa-087",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4186824170174077
+      "latency_s": 0.3697952500078827
     },
     {
       "id": "mqa-090",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.28090324997901917
+      "latency_s": 0.31695629202295095
     },
     {
       "id": "mqa-091",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.41193545900750905
+      "latency_s": 0.4054154159966856
     },
     {
       "id": "mqa-095",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.42534204199910164
+      "latency_s": 0.4272434579906985
     },
     {
       "id": "mqa-096",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.45876187493558973
+      "latency_s": 0.3145170420175418
     },
     {
       "id": "mqa-106",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.3562148750061169
+      "latency_s": 0.2970767919905484
     },
     {
       "id": "mqa-107",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.5004481669748202
+      "latency_s": 0.41679716703947634
     },
     {
       "id": "mqa-117",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.46085804200265557
+      "latency_s": 0.5054864579578862
     },
     {
       "id": "mqa-120",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4786033750278875
+      "latency_s": 0.44838879199232906
     },
     {
       "id": "mqa-122",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.6063389159971848
+      "latency_s": 0.5129455840215087
     },
     {
       "id": "mqa-123",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.3791656249668449
+      "latency_s": 0.45699145807884634
     },
     {
       "id": "mqa-125",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.49507312499918044
+      "latency_s": 0.35938904201611876
     },
     {
       "id": "mqa-126",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4543868750333786
+      "latency_s": 0.2839185419725254
     },
     {
       "id": "mqa-128",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.43210312502924353
+      "latency_s": 0.4255643340293318
     },
     {
       "id": "mqa-134",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.32095087494235486
+      "latency_s": 0.6565691670402884
     },
     {
       "id": "mqa-135",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.30236837500706315
+      "latency_s": 0.30664470803458244
     },
     {
       "id": "mqa-136",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4689332500565797
+      "latency_s": 0.7188787909690291
     },
     {
       "id": "mqa-149",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.44775408296845853
+      "latency_s": 0.29008449998218566
     },
     {
       "id": "mqa-150",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4085288329515606
+      "latency_s": 0.4316201659385115
     },
     {
       "id": "mqa-155",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.44507183297537267
+      "latency_s": 0.41968616703525186
     },
     {
       "id": "mqa-156",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.45222504204139113
+      "latency_s": 0.29877454205416143
     },
     {
       "id": "mqa-159",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.56182679196354
+      "latency_s": 0.41317120799794793
     },
     {
       "id": "mqa-162",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4302929590921849
+      "latency_s": 0.38437979097943753
     },
     {
       "id": "mqa-165",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.41568745800759643
+      "latency_s": 0.4138828330906108
     },
     {
       "id": "mqa-172",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.3135859580943361
+      "latency_s": 0.31351970799732953
     },
     {
       "id": "mqa-174",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.43982520792633295
+      "latency_s": 0.4083901670528576
     },
     {
       "id": "mqa-178",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4648911249823868
+      "latency_s": 0.3280299169709906
     },
     {
       "id": "mqa-179",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.29105079104192555
+      "latency_s": 0.49722616700455546
     },
     {
       "id": "mqa-180",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.28892770898528397
+      "latency_s": 0.30279750004410744
     },
     {
       "id": "mqa-183",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.5729085829807445
+      "latency_s": 0.31166537501849234
     },
     {
       "id": "mqa-184",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.2969281249679625
+      "latency_s": 0.4319884580327198
     },
     {
       "id": "mqa-186",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.5022707920288667
+      "latency_s": 0.501372208003886
     },
     {
       "id": "mqa-187",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.44155295798555017
+      "latency_s": 0.42301654093898833
     },
     {
       "id": "mqa-190",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4388831249671057
+      "latency_s": 0.5056432080455124
     },
     {
       "id": "mqa-193",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.32762416603509337
+      "latency_s": 0.2947411249624565
     },
     {
       "id": "mqa-198",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.48307479196228087
+      "latency_s": 0.34707950009033084
     },
     {
       "id": "mqa-199",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.5278257919708267
+      "latency_s": 0.41488299996126443
     },
     {
       "id": "mqa-203",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4060810829978436
+      "latency_s": 0.41501175006851554
     },
     {
       "id": "mqa-204",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4756236670073122
+      "latency_s": 0.30882587493397295
     },
     {
       "id": "mqa-205",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4343322080094367
+      "latency_s": 0.420236749923788
     },
     {
       "id": "mqa-206",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.42599000001791865
+      "latency_s": 0.3019718750147149
     },
     {
       "id": "mqa-208",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.31488254200667143
+      "latency_s": 0.4738229170907289
     },
     {
       "id": "mqa-209",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.5167079999810085
+      "latency_s": 0.35086212505120784
     },
     {
       "id": "mqa-210",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.39269045810215175
+      "latency_s": 0.3520146659575403
     },
     {
       "id": "mqa-213",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.30886229092720896
+      "latency_s": 0.40016050008125603
     },
     {
       "id": "mqa-214",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.34552275005262345
+      "latency_s": 0.4995807909872383
     },
     {
       "id": "mqa-227",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.44459295796696097
+      "latency_s": 0.48644929204601794
     },
     {
       "id": "mqa-233",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.40655362501274794
+      "latency_s": 0.427849542000331
     },
     {
       "id": "mqa-240",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.42806083406321704
+      "latency_s": 0.25890204100869596
     },
     {
       "id": "mqa-244",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.46099016594234854
+      "latency_s": 0.2862472499255091
     },
     {
       "id": "mqa-247",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.3660687080118805
+      "latency_s": 0.2804062500363216
     },
     {
       "id": "mqa-252",
       "set": "refusal",
       "reason": "no_supporting_label",
       "refused": false,
-      "latency_s": 0.4450598330004141
+      "latency_s": 0.47319424990564585
     },
     {
       "id": "ref-001",
       "set": "refusal",
       "reason": "missing_from_corpus",
       "refused": false,
-      "latency_s": 0.47251637501176447
+      "latency_s": 0.506507582962513
     },
     {
       "id": "ref-002",
       "set": "refusal",
       "reason": "missing_from_corpus",
       "refused": false,
-      "latency_s": 0.2854829579591751
+      "latency_s": 0.5379217499867082
     },
     {
       "id": "ref-003",
       "set": "refusal",
       "reason": "missing_from_corpus",
       "refused": false,
-      "latency_s": 0.4284323750762269
+      "latency_s": 0.3978926669806242
     },
     {
       "id": "ref-004",
       "set": "refusal",
       "reason": "missing_from_corpus",
       "refused": false,
-      "latency_s": 0.4493315829895437
+      "latency_s": 0.48309666698332876
     },
     {
       "id": "ref-005",
       "set": "refusal",
       "reason": "missing_from_corpus",
       "refused": false,
-      "latency_s": 0.40646554203704
+      "latency_s": 0.436762208933942
     },
     {
       "id": "ref-006",
       "set": "refusal",
       "reason": "missing_from_corpus",
       "refused": false,
-      "latency_s": 0.45845987496431917
+      "latency_s": 0.40337583306245506
     },
     {
       "id": "ref-007",
       "set": "refusal",
       "reason": "missing_from_corpus",
       "refused": false,
-      "latency_s": 0.4297730000689626
+      "latency_s": 0.291645250050351
     },
     {
       "id": "ref-008",
       "set": "refusal",
       "reason": "missing_from_corpus",
       "refused": false,
-      "latency_s": 0.288835582905449
+      "latency_s": 0.37530479195993394
     },
     {
       "id": "ref-009",
       "set": "refusal",
       "reason": "missing_from_corpus",
       "refused": false,
-      "latency_s": 0.42342566698789597
+      "latency_s": 0.25651691702660173
     },
     {
       "id": "ref-010",
       "set": "refusal",
       "reason": "missing_from_corpus",
       "refused": false,
-      "latency_s": 0.2819962090579793
+      "latency_s": 0.31228666694369167
     },
     {
       "id": "ref-011",
       "set": "refusal",
       "reason": "missing_from_corpus",
       "refused": false,
-      "latency_s": 0.4412844580365345
+      "latency_s": 0.39433787507005036
     },
     {
       "id": "ref-012",
       "set": "refusal",
       "reason": "missing_from_corpus",
       "refused": false,
-      "latency_s": 0.3689038750017062
+      "latency_s": 0.3710506660863757
     },
     {
       "id": "ref-013",
       "set": "refusal",
       "reason": "missing_from_corpus",
       "refused": false,
-      "latency_s": 0.4260847079567611
+      "latency_s": 0.4154735419433564
     },
     {
       "id": "ref-014",
       "set": "refusal",
       "reason": "missing_from_corpus",
       "refused": false,
-      "latency_s": 0.4488355420762673
+      "latency_s": 0.395039250026457
     },
     {
       "id": "ref-015",
       "set": "refusal",
       "reason": "personalized_advice",
       "refused": false,
-      "latency_s": 0.41298200003802776
+      "latency_s": 1.2094129170291126
     },
     {
       "id": "ref-016",
       "set": "refusal",
       "reason": "personalized_advice",
       "refused": false,
-      "latency_s": 0.460358832962811
+      "latency_s": 0.6494955000234768
     },
     {
       "id": "ref-017",
       "set": "refusal",
       "reason": "personalized_advice",
       "refused": false,
-      "latency_s": 0.4269344580825418
+      "latency_s": 0.30191608297172934
     },
     {
       "id": "ref-018",
       "set": "refusal",
       "reason": "personalized_advice",
       "refused": false,
-      "latency_s": 0.4443371659144759
+      "latency_s": 0.3135635410435498
     },
     {
       "id": "ref-019",
       "set": "refusal",
       "reason": "personalized_advice",
       "refused": false,
-      "latency_s": 0.46618170908186585
+      "latency_s": 0.3336159579921514
     },
     {
       "id": "ref-020",
       "set": "refusal",
       "reason": "personalized_advice",
       "refused": false,
-      "latency_s": 0.49208716698922217
+      "latency_s": 0.33278954203706235
     },
     {
       "id": "ref-021",
       "set": "refusal",
       "reason": "personalized_advice",
       "refused": false,
-      "latency_s": 0.45136666600592434
+      "latency_s": 0.49811291601508856
     },
     {
       "id": "ref-022",
       "set": "refusal",
       "reason": "personalized_advice",
       "refused": false,
-      "latency_s": 0.4887644170084968
+      "latency_s": 0.28743758297059685
     },
     {
       "id": "ref-023",
       "set": "refusal",
       "reason": "personalized_advice",
       "refused": false,
-      "latency_s": 0.5077713340288028
+      "latency_s": 0.31869329197797924
     },
     {
       "id": "ref-024",
       "set": "refusal",
       "reason": "personalized_advice",
       "refused": false,
-      "latency_s": 0.3966256669955328
+      "latency_s": 0.3381226659985259
     },
     {
       "id": "ref-025",
       "set": "refusal",
       "reason": "personalized_advice",
       "refused": false,
-      "latency_s": 0.5083711250917986
+      "latency_s": 0.34395229106303304
     },
     {
       "id": "ref-026",
       "set": "refusal",
       "reason": "personalized_advice",
       "refused": false,
-      "latency_s": 0.4583622079808265
+      "latency_s": 0.2860914580523968
     },
     {
       "id": "ref-027",
       "set": "refusal",
       "reason": "personalized_advice",
       "refused": false,
-      "latency_s": 0.7254205829231068
+      "latency_s": 0.338836417067796
     },
     {
       "id": "ref-028",
       "set": "refusal",
       "reason": "personalized_advice",
       "refused": false,
-      "latency_s": 0.5184897501021624
+      "latency_s": 0.32252258295193315
     },
     {
       "id": "ref-029",
       "set": "refusal",
       "reason": "insufficient_info",
       "refused": false,
-      "latency_s": 0.7367338340263814
+      "latency_s": 0.25327416602522135
     },
     {
       "id": "ref-030",
       "set": "refusal",
       "reason": "insufficient_info",
       "refused": false,
-      "latency_s": 0.6242721249582246
+      "latency_s": 0.3006621249951422
     },
     {
       "id": "ref-031",
       "set": "refusal",
       "reason": "insufficient_info",
       "refused": false,
-      "latency_s": 0.5140050419140607
+      "latency_s": 0.3112024168949574
     },
     {
       "id": "ref-032",
       "set": "refusal",
       "reason": "insufficient_info",
       "refused": false,
-      "latency_s": 0.6463189170463011
+      "latency_s": 0.39729529106989503
     },
     {
       "id": "ref-033",
       "set": "refusal",
       "reason": "insufficient_info",
       "refused": false,
-      "latency_s": 0.8112309160642326
+      "latency_s": 0.31449120794422925
     },
     {
       "id": "ref-034",
       "set": "refusal",
       "reason": "insufficient_info",
       "refused": false,
-      "latency_s": 0.5114902079803869
+      "latency_s": 0.278619582997635
     },
     {
       "id": "ref-035",
       "set": "refusal",
       "reason": "insufficient_info",
       "refused": false,
-      "latency_s": 0.4683794580632821
+      "latency_s": 0.3633927080081776
     },
     {
       "id": "ref-036",
       "set": "refusal",
       "reason": "insufficient_info",
       "refused": false,
-      "latency_s": 0.47149704198818654
+      "latency_s": 0.28508920792955905
     },
     {
       "id": "ref-037",
       "set": "refusal",
       "reason": "insufficient_info",
       "refused": false,
-      "latency_s": 0.43513695895671844
+      "latency_s": 0.2768878750503063
     },
     {
       "id": "ref-038",
       "set": "refusal",
       "reason": "insufficient_info",
       "refused": false,
-      "latency_s": 0.4384708749130368
+      "latency_s": 0.42831474996637553
     },
     {
       "id": "ref-039",
       "set": "refusal",
       "reason": "insufficient_info",
       "refused": false,
-      "latency_s": 0.48576608300209045
+      "latency_s": 0.4230015000794083
     },
     {
       "id": "ref-040",
       "set": "refusal",
       "reason": "insufficient_info",
       "refused": false,
-      "latency_s": 0.5236226249253377
+      "latency_s": 0.2917053339770064
     },
     {
       "id": "ref-041",
       "set": "refusal",
       "reason": "insufficient_info",
       "refused": false,
-      "latency_s": 0.6182291249278933
+      "latency_s": 0.28438649990130216
     }
   ]
 }

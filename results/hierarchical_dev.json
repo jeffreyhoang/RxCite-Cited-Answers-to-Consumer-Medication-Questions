@@ -1,0 +1,346 @@
+{
+  "arch": "hierarchical",
+  "mode": "dev",
+  "n_answerable": 20,
+  "n_refusal": 10,
+  "new_api_runs": {
+    "pipeline_answers": 0,
+    "judge_calls": 0
+  },
+  "metrics": {
+    "retrieval": {
+      "recall@10": 0.825,
+      "mrr": 0.7666666666666667,
+      "n": 20
+    },
+    "false_refusal_rate": 0.0,
+    "refusal_accuracy": 0.6,
+    "refusal_accuracy_by_reason": {
+      "missing_from_corpus": 1.0,
+      "no_supporting_label": 0.42857142857142855,
+      "personalized_advice": 1.0
+    },
+    "latency_s": {
+      "mean": 3.650072902770868,
+      "median": 3.3833031249814667
+    },
+    "judge": {
+      "correctness": 1.85,
+      "groundedness": 1.8,
+      "citation_accuracy": 1.8,
+      "n": 20
+    }
+  },
+  "questions": [
+    {
+      "id": "mqa-057",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 9.555858417064883,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly identifies hypoglycemia (with severe outcomes such as coma, seizure and death) and gives treatment, all supported by the overdosage and warnings sections, but the closing advice to contact a doctor or pharmacist is not in the excerpts and is uncited."
+      }
+    },
+    {
+      "id": "mqa-012",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.882689542020671,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately reports the label's elimination half-life (1.5-2 h accepted, 1.5-4.5 h terminal), the variability in clearance, and the effects of cirrhosis and renal impairment, and it correctly says the label gives no total clearance time; the reference's detection windows are not in the excerpts, so the label takes priority, and all claims are supported by the cited pharmacokinetics sections."
+      }
+    },
+    {
+      "id": "mqa-127",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.926930999965407,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the label excerpts (light blue, round, biconvex, debossed \"A\" and \"44\", scored on one side), which take priority over the reference's different manufacturer details, and the cited how_supplied and description sections support each claim."
+      }
+    },
+    {
+      "id": "mqa-113",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.552535666967742,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately reflects the label's dosing ranges (PHN up to 1,800 mg/day, studies up to 3,600 mg/day, epilepsy 300-600 mg TID, renal adjustment) and honestly notes the label doesn't define 'strong', with all claims supported by and cited to the dosage_and_administration section."
+      }
+    },
+    {
+      "id": "mqa-108",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.78893204103224,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the reference and the label excerpts on physician supervision, abrupt-cessation risks, a roughly one-week taper, and restarting therapy if withdrawal symptoms occur, with each claim cited to the correct section."
+      }
+    },
+    {
+      "id": "mqa-072",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.5994426250690594,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly names montelukast sodium as the active ingredient and accurately lists the tablet strength, inactive ingredients, and film coating components, all supported by the description and medication guide excerpts it cites."
+      }
+    },
+    {
+      "id": "mqa-055",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.8247765409760177,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer accurately describes the generic topiramate tablets in the excerpts and notes they may not match Topamax, but it does not give Topamax's actual appearance (cream, light-yellow, yellow, salmon with OMN debossing); it also says the labels don't describe color beyond white to off-white, which is slightly inconsistent, and the citation [3] (medguide) does not support the claim it is attached to."
+      }
+    },
+    {
+      "id": "mqa-230",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.894174874993041,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly describes fentanyl as an opioid agonist used for analgesia and sedation, matching the reference's opioid analgesic description, and each claim is supported by the cited mechanism_of_action, dosage_and_administration (trained personnel, IV use), and how_supplied (IM/IV route) sections."
+      }
+    },
+    {
+      "id": "mqa-048",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.4425587919540703,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the label guidance on a normal balanced diet, consistent vitamin K intake, avoiding large amounts of leafy greens and vitamin K-rich oils, and talking to a provider; each claim is supported by the cited sections, though it omits the grapefruit note."
+      }
+    },
+    {
+      "id": "mqa-245",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.236619709059596,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the reference dose (125-250 mg every 6-8 hours for 10 days), and the 10-day minimum and dose-adjustment statements are supported by the cited dosage and general precautions sections; the closing advice to ask a doctor is harmless."
+      }
+    },
+    {
+      "id": "mqa-181",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.6758030829951167,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the label gives no specific time of day, only once-daily dosing as directed by the doctor, with or without food, and the missed-dose guidance; each claim is supported by the cited patient insert and dosage sections."
+      }
+    },
+    {
+      "id": "mqa-017",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.486755833029747,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says Rapaflo should be taken with a meal, matching the reference, and its food-effect details (18-43% Cmax, 4-49% AUC, high-fat meal not evaluated) are supported by and cited to the dosage, drug interactions, and clinical pharmacology excerpts."
+      }
+    },
+    {
+      "id": "mqa-014",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.954813583055511,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly states subcutaneous administration, 120 mg every 4 weeks, and the GCTB loading doses on Days 8 and 15, and it honestly notes that the excerpts lack injection site and administrator details; however, the subcutaneous claim is cited to the adverse_reactions section and the GCTB dosing to clinical_pharmacology, which support it only loosely, and the GCTB claim would be better cited to clinical_studies, so some citations are somewhat off."
+      }
+    },
+    {
+      "id": "mqa-050",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.5247896250803024,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer honestly notes the excerpts are for Morphine Sulfate Injection rather than Kadian and accurately lists that label's contraindications, which overlap with the reference (it adds MAOIs, which the Kadian reference omits), but it does not directly state Kadian's contraindications, so it is only partly correct; all claims are supported and correctly cited."
+      }
+    },
+    {
+      "id": "mqa-104",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.3361757500097156,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the label lists only hypertension (when oral therapy is not practical) and does not mention stroke, matching the reference and the cited indications excerpt."
+      }
+    },
+    {
+      "id": "mqa-110",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.0223826670553535,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer honestly says the excerpts can't support a detailed comparison and accurately reports gabapentin's mechanism and pregabalin's pain uses, but it never covers the reference differences (pharmacokinetics, potency, conversion), and it adds unsupported details such as the brand names Neurontin and Lyrica, while the claim about dosing by condition and renal function is only loosely cited."
+      }
+    },
+    {
+      "id": "mqa-219",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.277319625020027,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly says no video is available and gives accurate written guidance (priming, dosing, checking the actuator, cap, cleaning, discarding), but it has minor citation problems: 'Children under adult supervision' is correctly cited to [2], though 'shaking well before each spray' is attributed to [1][2] and the priming wording differs slightly from the instructions-for-use (14 days vs 2 weeks); the referral to an 'illustrated leaflet' is supported, but the 'ask your doctor or pharmacist' closing is uncited general advice."
+      }
+    },
+    {
+      "id": "mqa-249",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.0863870829343796,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the labels don't address spices and accurately cites the botanical examples (garlic, ginkgo, St. John's wort, ginseng) and the advice to consult a doctor, which matches the reference's herb concerns and is fully supported by the cited drug_interactions and information_for_patients sections."
+      }
+    },
+    {
+      "id": "mqa-235",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.3503070829901844,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately lists the active and inactive ingredients of the 75 mg extended-release capsule exactly as stated in the description excerpt, cites that section, and notes its scope limitation; the reference lists a different product's ingredients, but the label excerpts take priority."
+      }
+    },
+    {
+      "id": "mqa-099",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.0516860829666257,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly identifies testosterone cypionate and the inactive ingredients of DEPO-Testosterone, all matching the description excerpt, though it covers only this one product rather than the other testosterone esters in the reference."
+      }
+    },
+    {
+      "id": "ref-013",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 2.935916292015463
+    },
+    {
+      "id": "mqa-128",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.091143082943745
+    },
+    {
+      "id": "ref-020",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": true,
+      "latency_s": 2.7481560830492526
+    },
+    {
+      "id": "mqa-180",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.339791041915305
+    },
+    {
+      "id": "mqa-008",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.416299166972749
+    },
+    {
+      "id": "mqa-081",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.468777999980375
+    },
+    {
+      "id": "ref-014",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 3.14948420797009
+    },
+    {
+      "id": "mqa-213",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 2.975182041991502
+    },
+    {
+      "id": "mqa-079",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.804108625045046
+    },
+    {
+      "id": "mqa-126",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.102388917002827
+    }
+  ]
+}

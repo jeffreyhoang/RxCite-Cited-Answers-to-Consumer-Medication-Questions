@@ -4,10 +4,34 @@ import psycopg
 
 from rxcite.config import EMBEDDING_DIM, supabase_db_url
 
+HNSW_EF_SEARCH = 100  # HNSW search breadth; higher = closer to exact search, a bit slower
+
+_shared: psycopg.Connection | None = None
+
 
 # Open a connection to the Supabase database (use as `with connect() as conn:`)
 def connect() -> psycopg.Connection:
     return psycopg.connect(supabase_db_url(), connect_timeout=10)
+
+
+# One reused connection for read-only queries at answer time (opening one costs ~1 s)
+def _shared_connection() -> psycopg.Connection:
+    global _shared
+    if _shared is None or _shared.closed or _shared.broken:
+        _shared = connect()
+        _shared.autocommit = True  # read-only queries; no open transaction left idle
+        _shared.execute(f"set hnsw.ef_search = {HNSW_EF_SEARCH}")
+    return _shared
+
+
+# Run a read-only query on the shared connection; reconnects once if it was dropped
+def query(sql: str, params=None) -> list[tuple]:
+    global _shared
+    try:
+        return _shared_connection().execute(sql, params).fetchall()
+    except psycopg.OperationalError:  # e.g. idle timeout
+        _shared = None
+        return _shared_connection().execute(sql, params).fetchall()
 
 
 # One row per FDA label; one row per named section of a label
