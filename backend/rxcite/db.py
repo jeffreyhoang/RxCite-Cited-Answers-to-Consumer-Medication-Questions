@@ -76,8 +76,33 @@ create index if not exists chunks_embedding_idx
 """
 
 
+# Section-based chunks (T7), same columns as chunks; embeddings are of search_text
+SECTION_CHUNKS_SCHEMA = f"""
+create table if not exists section_chunks (
+    chunk_id  text primary key,  -- "<set_id>:<section>:<n>"
+    set_id    text not null,
+    section   text not null,
+    text      text not null,
+    embedding halfvec({EMBEDDING_DIM}) not null,
+    foreign key (set_id, section) references sections (set_id, section) on delete cascade
+);
+"""
+
+SECTION_CHUNKS_INDEX = """
+create index if not exists section_chunks_embedding_idx
+    on section_chunks using hnsw (embedding halfvec_cosine_ops);
+"""
+
+# Chunk set -> (HNSW index name, its create statement), for load_chunks.py
+CHUNK_INDEXES = {
+    "fixed": ("chunks_embedding_idx", CHUNKS_INDEX),
+    "section": ("section_chunks_embedding_idx", SECTION_CHUNKS_INDEX),
+}
+
+
 # Create the tables if they don't exist yet (safe to run more than once)
 def create_tables() -> None:
     with connect() as conn:
         conn.execute(SCHEMA)
         conn.execute(CHUNKS_SCHEMA)
+        conn.execute(SECTION_CHUNKS_SCHEMA)

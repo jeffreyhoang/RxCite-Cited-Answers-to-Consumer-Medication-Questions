@@ -41,6 +41,11 @@ def section_name(section: str) -> str:
     return SECTION_NAMES.get(section) or section.replace("_", " ").capitalize()
 
 
+# Chunk text with a drug | section header, for embeddings, BM25 and the reranker
+def search_text(drug_name: str, section: str, text: str) -> str:
+    return f"{drug_name} | {section_name(section)}\n{text}"
+
+
 # Points at label section that the answer relied on
 @dataclass
 class Citation:
@@ -77,6 +82,8 @@ class RAGResult:
     chunks: list[Chunk]  # retrieved chunks, best first
     refused: bool = False
     latency_s: float = 0.0
+    # Intermediate steps, e.g. Advanced RAG's rewritten query (empty in older caches)
+    info: dict = field(default_factory=dict)
 
 
 # Generator takes the question and retrieved chunks and returns an Answer
@@ -97,10 +104,14 @@ class RAGPipeline(ABC):
         """Return up to top_k chunks, best first."""
         pass
 
+    # Chunks plus intermediate steps for RAGResult.info (per call, not stored on self)
+    def retrieve_with_info(self, query: str) -> tuple[list[Chunk], dict]:
+        return self.retrieve(query), {}
+
     # Retrieve, generate, and time the pipeline (usually not overridden)
     def answer(self, query: str) -> RAGResult:
         start = time.perf_counter()
-        chunks = self.retrieve(query)
+        chunks, info = self.retrieve_with_info(query)
         generated = self.generator(query, chunks)
         return RAGResult(
             question=query,
@@ -110,4 +121,5 @@ class RAGPipeline(ABC):
             chunks=chunks,
             refused=generated.refused,
             latency_s=time.perf_counter() - start,
+            info=info,
         )

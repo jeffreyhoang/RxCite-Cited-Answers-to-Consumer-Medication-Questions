@@ -45,7 +45,8 @@ FINAL_RUN_GENERATOR_MODEL = "claude-haiku-5-5"  # may switch to Sonnet 5.5 after
 
 EMBEDDING_MODEL = "openai-small"  # key in rxcite/embeddings.py MODELS: text-embedding-3-small (T5)
 EMBEDDING_DIM = 512  # must match the pgvector halfvec column
-RERANKER_MODEL = ""
+RERANKER_MODEL = "BAAI/bge-reranker-base"  # T7 cross-encoder, runs locally (MPS on a Mac)
+RERANKER_MAX_LENGTH = 512  # bge-reranker-base truncates its input at 512 tokens
 
 
 # Retrieval Constants
