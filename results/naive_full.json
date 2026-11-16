@@ -1,0 +1,2825 @@
+{
+  "arch": "naive",
+  "mode": "full",
+  "n_answerable": 160,
+  "n_refusal": 136,
+  "new_api_runs": {
+    "pipeline_answers": 266,
+    "judge_calls": 128
+  },
+  "metrics": {
+    "retrieval": {
+      "recall@10": 0.659375,
+      "mrr": 0.4974355158730159,
+      "n": 160
+    },
+    "false_refusal_rate": 0.0875,
+    "refusal_accuracy": 0.6544117647058824,
+    "refusal_accuracy_by_reason": {
+      "insufficient_info": 0.38461538461538464,
+      "missing_from_corpus": 1.0,
+      "no_supporting_label": 0.6105263157894737,
+      "personalized_advice": 0.8571428571428571
+    },
+    "latency_s": {
+      "mean": 3.790270740423128,
+      "median": 3.3525911245378666
+    },
+    "judge": {
+      "correctness": 1.7397260273972603,
+      "groundedness": 1.8150684931506849,
+      "citation_accuracy": 1.8287671232876712,
+      "n": 146
+    }
+  },
+  "questions": [
+    {
+      "id": "mqa-001",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.791803124942817,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the reference on the benzodiazepine effects and GABA facilitation, and its citations support the claims; the only unsupported detail is the label-external statement that Valium is the brand name for diazepam, and calling the CNS side effects 'brain-related' is a mild framing, so groundedness gets a 1."
+      }
+    },
+    {
+      "id": "mqa-002",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.9327818339224905,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly describes morphine as an opioid analgesic and agonist, with accurate details on its mechanism, indication and Schedule II status, all supported by the excerpts, but the citation [1] for the sentence that bundles the opioid-agonist description with administration is off since the description excerpt covers it only partly, and citation [2] is used for the 'sterile solution' claim, which comes only from the description."
+      }
+    },
+    {
+      "id": "mqa-004",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 4.672598792007193
+    },
+    {
+      "id": "mqa-005",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.1937069590203464,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately reports the 40 mg fluvastatin capsule colors (yellow body, pink cap) from the how_supplied excerpt, which take priority over the reference answer's differing color, and it correctly notes that the 20 mg color is not described and that these are capsules; the citation supports every claim."
+      }
+    },
+    {
+      "id": "mqa-006",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.264784957980737,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says to take it before meals and accurately notes the excerpts give no exact minutes, and the pharmacokinetic food-effect claim matches the label; each claim is cited to a supporting excerpt, with the reference answer's capsule/morning detail not in the excerpts."
+      }
+    },
+    {
+      "id": "mqa-007",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.600294459029101,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the label can't give the personal reason and identifies partial-onset seizures as the use, which matches the reference, though it omits the anticonvulsant class and the adjunctive-therapy detail; the claim that the excerpts show use in children is only partly supported (dosing section covers pediatrics, while the clinical studies cited are adult), and describing 'refractory' as seizures not responding well to other medicines is a mild paraphrase; the citations support the key claims."
+      }
+    },
+    {
+      "id": "mqa-012",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.2175733749754727,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately reports the label's half-life data (1.5-4.5 h terminal, 1.5-2 h accepted), excretion routes, and hepatic/renal impairment effects, and it states that the label gives no total time in the body; the reference's detection windows are not in the excerpts, so the label-based answer is appropriate, and the cited pharmacokinetics/clinical_pharmacology sections support every claim."
+      }
+    },
+    {
+      "id": "mqa-014",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.6001316669862717,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly gives subcutaneous route, 120 mg Q4W with Day 8 and 15 loading doses, and says injection details are missing, but it omits injection sites and who administers it, and it presents trial regimens as 'usual dose' and states supplementation as a recommendation in studies rather than as administration guidance; the citation [2] supports the loading-dose claim while [1] supports the dosing and calcium claims reasonably, though the 'every 4 weeks subcutaneous' claim is better supported by other uncited sections."
+      }
+    },
+    {
+      "id": "mqa-017",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 3.840410750010051
+    },
+    {
+      "id": "mqa-018",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.1786510839592665,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The excerpts contain no indications section, so the answer correctly says they don't state the uses and gives only the supported description (beta 1-selective blocker, once-daily dosing, strengths), but it never lists hypertension, angina or myocardial infarction, so it is incomplete; its claims are supported by and cited to the description excerpt."
+      }
+    },
+    {
+      "id": "mqa-021",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.1967543750070035,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the excerpts do not address blurry vision or whether stopping would clear it, warns against abrupt discontinuation with a gradual taper, and advises seeing a doctor, matching the reference's key point; the side effects and taper claims are supported by the cited medguide, dosage, and warnings sections."
+      }
+    },
+    {
+      "id": "mqa-023",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.6330324169248343,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly notes that the label gives no formulary 'tier' but states methylphenidate is a Schedule II controlled substance (matching the reference CII), and the CNS stimulant claim is supported; both claims are cited to the matching excerpts."
+      }
+    },
+    {
+      "id": "mqa-024",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.857634124928154,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly identifies normal saline as 0.9% sodium chloride injection, gives its composition and its use for fluid and sodium chloride replenishment, and each claim is supported by the cited description, indications, and clinical pharmacology sections."
+      }
+    },
+    {
+      "id": "mqa-025",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.63060337502975,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly describes the ciprofloxacin/dexamethasone otic suspension, its drug classes, indications, and ear-only use, matching the reference, and the citations support each claim; the only unsupported detail is the claim that 'Ciprodex' is a brand name for this product, which the excerpts never state."
+      }
+    },
+    {
+      "id": "mqa-027",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.4109790419461206,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly describes codeine as an opioid analgesic used for pain with accurate mechanism and risk details, all supported and well cited, but it omits the cough-suppressant use and the indication for mild to moderate pain from the reference, and it hedges that the labels don't say why."
+      }
+    },
+    {
+      "id": "mqa-028",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.2752355829579756,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately says the excerpts give no taper schedule and cites the pregnancy no-abrupt-discontinuation warning and the very gradual dose reduction, but it does not state the general rule that Tegretol should be withdrawn gradually to avoid increased seizure frequency, so it is incomplete."
+      }
+    },
+    {
+      "id": "mqa-029",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.53920879191719,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer honestly says the excerpts don't describe the effects of a double dose and correctly gives the missed-dose and overdose guidance from the patient insert, but it omits the reference overdose information (reported cases recovered without sequelae, supportive measures), so it is only partly complete; all claims are supported and the citation [1] accurately supports them."
+      }
+    },
+    {
+      "id": "mqa-030",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.3237862910609692,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly says the excerpts give no rash type and accurately cites the 4.5% vs 1.4% rash incidence from the adverse_reactions table, but it misses the reference's allergic-reaction rash details, and the advice to tell a doctor or pharmacist is not in the excerpts and is left uncited."
+      }
+    },
+    {
+      "id": "mqa-032",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.7750694579444826,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the label defines no 'low dose' and accurately gives the label's maintenance and dose-reduction figures, all supported by the cited dosage_and_administration excerpts, but it omits the rheumatoid arthritis initial dose of about 1 mg/kg (50-100 mg) that the reference treats as the low dose."
+      }
+    },
+    {
+      "id": "mqa-035",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.9858745000092313,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the label tables (UTI 7-14 days, acute uncomplicated cystitis 3 days, pediatric cUTI 10-21 days, continue 2 days after symptoms resolve), and each claim, including the renal dose adjustment, is supported by the cited dosage_and_administration excerpts."
+      }
+    },
+    {
+      "id": "mqa-042",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.6072750829625875,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately and honestly describes the injection versus oral differences from the excerpts (noting that geltab labels are absent), but it emphasizes oral being undependable for pernicious anemia and does not convey the reference point that oral is as effective in general, so it is only partly aligned; all claims are supported and each citation matches its claim."
+      }
+    },
+    {
+      "id": "mqa-046",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 2.8874831659486517
+    },
+    {
+      "id": "mqa-048",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.473138834000565,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the reference and the excerpts (normal balanced diet, consistent vitamin K, avoid large amounts of leafy greens and vitamin K-rich oils, consult provider), and each claim is cited to a supporting section; the only omission is grapefruit juice, which is minor."
+      }
+    },
+    {
+      "id": "mqa-050",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 2.0452468749135733
+    },
+    {
+      "id": "mqa-053",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.051962250028737,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly lists amiodarone's side effects and notes that the excerpts don't mention afib, but some citations are off: tiredness and nausea/vomiting are not in the cited [2] adverse_reactions excerpt as written (nausea is, tiredness/malaise is too, so fine), while the thyroid claim, vision problems, and the persistence of effects are placed under [3] and mostly match, though the 'vision problems' claim is only in the summary line of [3] and the medguide, making a few attributions loose."
+      }
+    },
+    {
+      "id": "mqa-054",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.0508099170401692,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly lists the indications (MDD, OCD, bulimia, panic disorder, and the olanzapine combination uses) with accurate citation to indications_and_usage, but its opening claim that fluoxetine is 'the active ingredient in Prozac' contradicts its own later statement that the excerpts do not say so (a minor unsupported detail), and the final advice to ask a pharmacist is cited to the medguide, which does not support it."
+      }
+    },
+    {
+      "id": "mqa-055",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.9487207080237567,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer accurately describes the generic Zydus topiramate tablets from the excerpts and honestly states it cannot describe Topamax brand tablets, but it does not give the brand's actual appearance (cream/yellow/salmon, debossed OMN), so it only partly answers; the claim that the capsules are described only by pellet filling is slightly incomplete, and the [3] citation is attached to a statement it only partly supports (it covers only the 100 mg tablet)."
+      }
+    },
+    {
+      "id": "mqa-056",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.398534832987934,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately summarizes quetiapine dosing by indication, plus elderly and hepatic adjustments, matching the label's dosage table and the reference's schizophrenia dosing, and each claim is cited to the dosage_and_administration or use_in_specific_populations excerpt that supports it."
+      }
+    },
+    {
+      "id": "mqa-057",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.310547125060111,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says excess insulin causes hypoglycemia (plus hypokalemia) and describes severe outcomes like coma and seizure, all supported by and cited to the insulin overdosage excerpt; it omits the reference's mechanism and symptom list, but the excerpts don't cover those."
+      }
+    },
+    {
+      "id": "mqa-058",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.5083103749202564,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly identifies amphetamine as a non-catecholamine sympathomimetic amine with CNS stimulant activity (matching the reference's CNS stimulant class) and a Schedule II controlled substance, and each claim is supported by the correctly cited amphetamine label sections."
+      }
+    },
+    {
+      "id": "mqa-064",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 3.278267708956264
+    },
+    {
+      "id": "mqa-065",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.3374099580105394,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The indications listed (edema in CHF, cirrhosis and nephrotic syndrome, diuretic-induced hypokalemia, hypertension) match the spironolactone/HCTZ label and the reference answer, and the cited section supports them. However, the claim that Aldactazide is a brand name for spironolactone and hydrochlorothiazide comes from outside the excerpts, and it contradicts the answer's own closing caveat, so groundedness is only partial."
+      }
+    },
+    {
+      "id": "mqa-066",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.3695518750464544,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately describes insulin's mechanism (peripheral glucose uptake, reduced hepatic glucose production, inhibited lipolysis and proteolysis, enhanced protein synthesis) and the variability in time course, all supported by and correctly cited to the insulin mechanism_of_action and clinical_pharmacology excerpts, though it does not mention the reference's lay framing about consequences of high glucose."
+      }
+    },
+    {
+      "id": "mqa-067",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.694970416952856,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly describes tiotropium as an anticholinergic with muscarinic specificity and a bronchodilator for COPD and asthma maintenance, and it honestly notes that the excerpts don't detail the mechanism; all claims are supported by the cited description, indications, and warnings sections."
+      }
+    },
+    {
+      "id": "mqa-071",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.5126955410232767,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly states that QVAR (40 mcg) is for maintenance treatment and prevention of asthma and not for rescue use, and the dosing details match the cited label sections; the age range of 4+ comes from the excerpts and differs from the reference only because it is a different product label."
+      }
+    },
+    {
+      "id": "mqa-072",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.6510232080472633,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly identifies montelukast sodium as the active ingredient and lists the inactive ingredients and tablet description, all matching the excerpts and each cited to the supporting section."
+      }
+    },
+    {
+      "id": "mqa-073",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.921313249971718,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer is faithful to the excerpts, which show no clinically important vital sign or orthostatic changes with escitalopram, and its citations support its claims. But the reference answer lists hypotension and orthostatic hypotension as reported vascular adverse events, so saying the label does not list hypotension is incomplete or partly wrong."
+      }
+    },
+    {
+      "id": "mqa-075",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.0712255829712376,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly states 2 puffs twice daily (morning and evening), matching the reference, and every added detail (strengths by age, no extra use, rescue inhaler) is supported by the cited dosage and patient insert sections."
+      }
+    },
+    {
+      "id": "mqa-077",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.054425708949566,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly says the optimal duration is unknown and that the relationship to long-term outcomes is unknown, and its added claims are all supported by the excerpts; however, the 'do not stop without informing provider' claim is cited to [1], which is ambiguous because two different spl_unclassified_section excerpts exist and the discontinuation warning appears only in the other one, so the citation is imprecise."
+      }
+    },
+    {
+      "id": "mqa-080",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.149191749980673,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly says furosemide is not mentioned in the excerpts and gives relevant context, but it does not give the reference's point about combination use in heart failure, and the potassium claim implies furosemide raises potassium, which the excerpts do not support; citations are mostly relevant but [3] is used for the potassium claim, which it does not clearly cover (it concerns NSAIDs), and the first-sentence claim has no citation."
+      }
+    },
+    {
+      "id": "mqa-082",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.1178765000076964,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly gives amlodipine besylate as the active ingredient and honestly notes that Norvasc's own inactive ingredients are not in the excerpts, but it omits the reference's inactive ingredients, which the excerpts do not contain; both claims are supported by and cited to the correct excerpt."
+      }
+    },
+    {
+      "id": "mqa-083",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.3521249160403386,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately gives the shape by strength (round for 2.5 and 10 mg, capsule-shaped for 5 mg) as stated in the how_supplied excerpt, and the reference answer 'diamond' is not supported by these excerpts so the label takes priority; the note on the benazepril combination capsules is supported by its how_supplied excerpt, and the citations match the claims."
+      }
+    },
+    {
+      "id": "mqa-085",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.092332417028956,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately describes the extended-release capsules for every strength (cap/body colors, imprints, ink colors, white to off-white pellets) exactly as the label excerpts state, and the reference answer's round white tablet reflects a different product, so the label takes priority; both citations (dosage_forms_and_strengths and how_supplied) directly support each claim."
+      }
+    },
+    {
+      "id": "mqa-088",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.0131733749294654,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer gives the correct 1.5-hour levodopa half-life with carbidopa (matching the reference), adds the 50-minute figure without carbidopa, and honestly notes that no full clearance time is given; all claims are supported by the cited pharmacokinetics and clinical_pharmacology excerpts."
+      }
+    },
+    {
+      "id": "mqa-089",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.8693451249273494,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly says oxybutynin is an anticholinergic and not described as an opioid, which is supported by the excerpts, but the final citation [1] for opioid info about oxycodone/codeine is mismatched (codeine is not from [1]) and the codeine claim is uncited, so citations are partly off."
+      }
+    },
+    {
+      "id": "mqa-092",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.362680334015749,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately says the glipizide label's only hypersensitivity contraindication is to glipizide itself, notes sulfonamides appear only as an interaction, and honestly says the label does not address cross-reactivity; all claims are supported by the cited glipizide excerpts."
+      }
+    },
+    {
+      "id": "mqa-093",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.7391950839664787,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The reference says pink, but the label excerpts (which take priority) describe the Taro capsule as opaque orange with white to off-white powder, and the answer reports this accurately, with every claim supported by and cited to the dosage_forms_and_strengths and information_for_patients sections."
+      }
+    },
+    {
+      "id": "mqa-094",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.117856999975629,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly describes alprazolam (the generic in Xanax) as a benzodiazepine for anxiety and panic disorder, and it candidly notes the excerpts never link Xanax to alprazolam, but its opening claim that 'Xanax is a brand name for alprazolam' is unsupported by the excerpts (the last sentence contradicts it), and it omits the chemical description in the reference; all cited sections support the claims they are attached to."
+      }
+    },
+    {
+      "id": "mqa-097",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.689165624906309,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer gives accurate, label-supported tapering and withdrawal-symptom guidance for an unclear question but omits the reference's support-resource angle (Narcotics Anonymous), and every claim is cited to a supporting excerpt."
+      }
+    },
+    {
+      "id": "mqa-098",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.000293249962851,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly describes streptomycin as an aminoglycoside antibiotic from Streptomyces griseus that interferes with protein synthesis, and every claim is supported by the cited excerpts (description, clinical pharmacology, microbiology, spl_unclassified_section, indications_and_usage)."
+      }
+    },
+    {
+      "id": "mqa-099",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.137313667102717,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly and fully describes the ingredients of DEPO-Testosterone (testosterone cypionate, benzyl benzoate, cottonseed oil, benzyl alcohol), all supported by the cited description section, but it covers only the cypionate product and omits other testosterone forms in the reference (undecanoate, enanthate), so it is incomplete."
+      }
+    },
+    {
+      "id": "mqa-100",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.8387227919884026,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly notes that the excerpts lack the mechanism of action and identifies levofloxacin as a fluoroquinolone antibiotic with some indications, but it never explains the antibacterial effect (topoisomerase IV/DNA gyrase inhibition), and it wrongly implies the excerpts do not describe use even though it then lists indications; it also states that the label 'recommends reserving' it for infections, which loosely matches the boxed warning, and the pediatric anthrax/plague claim is supported by the warnings section; the [1][2] grouping is slightly imprecise since the pediatric claim comes only from [2]."
+      }
+    },
+    {
+      "id": "mqa-101",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.503342082956806,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the labels don't directly address switching from Cymbalta to Effexor, accurately reports the duloxetine and venlafaxine tapering recommendations with correct citations, and defers to a clinician, which fits the reference's emphasis on cautious tapering; a minor flaw is that the claim about the Effexor label is slightly loose, since the excerpt is for extended-release capsules."
+      }
+    },
+    {
+      "id": "mqa-102",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.5352377500385046,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately lists the active and inactive ingredients from the provided label's description section (differing from the reference, which reflects another product, but the excerpts take priority), and it correctly cites that section while noting the limitation to this product."
+      }
+    },
+    {
+      "id": "mqa-103",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.0355839170515537,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says 5-ASA is the therapeutically active moiety, but it never names balsalazide disodium (the reference answer), though the excerpts mention 'balsalazide disodium capsules'. The claim that no other active ingredients are listed goes beyond the excerpts, which contain no ingredient list. The citation to the pharmacokinetics section does support the 5-ASA cleavage claim."
+      }
+    },
+    {
+      "id": "mqa-104",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.142214292078279,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the label does not list stroke and that enalaprilat is indicated for hypertension when oral therapy is not practical, which matches the reference and the cited indications excerpt."
+      }
+    },
+    {
+      "id": "mqa-105",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.3792527499608696,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately covers opioids, CNS depressants, morphine and aluminum/magnesium antacids as supported by the label excerpts, and it correctly says the label does not list every medicine to avoid; each claim is cited to a supporting section."
+      }
+    },
+    {
+      "id": "mqa-108",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.777877249987796,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says not to stop without physician supervision and to reinstitute therapy if withdrawal symptoms occur, with all claims supported and cited to the right excerpts, but it omits the reference's key advice to taper over about one week and the abrupt-cessation risks (angina, MI) in coronary artery disease, since those parts were not in the excerpts."
+      }
+    },
+    {
+      "id": "mqa-109",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.6270640840521082,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly notes the labels list suppressed reactions to skin tests as an adverse reaction, matching the reference, and its citation to the adverse_reactions section supports that claim; the advice to talk to a doctor is a reasonable, non-factual suggestion."
+      }
+    },
+    {
+      "id": "mqa-110",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.71520754089579,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer honestly says the excerpts lack a direct comparison and accurately summarizes the pregabalin pain indications and gabapentin mechanism with fitting citations, but it gives none of the reference's actual differences (pharmacokinetics, potency, conversion), so it is only partly responsive."
+      }
+    },
+    {
+      "id": "mqa-111",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.546776457922533,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly reports the 12.5 mg lowest tablet strength, the 25 mg adult edema and hypertension starting doses, and the weight-based pediatric dosing, and each claim is supported by the correctly cited description and dosage_and_administration sections."
+      }
+    },
+    {
+      "id": "mqa-112",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.8349271659972146,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly gives the blue, film-coated, capsule-shaped appearance with Y131/Y132 debossing, as the excerpts say (the reference's RX904 imprint reflects a different product), but the 'unscored' claim for the 500 mg tablet is supported only by [1] and not by [2], so the citations are slightly off."
+      }
+    },
+    {
+      "id": "mqa-113",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.4289291250752285,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly states that the labels don't characterize 600 mg as strong, and it gives the titration, 1,800 mg/day target, and 1,800-3,600 mg/day studied range that match the reference. Every claim is supported by the excerpts and cited to the correct sections."
+      }
+    },
+    {
+      "id": "mqa-114",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 7.1280077080009505,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The excerpts contain no metoprolol onset or absorption timing, so the answer correctly says this is not stated and offers only related duration and effect information, which is accurate and cited properly, but it does not give the reference's absorption detail."
+      }
+    },
+    {
+      "id": "mqa-115",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 12.285591666935943,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately reports the label's limited 10 mg references (10 mg every other day, 10 mg once daily for renal impairment, needing an alternate formulation) with supporting citations, but it misses the reference's OTC heartburn indications, which these Rx excerpts do not contain."
+      }
+    },
+    {
+      "id": "mqa-116",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.282383166952059,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the excerpts contain no magnesium-phenytoin interaction (the reference answer's rat data is not in them), accurately lists magnesium sulfate's adverse effects from the adverse_reactions section, and cites that section appropriately."
+      }
+    },
+    {
+      "id": "mqa-118",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.3399608340114355,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The answer gives accurate long-term safety information from the excerpts but misses the reference's OTC 14-day course guidance, which isn't in the excerpts; one minor unsupported detail is 'Lifetime exposure' in rats being described alongside ECL effects correctly, while the closing advice to consult a doctor/pharmacist and the claim that labels don't give a full guide are not from excerpts, and all citations match their claims."
+      }
+    },
+    {
+      "id": "mqa-119",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 3.073454458033666
+    },
+    {
+      "id": "mqa-121",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.8641288749640808,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says calcium interferes with alendronate absorption and to wait at least 30 minutes, matching the reference, and its other claims (doctor-prescribed calcium/vitamin D, calcium if diet inadequate) are supported by the excerpts and cited to sections that contain them."
+      }
+    },
+    {
+      "id": "mqa-124",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.1387006250442937,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The answer gives the 3-hour peak for 10 mg tablets (matching the reference) plus the 8-hour peak for 23 mg, half-life, and steady state, all supported and cited to the clinical_pharmacology label, though the opening claim that timing 'depends on when you take it' is an unsupported filler."
+      }
+    },
+    {
+      "id": "mqa-127",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.726578125031665,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the label excerpts (light blue, round, biconvex, debossed \"A\" and \"44\", scored on one side), and the reference's different imprint reflects a different manufacturer; the citations to how_supplied and description support these claims."
+      }
+    },
+    {
+      "id": "mqa-129",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.118826500023715,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately summarizes pen and syringe administration steps for ADMELOG, all supported by the cited instructions_for_use excerpts, which are the only source cited and support each claim."
+      }
+    },
+    {
+      "id": "mqa-130",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.593196125002578,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The excerpts contain no Singulair (montelukast) information, so the answer cannot give the reference indications; it correctly notes the ambiguity and lists 10 mg medicines with supported, accurately cited claims, but it does not answer the question."
+      }
+    },
+    {
+      "id": "mqa-131",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.527614916907623,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately reports the recommended daily dosages from the diclofenac label and correctly notes the excerpts give no explicit maximum, though it omits the reference's upper limits (e.g., above 225 mg/day for RA); the advice to seek medical help is not in the excerpts, and the citations support the dosing claims."
+      }
+    },
+    {
+      "id": "mqa-132",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.6611779159866273,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly rejects the false premise (no bupropion patch in the excerpts, and bupropion is a non-opioid antidepressant), though the reference answer names buprenorphine; the 'oral use only' claim is supported by the drug_abuse_and_dependence excerpt rather than the cited description and med guide sections, so some claims are cited to sections that don't contain them."
+      }
+    },
+    {
+      "id": "mqa-133",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.505859917029738,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately reflects the label excerpts (fluoride as the active ingredient in sodium fluoride products that help protect against cavities, with the stated concentrations) and honestly notes no general definition is given, but it omits the reference's explanation of what fluoride is and how it protects teeth, so it is incomplete; all claims are supported by the correctly cited sections."
+      }
+    },
+    {
+      "id": "mqa-137",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.587214834056795,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The answer is honest that 15,000 units isn't addressed and correctly covers rickets, monitoring, and toxicity, but it never explains that vitamin D helps calcium absorption for bone (the reference point), and 'used to treat bone conditions such as rickets' is a mild inference; the claim about slowed growth is loosely paraphrased, while the citations support the claims."
+      }
+    },
+    {
+      "id": "mqa-138",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.301049332949333,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly lists the labeled uses (cold sores, genital herpes, shingles, chickenpox) and sensibly notes the label does not claim a cure, but it wrongly implies 1 gram tablets are the strength for cold sores (2 g dose), and it omits the transmission reduction use; the chickenpox claim is cited to dosage_and_administration and clinical_studies, which support it, but the cold sore citation [2] is not the best fit and the 'strength listed for these uses' claim in [3] is not supported by that section."
+      }
+    },
+    {
+      "id": "mqa-139",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.015267292037606,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the products differ (oxycodone-only 5 mg capsule vs. oxycodone 10 mg/acetaminophen 325 mg tablet), and every claim, including the 5/7.5/10 mg with 325 mg strengths and acetaminophen's classification, is supported by the cited description and dosage-forms excerpts."
+      }
+    },
+    {
+      "id": "mqa-140",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.1249872079351917,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly describes the tablets as blue, film-coated and capsule-shaped (matching the reference's blue and capsule), adds the debossing and scoring details from the excerpts, and cites the dosage forms and how supplied sections that support each claim; the unscored 500-mg detail comes from the dosage forms section only, but that section is cited."
+      }
+    },
+    {
+      "id": "mqa-141",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.3393906669225544,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 1,
+        "reason": "The answer accurately says dextroamphetamine is a sympathomimetic amine CNS stimulant whose exact mechanism is not established, and it correctly flags the lisdexamfetamine reuptake/release mechanism as coming from a related drug. Its claims match the excerpts, but citation [3] is the racemic amphetamine label rather than dextroamphetamine, so citation [3] supports the claim only indirectly, and [2] (the description section) says 'sympathomimetic amine' but not 'CNS stimulant activity', so it supports only part of the claim."
+      }
+    },
+    {
+      "id": "mqa-142",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.8232537920121104,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer lists all six strengths (2.5, 5, 7.5, 10, 15, 20 mg) and the not-scored detail, both supported by the description and dosage_forms_and_strengths excerpts, which are cited correctly; the reference answer describes a different manufacturer's tablet, so the excerpts take priority."
+      }
+    },
+    {
+      "id": "mqa-143",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.762010541977361,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says pernicious anemia needs lifelong monthly injections and that treating the underlying cause or using oral supplementation may remove the need in other cases, all supported by and correctly cited to the dosage, precautions, and indications sections."
+      }
+    },
+    {
+      "id": "mqa-144",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.608755417051725,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly lists the major side effects and notes the label does not mention AFib, but the persistence-of-effects claim is cited to clinical_pharmacology when it comes from warnings_and_cautions section 5.1, and the cited med guide and warnings excerpts otherwise support the other claims."
+      }
+    },
+    {
+      "id": "mqa-145",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.223538083024323,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly identifies diazepam as a benzodiazepine (and a Schedule IV controlled substance), and each claim is supported by the cited description, medguide, and controlled_substance excerpts."
+      }
+    },
+    {
+      "id": "mqa-146",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.1452097919536754,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the excerpts cover only the vaginal cream and do not address transdermal patches or bio-identical status, and each supporting claim is accurate and cited to the matching excerpt (description, patient insert ingredients, clinical pharmacology on estradiol potency)."
+      }
+    },
+    {
+      "id": "mqa-147",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.640590749913827,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately describes ezetimibe's mechanism (inhibiting intestinal cholesterol absorption via NPC1L1, reducing hepatic cholesterol and increasing LDL receptors) matching the reference and excerpts, and each claim is cited to excerpts that directly support it, including the 54% figure from the clinical_pharmacology and pharmacodynamics sections."
+      }
+    },
+    {
+      "id": "mqa-148",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.7354224590817466,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the excerpts give no best time of day and accurately reports once-daily dosing, the 12-hour steady blood levels, the 6-hour peak, and that food effect was not investigated, with each claim supported by the cited dosage and clinical pharmacology excerpts."
+      }
+    },
+    {
+      "id": "mqa-151",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.529289375059307,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the excerpts do not mention kidney stones, advises telling the provider about kidney problems, and notes the dose reduction for renal impairment, and each claim is supported by the cited excerpts (patient info, indications, warnings 5.9, dosage section)."
+      }
+    },
+    {
+      "id": "mqa-152",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.04768887499813,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly describes amlodipine as a calcium channel blocker used for hypertension and angina that relaxes blood vessels, and each claim is supported by the cited excerpts (description, patient insert, and mechanism/clinical pharmacology sections), including the peripheral arterial vasodilator statement in [3] and [4]."
+      }
+    },
+    {
+      "id": "mqa-153",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.7471600419376045,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly notes that the excerpts don't mention 'Riva-clonazepam' by name, then accurately describes clonazepam's seizure and panic disorder uses and Schedule IV status, all supported by the cited indications, med guide, and controlled substance sections."
+      }
+    },
+    {
+      "id": "mqa-154",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.765646249987185,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says to stop immediately for PE, DVT, stroke or MI and to use the shortest duration, and it flags that the excerpts cover Premarin IV and oral rather than the cream, but it omits periodic re-evaluation and the cream's dosing regimen, which the excerpts did not cover; all claims are supported and the citations match."
+      }
+    },
+    {
+      "id": "mqa-157",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.7102962089702487,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly states that the excerpts give no duration and accurately reports that hydrocodone and acetaminophen are present in breast milk, but it omits the half-life data the reference uses to address duration; its claims and citations (hydrocodone from the nursing_mothers excerpt, acetaminophen from the acetaminophen/codeine excerpt) are supported."
+      }
+    },
+    {
+      "id": "mqa-158",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 4.728483209037222
+    },
+    {
+      "id": "mqa-160",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.933402583003044,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately reports the lozenge side effects, heart rate and blood pressure increases, and overdose symptoms from the excerpts, and it correctly states that no long-term consequences are described. Each claim is supported by the cited nicotine label sections, though it omits some reference points such as appetite and weight effects."
+      }
+    },
+    {
+      "id": "mqa-161",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.0625965419458225,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately lists the adult doses for cold sores, genital herpes (initial, recurrent, suppressive) and herpes zoster, plus the chickenpox and renal-adjustment notes, all matching the dosage_and_administration excerpts that it cites, and it covers the reference's cold sore and initial genital herpes doses."
+      }
+    },
+    {
+      "id": "mqa-163",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.86695029202383,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly explains that the toxin blocks acetylcholine release at the neuromuscular junction to weaken injected muscles, and it notes the cervical dystonia use and the limits of the excerpts, and each claim is supported by the label sections it cites."
+      }
+    },
+    {
+      "id": "mqa-164",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.4645534999435768,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately lists the fentanyl overdose symptoms from the overdosage section, matching the reference, and honestly notes the labels do not address heroin; the 911 advice is supported by citation [2], and the [2][1] citation on that sentence is acceptable."
+      }
+    },
+    {
+      "id": "mqa-166",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 3.567331542028114
+    },
+    {
+      "id": "mqa-167",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.880302125005983,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly notes that Cymbalta is not in the excerpts and accurately describes the cyclobenzaprine-SNRI serotonin syndrome risk, but it does not give the reference's CNS-acting drug caution; citations mostly support the claims, though the CNS depressant claim is cited to [1][2] where it appears in both, and the seek-care advice cited to [2] is supported, with the symptom list relying on [1]; minor mismatch since the excerpts never tie Cymbalta to the interaction."
+      }
+    },
+    {
+      "id": "mqa-168",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.892207165947184,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 1,
+        "reason": "The answer accurately describes the clotrimazole/betamethasone combination cream and honestly says plain clotrimazole dosing isn't covered, but it gives only partial help for the plain clotrimazole question, and a few citations are slightly off (e.g., hand-washing cited to [1][2], the 'notify doctor' guidance cited to [3], while the diaper-area and bandage points are supported)."
+      }
+    },
+    {
+      "id": "mqa-169",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.94567420904059,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly states IM or subcutaneous administration, avoidance of IV, and the pernicious anemia regimen, all matching the reference and supported by the cited description and dosage_and_administration excerpts."
+      }
+    },
+    {
+      "id": "mqa-170",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.5726033330429345,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 1,
+        "reason": "The question 'show me omeprazole' likely asks about appearance, which the reference gives as brown, oval, 12mm, imprint 20, but the answer omits appearance entirely and gives a general overview even though the label's how_supplied/dosage_forms excerpts describe the capsule (purple cap, grey body, 'R644'); the claims it does make are supported by the excerpts, though the citations are slightly off since the applesauce and indication claims in [3] are fine but the 'long-term treatment' claim is attributed to [2] and [3] when [2] does not support it."
+      }
+    },
+    {
+      "id": "mqa-171",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.3945610410301015,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the cited how_supplied excerpt (2.5 mL fill in a 5 mL bottle, NDC box of 2.5 mL); the reference's 6 mL container differs, but the label excerpt takes priority."
+      }
+    },
+    {
+      "id": "mqa-173",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.031722249928862,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately reports the seizure and panic disorder dosing from the dosage_and_administration excerpts (including the 1.5 mg/day start, 0.5-1 mg increments, 20 mg max, 0.25 mg BID start, 1 mg/day target, 4 mg max, weight-based pediatric dosing), and the single citation supports these claims."
+      }
+    },
+    {
+      "id": "mqa-175",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 7.249397458974272,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the labels give no stomach-emptying time and offers the supported related timing (30 minutes before food, stay upright 30 minutes, full glass of water, esophageal-emptying contraindications), each cited to a matching excerpt, though it omits the reference's bioavailability timing detail."
+      }
+    },
+    {
+      "id": "mqa-176",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.9929942920571193,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the doxycycline label excerpts list no resin or shellac, citing the inactive ingredients in the description section, and its mentions of shellac in the rabeprazole and dexmethylphenidate labels are supported by the cited excerpts."
+      }
+    },
+    {
+      "id": "mqa-177",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.0148762500612065,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the lorazepam label and reference (usual 2-6 mg/day divided, range 1-10, anxiety, insomnia, elderly dosing), and all claims are cited to the correct lorazepam dosage section; the Ativan=lorazepam link is common knowledge and reasonable."
+      }
+    },
+    {
+      "id": "mqa-181",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.325588500010781,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the label gives no specific time of day, and that the capsule is taken once daily with or without food, as prescribed, which matches the reference and excerpts; each claim is backed by an appropriate cited section."
+      }
+    },
+    {
+      "id": "mqa-182",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.9276496659731492,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says to rest and refrain from exercise at the first sign of tendon symptoms and to stop the drug and contact the provider, and it lists the risk factors, all supported by the cited excerpts; the closing advice to ask a doctor is generic but harmless."
+      }
+    },
+    {
+      "id": "mqa-185",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.7815772499889135,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly gives the 200 mg and 400 mg strengths, matching the label excerpts (the reference's imprint details are manufacturer-specific), and the added dosing details are supported by the dosage_and_administration excerpt, with all citations pointing to supporting sections."
+      }
+    },
+    {
+      "id": "mqa-188",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.9889620000030845,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says aripiprazole is taken once daily with or without food and that the label gives no specific time of day, which is accurate to the excerpts; it omits the reference's 'same time every day' advice, which the excerpts don't contain, and both citations support the claims they are attached to."
+      }
+    },
+    {
+      "id": "mqa-189",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.1147418749751523,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly notes that cabbage is not named in the labels, then gives the relevant guidance on consistent vitamin K intake and leafy green vegetables; each claim is supported by the cited excerpts, which match the claims."
+      }
+    },
+    {
+      "id": "mqa-191",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 4.952368666999973
+    },
+    {
+      "id": "mqa-192",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.5347285410389304,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately reports that the tetracycline label only says the drug is concentrated by the liver in bile and excreted in urine and feces in active form, and honestly states that no metabolic site is given, which fits the excerpts and the reference's point that tetracycline is largely not metabolized; the citation supports the claim."
+      }
+    },
+    {
+      "id": "mqa-194",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.4599422499304637,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly states the label's indication of major depressive disorder, and the target dose and outpatient trial claims are supported by the cited excerpts; the reference's SAD indication applies to the XL product and is not in these excerpts, so its omission is not penalized."
+      }
+    },
+    {
+      "id": "mqa-195",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 4.523671083035879
+    },
+    {
+      "id": "mqa-196",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 7.292089583002962,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the label does not list heartburn as a use and notes the contraindication in reflux esophagitis, consistent with the reference that dicyclomine can weaken the LES and worsen reflux. Every claim is supported by the excerpts, and each citation points to the supporting section. The statement that reflux esophagitis causes heartburn-type symptoms is mild general knowledge, but it does not undermine the answer."
+      }
+    },
+    {
+      "id": "mqa-197",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.401069500017911,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately gives the IV reconstitution volumes, the recommended 10-40 mg/mL concentration range, the ban on calcium-containing diluents, and the IM volumes, all matching the label excerpts, though it omits the metronidazole and incompatibility details in the reference; every claim is cited to the correct ceftriaxone dosage_and_administration section."
+      }
+    },
+    {
+      "id": "mqa-200",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 6.011008000001311,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately reports that the excerpts give amlodipine side effects only and none for metoprolol or the combination, correctly cites the amlodipine patient insert and the metoprolol interactions section, and every claim is supported (the reference answer's trial data isn't in the excerpts, so the label-grounded answer takes priority)."
+      }
+    },
+    {
+      "id": "mqa-201",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 2.965355082997121
+    },
+    {
+      "id": "mqa-202",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.094443624955602,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly gives indication-specific maximums (DPN 300, PHN 600, fibromyalgia 450, SCI 600, seizures 600 or 14 mg/kg/day), all matching the dosage_and_administration excerpts and including the reference's 300 mg/day for DPN; the single citation supports every claim, and the advice to ask a doctor is harmless."
+      }
+    },
+    {
+      "id": "mqa-207",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.6871042909333482,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the hydrocodone/acetaminophen product is for severe pain needing an opioid analgesic when alternatives are inadequate, and it cites the matching indications excerpt, but the statement that Vicodin contains hydrocodone and acetaminophen is not in the excerpts and is left uncited, and it appropriately notes the excerpts do not cover the Vicodin brand."
+      }
+    },
+    {
+      "id": "mqa-211",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.785006250021979,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly states the 25 mg and 50 mg strengths, which the excerpts confirm and which include the reference's 50 mg; the claim is supported by the cited dosage_forms_and_strengths and how_supplied sections."
+      }
+    },
+    {
+      "id": "mqa-212",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.165355042088777,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately describes the 25 mg and 50 mg tablets as given in the provided label excerpts (which take priority over the reference's different manufacturer), and both citations to dosage_forms_and_strengths and how_supplied directly support those descriptions."
+      }
+    },
+    {
+      "id": "mqa-215",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.944884750060737,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately says the excerpts do not address co-use of diclofenac and methylprednisolone, correctly summarizes the diclofenac corticosteroid note and the methylprednisolone warnings, and cites the sections that support each claim."
+      }
+    },
+    {
+      "id": "mqa-216",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.433676209067926,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says pediatric safety and effectiveness are not established and that the label gives no specific age limit, with accurate geriatric details, all drawn from and cited to the use_in_specific_populations excerpt (8.4 and 8.5); it does not state '18' but that number isn't in the excerpts."
+      }
+    },
+    {
+      "id": "mqa-217",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.88870395894628,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately summarizes the pen and syringe injection steps from the ADMELOG excerpts and tells the user to follow their healthcare provider's instructions, which matches the reference. All claims are supported, and every citation points to the correct ADMELOG instructions_for_use label."
+      }
+    },
+    {
+      "id": "mqa-218",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.665836290922016,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly notes that the label lists adverse reactions, that its list is not exhaustive, and that the excerpts cannot explain the website difference; minor issues are the claim that the Medication Guide gives a full list (the excerpt only says the list isn't complete), the 'ask your doctor or pharmacist' advice (loosely supported by 'call your healthcare provider'), and the first sentence's wording about 'the list it gives'. Citations are mostly accurate, but the claim that the Medication Guide offers a full list is unsupported by [1], and the answer misdescribes the postmarketing text slightly."
+      }
+    },
+    {
+      "id": "mqa-219",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.273495375062339,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly notes that no video is in the excerpts and accurately gives the label's steps for use and priming (shake, exhale, mouthpiece in mouth, press while inhaling slowly, hold breath up to 10 seconds, recap), each supported by and cited to the instructions_for_use and dosage_and_administration excerpts."
+      }
+    },
+    {
+      "id": "mqa-220",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.681684416951612,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately compares mechanism, GABA relationship, bioavailability, and food effects from the labels and notes that effectiveness and safety are not compared, but it omits the reference's indications and side-effect differences; all claims are supported and cited to the correct clinical_pharmacology excerpts."
+      }
+    },
+    {
+      "id": "mqa-221",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 3.0306638340698555
+    },
+    {
+      "id": "mqa-222",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.867399749928154,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly treats pregabalin and gabapentin as different drugs and cautiously declines to say more, but it never clearly states they are not the same, and it omits their similar uses; it also asserts that Lyrica is the brand name for pregabalin, which the excerpts do not state, and the final sentence is garbled; citations [2] (pediatric use) and [4] add little support, while [1] and [3] support the drug descriptions."
+      }
+    },
+    {
+      "id": "mqa-223",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.35220466600731,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the reference (insufficient geriatric data) and accurately adds the WHI stroke, breast cancer and dementia findings, all supported by the Premarin geriatric_use, clinical_studies and boxed_warning excerpts it cites."
+      }
+    },
+    {
+      "id": "mqa-224",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.704640125040896,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly lists the active ingredient, inactive ingredients, and film coating components, all supported by the cited description and medguide excerpts, and the added tablet appearance is supported by the dosage forms excerpt."
+      }
+    },
+    {
+      "id": "mqa-225",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.872345666983165,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately lists the labeled indications (partial-onset, myoclonic, and primary generalized tonic-clonic seizures) as in the medguide excerpt, appropriately notes it cannot know the doctor's specific reason, and cites the correct spl_medguide section; the reference refers to an extended-release product, but the provided excerpts take priority."
+      }
+    },
+    {
+      "id": "mqa-226",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.405714083928615,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 1,
+        "reason": "The answer accurately describes SPIRIVA RESPIMAT use from the excerpts (the reference covers HandiHaler capsules, but the excerpts are about Respimat and take priority), and its claims are supported, though some details such as the cartridge being inserted narrow end first come from the patient insert while being cited alongside the dosage section, and the priming sentence has mixed citations."
+      }
+    },
+    {
+      "id": "mqa-228",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 6.27389137505088,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the reference (10 or 15 mg/day for adults with schizophrenia, up to 30 mg/day, no added benefit above 10 or 15 mg) and accurately adds the other indications from the dosage table, with tablet strengths cited to the description section and all dosing claims cited to the dosage_and_administration section."
+      }
+    },
+    {
+      "id": "mqa-229",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.9297551250783727,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately reports the label's metoprolol-escitalopram interaction data (50% Cmax and 82% AUC increase, decreased cardioselectivity, no clinically significant BP/HR effects), matching the reference, and both citations directly support these claims; the advice to consult a doctor is generic and not a factual claim."
+      }
+    },
+    {
+      "id": "mqa-230",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.9380188749637455,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly describes fentanyl as an opioid agonist with analgesic and sedative actions, consistent with the reference's opioid analgesic class, and each claim is supported by the cited excerpt (description, mechanism_of_action, indications_and_usage, dosage_and_administration)."
+      }
+    },
+    {
+      "id": "mqa-231",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.155238999985158,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer accurately reports the generic 7.5/325 tablet from the excerpts and honestly says Percocet's own appearance isn't described, but it never gives the reference appearance (blue, round, scored, imprinted PERCOCET 5), so it is only partly responsive; the claim that Percocet is a brand name of oxycodone/acetaminophen is not in the excerpts and the sole citation covers only the tablet description, not the limitation statements."
+      }
+    },
+    {
+      "id": "mqa-232",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 8.142125625046901,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly describes warfarin as an anticoagulant tablet and honestly notes the excerpts never name Coumadin, but it gives only a thin description and omits the mechanism; it also states 'Coumadin is a brand name for warfarin' from outside knowledge, and the excerpts only imply the anticoagulant role (e.g., 'anticoagulant effects', PT monitoring) and tablet form, so the cited support is partial."
+      }
+    },
+    {
+      "id": "mqa-234",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 10.021877292077988,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly reports the 1% and 2% strengths in this label and the 300 mg adult maximum, but it misses the reference's higher concentrations (5%, topical 2-4%), though the excerpts support only this product; it also has minor issues like calling 30 mL the 'largest vial' (supported) and citing [2] for the claim that doses are lower for children and the lowest dose should be used, which is partly in [3] and [2] (acceptable), while the [2] citation for 'epidural 1% 30 mL' is valid."
+      }
+    },
+    {
+      "id": "mqa-235",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.913100958103314,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately lists the active ingredient (75 mg indomethacin) and the inactive ingredients from the description excerpt, and it notes that it covers only the extended-release product (the reference lists a different product's excipients, but the label excerpts take priority); all claims are supported and cited to the description section."
+      }
+    },
+    {
+      "id": "mqa-236",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 4.183903041994199,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the excerpts give no waiting period after dental treatment, and its points on oral hygiene, dental check-ups, reporting oral symptoms and the pre-treatment oral exam all match the excerpts and are cited to the right sections."
+      }
+    },
+    {
+      "id": "mqa-237",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.4079208340262994,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately states levetiracetam's seizure indications as given in the label excerpts (the reference describes the extended-release product, but the provided excerpts take priority), and each claim is backed by the cited medguide and indications sections."
+      }
+    },
+    {
+      "id": "mqa-238",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 3.3369138749549165
+    },
+    {
+      "id": "mqa-239",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.010853625019081,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the excerpts do not mention blood pressure lowering and cites supported adverse-effect figures, but it never confirms the reference's claim that alprazolam can lower BP, and the wording is awkward."
+      }
+    },
+    {
+      "id": "mqa-241",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.0187238339567557,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly identifies bimatoprost (0.3 mg/mL, i.e. 0.03%) as the sole active ingredient, and each claim, including the inactive ingredients and the prostamide analog description, is supported by the cited description and dosage forms sections."
+      }
+    },
+    {
+      "id": "mqa-242",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.526179459062405,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately conveys that a serious hypersensitivity reaction to penicillins contraindicates amoxicillin, notes the anaphylaxis risk and the need to ask about prior reactions, and appropriately flags the label's silence on milder allergies; each claim is supported by the cited contraindications and warnings sections."
+      }
+    },
+    {
+      "id": "mqa-243",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.848924541962333,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly lists the labeled uses, matching the reference and the Medication Guide excerpt, and cited [1] supports them; the opening claim that the label 'doesn't say taking fluoxetine means you are mentally ill' is an inference rather than a label statement, and the closing advice is only loosely supported."
+      }
+    },
+    {
+      "id": "mqa-245",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.662938333931379,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the reference dose (125-250 mg every 6 to 8 hours for 10 days) and the 10-day minimum, both supported by the cited penicillin label sections, with the caveat about strep throat not being named specifically being accurate."
+      }
+    },
+    {
+      "id": "mqa-246",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.3365634579677135,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately describes how the lozenge is used per the label and notes other forms aren't covered, but it omits the other forms (gum, inhaler, nasal spray, patch) in the reference; claims are supported and citations [1] and [2] match the dosage and user-guide excerpts."
+      }
+    },
+    {
+      "id": "mqa-248",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 3.2818987909704447
+    },
+    {
+      "id": "mqa-249",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.224504041019827,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the labels list no safe spices and flags garlic, ginkgo, St. John's wort and ginseng as interacting, and it advises asking a clinician, but it names echinacea as a botanical that interacts with warfarin, which the excerpt supports only through CYP450 interactions, and it never mentions ginger from the reference; citations [1], [2] and [3] each support the claims they are attached to."
+      }
+    },
+    {
+      "id": "mqa-250",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 7.679609957966022,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately reflects the 81 mg aspirin label (temporary relief of minor aches and pains, NSAID, delayed action) with correct citations, but it omits the other uses in the reference answer such as fever reduction, cardiovascular and stroke prevention, and arthritis, so it is incomplete."
+      }
+    },
+    {
+      "id": "mqa-251",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.7513393750414252,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 1,
+        "reason": "The answer honestly says the excerpts don't state the indication, so it misses the reference's core content (seizures, migraine prevention) but gives accurate safety information from the labels; the claims are all supported, though the excerpts do include mentions of migraine prevention and seizures it overlooked, and some citations are loose (e.g., the hyperammonemia and rash/hypersensitivity claims are cited to the med guide/warnings but the hyperammonemia claim is cited to [1][2] while it appears only in warnings, and 'stop the drug' for vision changes is only 'call your provider')."
+      }
+    },
+    {
+      "id": "mqa-253",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 8.901181958033703,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly gives 500 mg orally every 24 hours for 7 days for ABECB (CrCl \u226550), and the label supports its added details on causative bacteria, reserve-use caution, and renal adjustment, each cited to the right dosage or indications section."
+      }
+    },
+    {
+      "id": "mqa-254",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.9869127499405295,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer lists the label's symptoms of fluid and electrolyte imbalance and dehydration, consistent with the reference, and each claim is supported by the cited precautions, adverse_reactions, and dosage_and_administration excerpts."
+      }
+    },
+    {
+      "id": "mqa-255",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 3.4008703749859706,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the excerpts give no origin or source, describes the drug as a nucleoside metabolic inhibitor and fluorinated pyrimidine, and names the manufacturers, with each claim matching the cited description and manufacturer sections."
+      }
+    },
+    {
+      "id": "mqa-003",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 4.405663584009744
+    },
+    {
+      "id": "mqa-008",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.5462539580184966
+    },
+    {
+      "id": "mqa-009",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.7309155830880627
+    },
+    {
+      "id": "mqa-010",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 4.866250875056721
+    },
+    {
+      "id": "mqa-011",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.171821624971926
+    },
+    {
+      "id": "mqa-013",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 2.1274744170950726
+    },
+    {
+      "id": "mqa-015",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.942174374940805
+    },
+    {
+      "id": "mqa-016",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.9406863750191405
+    },
+    {
+      "id": "mqa-019",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.7860089170280844
+    },
+    {
+      "id": "mqa-020",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.2731124579440802
+    },
+    {
+      "id": "mqa-022",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.8477428749902174
+    },
+    {
+      "id": "mqa-026",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 5.788888874929398
+    },
+    {
+      "id": "mqa-031",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 4.085390166030265
+    },
+    {
+      "id": "mqa-033",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.1714190419297665
+    },
+    {
+      "id": "mqa-034",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.06872141698841
+    },
+    {
+      "id": "mqa-036",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.8599807089194655
+    },
+    {
+      "id": "mqa-037",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.0633135839598253
+    },
+    {
+      "id": "mqa-038",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 6.139130124938674
+    },
+    {
+      "id": "mqa-039",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 5.175262082950212
+    },
+    {
+      "id": "mqa-040",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.7706682920688763
+    },
+    {
+      "id": "mqa-041",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 5.202494582976215
+    },
+    {
+      "id": "mqa-043",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.927804167033173
+    },
+    {
+      "id": "mqa-044",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.8023033330682665
+    },
+    {
+      "id": "mqa-045",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 4.224774417001754
+    },
+    {
+      "id": "mqa-047",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.566065500024706
+    },
+    {
+      "id": "mqa-049",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 4.725298041943461
+    },
+    {
+      "id": "mqa-051",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.08083162503317
+    },
+    {
+      "id": "mqa-052",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.6709732079179958
+    },
+    {
+      "id": "mqa-059",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 5.0066331250127405
+    },
+    {
+      "id": "mqa-060",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 5.1011751249898225
+    },
+    {
+      "id": "mqa-061",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.5905797500163317
+    },
+    {
+      "id": "mqa-062",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.3799339160323143
+    },
+    {
+      "id": "mqa-063",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.1925764579791576
+    },
+    {
+      "id": "mqa-068",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.3574174579698592
+    },
+    {
+      "id": "mqa-069",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.3057148749940097
+    },
+    {
+      "id": "mqa-070",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.530774167040363
+    },
+    {
+      "id": "mqa-074",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.4217002919176593
+    },
+    {
+      "id": "mqa-076",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.3981438329210505
+    },
+    {
+      "id": "mqa-078",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 2.2650910830125213
+    },
+    {
+      "id": "mqa-079",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.352977583068423
+    },
+    {
+      "id": "mqa-081",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 2.3374977079220116
+    },
+    {
+      "id": "mqa-084",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.352887333952822
+    },
+    {
+      "id": "mqa-086",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.968605916015804
+    },
+    {
+      "id": "mqa-087",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.0707867079181597
+    },
+    {
+      "id": "mqa-090",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.8676018330734223
+    },
+    {
+      "id": "mqa-091",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 5.042101374943741
+    },
+    {
+      "id": "mqa-095",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.96183074999135
+    },
+    {
+      "id": "mqa-096",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.359025957994163
+    },
+    {
+      "id": "mqa-106",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.2940490829059854
+    },
+    {
+      "id": "mqa-107",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.951033249963075
+    },
+    {
+      "id": "mqa-117",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.981282665976323
+    },
+    {
+      "id": "mqa-120",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.160620625014417
+    },
+    {
+      "id": "mqa-122",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 4.500341707956977
+    },
+    {
+      "id": "mqa-123",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 1.961087540956214
+    },
+    {
+      "id": "mqa-125",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.942451125010848
+    },
+    {
+      "id": "mqa-126",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 2.915735541959293
+    },
+    {
+      "id": "mqa-128",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.996117459028028
+    },
+    {
+      "id": "mqa-134",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.406004042015411
+    },
+    {
+      "id": "mqa-135",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 1.8221222918946296
+    },
+    {
+      "id": "mqa-136",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 2.7683963750023395
+    },
+    {
+      "id": "mqa-149",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.6594298330601305
+    },
+    {
+      "id": "mqa-150",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 4.220798708032817
+    },
+    {
+      "id": "mqa-155",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 4.321502459002659
+    },
+    {
+      "id": "mqa-156",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 4.216724499943666
+    },
+    {
+      "id": "mqa-159",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 4.946769708069041
+    },
+    {
+      "id": "mqa-162",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.6958472079131752
+    },
+    {
+      "id": "mqa-165",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.7518043329473585
+    },
+    {
+      "id": "mqa-172",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 4.453133917064406
+    },
+    {
+      "id": "mqa-174",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 5.092408208991401
+    },
+    {
+      "id": "mqa-178",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 4.5982665420742705
+    },
+    {
+      "id": "mqa-179",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.290995749994181
+    },
+    {
+      "id": "mqa-180",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.3791121249087155
+    },
+    {
+      "id": "mqa-183",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.571599040995352
+    },
+    {
+      "id": "mqa-184",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.0773295830003917
+    },
+    {
+      "id": "mqa-186",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.684127458021976
+    },
+    {
+      "id": "mqa-187",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 4.607769833062775
+    },
+    {
+      "id": "mqa-190",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 4.913240542053245
+    },
+    {
+      "id": "mqa-193",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 2.868169416906312
+    },
+    {
+      "id": "mqa-198",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.555153707973659
+    },
+    {
+      "id": "mqa-199",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.5828542079543695
+    },
+    {
+      "id": "mqa-203",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 2.5595691669732332
+    },
+    {
+      "id": "mqa-204",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 6.041985416901298
+    },
+    {
+      "id": "mqa-205",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.071123000001535
+    },
+    {
+      "id": "mqa-206",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.2507193330675364
+    },
+    {
+      "id": "mqa-208",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 4.46898158302065
+    },
+    {
+      "id": "mqa-209",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.7424662919947878
+    },
+    {
+      "id": "mqa-210",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 5.629490957944654
+    },
+    {
+      "id": "mqa-213",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.282223333022557
+    },
+    {
+      "id": "mqa-214",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.4351360419532284
+    },
+    {
+      "id": "mqa-227",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.1737389999907464
+    },
+    {
+      "id": "mqa-233",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.865380708943121
+    },
+    {
+      "id": "mqa-240",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 3.3382623330689967
+    },
+    {
+      "id": "mqa-244",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 2.5978797080460936
+    },
+    {
+      "id": "mqa-247",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 4.8147812080569565
+    },
+    {
+      "id": "mqa-252",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 5.870776333031245
+    },
+    {
+      "id": "ref-001",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 4.571521500009112
+    },
+    {
+      "id": "ref-002",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 3.173323417082429
+    },
+    {
+      "id": "ref-003",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 2.643208457971923
+    },
+    {
+      "id": "ref-004",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 2.066536041907966
+    },
+    {
+      "id": "ref-005",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 2.456201000022702
+    },
+    {
+      "id": "ref-006",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 2.6568900409620255
+    },
+    {
+      "id": "ref-007",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 3.2787985410541296
+    },
+    {
+      "id": "ref-008",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 2.045878665987402
+    },
+    {
+      "id": "ref-009",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 2.049663917045109
+    },
+    {
+      "id": "ref-010",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 2.548984874971211
+    },
+    {
+      "id": "ref-011",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 2.3725479579297826
+    },
+    {
+      "id": "ref-012",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 5.312061999924481
+    },
+    {
+      "id": "ref-013",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 1.8803514169994742
+    },
+    {
+      "id": "ref-014",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 2.0682266249787062
+    },
+    {
+      "id": "ref-015",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": true,
+      "latency_s": 4.403274208074436
+    },
+    {
+      "id": "ref-016",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": true,
+      "latency_s": 3.275435166899115
+    },
+    {
+      "id": "ref-017",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": true,
+      "latency_s": 3.274759291904047
+    },
+    {
+      "id": "ref-018",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": true,
+      "latency_s": 2.315892457962036
+    },
+    {
+      "id": "ref-019",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": true,
+      "latency_s": 3.1940055419690907
+    },
+    {
+      "id": "ref-020",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": true,
+      "latency_s": 2.2133931659627706
+    },
+    {
+      "id": "ref-021",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": true,
+      "latency_s": 4.077381958952174
+    },
+    {
+      "id": "ref-022",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 2.8990930420113727
+    },
+    {
+      "id": "ref-023",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 5.026721250033006
+    },
+    {
+      "id": "ref-024",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": true,
+      "latency_s": 3.2684486660873517
+    },
+    {
+      "id": "ref-025",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": true,
+      "latency_s": 2.7606366249965504
+    },
+    {
+      "id": "ref-026",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": true,
+      "latency_s": 2.8700227910885587
+    },
+    {
+      "id": "ref-027",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": true,
+      "latency_s": 3.3773159169359133
+    },
+    {
+      "id": "ref-028",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": true,
+      "latency_s": 3.273453125031665
+    },
+    {
+      "id": "ref-029",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 3.275103708030656
+    },
+    {
+      "id": "ref-030",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": true,
+      "latency_s": 2.969135500025004
+    },
+    {
+      "id": "ref-031",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 2.4602773330407217
+    },
+    {
+      "id": "ref-032",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 6.756824999931268
+    },
+    {
+      "id": "ref-033",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 10.332250041072257
+    },
+    {
+      "id": "ref-034",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": true,
+      "latency_s": 12.091872915974818
+    },
+    {
+      "id": "ref-035",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": true,
+      "latency_s": 6.361228041001596
+    },
+    {
+      "id": "ref-036",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 6.846669125021435
+    },
+    {
+      "id": "ref-037",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 3.88616087497212
+    },
+    {
+      "id": "ref-038",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 3.49555754091125
+    },
+    {
+      "id": "ref-039",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": true,
+      "latency_s": 3.162351084058173
+    },
+    {
+      "id": "ref-040",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": true,
+      "latency_s": 6.692595207947306
+    },
+    {
+      "id": "ref-041",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 5.968236458022147
+    }
+  ]
+}
