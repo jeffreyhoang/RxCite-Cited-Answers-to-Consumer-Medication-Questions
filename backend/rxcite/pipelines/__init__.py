@@ -1,5 +1,5 @@
 # Registry of RAG architectures the eval runner can run, by name: name -> function that builds it
-#       Added per ticket: dummy/oracle (T4), dense (T5), naive (T6), hierarchical (T8), ...
+#       By ticket: dummy/oracle (T4), dense (T5), naive (T6), hierarchical (T8), decomposition (T9)
 
 from collections.abc import Callable
 
@@ -45,6 +45,19 @@ def _hierarchical_retrieval() -> RAGPipeline:
     return HierarchicalPipeline(dummy_generator, name="hierarchical-retrieval")
 
 
+def _decomposition() -> RAGPipeline:
+    from rxcite.pipelines.decomposition import DecompositionPipeline
+
+    return DecompositionPipeline()
+
+
+def _decomposition_retrieval() -> RAGPipeline:
+    from rxcite.pipelines.baselines import dummy_generator
+    from rxcite.pipelines.decomposition import DecompositionPipeline
+
+    return DecompositionPipeline(dummy_generator, name="decomposition-retrieval")
+
+
 def _dense(model: str) -> Callable[[], RAGPipeline]:
     def build() -> RAGPipeline:
         from rxcite.pipelines.dense import DensePipeline
@@ -60,6 +73,8 @@ PIPELINES: dict[str, Callable[[], RAGPipeline]] = {
     "naive": _naive,  # T6: dense top-10 -> shared generator
     "hierarchical": _hierarchical,  # T8: drug filter -> child chunks -> parent sections
     "hierarchical-retrieval": _hierarchical_retrieval,
+    "decomposition": _decomposition,  # T9: sub-questions -> dense search each -> merge
+    "decomposition-retrieval": _decomposition_retrieval,
     "dense": _pgvector_dense,  # chosen embedder, pgvector in Supabase
     # T5 embedder comparison (in memory): dense-bge-base, dense-pubmedbert, dense-openai-small
     **{f"dense-{m}": _dense(m) for m in MODELS},

@@ -1,0 +1,334 @@
+{
+  "arch": "decomposition",
+  "mode": "dev",
+  "n_answerable": 20,
+  "n_refusal": 10,
+  "new_api_runs": {
+    "pipeline_answers": 0,
+    "judge_calls": 0
+  },
+  "metrics": {
+    "retrieval": {
+      "recall@10": 0.8,
+      "mrr": 0.6392857142857143,
+      "n": 20
+    },
+    "false_refusal_rate": 0.1,
+    "refusal_accuracy": 0.7,
+    "refusal_accuracy_by_reason": {
+      "missing_from_corpus": 1.0,
+      "no_supporting_label": 0.5714285714285714,
+      "personalized_advice": 1.0
+    },
+    "latency_s": {
+      "mean": 1.2199815943992387,
+      "median": 0.92142404144397
+    },
+    "judge": {
+      "correctness": 1.7222222222222223,
+      "groundedness": 1.8333333333333333,
+      "citation_accuracy": 1.8333333333333333,
+      "n": 18
+    }
+  },
+  "questions": [
+    {
+      "id": "mqa-057",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.1699219580041245,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says excess insulin causes hypoglycemia (plus hypokalemia) and describes severe outcomes like coma and seizure, all supported by and cited to the insulin overdosage excerpt; it omits the reference's mechanism and symptom list, but the excerpts don't cover those."
+      }
+    },
+    {
+      "id": "mqa-012",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.792537167086266,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately reports the label's half-life data (1.5-4.5 h terminal, 1.5-2 h accepted), excretion routes, and hepatic/renal impairment effects, and it states that the label gives no total time in the body; the reference's detection windows are not in the excerpts, so the label-based answer is appropriate, and the cited pharmacokinetics/clinical_pharmacology sections support every claim."
+      }
+    },
+    {
+      "id": "mqa-127",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.1533612090861425,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the label excerpts (light blue, round, biconvex, debossed \"A\" and \"44\", scored on one side), and the reference's different imprint reflects a different manufacturer; the citations to how_supplied and description support these claims."
+      }
+    },
+    {
+      "id": "mqa-113",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 6.368154083029367,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 1,
+        "reason": "The answer matches the reference on titration to 1,800 mg/day and no added benefit above that, and adds epilepsy dosing supported by the label, but citation [3] (geriatric_use) is used for the claim that max dose depends on condition and kidney function, which it only partly supports, and the renal point is not clearly cited to the renal adjustment section."
+      }
+    },
+    {
+      "id": "mqa-108",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.55947587499395,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says not to stop without physician supervision and to reinstitute therapy if withdrawal symptoms occur, with all claims supported and cited to the right excerpts, but it omits the reference's key advice to taper over about one week and the abrupt-cessation risks (angina, MI) in coronary artery disease, since those parts were not in the excerpts."
+      }
+    },
+    {
+      "id": "mqa-072",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.7483264580368996,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly identifies montelukast sodium as the active ingredient and lists the inactive ingredients and tablet description, all matching the excerpts and each cited to the supporting section."
+      }
+    },
+    {
+      "id": "mqa-055",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.333640957949683,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer accurately describes the generic Zydus topiramate tablets from the excerpts and honestly states it cannot describe Topamax brand tablets, but it does not give the brand's actual appearance (cream/yellow/salmon, debossed OMN), so it only partly answers; the claim that the capsules are described only by pellet filling is slightly incomplete, and the [3] citation is attached to a statement it only partly supports (it covers only the 100 mg tablet)."
+      }
+    },
+    {
+      "id": "mqa-230",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9410632079234347,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly describes fentanyl as an opioid agonist with analgesic and sedative actions, consistent with the reference's opioid analgesic class, and each claim is supported by the cited excerpt (description, mechanism_of_action, indications_and_usage, dosage_and_administration)."
+      }
+    },
+    {
+      "id": "mqa-048",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9574230000143871,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the reference and the excerpts (normal balanced diet, consistent vitamin K, avoid large amounts of leafy greens and vitamin K-rich oils, consult provider), and each claim is cited to a supporting section; the only omission is grapefruit juice, which is minor."
+      }
+    },
+    {
+      "id": "mqa-245",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.3277725409716368,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer matches the reference dose (125-250 mg every 6 to 8 hours for 10 days) and the 10-day minimum, both supported by the cited penicillin label sections, with the caveat about strep throat not being named specifically being accurate."
+      }
+    },
+    {
+      "id": "mqa-181",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5205164999933913,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the label gives no specific time of day, and that the capsule is taken once daily with or without food, as prescribed, which matches the reference and excerpts; each claim is backed by an appropriate cited section."
+      }
+    },
+    {
+      "id": "mqa-017",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 1.8170807498972863
+    },
+    {
+      "id": "mqa-014",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.036953916074708,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 1,
+        "citation_accuracy": 1,
+        "reason": "The answer correctly gives subcutaneous route, 120 mg Q4W with Day 8 and 15 loading doses, and says injection details are missing, but it omits injection sites and who administers it, and it presents trial regimens as 'usual dose' and states supplementation as a recommendation in studies rather than as administration guidance; the citation [2] supports the loading-dose claim while [1] supports the dosing and calcium claims reasonably, though the 'every 4 weeks subcutaneous' claim is better supported by other uncited sections."
+      }
+    },
+    {
+      "id": "mqa-050",
+      "set": "answerable",
+      "refused": true,
+      "latency_s": 0.8818131670122966
+    },
+    {
+      "id": "mqa-104",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.7323827499058098,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the label does not list stroke and that enalaprilat is indicated for hypertension when oral therapy is not practical, which matches the reference and the cited indications excerpt."
+      }
+    },
+    {
+      "id": "mqa-110",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.31300574995111674,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer honestly says the excerpts lack a direct comparison and accurately summarizes the pregabalin pain indications and gabapentin mechanism with fitting citations, but it gives none of the reference's actual differences (pharmacokinetics, potency, conversion), so it is only partly responsive."
+      }
+    },
+    {
+      "id": "mqa-219",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.33711816603317857,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly notes that no video is in the excerpts and accurately gives the label's steps for use and priming (shake, exhale, mouthpiece in mouth, press while inhaling slowly, hold breath up to 10 seconds, recap), each supported by and cited to the instructions_for_use and dosage_and_administration excerpts."
+      }
+    },
+    {
+      "id": "mqa-249",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.41192745801527053,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 1,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly says the labels list no safe spices and flags garlic, ginkgo, St. John's wort and ginseng as interacting, and it advises asking a clinician, but it names echinacea as a botanical that interacts with warfarin, which the excerpt supports only through CYP450 interactions, and it never mentions ginger from the reference; citations [1], [2] and [3] each support the claims they are attached to."
+      }
+    },
+    {
+      "id": "mqa-235",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.3354956250404939,
+      "judge": {
+        "correctness": 2,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer accurately lists the active ingredient (75 mg indomethacin) and the inactive ingredients from the description excerpt, and it notes that it covers only the extended-release product (the reference lists a different product's excipients, but the label excerpts take priority); all claims are supported and cited to the description section."
+      }
+    },
+    {
+      "id": "mqa-099",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.702131333993748,
+      "judge": {
+        "correctness": 1,
+        "groundedness": 2,
+        "citation_accuracy": 2,
+        "reason": "The answer correctly and fully describes the ingredients of DEPO-Testosterone (testosterone cypionate, benzyl benzoate, cottonseed oil, benzyl alcohol), all supported by the cited description section, but it covers only the cypionate product and omits other testosterone forms in the reference (undecanoate, enanthate), so it is incomplete."
+      }
+    },
+    {
+      "id": "ref-013",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 0.3609262499958277
+    },
+    {
+      "id": "mqa-128",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 0.3506076670018956
+    },
+    {
+      "id": "ref-020",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": true,
+      "latency_s": 0.4817914580926299
+    },
+    {
+      "id": "mqa-180",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 0.4456187089672312
+    },
+    {
+      "id": "mqa-008",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 0.45954154105857015
+    },
+    {
+      "id": "mqa-081",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 1.3766809588996693
+    },
+    {
+      "id": "ref-014",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": true,
+      "latency_s": 1.289243625011295
+    },
+    {
+      "id": "mqa-213",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.9017848749645054
+    },
+    {
+      "id": "mqa-079",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": true,
+      "latency_s": 1.766858792048879
+    },
+    {
+      "id": "mqa-126",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 1.7262920829234645
+    }
+  ]
+}
