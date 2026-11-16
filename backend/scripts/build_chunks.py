@@ -65,6 +65,7 @@ if __name__ == "__main__":
     split = split_section if args.chunk_set == "section" else chunk_section
 
     with db.connect() as conn:
+        conn.execute("set statement_timeout = 0")  # 26 MB of text can pass the 2-minute limit
         rows = conn.execute(
             """select s.set_id, s.section, l.drug_name, s.text
                from sections s join labels l using (set_id)
