@@ -1,5 +1,6 @@
 # Registry of RAG architectures the eval runner can run, by name: name -> function that builds it
-#       By ticket: dummy/oracle (T4), dense (T5), naive (T6), hierarchical (T8), decomposition (T9)
+#       By ticket: dummy/oracle (T4), dense (T5), naive (T6), advanced (T7), hierarchical (T8),
+#       decomposition (T9). Each variant needs its own name: the runner caches answers per name.
 
 from collections.abc import Callable
 
@@ -45,6 +46,23 @@ def _hierarchical_retrieval() -> RAGPipeline:
     return HierarchicalPipeline(dummy_generator, name="hierarchical-retrieval")
 
 
+def _advanced() -> RAGPipeline:
+    from rxcite.pipelines.advanced import AdvancedPipeline
+
+    return AdvancedPipeline()
+
+
+# Retrieval-only Advanced RAG ablation rows (T7): each adds one step to the row above it
+def _advanced_retrieval(name: str, **steps: bool) -> Callable[[], RAGPipeline]:
+    def build() -> RAGPipeline:
+        from rxcite.pipelines.advanced import AdvancedPipeline
+        from rxcite.pipelines.baselines import dummy_generator
+
+        return AdvancedPipeline(dummy_generator, name=name, **steps)
+
+    return build
+
+
 def _decomposition() -> RAGPipeline:
     from rxcite.pipelines.decomposition import DecompositionPipeline
 
@@ -73,6 +91,11 @@ PIPELINES: dict[str, Callable[[], RAGPipeline]] = {
     "naive": _naive,  # T6: dense top-10 -> shared generator
     "hierarchical": _hierarchical,  # T8: drug filter -> child chunks -> parent sections
     "hierarchical-retrieval": _hierarchical_retrieval,
+    "advanced": _advanced,  # T7: rewrite -> BM25 + dense -> RRF -> rerank -> shared generator
+    "adv-section": _advanced_retrieval("adv-section", rewrite=False, hybrid=False, rerank=False),
+    "adv-rewrite": _advanced_retrieval("adv-rewrite", hybrid=False, rerank=False),
+    "adv-hybrid": _advanced_retrieval("adv-hybrid", rerank=False),
+    "advanced-retrieval": _advanced_retrieval("advanced-retrieval"),
     "decomposition": _decomposition,  # T9: sub-questions -> dense search each -> merge
     "decomposition-retrieval": _decomposition_retrieval,
     "dense": _pgvector_dense,  # chosen embedder, pgvector in Supabase
