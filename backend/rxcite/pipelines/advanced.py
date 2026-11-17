@@ -1,6 +1,8 @@
 # Advanced RAG (T7): query rewrite -> dense + BM25 over section-based chunks -> RRF fusion
 #       -> top 50 -> cross-encoder rerank -> top 10 -> shared generator.
-#       Each step can be switched off for the ablation. Only search sees the rewritten query.
+#       Each step can be switched off for the ablation. Search and the reranker see the rewritten
+#       query (reranking against the original lowered dev MRR 0.81 -> 0.57); the generator
+#       gets the original question.
 
 import time
 
@@ -48,7 +50,7 @@ class AdvancedPipeline(RAGPipeline):
             cands = dense
         if self.rerank:
             start = time.perf_counter()
-            top = rerank_chunks(query, cands, self.top_k)
+            top = rerank_chunks(search_q, cands, self.top_k)
             info["rerank_s"] = time.perf_counter() - start
         else:
             top = cands[: self.top_k]

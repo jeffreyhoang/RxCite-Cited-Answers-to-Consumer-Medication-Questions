@@ -1,0 +1,1943 @@
+{
+  "arch": "adv-section",
+  "mode": "full",
+  "n_answerable": 160,
+  "n_refusal": 136,
+  "new_api_runs": {
+    "pipeline_answers": 296,
+    "judge_calls": 0
+  },
+  "metrics": {
+    "retrieval": {
+      "recall@10": 0.7,
+      "mrr": 0.5346478174603175,
+      "n": 160
+    },
+    "false_refusal_rate": 0.0,
+    "refusal_accuracy": 0.0,
+    "refusal_accuracy_by_reason": {
+      "insufficient_info": 0.0,
+      "missing_from_corpus": 0.0,
+      "no_supporting_label": 0.0,
+      "personalized_advice": 0.0
+    },
+    "latency_s": {
+      "mean": 0.5959193249924479,
+      "median": 0.4837068335036747
+    }
+  },
+  "questions": [
+    {
+      "id": "mqa-001",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 5.0191869580885395
+    },
+    {
+      "id": "mqa-002",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.3476093329954892
+    },
+    {
+      "id": "mqa-004",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.0434431249741465
+    },
+    {
+      "id": "mqa-005",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.6462112079607323
+    },
+    {
+      "id": "mqa-006",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.201452250010334
+    },
+    {
+      "id": "mqa-007",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.7842262909980491
+    },
+    {
+      "id": "mqa-012",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.7126201670616865
+    },
+    {
+      "id": "mqa-014",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.433488457929343
+    },
+    {
+      "id": "mqa-017",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.8750696249771863
+    },
+    {
+      "id": "mqa-018",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.987974917050451
+    },
+    {
+      "id": "mqa-021",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.640618292032741
+    },
+    {
+      "id": "mqa-023",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5218804170144722
+    },
+    {
+      "id": "mqa-024",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.6995358329731971
+    },
+    {
+      "id": "mqa-025",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5748295839875937
+    },
+    {
+      "id": "mqa-027",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5076445830054581
+    },
+    {
+      "id": "mqa-028",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5137583750765771
+    },
+    {
+      "id": "mqa-029",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5750344160478562
+    },
+    {
+      "id": "mqa-030",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9034195409622043
+    },
+    {
+      "id": "mqa-032",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5869350419379771
+    },
+    {
+      "id": "mqa-035",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.6405559170525521
+    },
+    {
+      "id": "mqa-042",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.772007541032508
+    },
+    {
+      "id": "mqa-046",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.43845179199706763
+    },
+    {
+      "id": "mqa-048",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5221121249487624
+    },
+    {
+      "id": "mqa-050",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5789474999764934
+    },
+    {
+      "id": "mqa-053",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.42812499997671694
+    },
+    {
+      "id": "mqa-054",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5853751669637859
+    },
+    {
+      "id": "mqa-055",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.33208625006955117
+    },
+    {
+      "id": "mqa-056",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.4219054590212181
+    },
+    {
+      "id": "mqa-057",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.43185033299960196
+    },
+    {
+      "id": "mqa-058",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.3332297500455752
+    },
+    {
+      "id": "mqa-064",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5496729169972241
+    },
+    {
+      "id": "mqa-065",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.7867899159900844
+    },
+    {
+      "id": "mqa-066",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.8719645419623703
+    },
+    {
+      "id": "mqa-067",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.7439894999843091
+    },
+    {
+      "id": "mqa-071",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5449897910002619
+    },
+    {
+      "id": "mqa-072",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.45782104204408824
+    },
+    {
+      "id": "mqa-073",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.3466378750745207
+    },
+    {
+      "id": "mqa-075",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.38478891598060727
+    },
+    {
+      "id": "mqa-077",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.41162612510379404
+    },
+    {
+      "id": "mqa-080",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.42383616603910923
+    },
+    {
+      "id": "mqa-082",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5360638330457732
+    },
+    {
+      "id": "mqa-083",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.48120383301284164
+    },
+    {
+      "id": "mqa-085",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.40989045903552324
+    },
+    {
+      "id": "mqa-088",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.39221624995116144
+    },
+    {
+      "id": "mqa-089",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.3474733749171719
+    },
+    {
+      "id": "mqa-092",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.3255869169952348
+    },
+    {
+      "id": "mqa-093",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.3513176669366658
+    },
+    {
+      "id": "mqa-094",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.43884833296760917
+    },
+    {
+      "id": "mqa-097",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.7083773339400068
+    },
+    {
+      "id": "mqa-098",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5757713339990005
+    },
+    {
+      "id": "mqa-099",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.510814290959388
+    },
+    {
+      "id": "mqa-100",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9627291250508279
+    },
+    {
+      "id": "mqa-101",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.42279529105871916
+    },
+    {
+      "id": "mqa-102",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.41874258394818753
+    },
+    {
+      "id": "mqa-103",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5871613330673426
+    },
+    {
+      "id": "mqa-104",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5235349999275059
+    },
+    {
+      "id": "mqa-105",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5121353339636698
+    },
+    {
+      "id": "mqa-108",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.6768563750665635
+    },
+    {
+      "id": "mqa-109",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5454989999998361
+    },
+    {
+      "id": "mqa-110",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.6368212910601869
+    },
+    {
+      "id": "mqa-111",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.572200792026706
+    },
+    {
+      "id": "mqa-112",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.30786579090636224
+    },
+    {
+      "id": "mqa-113",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.3343557089101523
+    },
+    {
+      "id": "mqa-114",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.34532412502449006
+    },
+    {
+      "id": "mqa-115",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5452285410137847
+    },
+    {
+      "id": "mqa-116",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.6218644169857726
+    },
+    {
+      "id": "mqa-118",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.3823769580340013
+    },
+    {
+      "id": "mqa-119",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.46618350001517683
+    },
+    {
+      "id": "mqa-121",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.4442694999743253
+    },
+    {
+      "id": "mqa-124",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.31811912497505546
+    },
+    {
+      "id": "mqa-127",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.43531783297657967
+    },
+    {
+      "id": "mqa-129",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.49234687502030283
+    },
+    {
+      "id": "mqa-130",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.4489304170710966
+    },
+    {
+      "id": "mqa-131",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.41665054101031274
+    },
+    {
+      "id": "mqa-132",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.658366083051078
+    },
+    {
+      "id": "mqa-133",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5012567919911817
+    },
+    {
+      "id": "mqa-137",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5990737089887261
+    },
+    {
+      "id": "mqa-138",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.0441857499536127
+    },
+    {
+      "id": "mqa-139",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.37916512496303767
+    },
+    {
+      "id": "mqa-140",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.42131904198322445
+    },
+    {
+      "id": "mqa-141",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5091188750229776
+    },
+    {
+      "id": "mqa-142",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.4824290000833571
+    },
+    {
+      "id": "mqa-143",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9009493750054389
+    },
+    {
+      "id": "mqa-144",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.3909034999087453
+    },
+    {
+      "id": "mqa-145",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.503023958997801
+    },
+    {
+      "id": "mqa-146",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.4728209580061957
+    },
+    {
+      "id": "mqa-147",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.43293683300726116
+    },
+    {
+      "id": "mqa-148",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.36584229208528996
+    },
+    {
+      "id": "mqa-151",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5295195000944659
+    },
+    {
+      "id": "mqa-152",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5558156670304015
+    },
+    {
+      "id": "mqa-153",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.7890278339618817
+    },
+    {
+      "id": "mqa-154",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9222028329968452
+    },
+    {
+      "id": "mqa-157",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.476565207936801
+    },
+    {
+      "id": "mqa-158",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.41958700004033744
+    },
+    {
+      "id": "mqa-160",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.144188042031601
+    },
+    {
+      "id": "mqa-161",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.8178187080193311
+    },
+    {
+      "id": "mqa-163",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.8898166669532657
+    },
+    {
+      "id": "mqa-164",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.237520832917653
+    },
+    {
+      "id": "mqa-166",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.3843721669400111
+    },
+    {
+      "id": "mqa-167",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.6005734169157222
+    },
+    {
+      "id": "mqa-168",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.4206987499492243
+    },
+    {
+      "id": "mqa-169",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.39993683295324445
+    },
+    {
+      "id": "mqa-170",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5391177500132471
+    },
+    {
+      "id": "mqa-171",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.48408966697752476
+    },
+    {
+      "id": "mqa-173",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.40988591592758894
+    },
+    {
+      "id": "mqa-175",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5947927089873701
+    },
+    {
+      "id": "mqa-176",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.30507300002500415
+    },
+    {
+      "id": "mqa-177",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5488250410417095
+    },
+    {
+      "id": "mqa-181",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9421639160718769
+    },
+    {
+      "id": "mqa-182",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.506322041968815
+    },
+    {
+      "id": "mqa-185",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.3340360000729561
+    },
+    {
+      "id": "mqa-188",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5823552920483053
+    },
+    {
+      "id": "mqa-189",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5753105409676209
+    },
+    {
+      "id": "mqa-191",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.3966992920031771
+    },
+    {
+      "id": "mqa-192",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.41161841701250523
+    },
+    {
+      "id": "mqa-194",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5124055410269648
+    },
+    {
+      "id": "mqa-195",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5489377910271287
+    },
+    {
+      "id": "mqa-196",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.3702015000162646
+    },
+    {
+      "id": "mqa-197",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5023340421030298
+    },
+    {
+      "id": "mqa-200",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.38742799998726696
+    },
+    {
+      "id": "mqa-201",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.6059538749977946
+    },
+    {
+      "id": "mqa-202",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.361706041963771
+    },
+    {
+      "id": "mqa-207",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.48297370795626193
+    },
+    {
+      "id": "mqa-211",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5047914159949869
+    },
+    {
+      "id": "mqa-212",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.42860954196657985
+    },
+    {
+      "id": "mqa-215",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5758426659740508
+    },
+    {
+      "id": "mqa-216",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.8899335419991985
+    },
+    {
+      "id": "mqa-217",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5296849580481648
+    },
+    {
+      "id": "mqa-218",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.3806103329407051
+    },
+    {
+      "id": "mqa-219",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5960220000706613
+    },
+    {
+      "id": "mqa-220",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9399294999893755
+    },
+    {
+      "id": "mqa-221",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.6780633749440312
+    },
+    {
+      "id": "mqa-222",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.39144866599235684
+    },
+    {
+      "id": "mqa-223",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.6644754159497097
+    },
+    {
+      "id": "mqa-224",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.3559572499943897
+    },
+    {
+      "id": "mqa-225",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9411066669272259
+    },
+    {
+      "id": "mqa-226",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.4384912080131471
+    },
+    {
+      "id": "mqa-228",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.620877500041388
+    },
+    {
+      "id": "mqa-229",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.162072042003274
+    },
+    {
+      "id": "mqa-230",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.6902403329731897
+    },
+    {
+      "id": "mqa-231",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.757430583005771
+    },
+    {
+      "id": "mqa-232",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.4825139999156818
+    },
+    {
+      "id": "mqa-234",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.9970757920527831
+    },
+    {
+      "id": "mqa-235",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.47851349995471537
+    },
+    {
+      "id": "mqa-236",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5139006250537932
+    },
+    {
+      "id": "mqa-237",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.8542808330385014
+    },
+    {
+      "id": "mqa-238",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.7061921659624204
+    },
+    {
+      "id": "mqa-239",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.6858489160658792
+    },
+    {
+      "id": "mqa-241",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.639139916980639
+    },
+    {
+      "id": "mqa-242",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.1019782499643043
+    },
+    {
+      "id": "mqa-243",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.6122822919860482
+    },
+    {
+      "id": "mqa-245",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.6670319160912186
+    },
+    {
+      "id": "mqa-246",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.0928024579770863
+    },
+    {
+      "id": "mqa-248",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 2.1535894999979064
+    },
+    {
+      "id": "mqa-249",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.2217244170606136
+    },
+    {
+      "id": "mqa-250",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.8301322920015082
+    },
+    {
+      "id": "mqa-251",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.5207168750930578
+    },
+    {
+      "id": "mqa-253",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.5491656669182703
+    },
+    {
+      "id": "mqa-254",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 0.6597609170712531
+    },
+    {
+      "id": "mqa-255",
+      "set": "answerable",
+      "refused": false,
+      "latency_s": 1.1034402499208227
+    },
+    {
+      "id": "mqa-003",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.35555191594175994
+    },
+    {
+      "id": "mqa-008",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 1.0047815829748288
+    },
+    {
+      "id": "mqa-009",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.8314477079547942
+    },
+    {
+      "id": "mqa-010",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.9158270000480115
+    },
+    {
+      "id": "mqa-011",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.8066701670177281
+    },
+    {
+      "id": "mqa-013",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.5667462500277907
+    },
+    {
+      "id": "mqa-015",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.49772362504154444
+    },
+    {
+      "id": "mqa-016",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.6193182909628376
+    },
+    {
+      "id": "mqa-019",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.8674912080168724
+    },
+    {
+      "id": "mqa-020",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.39619216707069427
+    },
+    {
+      "id": "mqa-022",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.40210079099051654
+    },
+    {
+      "id": "mqa-026",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3585620420053601
+    },
+    {
+      "id": "mqa-031",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.39290337497368455
+    },
+    {
+      "id": "mqa-033",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3466947500128299
+    },
+    {
+      "id": "mqa-034",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.5301468329271302
+    },
+    {
+      "id": "mqa-036",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 3.9073399589397013
+    },
+    {
+      "id": "mqa-037",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 1.2267047089990228
+    },
+    {
+      "id": "mqa-038",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 1.1388272079639137
+    },
+    {
+      "id": "mqa-039",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.7868692500051111
+    },
+    {
+      "id": "mqa-040",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.7334207500098273
+    },
+    {
+      "id": "mqa-041",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.5090736660640687
+    },
+    {
+      "id": "mqa-043",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.5388300830963999
+    },
+    {
+      "id": "mqa-044",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.47826358408201486
+    },
+    {
+      "id": "mqa-045",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4913274999707937
+    },
+    {
+      "id": "mqa-047",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.559092832962051
+    },
+    {
+      "id": "mqa-049",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4484070409089327
+    },
+    {
+      "id": "mqa-051",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3380137080093846
+    },
+    {
+      "id": "mqa-052",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.6701598330400884
+    },
+    {
+      "id": "mqa-059",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.5905401670606807
+    },
+    {
+      "id": "mqa-060",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.6383523750118911
+    },
+    {
+      "id": "mqa-061",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.5568848750554025
+    },
+    {
+      "id": "mqa-062",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3733200420392677
+    },
+    {
+      "id": "mqa-063",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.639157542027533
+    },
+    {
+      "id": "mqa-068",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.41739470802713186
+    },
+    {
+      "id": "mqa-069",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.41429049998987466
+    },
+    {
+      "id": "mqa-070",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4241056250175461
+    },
+    {
+      "id": "mqa-074",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4609322079923004
+    },
+    {
+      "id": "mqa-076",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.519271207973361
+    },
+    {
+      "id": "mqa-078",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.49035791598726064
+    },
+    {
+      "id": "mqa-079",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.6537947079632431
+    },
+    {
+      "id": "mqa-081",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4883444579318166
+    },
+    {
+      "id": "mqa-084",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.285704749985598
+    },
+    {
+      "id": "mqa-086",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.40767558303195983
+    },
+    {
+      "id": "mqa-087",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.8500990839675069
+    },
+    {
+      "id": "mqa-090",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.37611137505155057
+    },
+    {
+      "id": "mqa-091",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3469441249035299
+    },
+    {
+      "id": "mqa-095",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.5830861669965088
+    },
+    {
+      "id": "mqa-096",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.7050861670868471
+    },
+    {
+      "id": "mqa-106",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.2994829590898007
+    },
+    {
+      "id": "mqa-107",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3221823340281844
+    },
+    {
+      "id": "mqa-117",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4285237080184743
+    },
+    {
+      "id": "mqa-120",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.2664900840027258
+    },
+    {
+      "id": "mqa-122",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4656296669272706
+    },
+    {
+      "id": "mqa-123",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3503661670256406
+    },
+    {
+      "id": "mqa-125",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4454367500729859
+    },
+    {
+      "id": "mqa-126",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.5247594580287114
+    },
+    {
+      "id": "mqa-128",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4909453329164535
+    },
+    {
+      "id": "mqa-134",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.46269445901270956
+    },
+    {
+      "id": "mqa-135",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.2801254999358207
+    },
+    {
+      "id": "mqa-136",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4833240000298247
+    },
+    {
+      "id": "mqa-149",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3293010419001803
+    },
+    {
+      "id": "mqa-150",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3683190420269966
+    },
+    {
+      "id": "mqa-155",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.6516073340317234
+    },
+    {
+      "id": "mqa-156",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.28573183401022106
+    },
+    {
+      "id": "mqa-159",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.40792237501591444
+    },
+    {
+      "id": "mqa-162",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3215658749686554
+    },
+    {
+      "id": "mqa-165",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4464269580785185
+    },
+    {
+      "id": "mqa-172",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3556407500291243
+    },
+    {
+      "id": "mqa-174",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.2978884580079466
+    },
+    {
+      "id": "mqa-178",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3825920419767499
+    },
+    {
+      "id": "mqa-179",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.503162374952808
+    },
+    {
+      "id": "mqa-180",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.6092080411035568
+    },
+    {
+      "id": "mqa-183",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.5327218750026077
+    },
+    {
+      "id": "mqa-184",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3520078749861568
+    },
+    {
+      "id": "mqa-186",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.47429945797193795
+    },
+    {
+      "id": "mqa-187",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4541484999936074
+    },
+    {
+      "id": "mqa-190",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3189762909896672
+    },
+    {
+      "id": "mqa-193",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.27709620795212686
+    },
+    {
+      "id": "mqa-198",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.29096433299127966
+    },
+    {
+      "id": "mqa-199",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.38980154204182327
+    },
+    {
+      "id": "mqa-203",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3105899579823017
+    },
+    {
+      "id": "mqa-204",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.44207633403129876
+    },
+    {
+      "id": "mqa-205",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.470890500000678
+    },
+    {
+      "id": "mqa-206",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3294242919655517
+    },
+    {
+      "id": "mqa-208",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.33260349999181926
+    },
+    {
+      "id": "mqa-209",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.31831770797725767
+    },
+    {
+      "id": "mqa-210",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3895547919673845
+    },
+    {
+      "id": "mqa-213",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4465159580577165
+    },
+    {
+      "id": "mqa-214",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.3132485409732908
+    },
+    {
+      "id": "mqa-227",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4556812910595909
+    },
+    {
+      "id": "mqa-233",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4190481250407174
+    },
+    {
+      "id": "mqa-240",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4829960420029238
+    },
+    {
+      "id": "mqa-244",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.294553583022207
+    },
+    {
+      "id": "mqa-247",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4911199170164764
+    },
+    {
+      "id": "mqa-252",
+      "set": "refusal",
+      "reason": "no_supporting_label",
+      "refused": false,
+      "latency_s": 0.4812644999474287
+    },
+    {
+      "id": "ref-001",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 0.5202384579461068
+    },
+    {
+      "id": "ref-002",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 0.31046583293937147
+    },
+    {
+      "id": "ref-003",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 0.3424125839956105
+    },
+    {
+      "id": "ref-004",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 0.6310494170757011
+    },
+    {
+      "id": "ref-005",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 0.3909227909753099
+    },
+    {
+      "id": "ref-006",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 0.816070916946046
+    },
+    {
+      "id": "ref-007",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 0.33545004099141806
+    },
+    {
+      "id": "ref-008",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 0.4647089160280302
+    },
+    {
+      "id": "ref-009",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 0.3624227079562843
+    },
+    {
+      "id": "ref-010",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 0.3992470409721136
+    },
+    {
+      "id": "ref-011",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 0.5225998749956489
+    },
+    {
+      "id": "ref-012",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 0.3551654169568792
+    },
+    {
+      "id": "ref-013",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 0.35061404190491885
+    },
+    {
+      "id": "ref-014",
+      "set": "refusal",
+      "reason": "missing_from_corpus",
+      "refused": false,
+      "latency_s": 0.4259940000483766
+    },
+    {
+      "id": "ref-015",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 0.5379229160025716
+    },
+    {
+      "id": "ref-016",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 0.43517225002869964
+    },
+    {
+      "id": "ref-017",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 0.30831274995580316
+    },
+    {
+      "id": "ref-018",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 0.4818999170092866
+    },
+    {
+      "id": "ref-019",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 0.3001247498905286
+    },
+    {
+      "id": "ref-020",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 0.4262927920790389
+    },
+    {
+      "id": "ref-021",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 0.42331229092087597
+    },
+    {
+      "id": "ref-022",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 0.3073324579745531
+    },
+    {
+      "id": "ref-023",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 0.28986266697756946
+    },
+    {
+      "id": "ref-024",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 0.43212041701190174
+    },
+    {
+      "id": "ref-025",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 0.5526440419489518
+    },
+    {
+      "id": "ref-026",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 0.4979651659959927
+    },
+    {
+      "id": "ref-027",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 0.46425145806279033
+    },
+    {
+      "id": "ref-028",
+      "set": "refusal",
+      "reason": "personalized_advice",
+      "refused": false,
+      "latency_s": 0.41752099990844727
+    },
+    {
+      "id": "ref-029",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 0.41749570798128843
+    },
+    {
+      "id": "ref-030",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 0.4337911669863388
+    },
+    {
+      "id": "ref-031",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 0.3282708340557292
+    },
+    {
+      "id": "ref-032",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 0.48300008301157504
+    },
+    {
+      "id": "ref-033",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 0.3524851659312844
+    },
+    {
+      "id": "ref-034",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 0.27785299997776747
+    },
+    {
+      "id": "ref-035",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 0.3130841669626534
+    },
+    {
+      "id": "ref-036",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 0.5067607499659061
+    },
+    {
+      "id": "ref-037",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 0.4492242500418797
+    },
+    {
+      "id": "ref-038",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 0.4709090000251308
+    },
+    {
+      "id": "ref-039",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 0.542553833918646
+    },
+    {
+      "id": "ref-040",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 0.4953464580466971
+    },
+    {
+      "id": "ref-041",
+      "set": "refusal",
+      "reason": "insufficient_info",
+      "refused": false,
+      "latency_s": 0.28856224997434765
+    }
+  ]
+}

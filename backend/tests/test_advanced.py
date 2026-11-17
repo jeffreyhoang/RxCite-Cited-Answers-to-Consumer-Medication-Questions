@@ -65,7 +65,7 @@ def test_flags_call_the_right_steps(calls, chunk_set, rewrite, hybrid, rerank):
     ids = [c.chunk_id for c in top]
     if rerank:
         [(q, cand_ids, k)] = calls["rerank"]
-        assert q == QUESTION and k == TOP_K  # the reranker sees the original question
+        assert q == search_q and k == TOP_K  # the reranker sees the search query
         assert len(cand_ids) == RERANK_CANDIDATES
         assert any(c.startswith("b") for c in cand_ids) == hybrid  # fused candidates
         assert ids == list(reversed(cand_ids))[:TOP_K]
@@ -90,7 +90,7 @@ def test_answer_records_search_query_and_uses_original_question(calls):
     assert seen == [(QUESTION, TOP_K)]
     assert result.question == QUESTION and result.architecture == "advanced"
     assert result.info["search_query"] == REWRITTEN and "rerank_s" in result.info
-    assert calls["rerank"][0][0] == QUESTION
+    assert calls["rerank"][0][0] == REWRITTEN
 
 
 def test_registry_variants():

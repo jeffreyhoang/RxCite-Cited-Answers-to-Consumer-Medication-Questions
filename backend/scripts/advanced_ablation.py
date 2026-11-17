@@ -18,7 +18,7 @@ from rxcite.eval.runner import RUNS_CACHE
 # Cumulative ablation: each row adds one step to the row above it
 ROWS = [
     ("dense", "Fixed chunks, dense top-10 (Naive retrieval)"),
-    ("adv-section", "+ section-based chunks with drug | section header"),
+    ("adv-section", "+ section-based chunks with drug \\| section header"),
     ("adv-rewrite", "+ query rewriting"),
     ("adv-hybrid", "+ BM25 + dense, RRF fusion (k = 60)"),
     ("advanced-retrieval", "+ bge-reranker-base over the top 50 (full Advanced)"),
