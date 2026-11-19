@@ -18,7 +18,7 @@ class DecompositionPipeline(RAGPipeline):
     def retrieve(self, query: str) -> list[Chunk]:
         return self.retrieve_with_info(query)[0]
 
-    # info: the sub-questions searched besides the original (empty when it wasn't split)
+    # info: sub-questions searched besides the original
     def retrieve_with_info(self, query: str) -> tuple[list[Chunk], dict]:
         queries = search_queries(query, decompose(query))
         chunks = merge_round_robin([dense_search(q, self.top_k) for q in queries], self.top_k)

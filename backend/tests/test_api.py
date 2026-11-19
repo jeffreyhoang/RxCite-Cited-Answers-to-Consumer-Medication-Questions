@@ -8,7 +8,7 @@ from rxcite.pipelines.base import Chunk, Citation, RAGPipeline, RAGResult
 QUESTION = "can i drink alcohol with ibuprofen?"
 
 
-# Returns a fixed result (or raises) instead of calling Claude, OpenAI or Supabase
+# Fixed result or error, no network calls
 class Fake(RAGPipeline):
     def __init__(self, name, refused=False, error=None):
         super().__init__(generator=None)
@@ -123,6 +123,19 @@ def test_upstream_failure_is_502():
         r = ask(c)
     assert r.status_code == 502
     assert "Supabase" in r.json()["detail"]
+
+
+# Without CORS headers the frontend would report the server as unreachable
+def test_unexpected_error_is_500_with_cors():
+    with client({"naive": lambda: Fake("naive", error=ValueError("bug"))}) as c:
+        r = c.post(
+            "/ask",
+            json={"question": QUESTION, "architecture": "naive"},
+            headers={"Origin": "http://localhost:5173"},
+        )
+    assert r.status_code == 500
+    assert "naive" in r.json()["detail"]
+    assert r.headers["access-control-allow-origin"] == "http://localhost:5173"
 
 
 def test_cors_allows_vite_dev_server():

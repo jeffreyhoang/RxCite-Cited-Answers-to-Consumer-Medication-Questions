@@ -1,11 +1,5 @@
-# Web API (T11): serves the four RAG architectures to the React frontend
+# Web API (T11) for the four RAG architectures
 #       Run from backend/: uv run uvicorn api.main:app --reload --port 8000
-#       Docs while running: http://localhost:8000/docs
-#
-#       Endpoints are plain `def`, so FastAPI runs each request in a worker thread. Requests for
-#       the same architecture take turns (one lock each); different architectures run at the
-#       same time, so the frontend's compare-all mode (four /ask calls at once) runs in parallel.
-#       Only Advanced uses the reranker, so the model is never called from two threads at once.
 
 import logging
 import os
@@ -26,8 +20,7 @@ from rxcite.pipelines.base import RAGPipeline, RAGResult, citation_url, section_
 
 log = logging.getLogger("rxcite.api")
 
-# The four architectures the app offers, in display order (the registry also has eval-only
-# variants such as adv-section and dummy, which the API doesn't expose)
+# Display order; the registry's eval-only variants aren't exposed
 ARCHITECTURES = [
     {
         "id": "naive",
@@ -55,13 +48,11 @@ ARCHITECTURES = [
 ]
 ArchitectureId = Literal["naive", "advanced", "hierarchical", "decomposition"]
 
-# Every architecture embeds the question (OpenAI), searches Supabase, and answers with Claude
 REQUIRED_ENV = ("ANTHROPIC_API_KEY", "OPENAI_API_KEY", "SUPABASE_DB_URL")
-
 DEFAULT_CORS_ORIGINS = "http://localhost:5173,http://127.0.0.1:5173"  # Vite dev server
 MAX_QUESTION_CHARS = 1000
 
-# Errors from the services a pipeline calls -> 502, named so the message says which one failed
+# Returned as 502 with the service's name
 UPSTREAM_ERRORS: tuple[tuple[type[Exception], str], ...] = (
     (anthropic.APIError, "Claude API"),
     (openai.APIError, "OpenAI API"),
@@ -80,14 +71,14 @@ class CitationOut(BaseModel):
     n: int  # the answer's [n] marker
     set_id: str
     section: str
-    section_label: str  # e.g. "Drug interactions"
+    section_label: str
     drug_name: str
-    label: str  # e.g. "Lisinopril — Drug interactions"
-    url: str  # DailyMed page for the label
+    label: str
+    url: str
 
 
 class SourceOut(BaseModel):
-    rank: int  # 1 = best
+    rank: int
     chunk_id: str
     set_id: str
     drug_name: str
@@ -96,17 +87,17 @@ class SourceOut(BaseModel):
     text: str
     score: float
     url: str
-    cited: bool  # True if the answer cites this source's (label, section)
+    cited: bool
 
 
 class AskResponse(BaseModel):
     question: str
     architecture: str
-    answer: str  # contains [n] markers matching citations[].n (none when refused)
+    answer: str
     refused: bool
     citations: list[CitationOut]
     sources: list[SourceOut]
-    info: dict[str, Any]  # intermediate steps; keys depend on the architecture
+    info: dict[str, Any]  # keys depend on the architecture
     latency_s: float
 
 
@@ -153,7 +144,7 @@ def missing_env(required: Sequence[str]) -> list[str]:
     return [name for name in required if not os.environ.get(name)]
 
 
-# Load the BM25 index and the reranker now, so the first Advanced question isn't slow
+# Preload Advanced RAG's BM25 index and reranker so its first question isn't slow
 def warm_up() -> None:
     from rxcite.bm25 import index
     from rxcite.rerank import reranker
@@ -162,7 +153,7 @@ def warm_up() -> None:
         try:
             load()
             log.info("Warm-up: %s loaded", step)
-        except Exception:  # not fatal: it loads on the first Advanced question instead
+        except Exception:  # not fatal: loads on first use instead
             log.exception("Warm-up: %s failed to load", step)
 
 
@@ -171,8 +162,8 @@ def create_app(
     required_env: Sequence[str] = REQUIRED_ENV,
     warm: bool | None = None,
 ) -> FastAPI:
-    """builders: architecture id -> function that builds its pipeline (tests pass fakes).
-    warm: preload the BM25 index and reranker (default on; RXCITE_WARMUP=0 turns it off)."""
+    """builders: architecture id -> pipeline builder (tests pass fakes).
+    warm: run warm_up() at startup (default on; RXCITE_WARMUP=0 turns it off)."""
     if builders is None:
         builders = {a["id"]: PIPELINES[a["id"]] for a in ARCHITECTURES}
     if warm is None:
@@ -180,6 +171,7 @@ def create_app(
 
     pipelines: dict[str, RAGPipeline] = {}
     load_errors: dict[str, str] = {}
+    # One request per architecture at a time; different architectures run in parallel
     locks = {arch: threading.Lock() for arch in builders}
 
     @asynccontextmanager
@@ -237,7 +229,11 @@ def create_app(
                 if isinstance(e, error_type):
                     log.exception("%s failed while answering with %s", service, arch)
                     raise HTTPException(502, f"{service} request failed; try again") from e
-            raise
+            # Raise here, not via an exception_handler, so the 500 keeps its CORS headers
+            log.exception("Unexpected error while answering with %s", arch)
+            raise HTTPException(
+                500, f"Unexpected server error in {arch}; see the backend logs"
+            ) from e
         return to_response(result, arch)
 
     return app

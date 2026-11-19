@@ -21,7 +21,7 @@ class HierarchicalPipeline(RAGPipeline):
     def retrieve(self, query: str) -> list[Chunk]:
         return self.retrieve_with_info(query)[0]
 
-    # info: the detected drugs (the metadata filter) and question type
+    # info: detected drugs and question type
     def retrieve_with_info(self, query: str) -> tuple[list[Chunk], dict]:
         info = analyze(query)
         children = dense_search(query, N_CHILDREN, labels_for(info.drugs))
