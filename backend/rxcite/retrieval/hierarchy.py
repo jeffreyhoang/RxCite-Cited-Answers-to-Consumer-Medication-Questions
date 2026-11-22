@@ -7,7 +7,7 @@ from dataclasses import dataclass, field
 
 from rxcite import db
 from rxcite.pipelines.base import Chunk
-from rxcite.query_analysis import SECTION_GROUPS
+from rxcite.query.analysis import SECTION_GROUPS
 
 N_PARENTS = 5
 MAX_PARENT_CHARS = 6000  # ~1,500 tokens; 5 parents ≈ Naive's 10 chunks
@@ -43,7 +43,7 @@ def rank_parents(children: list[Chunk], section_type: str, n: int = N_PARENTS) -
     return sorted(parents.values(), key=lambda p: p.score, reverse=True)[:n]
 
 
-# Whole section if short enough; otherwise matched chunks ± 1 neighbor, best matches first,
+# Whole section if short enough; otherwise matched chunks 1 neighbors, best matches first,
 # until the cap. The best match is always kept.
 def parent_text(
     section_text: str,

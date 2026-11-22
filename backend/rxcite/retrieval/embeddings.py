@@ -1,6 +1,5 @@
-# Text embeddings for the T5 candidate models
+# Text embeddings for the three candidate embedding models
 #       Every vector is unit length, so cosine similarity is a plain dot product.
-#       Local models run on the Mac GPU (MPS) when available; OpenAI needs OPENAI_API_KEY.
 
 from dataclasses import dataclass
 from functools import cache

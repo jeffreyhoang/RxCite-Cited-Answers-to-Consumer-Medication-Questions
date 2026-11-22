@@ -1,6 +1,6 @@
-from rxcite import decomposition
-from rxcite.decomposition import decompose, merge_round_robin, search_queries
 from rxcite.pipelines.base import Chunk
+from rxcite.query import decomposition
+from rxcite.query.decomposition import decompose, merge_round_robin, search_queries
 
 
 class FakeResponse:

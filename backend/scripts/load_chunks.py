@@ -18,7 +18,7 @@ import numpy as np
 
 from rxcite import db
 from rxcite.config import DATA_DIR, EMBEDDING_DIM, EMBEDDING_MODEL
-from rxcite.retrieval import chunk_table
+from rxcite.retrieval.search import chunk_table
 
 CHUNKS = {
     "fixed": DATA_DIR / "chunks" / "fixed_v1.jsonl",

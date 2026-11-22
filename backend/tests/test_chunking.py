@@ -1,4 +1,4 @@
-from rxcite.chunking import (
+from rxcite.data.chunking import (
     MAX_CHARS,
     MIN_CHARS,
     SECTION_MAX_CHARS,

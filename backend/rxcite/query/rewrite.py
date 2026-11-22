@@ -1,6 +1,5 @@
-# Query rewriting for Advanced RAG (T7): consumer question -> keyword-style label search string
+# Query rewriting for Advanced RAG
 #       Only BM25 and dense search see the rewrite; the reranker and generator get the original.
-#       Check it with: uv run python -m rxcite.rewrite
 
 import json
 

@@ -1,14 +1,13 @@
 # Retrieval over the Supabase chunk tables (pgvector), plus Reciprocal Rank Fusion
-#       dense_search is the shared dense retriever for the RAG architectures (Naive RAG in T6, ...)
-#       Queries run on db.query's shared connection (opened once, reconnects if dropped).
-#       Two chunk sets: "fixed" (T5 fixed-size chunks) and "section" (T7 section-based chunks).
+#       dense_search is the shared dense retriever for the RAG architectures
+#       Two chunk sets: "fixed" and "section"
 
 from dataclasses import replace
 
 from rxcite import db
 from rxcite.config import EMBEDDING_DIM, EMBEDDING_MODEL, RERANK_CANDIDATES, RRF_K, TOP_K
-from rxcite.embeddings import embed
 from rxcite.pipelines.base import Chunk
+from rxcite.retrieval.embeddings import embed
 
 # Chunk set name -> table. Table names are only ever formatted into SQL from this dict.
 CHUNK_TABLES = {"fixed": "chunks", "section": "section_chunks"}

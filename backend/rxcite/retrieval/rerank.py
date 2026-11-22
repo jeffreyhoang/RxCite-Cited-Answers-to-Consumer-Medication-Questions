@@ -1,5 +1,5 @@
-# Cross-encoder reranking for Advanced RAG (T7): bge-reranker-base scores (question, chunk)
-#       pairs locally. The model loads once, on first use.
+# Cross-encoder reranking for Advanced RAG: bge-reranker-base scores (question, chunk)
+#       pairs locally.
 
 from dataclasses import replace
 from functools import cache

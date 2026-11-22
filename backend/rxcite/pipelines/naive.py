@@ -1,9 +1,8 @@
 # Naive RAG (baseline architecture): embed the question -> top-k dense chunks -> generate
-#       Retrieval is pgvector over the fixed-size chunks (T5); generation is the shared generator.
 
 from rxcite.generation import generate
 from rxcite.pipelines.base import Chunk, RAGPipeline
-from rxcite.retrieval import dense_search
+from rxcite.retrieval.search import dense_search
 
 
 class NaivePipeline(RAGPipeline):

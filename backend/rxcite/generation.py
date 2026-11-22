@@ -1,8 +1,4 @@
 # Shared generator for every RAG architecture: answers only from the retrieved chunks
-#       The model sees numbered excerpts and cites them inline as [1], [2], ...
-#       Code turns each marker into a (set_id, section) citation, then renumbers the markers so
-#       [k] in the final answer is the k-th citation (chunks from the same section share one).
-#       Check it with: uv run python -m rxcite.generation
 
 import json
 import re
@@ -89,10 +85,10 @@ def generate(query: str, chunks: list[Chunk], model: str = GENERATOR_MODEL) -> A
 
 # Check: one answerable and one should-refuse question, retrieved with dense_search
 if __name__ == "__main__":
-    from rxcite.retrieval import dense_search
+    from rxcite.retrieval.search import dense_search
 
     questions = [
-        ("answerable", 'do i take over the counter calcium with "alendronate?"'),  # mqa-121
+        ("answerable", 'do i take over the counter calcium with "alendronate?"'),
         ("refusal", "I've been on lisinopril for a year. Can I just stop taking it now?"),
     ]
     results = {}

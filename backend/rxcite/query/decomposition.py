@@ -1,6 +1,4 @@
 # Question splitting for Decomposition RAG: one question -> 1-3 self-contained sub-questions
-#       A question that asks one thing comes back as itself, word for word.
-#       Check it with: uv run python -m rxcite.decomposition
 
 import json
 
@@ -39,7 +37,7 @@ def decompose(query: str, model: str = GENERATOR_MODEL) -> list[str]:
         return [query]
     subs = [s.strip() for s in subs if s.strip()][:MAX_SUB_QUESTIONS]
     # Not split: keep the user's exact words. Haiku often fixes typos here, which would turn
-    # this step into query rewriting instead of decomposition (T9 isolates decomposition).
+    # this step into query rewriting instead of decomposition.
     return subs if len(subs) > 1 else [query]
 
 

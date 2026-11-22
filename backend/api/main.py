@@ -1,4 +1,4 @@
-# Web API (T11) for the four RAG architectures
+# Web API for the four RAG architectures
 #       Run from backend/: uv run uvicorn api.main:app --reload --port 8000
 
 import logging
@@ -146,8 +146,8 @@ def missing_env(required: Sequence[str]) -> list[str]:
 
 # Preload Advanced RAG's BM25 index and reranker so its first question isn't slow
 def warm_up() -> None:
-    from rxcite.bm25 import index
-    from rxcite.rerank import reranker
+    from rxcite.retrieval.bm25 import index
+    from rxcite.retrieval.rerank import reranker
 
     for step, load in (("BM25 index", lambda: index("section")), ("reranker", reranker)):
         try:

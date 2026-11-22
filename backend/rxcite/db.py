@@ -9,12 +9,12 @@ HNSW_EF_SEARCH = 100  # HNSW search breadth; higher = closer to exact search, a 
 _shared: psycopg.Connection | None = None
 
 
-# Open a connection to the Supabase database (use as `with connect() as conn:`)
+# Open a connection to the Supabase database
 def connect() -> psycopg.Connection:
     return psycopg.connect(supabase_db_url(), connect_timeout=10)
 
 
-# One reused connection for read-only queries at answer time (opening one costs ~1 s)
+# One reused connection for read-only queries at answer time
 def _shared_connection() -> psycopg.Connection:
     global _shared
     if _shared is None or _shared.closed or _shared.broken:
@@ -29,7 +29,7 @@ def query(sql: str, params=None) -> list[tuple]:
     global _shared
     try:
         return _shared_connection().execute(sql, params).fetchall()
-    except psycopg.OperationalError:  # e.g. idle timeout
+    except psycopg.OperationalError:
         _shared = None
         return _shared_connection().execute(sql, params).fetchall()
 
@@ -54,8 +54,7 @@ create table if not exists sections (
 """
 
 
-# Fixed-size chunks (T5) with their embeddings; each chunk belongs to one label section.
-#       halfvec = 16-bit floats, half the storage of vector (fits the Supabase free tier)
+# Fixed-size chunks
 CHUNKS_SCHEMA = f"""
 create extension if not exists vector;
 
@@ -69,14 +68,14 @@ create table if not exists chunks (
 );
 """
 
-# Built after a bulk load (faster than updating the index row by row)
+# Built after a bulk load
 CHUNKS_INDEX = """
 create index if not exists chunks_embedding_idx
     on chunks using hnsw (embedding halfvec_cosine_ops);
 """
 
 
-# Section-based chunks (T7), same columns as chunks; embeddings are of search_text
+# Section-based chunks
 SECTION_CHUNKS_SCHEMA = f"""
 create table if not exists section_chunks (
     chunk_id  text primary key,  -- "<set_id>:<section>:<n>"

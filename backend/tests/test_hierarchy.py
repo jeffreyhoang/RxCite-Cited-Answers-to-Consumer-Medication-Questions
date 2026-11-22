@@ -1,5 +1,5 @@
-from rxcite.hierarchy import GAP, TOPIC_BONUS, parent_text, rank_parents
 from rxcite.pipelines.base import Chunk
+from rxcite.retrieval.hierarchy import GAP, TOPIC_BONUS, parent_text, rank_parents
 
 
 def child(set_id, section, n, score):

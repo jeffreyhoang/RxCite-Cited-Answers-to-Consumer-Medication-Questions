@@ -1,5 +1,4 @@
 # One way to call Claude: responses are cached on disk so repeated calls skip the API
-#       Cache: data/cache/llm/<hash>.json
 
 import hashlib
 import json
@@ -64,7 +63,7 @@ def call(
         "model": model,
         "max_tokens": max_tokens,
         "messages": request["messages"],
-        "output_config": {"effort": effort},  # no temperature: Haiku/Sonnet 5.5 reject it
+        "output_config": {"effort": effort},  # no temperature
     }
     if schema:
         kwargs["output_config"]["format"] = {"type": "json_schema", "schema": schema}

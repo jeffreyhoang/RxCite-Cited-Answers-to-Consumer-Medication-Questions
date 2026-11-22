@@ -22,7 +22,7 @@ import time
 import numpy as np
 
 from rxcite.config import DATA_DIR, EMBEDDING_MODEL
-from rxcite.embeddings import MODELS, embed, token_counts
+from rxcite.retrieval.embeddings import MODELS, embed, token_counts
 
 CHUNKS = {
     "fixed": DATA_DIR / "chunks" / "fixed_v1.jsonl",

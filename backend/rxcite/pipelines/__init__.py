@@ -1,11 +1,9 @@
 # Registry of RAG architectures the eval runner can run, by name: name -> function that builds it
-#       By ticket: dummy/oracle (T4), dense (T5), naive (T6), advanced (T7), hierarchical (T8),
-#       decomposition (T9). Each variant needs its own name: the runner caches answers per name.
 
 from collections.abc import Callable
 
-from rxcite.embeddings import MODELS
 from rxcite.pipelines.base import RAGPipeline
+from rxcite.retrieval.embeddings import MODELS
 
 
 def _oracle() -> RAGPipeline:
@@ -52,7 +50,7 @@ def _advanced() -> RAGPipeline:
     return AdvancedPipeline()
 
 
-# Retrieval-only Advanced RAG ablation rows (T7): each adds one step to the row above it
+# Retrieval-only Advanced RAG ablation rows: each adds one step to the row above it
 def _advanced_retrieval(name: str, **steps: bool) -> Callable[[], RAGPipeline]:
     def build() -> RAGPipeline:
         from rxcite.pipelines.advanced import AdvancedPipeline
@@ -88,17 +86,17 @@ def _dense(model: str) -> Callable[[], RAGPipeline]:
 PIPELINES: dict[str, Callable[[], RAGPipeline]] = {
     "oracle": _oracle,
     "dummy": _dummy,
-    "naive": _naive,  # T6: dense top-10 -> shared generator
-    "hierarchical": _hierarchical,  # T8: drug filter -> child chunks -> parent sections
+    "naive": _naive,  # dense top-10 -> shared generator
+    "hierarchical": _hierarchical,  # drug filter -> child chunks -> parent sections
     "hierarchical-retrieval": _hierarchical_retrieval,
-    "advanced": _advanced,  # T7: rewrite -> BM25 + dense -> RRF -> rerank -> shared generator
+    "advanced": _advanced,  # rewrite -> BM25 + dense -> RRF -> rerank -> shared generator
     "adv-section": _advanced_retrieval("adv-section", rewrite=False, hybrid=False, rerank=False),
     "adv-rewrite": _advanced_retrieval("adv-rewrite", hybrid=False, rerank=False),
     "adv-hybrid": _advanced_retrieval("adv-hybrid", rerank=False),
     "advanced-retrieval": _advanced_retrieval("advanced-retrieval"),
-    "decomposition": _decomposition,  # T9: sub-questions -> dense search each -> merge
+    "decomposition": _decomposition,  # sub-questions -> dense search each -> merge
     "decomposition-retrieval": _decomposition_retrieval,
     "dense": _pgvector_dense,  # chosen embedder, pgvector in Supabase
-    # T5 embedder comparison (in memory): dense-bge-base, dense-pubmedbert, dense-openai-small
+    # embedder comparison (in memory): dense-bge-base, dense-pubmedbert, dense-openai-small
     **{f"dense-{m}": _dense(m) for m in MODELS},
 }

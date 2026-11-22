@@ -1,5 +1,4 @@
 # LLM judge: scores one answer 0-2 on correctness, groundedness, and citation accuracy
-#       Check it with: uv run python -m rxcite.eval.judge
 
 import json
 from dataclasses import dataclass
@@ -94,7 +93,7 @@ def judge(
 if __name__ == "__main__":
     from rxcite import db
 
-    question = 'do i take over the counter calcium with "alendronate?"'  # mqa-121
+    question = 'do i take over the counter calcium with "alendronate?"'
     reference = (
         "Co-administration of alendronate sodium and calcium, antacids, or oral medications "
         "containing multivalent cations will interfere with absorption of alendronate."

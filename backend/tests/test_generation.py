@@ -4,7 +4,7 @@ from rxcite.pipelines.base import Chunk, Citation
 
 CHUNKS = [
     Chunk("a:warnings:0", "a", "drugA", "warnings", "..."),
-    Chunk("a:warnings:1", "a", "drugA", "warnings", "..."),  # same section as [1]
+    Chunk("a:warnings:1", "a", "drugA", "warnings", "..."),
     Chunk("b:dosage:0", "b", "drugB", "dosage", "..."),
 ]
 

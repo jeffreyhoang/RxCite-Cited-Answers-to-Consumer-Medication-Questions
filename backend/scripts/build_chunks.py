@@ -1,4 +1,4 @@
-"""Split every label section in Supabase into chunks: fixed-size (T5) or section-based (T7).
+"""Split every label section in Supabase into chunks: fixed-size or section-based.
 
 Run from backend/:
     uv run python scripts/build_chunks.py                 # fixed-size chunks (default)
@@ -18,7 +18,8 @@ import statistics
 from collections import Counter
 
 from rxcite import db
-from rxcite.chunking import (
+from rxcite.config import DATA_DIR
+from rxcite.data.chunking import (
     MAX_CHARS,
     OVERLAP_CHARS,
     SECTION_MAX_CHARS,
@@ -26,7 +27,6 @@ from rxcite.chunking import (
     section_pieces,
     split_section,
 )
-from rxcite.config import DATA_DIR
 from rxcite.pipelines.base import search_text
 
 OUT = {

@@ -1,18 +1,16 @@
 # Advanced RAG (T7): query rewrite -> dense + BM25 over section-based chunks -> RRF fusion
 #       -> top 50 -> cross-encoder rerank -> top 10 -> shared generator.
-#       Each step can be switched off for the ablation. Search and the reranker see the rewritten
-#       query (reranking against the original lowered dev MRR 0.81 -> 0.57); the generator
-#       gets the original question.
+#       Each step can be switched off for the ablation. 
 
 import time
 
-from rxcite.bm25 import bm25_search
 from rxcite.config import RERANK_CANDIDATES
 from rxcite.generation import generate
 from rxcite.pipelines.base import Chunk, Generator, RAGPipeline
-from rxcite.rerank import rerank as rerank_chunks  # alias: the `rerank` flag would shadow it
-from rxcite.retrieval import dense_search, rrf
-from rxcite.rewrite import rewrite_query
+from rxcite.query.rewrite import rewrite_query
+from rxcite.retrieval.bm25 import bm25_search
+from rxcite.retrieval.rerank import rerank as rerank_chunks  # the `rerank` flag would shadow it
+from rxcite.retrieval.search import dense_search, rrf
 
 
 class AdvancedPipeline(RAGPipeline):

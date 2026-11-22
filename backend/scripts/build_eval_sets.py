@@ -245,7 +245,7 @@ def build_drug_list(questions: list[dict]) -> dict:
     }
 
 
-# v2 top-up: unused questions about drugs that have a label (from T3's corpus_stats.json),
+# v2 top-up: unused questions about drugs that have a label (corpus_stats.json),
 # skipping weak types. IDs continue after v1 (mqa-201...).
 def sample_topup(df: pd.DataFrame, v1: list[dict]) -> tuple[list[dict], dict]:
     stats = json.loads((REPO_ROOT / "results" / "corpus_stats.json").read_text())

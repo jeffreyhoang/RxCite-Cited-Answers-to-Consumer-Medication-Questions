@@ -1,16 +1,14 @@
-# Plain dense retrieval over the fixed-size chunks (T5); both use dummy_generator (retrieval only)
-#       DensePipeline("<model>"): in memory from data/embeddings/<model>.npy, to compare embedders
-#       PgvectorDensePipeline:    the chosen embedder via pgvector in Supabase (rxcite.retrieval)
+# Plain dense retrieval over the fixed-size chunks; both use dummy_generator (retrieval only)
 
 import json
 
 import numpy as np
 
 from rxcite.config import DATA_DIR
-from rxcite.embeddings import embed
 from rxcite.pipelines.base import Chunk, RAGPipeline
 from rxcite.pipelines.baselines import dummy_generator
-from rxcite.retrieval import dense_search
+from rxcite.retrieval.embeddings import embed
+from rxcite.retrieval.search import dense_search
 
 CHUNKS = DATA_DIR / "chunks" / "fixed_v1.jsonl"
 EMBEDDINGS = DATA_DIR / "embeddings"

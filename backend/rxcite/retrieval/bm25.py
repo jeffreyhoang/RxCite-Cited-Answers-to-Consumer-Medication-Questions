@@ -1,6 +1,4 @@
-# BM25 (Okapi) keyword search over a chunk table, the sparse half of Advanced RAG's hybrid search
-#       Built from Supabase over search_text, then pickled to data/indexes/bm25_<set>.pkl
-#       (rebuilt when the table's row count changes).
+# BM25 (Okapi) keyword search over a chunk table, which is the sparse half of Advanced RAG's hybrid search
 
 import pickle
 import re
@@ -11,7 +9,7 @@ import numpy as np
 from rxcite import db
 from rxcite.config import DATA_DIR, TOP_K
 from rxcite.pipelines.base import Chunk, search_text
-from rxcite.retrieval import chunk_table
+from rxcite.retrieval.search import chunk_table
 
 INDEX_DIR = DATA_DIR / "indexes"
 

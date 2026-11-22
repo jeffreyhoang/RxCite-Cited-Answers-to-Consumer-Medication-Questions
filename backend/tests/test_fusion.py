@@ -3,7 +3,7 @@ import copy
 from pytest import approx
 
 from rxcite.pipelines.base import Chunk
-from rxcite.retrieval import rrf
+from rxcite.retrieval.search import rrf
 
 
 def chunks(*ids):

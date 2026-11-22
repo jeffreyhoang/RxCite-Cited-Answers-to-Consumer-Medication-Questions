@@ -1,7 +1,7 @@
 import json
 
-from rxcite import query_analysis
-from rxcite.query_analysis import SECTION_GROUPS, analyze, labels_for
+from rxcite.query import analysis as query_analysis
+from rxcite.query.analysis import SECTION_GROUPS, analyze, labels_for
 
 
 class FakeResponse:

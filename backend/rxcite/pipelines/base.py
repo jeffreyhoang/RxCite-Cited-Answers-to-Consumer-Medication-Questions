@@ -1,5 +1,4 @@
 # Shared class/interface content for the RAG architectures
-#       -all architectures need RAGPipeline and retrieve()
 
 import time
 from abc import ABC, abstractmethod

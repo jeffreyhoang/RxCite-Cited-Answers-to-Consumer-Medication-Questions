@@ -1,5 +1,4 @@
-# Fetch one FDA label per drug from the openFDA label API, cached in data/raw/openfda/
-#       Run with scripts/fetch_openfda.py
+# Downloads openFDA labels into data/raw/openfda/
 
 import json
 import re

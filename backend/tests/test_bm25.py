@@ -1,7 +1,7 @@
 import pytest
 
-from rxcite import bm25
-from rxcite.bm25 import bm25_search, index, tokenize
+from rxcite.retrieval import bm25
+from rxcite.retrieval.bm25 import bm25_search, index, tokenize
 
 ROWS = [
     ("m:adverse_reactions:0", "m", "metformin", "adverse_reactions", "Nausea, lactic acidosis."),

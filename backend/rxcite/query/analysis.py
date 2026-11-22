@@ -1,7 +1,4 @@
-# Query analysis for Hierarchical RAG: which drug(s) and what kind of question?
-#       Haiku picks drug names from the corpus list (or none) and one section type.
-#       The JSON schema restricts drugs to that list, so it can't invent a name.
-#       Check it with: uv run python -m rxcite.query_analysis
+# Query analysis for Hierarchical RAG: Haiku picks drug names from the corpus list (or none) and one section type.
 
 import json
 from dataclasses import dataclass

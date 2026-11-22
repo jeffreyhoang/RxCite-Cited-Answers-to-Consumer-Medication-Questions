@@ -1,4 +1,4 @@
-"""Build the Advanced RAG ablation table (T7) from saved eval results.
+"""Build the Advanced RAG ablation table from saved eval results.
 
 Run the rows first (from backend/), then this script:
     uv run python scripts/run_eval.py --arch <row> --full --no-judge   # for each row below

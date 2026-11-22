@@ -1,5 +1,4 @@
 # Configuration settings for the RxCite application
-#       -paths, env vars, model names, constants, etc.
 
 import os
 from pathlib import Path
@@ -10,7 +9,7 @@ from dotenv import load_dotenv
 BACKEND_DIR = Path(__file__).resolve().parents[1]
 REPO_ROOT = BACKEND_DIR.parent
 
-DATA_DIR = REPO_ROOT / "data"  # (gitignored) raw openFDA downloads, caches
+DATA_DIR = REPO_ROOT / "data"  # raw openFDA downloads, caches (gitignored)
 DATASETS_DIR = REPO_ROOT / "datasets"  # eval sets, gold mapping
 RESULTS_DIR = REPO_ROOT / "results"
 CACHE_DIR = DATA_DIR / "cache"  # cached LLM calls, eval runs
@@ -39,13 +38,13 @@ def supabase_db_url() -> str:
 
 # Model names
 GENERATOR_MODEL = "claude-haiku-5-5"
-JUDGE_MODEL = "claude-sonnet-5-5"  # stronger than the generator (T4 decision)
-FINAL_RUN_GENERATOR_MODEL = "claude-haiku-5-5"  # may switch to Sonnet 5.5 after T9
+JUDGE_MODEL = "claude-sonnet-5-5"  # stronger model than the generator
+FINAL_RUN_GENERATOR_MODEL = "claude-haiku-5-5"
 
 
-EMBEDDING_MODEL = "openai-small"  # key in rxcite/embeddings.py MODELS: text-embedding-3-small (T5)
+EMBEDDING_MODEL = "openai-small"  # retrieval/embeddings.py MODELS key: text-embedding-3-small
 EMBEDDING_DIM = 512  # must match the pgvector halfvec column
-RERANKER_MODEL = "BAAI/bge-reranker-base"  # T7 cross-encoder, runs locally (MPS on a Mac)
+RERANKER_MODEL = "BAAI/bge-reranker-base"  # cross-encoder (local)
 RERANKER_MAX_LENGTH = 512  # bge-reranker-base truncates its input at 512 tokens
 
 

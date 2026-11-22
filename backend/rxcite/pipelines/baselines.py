@@ -1,7 +1,7 @@
 # Baseline pipelines that test the eval harness (not real RAG systems)
 #       oracle: retrieves exactly the gold sections -> recall@10 should be 1.0
 #       dummy:  retrieves 10 random sections        -> recall@10 should be near 0
-#       Both use dummy_generator. Until T5 adds chunks, a "chunk" is a whole label section.
+#       Used for testing
 
 import hashlib
 import random

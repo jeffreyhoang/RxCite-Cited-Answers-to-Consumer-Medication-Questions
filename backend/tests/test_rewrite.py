@@ -2,8 +2,8 @@ import json
 
 import pytest
 
-from rxcite import rewrite
-from rxcite.rewrite import rewrite_query
+from rxcite.query import rewrite
+from rxcite.query.rewrite import rewrite_query
 
 QUESTION = "can i drink while on advil?"
 

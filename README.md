@@ -10,7 +10,9 @@ A retrieval-augmented generation (RAG) assistant that answers consumer medicatio
 │   │   ├── config.py       # settings: paths, model names, numbers
 │   │   ├── db.py           # talks to the Supabase database
 │   │   ├── llm.py          # talks to Claude
+│   │   ├── generation.py   # writes the cited answer from retrieved chunks
 │   │   ├── data/           # downloads drug labels and splits them into chunks
+│   │   ├── query/          # rewrites, analyzes, or splits the question before search
 │   │   ├── retrieval/      # finds the chunks that match a question
 │   │   ├── pipelines/      # the four RAG types, one file each
 │   │   └── eval/           # scores how well each RAG type does

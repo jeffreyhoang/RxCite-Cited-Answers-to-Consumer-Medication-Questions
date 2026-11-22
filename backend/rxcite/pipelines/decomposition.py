@@ -2,10 +2,10 @@
 #       original question and each sub-question -> merge by taking turns -> top 10 -> generate.
 #       Same chunks, search and generator as Naive; only the splitting and merging differ.
 
-from rxcite.decomposition import decompose, merge_round_robin, search_queries
 from rxcite.generation import generate
 from rxcite.pipelines.base import Chunk, Generator, RAGPipeline
-from rxcite.retrieval import dense_search
+from rxcite.query.decomposition import decompose, merge_round_robin, search_queries
+from rxcite.retrieval.search import dense_search
 
 
 class DecompositionPipeline(RAGPipeline):

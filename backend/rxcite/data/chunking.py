@@ -1,8 +1,4 @@
-# Chunking: fixed-size (T5, Naive RAG) and section-based (T7, Advanced RAG)
-#       Each section is split on its own, so a chunk never crosses a section and can be cited
-#       as (set_id, section). Sizes are in characters (~4 characters per token):
-#       1600 characters ≈ 400 tokens, which fits every candidate embedder's 512-token limit.
-#       Section-based chunks use the same cap, so the T7 ablation compares only where they split.
+# Chunking: split labels into fixed-size and section-based chunks
 
 import re
 
