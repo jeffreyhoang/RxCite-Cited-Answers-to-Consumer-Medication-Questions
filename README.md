@@ -46,3 +46,21 @@ Folders are added as the work that needs them begins.
    ```
 
 Use `uv add <package>` to add dependencies (not `pip install`), and commit `pyproject.toml` and `uv.lock`. Never commit `.env`.
+
+## Run the API
+
+From `backend/`, with `.env` filled in:
+
+```bash
+uv run uvicorn api.main:app --reload --port 8000
+```
+
+Interactive docs: http://localhost:8000/docs. Startup preloads the BM25 index and the reranker for Advanced RAG (a few seconds); set `RXCITE_WARMUP=0` to skip that.
+
+| Endpoint | What it does |
+|---|---|
+| `GET /health` | `status` (`ok`, or `degraded` if a setting is missing or a pipeline failed to load), the loaded architectures, and what is missing |
+| `GET /architectures` | The four architectures: `id`, `name`, `description` |
+| `POST /ask` | Body `{"question": "...", "architecture": "naive" \| "advanced" \| "hierarchical" \| "decomposition"}`. Returns the answer (with `[n]` markers), `refused`, `citations` (numbered, with DailyMed links), `sources` (retrieved chunks, best first), `info` (intermediate steps, e.g. the rewritten query or sub-questions) and `latency_s` |
+
+Errors: `422` for an invalid request, `503` when an architecture or a setting is unavailable, `502` when Claude, OpenAI or Supabase fails, `500` for any other error while answering (details in the server log). CORS allows the Vite dev server (`http://localhost:5173`); set `RXCITE_CORS_ORIGINS` (comma-separated) to change it.
