@@ -47,6 +47,25 @@ Folders are added as the work that needs them begins.
 
 Use `uv add <package>` to add dependencies (not `pip install`), and commit `pyproject.toml` and `uv.lock`. Never commit `.env`.
 
+## Running the app
+
+Needs Node 20.19+ (or 22.12+) for the frontend. Use two terminals:
+
+```bash
+# Terminal 1: API on http://localhost:8000
+cd backend
+uv run uvicorn api.main:app --reload --port 8000
+
+# Terminal 2: website on http://localhost:5173
+cd frontend
+npm install        # first time only
+npm run dev
+```
+
+Open http://localhost:5173. To point the site at a different API, copy
+`frontend/.env.example` to `frontend/.env.local` and change `VITE_API_URL`.
+The site must run on port 5173, because that's the only origin the API's CORS allows.
+
 ## Run the API
 
 From `backend/`, with `.env` filled in:
