@@ -71,57 +71,55 @@ naive_dev.json, hierarchical_dev.json, and decomposition_dev.json contain dev ru
 
 ## Setup
 
-1. Install [uv](https://docs.astral.sh/uv/): `brew install uv`
-2. Install dependencies (uv installs Python 3.12 automatically):
+**Requirements:** [uv](https://docs.astral.sh/uv/) (`brew install uv`) and Node 20.19+ (or 22.12+).
+
+1. Clone the repo and install the backend (uv install Python 3.12 automatically):
    ```bash
-   cd backend
+   git clone https://github.com/jeffreyhoang/RxCite-Cited-Answers-to-Consumer-Medication-Questions.git
+   cd RxCite-Cited-Answers-to-Consumer-Medication-Questions/backend
    uv sync
    ```
-3. Create your env file and fill in the values (ask a teammate for the Supabase connection string):
+2. Create your env file:
    ```bash
    cp .env.example .env
    ```
-4. Check your setup:
+   `SUPABASE_DB_URL` is already filled in with a read-only key.
+   Add your own keys:
+   ```
+   ANTHROPIC_API_KEY=...
+   OPENAI_API_KEY=...
+   ```
+3. Check that everything connects:
    ```bash
    uv run python scripts/smoke_test.py   # should print: Supabase: OK
-   uv run ruff check . && uv run pytest
+   ```
+4. Install the frontend:
+   ```bash
+   cd ../frontend
+   npm install
    ```
 
 Use `uv add <package>` to add dependencies (not `pip install`), and commit `pyproject.toml` and `uv.lock`. Never commit `.env`.
 
-## Running the app
+## Run the app
 
-Needs Node 20.19+ (or 22.12+) for the frontend. Use two terminals:
+Use two terminals, both starting from the repo root.
 
+**Terminal 1: backend** (API on http://localhost:8000)
 ```bash
-# Terminal 1: API on http://localhost:8000
 cd backend
 uv run uvicorn api.main:app --reload --port 8000
+```
+Startup preloads the BM25 index and the reranker (a few seconds). Set `RXCITE_WARMUP=0` to skip that.
 
-# Terminal 2: website on http://localhost:5173
+**Terminal 2: frontend** (website on http://localhost:5173)
+```bash
 cd frontend
-npm install        # first time only
 npm run dev
 ```
 
-Open http://localhost:5173. To point the site at a different API, copy
+Open http://localhost:5173, pick an architecture, and ask a question.
+
+The site must run on port 5173, because that's the only origin the API's CORS allows
+(set `RXCITE_CORS_ORIGINS` to change it). To point the site at a different API, copy
 `frontend/.env.example` to `frontend/.env.local` and change `VITE_API_URL`.
-The site must run on port 5173, because that's the only origin the API's CORS allows.
-
-## Run the API
-
-From `backend/`, with `.env` filled in:
-
-```bash
-uv run uvicorn api.main:app --reload --port 8000
-```
-
-Interactive docs: http://localhost:8000/docs. Startup preloads the BM25 index and the reranker for Advanced RAG (a few seconds); set `RXCITE_WARMUP=0` to skip that.
-
-| Endpoint | What it does |
-|---|---|
-| `GET /health` | `status` (`ok`, or `degraded` if a setting is missing or a pipeline failed to load), the loaded architectures, and what is missing |
-| `GET /architectures` | The four architectures: `id`, `name`, `description` |
-| `POST /ask` | Body `{"question": "...", "architecture": "naive" \| "advanced" \| "hierarchical" \| "decomposition"}`. Returns the answer (with `[n]` markers), `refused`, `citations` (numbered, with DailyMed links), `sources` (retrieved chunks, best first), `info` (intermediate steps, e.g. the rewritten query or sub-questions) and `latency_s` |
-
-Errors: `422` for an invalid request, `503` when an architecture or a setting is unavailable, `502` when Claude, OpenAI or Supabase fails, `500` for any other error while answering (details in the server log). CORS allows the Vite dev server (`http://localhost:5173`); set `RXCITE_CORS_ORIGINS` (comma-separated) to change it.
