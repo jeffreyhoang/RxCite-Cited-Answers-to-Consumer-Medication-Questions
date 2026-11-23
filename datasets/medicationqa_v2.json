@@ -1,6 +1,6 @@
 {
   "version": "v2",
-  "source": "MedicationQA top-up: drugs with a label in the T3 corpus",
+  "source": "MedicationQA top-up: drugs with a label in the corpus",
   "seed": 42,
   "aliases": {
     "albuterol": [

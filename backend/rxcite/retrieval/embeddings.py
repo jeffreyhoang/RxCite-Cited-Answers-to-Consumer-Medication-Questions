@@ -1,5 +1,4 @@
 # Text embeddings for the three candidate embedding models
-#       Every vector is unit length, so cosine similarity is a plain dot product.
 
 from dataclasses import dataclass
 from functools import cache

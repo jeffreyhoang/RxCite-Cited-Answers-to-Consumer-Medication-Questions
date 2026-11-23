@@ -1,5 +1,4 @@
-# Cross-encoder reranking for Advanced RAG: bge-reranker-base scores (question, chunk)
-#       pairs locally.
+# Cross-encoder reranking for Advanced RAG
 
 from dataclasses import replace
 from functools import cache

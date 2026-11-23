@@ -213,7 +213,7 @@ TOPUP_SKIP_TYPES = {"Alternatives", "Storage and disposal", "Stopping/tapering"}
 
 
 # Drugs used by the missing_from_corpus refusal questions (datasets/refusal_v1.json).
-# None had any openFDA label hit on 2026-11-02; T3 must not fetch them.
+# None had any openFDA label hit on 2026-11-02
 EXCLUDED_DRUGS = [
     "betahistine",
     "bilastine",
@@ -300,7 +300,7 @@ if __name__ == "__main__":
         DATASETS_DIR / "medicationqa_v2.json",
         {
             "version": "v2",
-            "source": "MedicationQA top-up: drugs with a label in the T3 corpus",
+            "source": "MedicationQA top-up: drugs with a label in the corpus",
             "seed": SEED,
             "aliases": topup_aliases,
             "questions": topup,

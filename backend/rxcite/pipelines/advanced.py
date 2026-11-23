@@ -1,4 +1,4 @@
-# Advanced RAG (T7): query rewrite -> dense + BM25 over section-based chunks -> RRF fusion
+# Advanced RAG: query rewrite -> dense + BM25 over section-based chunks -> RRF fusion
 #       -> top 50 -> cross-encoder rerank -> top 10 -> shared generator.
 #       Each step can be switched off for the ablation. 
 
