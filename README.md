@@ -120,6 +120,4 @@ npm run dev
 
 Open http://localhost:5173, pick an architecture, and ask a question.
 
-The site must run on port 5173, because that's the only origin the API's CORS allows
-(set `RXCITE_CORS_ORIGINS` to change it). To point the site at a different API, copy
-`frontend/.env.example` to `frontend/.env.local` and change `VITE_API_URL`.
+The site must run on port 5173, because that's the only origin the API's CORS allows.
